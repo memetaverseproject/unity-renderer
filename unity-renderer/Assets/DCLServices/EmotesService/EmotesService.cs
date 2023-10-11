@@ -14,8 +14,8 @@ namespace DCL.Emotes
     {
         //To avoid circular references in assemblies we hardcode this here instead of using WearableLiterals
         //Embedded Emotes are only temporary until they can be retrieved from the content server
-        private const string FEMALE = "urn:decentraland:off-chain:base-avatars:BaseFemale";
-        private const string MALE = "urn:decentraland:off-chain:base-avatars:BaseMale";
+        private const string FEMALE = "urn:memetaverse:off-chain:base-avatars:BaseFemale";
+        private const string MALE = "urn:memetaverse:off-chain:base-avatars:BaseMale";
 
         private readonly EmoteAnimationLoaderFactory emoteAnimationLoaderFactory;
         private readonly IEmotesCatalogService emotesCatalogService;

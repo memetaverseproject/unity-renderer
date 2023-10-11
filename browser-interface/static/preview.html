@@ -628,11 +628,11 @@
         }
 
         if (qs.has('explorer-branch')) {
-          return `https://renderer-artifacts.decentraland.org/branch/${qs.get('explorer-branch')}`
+          return `https://renderer-artifacts.memetaverse.club/branch/${qs.get('explorer-branch')}`
         }
 
         if (qs.has('explorer-version')) {
-          return `https://cdn.decentraland.org/@dcl/explorer/${qs.get('explorer-version')}`
+          return `https://cdn.memetaverse.club/@dcl/explorer/${qs.get('explorer-version')}`
         }
 
         // the CLI tool binds @/explorer to a static server serving the contents of
@@ -645,11 +645,11 @@
         const qs = new URLSearchParams(document.location.search)
 
         if (qs.has('renderer-branch')) {
-          return `https://renderer-artifacts.decentraland.org/branch/${qs.get('renderer-branch')}`
+          return `https://renderer-artifacts.memetaverse.club/branch/${qs.get('renderer-branch')}`
         }
 
         if (qs.has('renderer-version')) {
-          return `https://cdn.decentraland.org/@dcl/explorer/${qs.get('renderer-version')}`
+          return `https://cdn.memetaverse.club/@dcl/explorer/${qs.get('renderer-version')}`
         }
       }
 
@@ -740,7 +740,7 @@
             kernel.authenticate(globalThis.ethereum, false)
           }
         } else {
-          kernel.authenticate('wss://rpc.decentraland.org/mainnet?project=cli-preview', true)
+          kernel.authenticate('wss://ws-nebulas-testnet.uniultra.xyz', true)
         }
 
         if (isElectron()) {

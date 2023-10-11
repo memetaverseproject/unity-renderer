@@ -31,10 +31,10 @@ public interface IEventsAPIController
 [ExcludeFromCodeCoverage]
 public class EventsAPIController : IEventsAPIController
 {
-    internal const string URL_GET_ALL_EVENTS = "https://events.decentraland.org/api/events";
-    private const string URL_GET_DETAILED_EVENT = "https://events.decentraland.org/api/events/{event_id}";
-    private const string URL_PARTICIPATE_EVENT = "https://events.decentraland.org/api/events/{event_id}/attendees";
-    internal const string URL_GET_CATEGORIES = "https://events.decentraland.org/api/events/categories";
+    internal const string URL_GET_ALL_EVENTS = "https://events.memetaverse.club/api/events";
+    private const string URL_GET_DETAILED_EVENT = "https://events.memetaverse.club/api/events/{event_id}";
+    private const string URL_PARTICIPATE_EVENT = "https://events.memetaverse.club/api/events/{event_id}/attendees";
+    internal const string URL_GET_CATEGORIES = "https://events.memetaverse.club/api/events/categories";
 
     internal UserProfile ownUserProfile => UserProfile.GetOwnUserProfile();
     private Service<IWebRequestController> webRequestController;

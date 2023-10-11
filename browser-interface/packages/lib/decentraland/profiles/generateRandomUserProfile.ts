@@ -1,29 +1,29 @@
-import type { Avatar } from '@dcl/schemas'
+import type { Avatar } from '@beland/schemas'
 
 const bodyShapeWearables = [
   {
-    bodyShape: 'urn:decentraland:off-chain:base-avatars:BaseFemale',
+    bodyShape: 'urn:memetaverse:off-chain:base-avatars:BaseFemale',
     wearables: [
-      'urn:decentraland:off-chain:base-avatars:f_blue_jacket',
-      'urn:decentraland:off-chain:base-avatars:f_capris',
-      'urn:decentraland:off-chain:base-avatars:ruby_blue_loafer',
-      'urn:decentraland:off-chain:base-avatars:pony_tail',
-      'urn:decentraland:off-chain:base-avatars:pearls_earring',
-      'urn:decentraland:off-chain:base-avatars:f_mouth_05',
-      'urn:decentraland:off-chain:base-avatars:f_eyebrows_02',
-      'urn:decentraland:off-chain:base-avatars:f_eyes_06'
+      // 'urn:memetaverse:off-chain:base-avatars:eyes_00',
+      // 'urn:memetaverse:off-chain:base-avatars:eyebrows_00',
+      // 'urn:memetaverse:off-chain:base-avatars:mouth_00',
+      // 'urn:memetaverse:off-chain:base-avatars:hair_left_over',
+      // 'urn:memetaverse:off-chain:base-avatars:beard',
+      // 'urn:memetaverse:off-chain:base-avatars:brown_jacket',
+      // 'urn:memetaverse:off-chain:base-avatars:red_short',
+      // 'urn:memetaverse:off-chain:base-avatars:red_sandals'
     ]
   },
   {
-    bodyShape: 'urn:decentraland:off-chain:base-avatars:BaseMale',
+    bodyShape: 'urn:memetaverse:off-chain:base-avatars:BaseMale',
     wearables: [
-      'urn:decentraland:off-chain:base-avatars:m_sweater_02',
-      'urn:decentraland:off-chain:base-avatars:comfortablepants',
-      'urn:decentraland:off-chain:base-avatars:Espadrilles',
-      'urn:decentraland:off-chain:base-avatars:cool_hair',
-      'urn:decentraland:off-chain:base-avatars:beard',
-      'urn:decentraland:off-chain:base-avatars:eyebrows_00',
-      'urn:decentraland:off-chain:base-avatars:eyes_00'
+      // 'urn:memetaverse:off-chain:base-avatars:f_eyes_00',
+      // 'urn:memetaverse:off-chain:base-avatars:f_eyebrows_00',
+      // 'urn:memetaverse:off-chain:base-avatars:f_mouth_00',
+      // 'urn:memetaverse:off-chain:base-avatars:standard_hair',
+      // 'urn:memetaverse:off-chain:base-avatars:light_green_jennie_short_dress',
+      // 'urn:memetaverse:off-chain:base-avatars:purple_pants',
+      // 'urn:memetaverse:off-chain:base-avatars:black_while_shoes'
     ]
   }
 ]

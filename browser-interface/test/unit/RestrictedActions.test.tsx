@@ -1,6 +1,6 @@
 import { Vector3 } from '@dcl/ecs-math'
 import { PermissionItem, permissionItemToJSON } from 'shared/protocol/decentraland/kernel/apis/permissions.gen'
-import { EntityType, RequiredPermission, Scene } from '@dcl/schemas'
+import { EntityType, RequiredPermission, Scene } from '@beland/schemas'
 import { expect } from 'chai'
 import { PortContext } from 'shared/apis/host/context'
 import { movePlayerTo, triggerEmote } from 'shared/apis/host/RestrictedActions'
@@ -159,7 +159,7 @@ describe('RestrictedActions tests', () => {
   function buildSceneData(permissions: PermissionItem[] = []): PortContext['sceneData'] {
     const metadata: Scene = {
       display: { title: 'interactive-text', favicon: 'favicon_asset' },
-      contact: { name: 'Ezequiel', email: 'ezequiel@decentraland.org' },
+      contact: { name: 'Ezequiel', email: 'ezequiel@memetaverse.club' },
       owner: 'decentraland',
       scene: { parcels: ['0,101'], base: '0,101' },
       main: 'game.js',

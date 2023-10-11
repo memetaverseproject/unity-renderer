@@ -6,7 +6,7 @@ namespace DCL.ECSComponents
 {
     public static class PBAvatarShape_Defaults
     {
-        private const string avatarDefaultBodyShape = "urn:decentraland:off-chain:base-avatars:BaseFemale";
+        private const string avatarDefaultBodyShape = "urn:memetaverse:off-chain:base-avatars:BaseFemale";
 
         private static readonly Color3 neutralColor = new Color3()
         {
@@ -20,13 +20,13 @@ namespace DCL.ECSComponents
 
         private static readonly RepeatedField<string> defaultWearables = new RepeatedField<string>()
         {
-            "urn:decentraland:off-chain:base-avatars:f_eyes_00",
-            "urn:decentraland:off-chain:base-avatars:f_eyebrows_00",
-            "urn:decentraland:off-chain:base-avatars:f_mouth_00",
-            "urn:decentraland:off-chain:base-avatars:standard_hair",
-            "urn:decentraland:off-chain:base-avatars:f_simple_yellow_tshirt",
-            "urn:decentraland:off-chain:base-avatars:f_brown_trousers",
-            "urn:decentraland:off-chain:base-avatars:bun_shoes"
+            "urn:memetaverse:off-chain:base-avatars:f_eyes_00",
+            // "urn:memetaverse:off-chain:base-avatars:f_eyebrows_00",
+            "urn:memetaverse:off-chain:base-avatars:f_mouth_00",
+            // "urn:memetaverse:off-chain:base-avatars:standard_hair",
+            // "urn:memetaverse:off-chain:base-avatars:light_green_jennie_short_dress",
+            // "urn:memetaverse:off-chain:base-avatars:purple_pants",
+            // "urn:memetaverse:off-chain:base-avatars:black_while_shoes"
         };
 
         public static long GetExpressionTriggerTimestamp(this PBAvatarShape self)

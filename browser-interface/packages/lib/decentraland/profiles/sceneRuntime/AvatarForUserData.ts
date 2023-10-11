@@ -1,4 +1,4 @@
-import type { Snapshots, WearableCategory, WearableId } from '@dcl/schemas'
+import type { Snapshots, WearableCategory, WearableId } from '@beland/schemas'
 
 export type AvatarForUserData = {
   bodyShape: WearableId

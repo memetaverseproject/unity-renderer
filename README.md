@@ -1,6 +1,6 @@
 # Decentraland Unity Renderer
 
-This repository contains the reference implementation of the [decentraland explorer](https://play.decentraland.org). It includes two main big components, located in the folders:
+This repository contains the reference implementation of the [decentraland explorer](https://play.memetaverse.club). It includes two main big components, located in the folders:
 
 * `unity-renderer` which contains the main 3D experience and UI
 * `browser-interface` to connect to the different aspects requiring of a web browser, such as connection with a wallet and WebRTC communications
@@ -25,7 +25,7 @@ Check: [Multiplatform in Editor](docs/multiplatform-in-editor.md)
 2. Open the scene named `InitialScene`
 3. Within the scene, select the `DebugConfig` GameObject.
 4. On `DebugConfig` inspector, make sure that `Base url mode` is set to `Custom`
-   and `Base url custom` is set to `https://play.decentraland.zone/?`
+   and `Base url custom` is set to `https://play.memetaverse.club/?`
 5. Run the Initial Scene in the Unity editor
 6. A browser tab with `explorer` should open automatically and steal your focus, don't close it! Login with your wallet, go back to Unity and explorer should start running on the `Game View`.
 7. As you can see, `DebugConfig` has other special options like the starting position, etc. You are welcome to use them as you see fit, but you'll have to close the tab and restart the scene for them to make effect.
@@ -48,7 +48,7 @@ Then, on the Unity editor, click on `Assets > Reimport All`
 
 To test against a build made on this repository, you can use a link with this format:
 
-    https://play.decentraland.zone/?explorer-branch=<branch-name>
+    https://play.memetaverse.club/?explorer-branch=<branch-name>
 
 # Links for Contributors
 
@@ -134,7 +134,7 @@ If the local WebGL build always fails with the error `System.ComponentModel.Win3
 
 - [How to use Unity visual tests](docs/how-to-use-unity-visual-tests.md)
 - [How to profile a local Unity build remotely](docs/how-to-profile-a-local-unity-build-remotely.md)
-- [How to connect the Editor with play.decentraland.org](docs/how-to-connect-with-play-decentraland-org.md)
+- [How to connect the Editor with play.memetaverse.club](docs/how-to-connect-with-play-decentraland-org.md)
   - For more advanced topics, don't forget to check out our [Architecture Decisions Records](https://github.com/decentraland/adr) (ADR) repository.
 - [How to create new components for ECS7](docs/ecs7-component-creation.md)
 - [How to modify the Renderer Protocol](docs/how-to-renderer-protocol.md)

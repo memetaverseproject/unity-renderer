@@ -55,7 +55,7 @@ Another option is to call the converter locally from the terminal in headless mo
 
 ### Scenes
 
-Normally for scene-related dumping we need the scene id and asset hashes, this can be found by checking the scene mappings json, for example (coords -17, -122): `[https://peer.decentraland.org/content/entities/scene/?pointer=-17,-122](https://peer.decentraland.org/content/entities/scene/?pointer=-17,-122)`
+Normally for scene-related dumping we need the scene id and asset hashes, this can be found by checking the scene mappings json, for example (coords -17, -122): `[https://testnet-peer.memetaverse.club/content/entities/scene/?pointer=-17,-122](https://testnet-peer.memetaverse.club/content/entities/scene/?pointer=-17,-122)`
 
 ### Wearable collections
 
@@ -73,7 +73,7 @@ The best way to test the ABs conversion went fine is the following sequence:
 
 ## Pre-process pipeline
 
-[Specific optimizers for explorer assets - RFC](https://rfc.decentraland.org/rfc/RFC-8)
+[Specific optimizers for explorer assets - RFC](https://rfc.memetaverse.club/rfc/RFC-8)
 
 ## Loading Asset Bundles in runtime
 

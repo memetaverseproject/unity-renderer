@@ -1,6 +1,6 @@
 import { createUnsafeIdentity } from '@dcl/crypto/dist/crypto'
 import { Vector3 } from '@dcl/ecs-math'
-import { Avatar } from '@dcl/schemas'
+import { Avatar } from '@beland/schemas'
 import { parseParcelPosition } from 'lib/decentraland/parcels/parseParcelPosition'
 import { gridToWorld } from 'lib/decentraland/parcels/gridToWorld'
 import mitt from 'mitt'
@@ -114,7 +114,7 @@ export class SimulationRoom implements RoomConnection {
       setTimeout(() => {
         this.events.emit('profileResponse', {
           address: request.address,
-          data: { serializedProfile: JSON.stringify(peer.profile), baseUrl: `https://peer.decentraland.org` }
+          data: { serializedProfile: JSON.stringify(peer.profile), baseUrl: `https://testnet-peer.memetaverse.club` }
         })
       }, Math.random() * 100)
     }

@@ -30,7 +30,7 @@ namespace DCLServices.QuestsService.TestScene
         private CancellationTokenSource subscribeCTS = new CancellationTokenSource();
         private bool isSubscribed = false;
 
-        // You can find more quests here: https://quests.decentraland.zone/quests
+        // You can find more quests here: https://quests.memetaverse.club/quests
         public string[] questsToStart =
         {
             "7d795b67-11f6-4d73-bd88-5d89cf33d679",
@@ -50,7 +50,7 @@ namespace DCLServices.QuestsService.TestScene
             // If you encounter this in a review it means I couldnt solve the issue, please yell at me so I can remove it
 
             var rpcSignRequest = new RPCSignRequest(DCL.Environment.i.serviceLocator.Get<IRPC>());
-            AuthedWebSocketClientTransport webSocketClientTransport = new AuthedWebSocketClientTransport(rpcSignRequest, "wss://quests-rpc.decentraland.zone");
+            AuthedWebSocketClientTransport webSocketClientTransport = new AuthedWebSocketClientTransport(rpcSignRequest, "wss://quests-rpc.memetaverse.club");
             //TODO Quest Server is not accepting the correct url and by now it needs "/". Change it as soon as QuestServer is ready to have a generic authed WebSocket Client
             await webSocketClientTransport.Connect("/");
             MyLog($"RPC Authenticated");

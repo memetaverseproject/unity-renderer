@@ -13,7 +13,7 @@ namespace DCL.Quests
 {
     public class QuestRewardsResolver : IQuestRewardsResolver
     {
-        private const string QUESTS_API_URL = "https://quests.decentraland.zone/quests";
+        private const string QUESTS_API_URL = "https://quests.memetaverse.club/quests";
 
         private readonly Service<IWebRequestController> webRequestController;
 

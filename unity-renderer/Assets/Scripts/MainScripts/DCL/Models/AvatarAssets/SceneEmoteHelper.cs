@@ -9,7 +9,7 @@ namespace AvatarAssets
 {
     public static class SceneEmoteHelper
     {
-        public const string SCENE_EMOTE_PREFIX = "urn:decentraland:off-chain:scene-emote:";
+        public const string SCENE_EMOTE_PREFIX = "urn:memetaverse:off-chain:scene-emote:";
 
         public static bool TryGenerateEmoteId(IParcelScene scene, string emoteFilePath, bool loop, out string emoteId)
         {

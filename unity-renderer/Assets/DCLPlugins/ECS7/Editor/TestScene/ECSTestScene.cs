@@ -95,7 +95,7 @@ public class ECSTestScene : MonoBehaviour
         PBAvatarShape avatarShape = new PBAvatarShape();
         avatarShape.Id = "0xe7dd153081b0526e0a8c582497cbcee7cd44e464";
         avatarShape.Name = "TestName#2354";
-        avatarShape.BodyShape = "urn:decentraland:off-chain:base-avatars:BaseFemale";
+        avatarShape.BodyShape = "urn:memetaverse:off-chain:base-avatars:BaseFemale";
         avatarShape.ExpressionTriggerId = "Idle";
 
         avatarShape.EyeColor = new Color3();
@@ -113,17 +113,17 @@ public class ECSTestScene : MonoBehaviour
         avatarShape.SkinColor.G = 0.484f;
         avatarShape.SkinColor.B = 0.691f;
 
-        avatarShape.Wearables.Add("urn:decentraland:off-chain:base-avatars:f_eyebrows_07");
-        avatarShape.Wearables.Add("urn:decentraland:off-chain:base-avatars:eyes_02");
-        avatarShape.Wearables.Add("urn:decentraland:off-chain:base-avatars:f_mouth_03");
-        avatarShape.Wearables.Add("urn:decentraland:off-chain:base-avatars:f_school_skirt");
-        avatarShape.Wearables.Add("urn:decentraland:off-chain:base-avatars:SchoolShoes");
-        avatarShape.Wearables.Add("urn:decentraland:matic:collections-v2:0x177535a421e7867ec52f2cc19b7dfed4f289a2bb:0");
-        avatarShape.Wearables.Add("urn:decentraland:matic:collections-v2:0xd89efd0be036410d4ff194cd6ecece4ef8851d86:1");
-        avatarShape.Wearables.Add("urn:decentraland:matic:collections-v2:0x1df3011a14ea736314df6cdab4fff824c5d46ec1:0");
-        avatarShape.Wearables.Add("urn:decentraland:matic:collections-v2:0xbada8a315e84e4d78e3b6914003647226d9b4001:1");
-        avatarShape.Wearables.Add("urn:decentraland:matic:collections-v2:0x1df3011a14ea736314df6cdab4fff824c5d46ec1:5");
-        avatarShape.Wearables.Add("urn:decentraland:matic:collections-v2:0xd89efd0be036410d4ff194cd6ecece4ef8851d86:0");
+        avatarShape.Wearables.Add("urn:memetaverse:off-chain:base-avatars:f_eyebrows_07");
+        avatarShape.Wearables.Add("urn:memetaverse:off-chain:base-avatars:eyes_02");
+        avatarShape.Wearables.Add("urn:memetaverse:off-chain:base-avatars:f_mouth_03");
+        avatarShape.Wearables.Add("urn:memetaverse:off-chain:base-avatars:f_school_skirt");
+        avatarShape.Wearables.Add("urn:memetaverse:off-chain:base-avatars:SchoolShoes");
+        avatarShape.Wearables.Add("urn:memetaverse:matic:collections-v2:0x177535a421e7867ec52f2cc19b7dfed4f289a2bb:0");
+        avatarShape.Wearables.Add("urn:memetaverse:matic:collections-v2:0xd89efd0be036410d4ff194cd6ecece4ef8851d86:1");
+        avatarShape.Wearables.Add("urn:memetaverse:matic:collections-v2:0x1df3011a14ea736314df6cdab4fff824c5d46ec1:0");
+        avatarShape.Wearables.Add("urn:memetaverse:matic:collections-v2:0xbada8a315e84e4d78e3b6914003647226d9b4001:1");
+        avatarShape.Wearables.Add("urn:memetaverse:matic:collections-v2:0x1df3011a14ea736314df6cdab4fff824c5d46ec1:5");
+        avatarShape.Wearables.Add("urn:memetaverse:matic:collections-v2:0xd89efd0be036410d4ff194cd6ecece4ef8851d86:0");
 
         componentWriter.PutComponent(sceneNumber, 4, ComponentID.AVATAR_SHAPE,
             avatarShape);
@@ -158,7 +158,7 @@ public class ECSTestScene : MonoBehaviour
     private static void AddNFTComponent(int sceneNumber, IECSComponentWriter componentWriter)
     {
         PBNftShape model = new PBNftShape();
-        model.Urn = "urn:decentraland:ethereum:erc721:0x06012c8cf97bead5deae237070f9587f8e7a266d:1540722";
+        model.Urn = "urn:memetaverse:ethereum:erc721:0x06012c8cf97bead5deae237070f9587f8e7a266d:1540722";
         model.Color = new Color3();
         model.Style = (NftFrameType)6;
         model.Color.R = 0.5f;

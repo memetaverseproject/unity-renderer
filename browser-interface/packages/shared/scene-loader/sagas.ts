@@ -54,7 +54,7 @@ import {
 } from './selectors'
 import { ISceneLoader, SceneLoaderPositionReport, SetDesiredScenesCommand } from './types'
 import { createWorldLoader } from './world-loader-impl'
-import { Entity } from '@dcl/schemas'
+import { Entity } from '@beland/schemas'
 import { getContentService } from '../dao/selectors'
 
 export function* sceneLoaderSaga() {

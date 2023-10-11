@@ -1,7 +1,7 @@
 import { isAddress } from 'eth-connect'
 import { ethereumConfigurations } from 'config'
 import { getEthereumNetworkFromProvider } from 'lib/web3/getEthereumNetworkFromProvider'
-import type { Avatar } from '@dcl/schemas'
+import type { Avatar } from '@beland/schemas'
 import { retrieveProfile } from 'shared/profiles/retrieveProfile'
 import { fetchENSOwnersContains } from 'lib/web3/fetchENSOwnersContains'
 

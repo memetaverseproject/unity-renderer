@@ -19,8 +19,8 @@ namespace DCL.Backpack
         private const string ALL_FILTER_REF = "all";
         private const string NAME_FILTER_REF = "name=";
         private const string CATEGORY_FILTER_REF = "category=";
-        private const string URL_MARKET_PLACE = "https://market.decentraland.org/browse?section=wearables";
-        private const string URL_GET_A_WALLET = "https://docs.decentraland.org/get-a-wallet";
+        private const string URL_MARKET_PLACE = "https://market.memetaverse.club/browse?section=wearables";
+        private const string URL_GET_A_WALLET = "https://docs.memetaverse.club/get-a-wallet";
 
         private readonly IWearableGridView view;
         private readonly IUserProfileBridge userProfileBridge;

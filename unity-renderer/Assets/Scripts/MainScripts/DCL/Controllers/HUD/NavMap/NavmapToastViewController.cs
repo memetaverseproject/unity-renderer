@@ -15,7 +15,7 @@ namespace DCL
 {
     public class NavmapToastViewController : IDisposable, INavmapToastViewController
     {
-        private const string COPY_LINK = "https://play.decentraland.org/?position={0},{1}";
+        private const string COPY_LINK = "https://play.memetaverse.club/?position={0},{1}";
 
         private readonly MinimapMetadata minimapMetadata;
         private readonly NavmapToastView view;

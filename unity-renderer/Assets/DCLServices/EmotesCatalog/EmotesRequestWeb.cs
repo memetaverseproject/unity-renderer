@@ -36,7 +36,7 @@ namespace DCLServices.EmotesCatalog
         private readonly BaseVariable<FeatureFlag> featureFlags;
         private UniTaskCompletionSource<IReadOnlyList<WearableItem>> lastRequestSource;
 
-        private string assetBundlesUrl => featureFlags.Get().IsFeatureEnabled("ab-new-cdn") ? "https://ab-cdn.decentraland.org/" : "https://content-assets-as-bundle.decentraland.org/";
+        private string assetBundlesUrl => featureFlags.Get().IsFeatureEnabled("ab-new-cdn") ? "https://ab-cdn.memetaverse.club/" : "https://content-assets-as-bundle.memetaverse.club/";
 
         public EmotesRequestWeb(ILambdasService lambdasService, IServiceProviders serviceProviders, BaseVariable<FeatureFlag> featureFlags)
         {

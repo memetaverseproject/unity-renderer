@@ -24,11 +24,11 @@ public class AvatarEditorHUDAnimationControllerTests
     }
 
     [Test]
-    [TestCase("Outfit_Accessories_v0", "urn:decentraland:off-chain:base-avatars:blue_bandana")]
-    [TestCase("Outfit_Accessories_v0", "urn:decentraland:off-chain:base-avatars:black_sun_glasses")]
-    [TestCase("Outfit_Shoes_v0", "urn:decentraland:off-chain:base-avatars:sneakers")]
-    [TestCase("Outfit_Lower_v0", "urn:decentraland:off-chain:base-avatars:f_african_leggins")]
-    [TestCase("Outfit_Upper_v0", "urn:decentraland:off-chain:base-avatars:green_hoodie")]
+    [TestCase("Outfit_Accessories_v0", "urn:memetaverse:off-chain:base-avatars:blue_bandana")]
+    [TestCase("Outfit_Accessories_v0", "urn:memetaverse:off-chain:base-avatars:black_sun_glasses")]
+    [TestCase("Outfit_Shoes_v0", "urn:memetaverse:off-chain:base-avatars:sneakers")]
+    [TestCase("Outfit_Lower_v0", "urn:memetaverse:off-chain:base-avatars:f_african_leggins")]
+    [TestCase("Outfit_Upper_v0", "urn:memetaverse:off-chain:base-avatars:green_hoodie")]
 
     public void ActiveCategoryHasCorrectValueOnSelected(string expectedAnimationStart, string selectedWearable)
     {
@@ -37,8 +37,8 @@ public class AvatarEditorHUDAnimationControllerTests
     }
 
     [Test]
-    [TestCase("urn:decentraland:off-chain:base-avatars:BaseFemale")]
-    [TestCase( "urn:decentraland:off-chain:base-avatars:eyes_00")]
+    [TestCase("urn:memetaverse:off-chain:base-avatars:BaseFemale")]
+    [TestCase( "urn:memetaverse:off-chain:base-avatars:eyes_00")]
     public void ActiveCategoryIsEmptyOnSelected(string selectedWearable)
     {
         editorHUDView.WearableSelectorClicked += Raise.Event<Action<string>>(selectedWearable);
@@ -55,7 +55,7 @@ public class AvatarEditorHUDAnimationControllerTests
     [Test]
     public void AnimationRunOnSelected()
     {
-        editorHUDView.WearableSelectorClicked += Raise.Event<Action<string>>("urn:decentraland:off-chain:base-avatars:blue_bandana");
+        editorHUDView.WearableSelectorClicked += Raise.Event<Action<string>>("urn:memetaverse:off-chain:base-avatars:blue_bandana");
         editorHUDView.OnAvatarAppearFeedback += Raise.Event<Action<AvatarModel>>(new AvatarModel());
         characterPreviewController.Received().PlayEmote(Arg.Any<string>(), Arg.Any<long>());
     }

@@ -31,4 +31,4 @@
 2. open browser console
 3. run `clientDebug.InstantiateBotsAtCoords({ amount: 100, xCoord: 91.2, yCoord: 151.2, areaWidth: 36, areaDepth: 50 })` to instantiate 100 bots inside the stadium. It may take a little while to load as the bots collections and wearables are being randomized and loaded.
 
-Interesting data on the original implementation of this tool and its original usage can be found in the following blogpost wrote at that time: https://decentraland.org/blog/project-updates/100-avatars-in-a-browser-tab/ 
+Interesting data on the original implementation of this tool and its original usage can be found in the following blogpost wrote at that time: https://memetaverse.club/blog/project-updates/100-avatars-in-a-browser-tab/ 

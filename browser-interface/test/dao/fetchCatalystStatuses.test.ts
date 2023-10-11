@@ -7,7 +7,7 @@ import { Candidate } from 'shared/dao/types'
 const EXPECTED: Candidate = {
   protocol: 'v2',
   catalystName: 'loki',
-  domain: 'peer.decentraland.org',
+  domain: 'peer.memetaverse.club',
   elapsed: 309,
   maxUsers: 2000,
   status: 0,
@@ -77,14 +77,14 @@ describe('Fetch catalyst server status', () => {
 
     const NODES = [
       {
-        domain: 'peer.decentraland.org'
+        domain: 'peer.memetaverse.club'
       },
       {
-        domain: 'peer-ec1.decentraland.org'
+        domain: 'peer-ec1.memetaverse.club'
       }
     ]
 
-    const results = await fetchCatalystStatuses(NODES, ['peer-ec1.decentraland.org'], askFunction)
+    const results = await fetchCatalystStatuses(NODES, ['peer-ec1.memetaverse.club'], askFunction)
     expect(results.length).to.eql(1)
     console.log({ a: results[0], b: EXPECTED })
     expect(results[0]).to.eql(EXPECTED)
@@ -140,10 +140,10 @@ describe('Fetch catalyst server status', () => {
 
     const NODES = [
       {
-        domain: 'peer.decentraland.org'
+        domain: 'peer.memetaverse.club'
       },
       {
-        domain: 'peer-ec1.decentraland.org'
+        domain: 'peer-ec1.memetaverse.club'
       }
     ]
 

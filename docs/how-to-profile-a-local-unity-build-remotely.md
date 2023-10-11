@@ -31,7 +31,7 @@ Firefox profiling tool is better than Chrome's as it allows to see Native code a
 
 1. Build the project for your target platform with the following build settings checked: `Development Build`, `Autoconnect Profiler`. In contrast with WebGL build restrictions, Desktop builds have no restrictions on Deep Profiling.
 2. Open the build adding the `--no-ssl` parameter
-3. After the explorer opens; open on a Chrome Tab to https://play.decentraland.org/?ws=ws://localhost:7666/dcl
+3. After the explorer opens; open on a Chrome Tab to https://play.memetaverse.club/?ws=ws://localhost:7666/dcl
 4. After starting the explorer your Profiler window at Unity Editor should start receiving and displaying the data (you can open on the Unity Editor at `window -> analysis -> profiler`)
 
 ## Important notes and recommendations for Unity Editor profiling with builds

@@ -748,7 +748,7 @@ namespace DCL.Social.Chat
         }
 
         private void OpenWalletReadme() =>
-            browserBridge.OpenUrl("https://docs.decentraland.org/player/blockchain-integration/get-a-wallet/");
+            browserBridge.OpenUrl("https://docs.memetaverse.club/player/blockchain-integration/get-a-wallet/");
 
         private void SignUp() => userProfileBridge.SignUp();
 

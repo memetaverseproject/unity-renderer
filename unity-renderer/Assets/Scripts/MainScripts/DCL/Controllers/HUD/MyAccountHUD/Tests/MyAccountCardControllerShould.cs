@@ -79,7 +79,7 @@ namespace DCL.MyAccount
         {
             view.OnTermsOfServiceClicked += Raise.Event<Action>();
 
-            browserBridge.Received(1).OpenUrl("https://decentraland.org/terms");
+            browserBridge.Received(1).OpenUrl("https://memetaverse.club/terms");
         }
 
         [Test]
@@ -87,7 +87,7 @@ namespace DCL.MyAccount
         {
             view.OnPrivacyPolicyClicked += Raise.Event<Action>();
 
-            browserBridge.Received(1).OpenUrl("https://decentraland.org/privacy");
+            browserBridge.Received(1).OpenUrl("https://memetaverse.club/privacy");
         }
     }
 }

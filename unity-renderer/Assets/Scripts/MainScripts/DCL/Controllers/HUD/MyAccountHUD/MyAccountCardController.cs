@@ -7,8 +7,8 @@ namespace DCL.MyAccount
     public class MyAccountCardController
     {
         private const string OPEN_PASSPORT_SOURCE = "ProfileHUD";
-        private const string URL_TERMS_OF_USE = "https://decentraland.org/terms";
-        private const string URL_PRIVACY_POLICY = "https://decentraland.org/privacy";
+        private const string URL_TERMS_OF_USE = "https://memetaverse.club/terms";
+        private const string URL_PRIVACY_POLICY = "https://memetaverse.club/privacy";
 
         private readonly IMyAccountCardComponentView view;
         private readonly DataStore dataStore;

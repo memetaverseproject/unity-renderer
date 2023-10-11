@@ -575,11 +575,11 @@
         }
 
         if (qs.has('explorer-branch')) {
-          return `https://renderer-artifacts.decentraland.org/branch/${qs.get('explorer-branch')}`
+          return `https://renderer-artifacts.memetaverse.club/branch/${qs.get('explorer-branch')}`
         }
 
         if (qs.has('explorer-version')) {
-          return `https://cdn.decentraland.org/@dcl/explorer/${qs.get('explorer-version')}`
+          return `https://cdn.memetaverse.club/@dcl/explorer/${qs.get('explorer-version')}`
         }
 
         return new URL(rootURL() + 'explorer').toString()
@@ -653,7 +653,7 @@
             kernel.authenticate(globalThis.ethereum, false)
           }
         } else {
-          kernel.authenticate('wss://rpc.decentraland.org/mainnet?project=cli-preview', true)
+          kernel.authenticate('wss://ws-nebulas-testnet.uniultra.xyz', true)
         }
       }
 

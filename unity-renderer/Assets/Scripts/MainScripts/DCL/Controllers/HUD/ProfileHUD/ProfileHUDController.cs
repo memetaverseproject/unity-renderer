@@ -22,11 +22,11 @@ public class ProfileHUDController : IHUD
         public bool connectedWallet;
     }
 
-    private const string URL_CLAIM_NAME = "https://builder.decentraland.org/claim-name";
-    private const string URL_MANA_INFO = "https://docs.decentraland.org/examples/get-a-wallet";
-    private const string URL_MANA_PURCHASE = "https://account.decentraland.org";
-    private const string URL_TERMS_OF_USE = "https://decentraland.org/terms";
-    private const string URL_PRIVACY_POLICY = "https://decentraland.org/privacy";
+    private const string URL_CLAIM_NAME = "https://builder.memetaverse.club/claim-name";
+    private const string URL_MANA_INFO = "https://docs.memetaverse.club/examples/get-a-wallet";
+    private const string URL_MANA_PURCHASE = "https://account.memetaverse.club";
+    private const string URL_TERMS_OF_USE = "https://memetaverse.club/terms";
+    private const string URL_PRIVACY_POLICY = "https://memetaverse.club/privacy";
     private const string LINKS_REGEX = @"\[(.*?)\)";
     private const float FETCH_MANA_INTERVAL = 60;
 

@@ -57,9 +57,9 @@ namespace DCLServices.Lambdas
         /// <summary>
         /// Make a Get request to Lambdas2.
         /// </summary>
-        /// <param name="endPointTemplate">Endpoint without slashes (e.g. "https://peer-ue-2.decentraland.zone/nfts/emotes/:userId")</param>
+        /// <param name="endPointTemplate">Endpoint without slashes (e.g. "https://peer-ue-2.memetaverse.club/nfts/emotes/:userId")</param>
         /// <param name="url">Composed url including path variables
-        ///     (e.g. "https://peer-ue-2.decentraland.zone/nfts/emotes/0xddf1eec586d8f8f0eb8c5a3bf51fb99379a55684")</param>
+        ///     (e.g. "https://peer-ue-2.memetaverse.club/nfts/emotes/0xddf1eec586d8f8f0eb8c5a3bf51fb99379a55684")</param>
         /// <param name="timeout">Timeout for each attempt</param>
         /// <param name="attemptsNumber">Attempts number</param>
         /// <param name="cancellationToken">Cancellation token attacked to the web request</param>

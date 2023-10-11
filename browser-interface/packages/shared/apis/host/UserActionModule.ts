@@ -1,7 +1,7 @@
 import { UserActionModuleServiceDefinition } from 'shared/protocol/decentraland/kernel/apis/user_action_module.gen'
 import type { RpcServerPort } from '@dcl/rpc'
 import * as codegen from '@dcl/rpc/dist/codegen'
-import type { Scene } from '@dcl/schemas'
+import type { Scene } from '@beland/schemas'
 import { getOwnerNameFromJsonData } from 'lib/decentraland/sceneJson/getOwnerNameFromJsonData'
 import { getSceneNameFromJsonData } from 'lib/decentraland/sceneJson/getSceneNameFromJsonData'
 import { getThumbnailUrlFromJsonDataAndContent } from 'lib/decentraland/sceneJson/getThumbnailUrlFromJsonDataAndContent'
@@ -47,7 +47,7 @@ export function registerUserActionModuleServiceServerImplementation(port: RpcSer
       }
 
       try {
-        const response = await fetch(`https://events.decentraland.org/api/events/?position=${destination}`)
+        const response = await fetch(`https://events.memetaverse.club/api/events/?position=${destination}`)
         const json = await response.json()
         if (json.data.length > 0) {
           sceneEvent = {

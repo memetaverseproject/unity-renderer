@@ -59,7 +59,7 @@ namespace MainScripts.DCL.Controllers.HotScenes
 
         public async UniTask<IReadOnlyList<IHotScenesController.HotWorldInfo.WorldInfo>> GetHotWorldsListAsync(CancellationToken cancellationToken)
         {
-            UnityWebRequest result = await Environment.i.platform.webRequest.GetAsync("https://worlds-content-server.decentraland.org/live-data", cancellationToken: cancellationToken);
+            UnityWebRequest result = await Environment.i.platform.webRequest.GetAsync("https://worlds-content-server.memetaverse.club/live-data", cancellationToken: cancellationToken);
 
             if (result.result != UnityWebRequest.Result.Success)
                 throw new Exception($"Error fetching hot world info:\n{result.error}");

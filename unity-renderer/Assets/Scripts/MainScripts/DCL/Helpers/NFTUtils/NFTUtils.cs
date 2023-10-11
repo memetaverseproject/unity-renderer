@@ -103,9 +103,9 @@ namespace DCL.Helpers.NFT
         }
 
         /// <summary>
-        /// Parses URNs with the format "urn:decentraland:{CHAIN}:{CONTRACT_STANDARD}:{CONTRACT_ADDRESS}:{TOKEN_ID}"
+        /// Parses URNs with the format "urn:memetaverse:{CHAIN}:{CONTRACT_STANDARD}:{CONTRACT_ADDRESS}:{TOKEN_ID}"
         /// and if successful stores the contract address and token ID in their corresponding reference parameters.
-        /// example: urn:decentraland:ethereum:erc721:0x00...000:123
+        /// example: urn:memetaverse:ethereum:erc721:0x00...000:123
         /// </summary>
         /// <param name="urn">the raw URN of the NFT asset</param>
         /// <param name="contractAddress">if successful the contract address is stored in this reference parameter</param>
@@ -115,7 +115,7 @@ namespace DCL.Helpers.NFT
         public static bool TryParseUrn(string urn, out string contractAddress, out string tokenId)
         {
             const char SEPARATOR = ':';
-            const string DCL_URN_ID = "urn:decentraland";
+            const string DCL_URN_ID = "urn:memetaverse";
             const string CHAIN_ETHEREUM = "ethereum";
 
             contractAddress = string.Empty;
@@ -125,7 +125,7 @@ namespace DCL.Helpers.NFT
             {
                 var urnSpan = urn.AsSpan();
 
-                // 1: "urn:decentraland"
+                // 1: "urn:memetaverse"
                 if (!urnSpan.Slice(0, DCL_URN_ID.Length).Equals(DCL_URN_ID, StringComparison.Ordinal))
                     return false;
                 urnSpan = urnSpan.Slice(DCL_URN_ID.Length + 1);

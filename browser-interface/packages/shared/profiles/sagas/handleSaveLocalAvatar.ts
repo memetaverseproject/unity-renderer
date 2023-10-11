@@ -1,4 +1,4 @@
-import { Avatar } from '@dcl/schemas'
+import { Avatar } from '@beland/schemas'
 import { createFakeName } from 'lib/decentraland/profiles/names/fakeName'
 import { deepEqual } from 'lib/javascript/deepEqual'
 import defaultLogger from 'lib/logger'

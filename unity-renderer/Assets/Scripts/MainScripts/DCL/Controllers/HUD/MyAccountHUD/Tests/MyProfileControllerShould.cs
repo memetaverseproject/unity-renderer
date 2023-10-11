@@ -322,7 +322,7 @@ namespace DCL.MyAccount
         {
             view.OnClaimNameClicked += Raise.Event<Action>();
 
-            browserBridge.Received(1).OpenUrl("https://builder.decentraland.org/claim-name?utm_source=dcl_explorer");
+            browserBridge.Received(1).OpenUrl("https://builder.memetaverse.club/claim-name?utm_source=dcl_explorer");
             myAccountAnalyticsService.Received(1).SendPlayerOpenClaimNameAnalytic();
         }
 

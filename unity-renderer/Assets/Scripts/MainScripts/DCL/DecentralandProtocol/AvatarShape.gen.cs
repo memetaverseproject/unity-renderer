@@ -161,7 +161,7 @@ namespace DCL.ECSComponents {
     public const int BodyShapeFieldNumber = 3;
     private string bodyShape_;
     /// <summary>
-    /// shape URN (default "urn:decentraland:off-chain:base-avatars:BaseFemale")
+    /// shape URN (default "urn:memetaverse:off-chain:base-avatars:BaseFemale")
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -320,13 +320,13 @@ namespace DCL.ECSComponents {
     /// <summary>
     /// Wearable URNs, one for each body slot.
     ///   Default values for each unspecified slot:
-    ///     Eyes    : "urn:decentraland:off-chain:base-avatars:f_eyes_00", 
-    ///     Eyebrows: "urn:decentraland:off-chain:base-avatars:f_eyebrows_00",
-    ///     Mouth   : "urn:decentraland:off-chain:base-avatars:f_mouth_00" 
-    ///     Hair    : "urn:decentraland:off-chain:base-avatars:standard_hair", 
-    ///     Shirt   : "urn:decentraland:off-chain:base-avatars:f_simple_yellow_tshirt", 
-    ///     Trousers: "urn:decentraland:off-chain:base-avatars:f_brown_trousers", 
-    ///     Shoes   : "urn:decentraland:off-chain:base-avatars:bun_shoes"]
+    ///     Eyes    : "urn:memetaverse:off-chain:base-avatars:f_eyes_00", 
+    ///     Eyebrows: "urn:memetaverse:off-chain:base-avatars:f_eyebrows_00",
+    ///     Mouth   : "urn:memetaverse:off-chain:base-avatars:f_mouth_00" 
+    ///     Hair    : "urn:memetaverse:off-chain:base-avatars:standard_hair", 
+    ///     Shirt   : "urn:memetaverse:off-chain:base-avatars:f_simple_yellow_tshirt", 
+    ///     Trousers: "urn:memetaverse:off-chain:base-avatars:f_brown_trousers", 
+    ///     Shoes   : "urn:memetaverse:off-chain:base-avatars:bun_shoes"]
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

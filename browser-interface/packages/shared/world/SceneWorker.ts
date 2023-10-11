@@ -4,7 +4,7 @@ import { PermissionItem, permissionItemFromJSON } from 'shared/protocol/decentra
 import { RpcSceneControllerServiceDefinition } from 'shared/protocol/decentraland/renderer/renderer_services/scene_controller.gen'
 import { createRpcServer, RpcClient, RpcClientPort, RpcServer, Transport } from '@dcl/rpc'
 import * as codegen from '@dcl/rpc/dist/codegen'
-import { Scene } from '@dcl/schemas'
+import { Scene } from '@beland/schemas'
 import {
   DEBUG_SCENE_LOG,
   ETHEREUM_NETWORK,
@@ -229,7 +229,7 @@ export class SceneWorker {
   }
 
   async readFile(fileName: string) {
-    // filenames are lower cased as per https://adr.decentraland.org/adr/ADR-80
+    // filenames are lower cased as per https://adr.memetaverse.club/adr/ADR-80
     const normalized = fileName.toLowerCase()
 
     // and we iterate over the entity content mappings to resolve the file hash

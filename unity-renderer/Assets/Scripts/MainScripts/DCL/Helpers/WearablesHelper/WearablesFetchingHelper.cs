@@ -12,11 +12,11 @@ namespace DCL.Helpers
     public static class WearablesFetchingHelper
     {
         // TODO: change fetching logic to allow for auto-pagination
-        // The https://nft-api.decentraland.org/v1/ endpoint doesn't fetch L1 wearables right now, if those need to be re-converted we should use that old endpoint again and change the WearablesAPIData structure again for that response.
-        public const string BASE_FETCH_URL = "https://peer.decentraland.org/lambdas/collections";
+        // The https://nft-api.memetaverse.club/v1/ endpoint doesn't fetch L1 wearables right now, if those need to be re-converted we should use that old endpoint again and change the WearablesAPIData structure again for that response.
+        public const string BASE_FETCH_URL = "https://testnet-peer.memetaverse.club/lambdas/collections";
         public const string COLLECTIONS_FETCH_PARAMS = "?sortBy=newest&first=1000";
         public const string WEARABLES_FETCH_PARAMS = "/wearables?";
-        public const string BASE_WEARABLES_COLLECTION_ID = "urn:decentraland:off-chain:base-avatars";
+        public const string BASE_WEARABLES_COLLECTION_ID = "urn:memetaverse:off-chain:base-avatars";
         public const string THIRD_PARTY_COLLECTIONS_FETCH_URL = "third-party-integrations";
         private static Collection[] collections;
 

@@ -1,4 +1,4 @@
-import type { Avatar } from '@dcl/schemas'
+import type { Avatar } from '@beland/schemas'
 import { store } from 'shared/store/isolatedStore'
 import { sagaMiddleware } from 'shared/store/store'
 import { profileRequest } from './actions'

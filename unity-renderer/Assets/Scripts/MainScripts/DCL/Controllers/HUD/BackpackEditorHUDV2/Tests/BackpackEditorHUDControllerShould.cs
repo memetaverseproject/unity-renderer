@@ -152,9 +152,9 @@ namespace DCL.Backpack
             // Arrange
             dataStore.skyboxConfig.avatarMatProfile.Set(AvatarMaterialProfile.InEditor, false);
             userProfile.avatar.wearables.Clear();
-            wearableGridView.OnWearableEquipped += Raise.Event<Action<WearableGridItemModel, EquipWearableSource>>(new WearableGridItemModel { WearableId = "urn:decentraland:off-chain:base-avatars:f_eyebrows_01" }, EquipWearableSource.Wearable);
-            wearableGridView.OnWearableEquipped += Raise.Event<Action<WearableGridItemModel, EquipWearableSource>>(new WearableGridItemModel { WearableId = "urn:decentraland:off-chain:base-avatars:bear_slippers" }, EquipWearableSource.Wearable);
-            wearableGridView.OnWearableEquipped += Raise.Event<Action<WearableGridItemModel, EquipWearableSource>>(new WearableGridItemModel { WearableId = "urn:decentraland:off-chain:base-avatars:bee_t_shirt" }, EquipWearableSource.Wearable);
+            wearableGridView.OnWearableEquipped += Raise.Event<Action<WearableGridItemModel, EquipWearableSource>>(new WearableGridItemModel { WearableId = "urn:memetaverse:off-chain:base-avatars:f_eyebrows_01" }, EquipWearableSource.Wearable);
+            wearableGridView.OnWearableEquipped += Raise.Event<Action<WearableGridItemModel, EquipWearableSource>>(new WearableGridItemModel { WearableId = "urn:memetaverse:off-chain:base-avatars:bear_slippers" }, EquipWearableSource.Wearable);
+            wearableGridView.OnWearableEquipped += Raise.Event<Action<WearableGridItemModel, EquipWearableSource>>(new WearableGridItemModel { WearableId = "urn:memetaverse:off-chain:base-avatars:bee_t_shirt" }, EquipWearableSource.Wearable);
 
             view.Configure().TakeSnapshotsAfterStopPreviewAnimation(
                 Arg.InvokeDelegate<IBackpackEditorHUDView.OnSnapshotsReady>(testFace256Texture, testBodyTexture),
@@ -166,9 +166,9 @@ namespace DCL.Backpack
             // Assert
             Assert.AreEqual(AvatarMaterialProfile.InWorld, dataStore.skyboxConfig.avatarMatProfile.Get());
             Assert.IsTrue(userProfile.avatar.wearables.Count > 0);
-            Assert.IsTrue(userProfile.avatar.wearables.Contains("urn:decentraland:off-chain:base-avatars:f_eyebrows_01"));
-            Assert.IsTrue(userProfile.avatar.wearables.Contains("urn:decentraland:off-chain:base-avatars:bear_slippers"));
-            Assert.IsTrue(userProfile.avatar.wearables.Contains("urn:decentraland:off-chain:base-avatars:bee_t_shirt"));
+            Assert.IsTrue(userProfile.avatar.wearables.Contains("urn:memetaverse:off-chain:base-avatars:f_eyebrows_01"));
+            Assert.IsTrue(userProfile.avatar.wearables.Contains("urn:memetaverse:off-chain:base-avatars:bear_slippers"));
+            Assert.IsTrue(userProfile.avatar.wearables.Contains("urn:memetaverse:off-chain:base-avatars:bee_t_shirt"));
         }
 
         [Test]
@@ -176,9 +176,9 @@ namespace DCL.Backpack
         {
             // Arrange
             EquipAndSaveCorrectly();
-            wearableGridView.OnWearableUnequipped += Raise.Event<Action<WearableGridItemModel, UnequipWearableSource>>(new WearableGridItemModel { WearableId = "urn:decentraland:off-chain:base-avatars:f_eyebrows_01" }, UnequipWearableSource.None);
-            wearableGridView.OnWearableUnequipped += Raise.Event<Action<WearableGridItemModel, UnequipWearableSource>>(new WearableGridItemModel { WearableId = "urn:decentraland:off-chain:base-avatars:bear_slippers" }, UnequipWearableSource.None);
-            wearableGridView.OnWearableUnequipped += Raise.Event<Action<WearableGridItemModel, UnequipWearableSource>>(new WearableGridItemModel { WearableId = "urn:decentraland:off-chain:base-avatars:bee_t_shirt" }, UnequipWearableSource.None);
+            wearableGridView.OnWearableUnequipped += Raise.Event<Action<WearableGridItemModel, UnequipWearableSource>>(new WearableGridItemModel { WearableId = "urn:memetaverse:off-chain:base-avatars:f_eyebrows_01" }, UnequipWearableSource.None);
+            wearableGridView.OnWearableUnequipped += Raise.Event<Action<WearableGridItemModel, UnequipWearableSource>>(new WearableGridItemModel { WearableId = "urn:memetaverse:off-chain:base-avatars:bear_slippers" }, UnequipWearableSource.None);
+            wearableGridView.OnWearableUnequipped += Raise.Event<Action<WearableGridItemModel, UnequipWearableSource>>(new WearableGridItemModel { WearableId = "urn:memetaverse:off-chain:base-avatars:bee_t_shirt" }, UnequipWearableSource.None);
 
             view.Configure().TakeSnapshotsAfterStopPreviewAnimation(
                 Arg.InvokeDelegate<IBackpackEditorHUDView.OnSnapshotsReady>(testFace256Texture, testBodyTexture),
@@ -312,18 +312,18 @@ namespace DCL.Backpack
                 Arg.Any<Action>());
 
             wearableGridView.OnWearableEquipped += Raise.Event<Action<WearableGridItemModel, EquipWearableSource>>(
-                new WearableGridItemModel { WearableId = "urn:decentraland:off-chain:base-avatars:f_eyebrows_01" },
+                new WearableGridItemModel { WearableId = "urn:memetaverse:off-chain:base-avatars:f_eyebrows_01" },
                 EquipWearableSource.Wearable);
             wearableGridView.OnWearableEquipped += Raise.Event<Action<WearableGridItemModel, EquipWearableSource>>(
-                new WearableGridItemModel { WearableId = "urn:decentraland:off-chain:base-avatars:bear_slippers" },
+                new WearableGridItemModel { WearableId = "urn:memetaverse:off-chain:base-avatars:bear_slippers" },
                 EquipWearableSource.Wearable);
             view.ClearReceivedCalls();
 
             view.OnContinueSignup += Raise.Event<Action>();
 
             Assert.IsTrue(userProfile.avatar.wearables.Count > 0);
-            Assert.IsTrue(userProfile.avatar.wearables.Contains("urn:decentraland:off-chain:base-avatars:f_eyebrows_01"));
-            Assert.IsTrue(userProfile.avatar.wearables.Contains("urn:decentraland:off-chain:base-avatars:bear_slippers"));
+            Assert.IsTrue(userProfile.avatar.wearables.Contains("urn:memetaverse:off-chain:base-avatars:f_eyebrows_01"));
+            Assert.IsTrue(userProfile.avatar.wearables.Contains("urn:memetaverse:off-chain:base-avatars:bear_slippers"));
             view.Received(1).Hide();
             view.ReceivedWithAnyArgs(1).TakeSnapshotsAfterStopPreviewAnimation(default(IBackpackEditorHUDView.OnSnapshotsReady), default(Action));
         }
@@ -405,9 +405,9 @@ namespace DCL.Backpack
         public void FallbackIncompatibleWearablesWhenChangingBodyShape()
         {
             userProfile.avatar.bodyShape = WearableLiterals.BodyShapes.FEMALE;
-            userProfile.avatar.wearables.Add("urn:decentraland:off-chain:base-avatars:f_sweater");
-            userProfile.avatar.wearables.Add("urn:decentraland:off-chain:base-avatars:f_jeans");
-            userProfile.avatar.wearables.Add("urn:decentraland:off-chain:base-avatars:sneakers");
+            userProfile.avatar.wearables.Add("urn:memetaverse:off-chain:base-avatars:f_sweater");
+            userProfile.avatar.wearables.Add("urn:memetaverse:off-chain:base-avatars:f_jeans");
+            userProfile.avatar.wearables.Add("urn:memetaverse:off-chain:base-avatars:sneakers");
 
             view.Configure().TakeSnapshotsAfterStopPreviewAnimation(
                 Arg.InvokeDelegate<IBackpackEditorHUDView.OnSnapshotsReady>(testFace256Texture, testBodyTexture),
@@ -422,11 +422,11 @@ namespace DCL.Backpack
 
             dataStore.HUDs.avatarEditorVisible.Set(false, true);
 
-            Assert.IsTrue(userProfile.avatar.wearables.Contains("urn:decentraland:off-chain:base-avatars:m_sweater_02"));
-            Assert.IsTrue(userProfile.avatar.wearables.Contains("urn:decentraland:off-chain:base-avatars:soccer_pants"));
-            Assert.IsTrue(userProfile.avatar.wearables.Contains("urn:decentraland:off-chain:base-avatars:sneakers"));
-            Assert.IsFalse(userProfile.avatar.wearables.Contains("urn:decentraland:off-chain:base-avatars:f_sweater"));
-            Assert.IsFalse(userProfile.avatar.wearables.Contains("urn:decentraland:off-chain:base-avatars:f_jeans"));
+            Assert.IsTrue(userProfile.avatar.wearables.Contains("urn:memetaverse:off-chain:base-avatars:m_sweater_02"));
+            Assert.IsTrue(userProfile.avatar.wearables.Contains("urn:memetaverse:off-chain:base-avatars:soccer_pants"));
+            Assert.IsTrue(userProfile.avatar.wearables.Contains("urn:memetaverse:off-chain:base-avatars:sneakers"));
+            Assert.IsFalse(userProfile.avatar.wearables.Contains("urn:memetaverse:off-chain:base-avatars:f_sweater"));
+            Assert.IsFalse(userProfile.avatar.wearables.Contains("urn:memetaverse:off-chain:base-avatars:f_jeans"));
         }
 
         private static UserProfileModel GetTestUserProfileModel() =>
@@ -439,13 +439,13 @@ namespace DCL.Backpack
                     bodyShape = WearableLiterals.BodyShapes.FEMALE,
                     wearables = new List<string>
                     {
-                        "urn:decentraland:off-chain:base-avatars:f_eyebrows_01",
-                        "urn:decentraland:off-chain:base-avatars:f_eyes_00",
-                        "urn:decentraland:off-chain:base-avatars:bear_slippers",
-                        "urn:decentraland:off-chain:base-avatars:f_african_leggins",
-                        "urn:decentraland:off-chain:base-avatars:f_mouth_00",
-                        "urn:decentraland:off-chain:base-avatars:blue_bandana",
-                        "urn:decentraland:off-chain:base-avatars:bee_t_shirt",
+                        "urn:memetaverse:off-chain:base-avatars:f_eyebrows_01",
+                        "urn:memetaverse:off-chain:base-avatars:f_eyes_00",
+                        "urn:memetaverse:off-chain:base-avatars:bear_slippers",
+                        "urn:memetaverse:off-chain:base-avatars:f_african_leggins",
+                        "urn:memetaverse:off-chain:base-avatars:f_mouth_00",
+                        "urn:memetaverse:off-chain:base-avatars:blue_bandana",
+                        "urn:memetaverse:off-chain:base-avatars:bee_t_shirt",
                     },
                     skinColor = Color.black,
                     hairColor = Color.green,

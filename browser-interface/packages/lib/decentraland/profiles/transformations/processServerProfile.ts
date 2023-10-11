@@ -1,6 +1,6 @@
 import { filterInvalidNameCharacters } from '../names'
 import { createFakeName } from '../names/fakeName'
-import type { Avatar } from '@dcl/schemas'
+import type { Avatar } from '@beland/schemas'
 
 export function fixWearableIds(wearableId: string) {
   return wearableId.replace('/male_body', '/BaseMale').replace('/female_body', '/BaseFemale')

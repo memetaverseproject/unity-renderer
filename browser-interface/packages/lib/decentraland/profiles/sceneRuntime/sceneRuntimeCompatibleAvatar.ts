@@ -1,4 +1,4 @@
-import { AvatarInfo } from '@dcl/schemas'
+import { AvatarInfo } from '@beland/schemas'
 import { rgbToHex } from 'lib/decentraland/profiles/transformations/convertToRGBObject'
 import { AvatarForUserData } from './AvatarForUserData'
 

@@ -55,7 +55,7 @@ namespace Tests
             yield return UniTask.ToCoroutine(async () =>
             {
                 const int EXPECTED_SCENE_NUMBER = 666;
-                const string EXPECTED_URL = "http://decentraland.org";
+                const string EXPECTED_URL = "http://memetaverse.club";
 
                 bool requested = false;
 
@@ -91,7 +91,7 @@ namespace Tests
             yield return UniTask.ToCoroutine(async () =>
             {
                 const int EXPECTED_SCENE_NUMBER = 666;
-                const string EXPECTED_URL = "http://decentraland.org";
+                const string EXPECTED_URL = "http://memetaverse.club";
 
                 bool requested = false;
 
@@ -121,7 +121,7 @@ namespace Tests
             const string TOKEN_ID = "645433";
 
             Assert.IsTrue(NFTUtils.TryParseUrn(
-                $"urn:decentraland:ethereum:erc1150:{CONTRACT_ADDRESS}:{TOKEN_ID}",
+                $"urn:memetaverse:ethereum:erc1150:{CONTRACT_ADDRESS}:{TOKEN_ID}",
                 out string contractAddress,
                 out string tokenId));
 
@@ -135,7 +135,7 @@ namespace Tests
             string contractAddress;
             string tokenId;
 
-            // "urn:decentraland" missing
+            // "urn:memetaverse" missing
             Assert.IsFalse(NFTUtils.TryParseUrn(
                 $"ethereum:erc1150:0x0000temptation:666",
                 out contractAddress,
@@ -143,25 +143,25 @@ namespace Tests
 
             // "chain" missing
             Assert.IsFalse(NFTUtils.TryParseUrn(
-                $"urn:decentraland:erc1150:0x0000temptation:666",
+                $"urn:memetaverse:erc1150:0x0000temptation:666",
                 out contractAddress,
                 out tokenId));
 
             // "chain" invalid
             Assert.IsFalse(NFTUtils.TryParseUrn(
-                $"urn:decentraland:some-chain:erc1150:0x0000temptation:666",
+                $"urn:memetaverse:some-chain:erc1150:0x0000temptation:666",
                 out contractAddress,
                 out tokenId));
 
             // contract address missing
             Assert.IsFalse(NFTUtils.TryParseUrn(
-                $"urn:decentraland:ethereum:erc1150:666",
+                $"urn:memetaverse:ethereum:erc1150:666",
                 out contractAddress,
                 out tokenId));
 
             // token id missing
             Assert.IsFalse(NFTUtils.TryParseUrn(
-                $"urn:decentraland:ethereum:erc1150:0x0000temptation",
+                $"urn:memetaverse:ethereum:erc1150:0x0000temptation",
                 out contractAddress,
                 out tokenId));
 
@@ -197,7 +197,7 @@ namespace Tests
                 var result = await rpcClient.OpenNftDialog(
                     new OpenNftDialogRequest()
                     {
-                        Urn = $"urn:decentraland:ethereum:erc1150:{EXPECTED_CONTRACT_ADDRESS}:{EXPECTED_TOKEN_ID}"
+                        Urn = $"urn:memetaverse:ethereum:erc1150:{EXPECTED_CONTRACT_ADDRESS}:{EXPECTED_TOKEN_ID}"
                     });
 
                 Assert.IsTrue(result.Success);
@@ -227,7 +227,7 @@ namespace Tests
                 var result = await rpcClient.OpenNftDialog(
                     new OpenNftDialogRequest()
                     {
-                        Urn = $"urn:decentraland:ethereum:erc1150:{EXPECTED_CONTRACT_ADDRESS}:{EXPECTED_TOKEN_ID}"
+                        Urn = $"urn:memetaverse:ethereum:erc1150:{EXPECTED_CONTRACT_ADDRESS}:{EXPECTED_TOKEN_ID}"
                     });
 
                 Assert.IsFalse(result.Success);

@@ -576,7 +576,7 @@ namespace DCL.Social.Chat
 
             view.OnRequireWalletReadme += Raise.Event<Action>();
 
-            browserBridge.Received(1).OpenUrl("https://docs.decentraland.org/player/blockchain-integration/get-a-wallet/");
+            browserBridge.Received(1).OpenUrl("https://docs.memetaverse.club/player/blockchain-integration/get-a-wallet/");
         }
 
         [Test]

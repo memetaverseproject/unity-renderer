@@ -24,7 +24,7 @@ jobs:
           packageVersion: ${{ github.event.deployment.payload.packageVersion }}
 
           # Rollout information
-          deploymentDomain: "play.decentraland.zone"
+          deploymentDomain: "play.memetaverse.club"
           deploymentName: "@dcl/explorer"
           percentage: 100
 
@@ -42,7 +42,7 @@ jobs:
           packageVersion: ${{ github.event.deployment.payload.packageVersion }}
 
           # Rollout information
-          deploymentDomain: "play.decentraland.today"
+          deploymentDomain: "play.memetaverse.club"
           deploymentName: "@dcl/explorer"
           percentage: 100
 
@@ -60,6 +60,6 @@ jobs:
           packageVersion: ${{ github.event.deployment.payload.packageVersion }}
 
           # Rollout information
-          deploymentDomain: "play.decentraland.org"
+          deploymentDomain: "play.memetaverse.club"
           deploymentName: "@dcl/explorer"
           percentage: 0

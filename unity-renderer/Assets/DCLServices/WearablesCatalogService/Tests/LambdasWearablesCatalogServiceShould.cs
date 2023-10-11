@@ -16,10 +16,10 @@ namespace DCLServices.WearablesCatalogService
 {
     public class LambdasWearablesCatalogServiceShould
     {
-        private const string ASSET_BUNDLES_URL_ORG = "https://content-assets-as-bundle.decentraland.org/";
+        private const string ASSET_BUNDLES_URL_ORG = "https://content-assets-as-bundle.memetaverse.club/";
         private const string VALID_WEARABLE_ID = "validWearable";
         private const string WEARABLE_WITHOUT_THUMBNAIL = "wearableWithoutThumbnail";
-        private const string BASE_WEARABLES_COLLECTION = "urn:decentraland:off-chain:base-avatars";
+        private const string BASE_WEARABLES_COLLECTION = "urn:memetaverse:off-chain:base-avatars";
         private const string TPW_COLLECTION_ID = "tpwCollection";
         private const string CONTENT_URL = "http://catalyst.url/content/";
         private const string LAMBDAS_URL = "http://catalyst.url/lambdas/";

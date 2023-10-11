@@ -1,4 +1,4 @@
-import { Scene } from '@dcl/schemas'
+import { Scene } from '@beland/schemas'
 import { SceneFeatureToggle } from './types'
 
 export function isSceneFeatureToggleEnabled(toggle: SceneFeatureToggle, sceneJsonData?: Scene): boolean {

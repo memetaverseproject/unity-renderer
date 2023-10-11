@@ -1,4 +1,4 @@
-import type { Avatar } from '@dcl/schemas'
+import type { Avatar } from '@beland/schemas'
 import { COMMS_PROFILE_TIMEOUT } from 'config'
 import { storeCondition } from 'lib/redux'
 import { requestProfileFromPeers } from 'shared/comms/handlers'

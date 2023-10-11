@@ -45,7 +45,7 @@ namespace DCL.ECSComponents {
   }
   #region Messages
   /// <summary>
-  /// The PBRaycast component and PBRaycastResult are defined in https://adr.decentraland.org/adr/ADR-200
+  /// The PBRaycast component and PBRaycastResult are defined in https://adr.memetaverse.club/adr/ADR-200
   ///
   /// The RaycastResult component is added to an Entity when the results of a previously attached
   /// Raycast component are available. It contains information about the ray and any objects it

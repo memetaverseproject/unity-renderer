@@ -1,4 +1,4 @@
-import { Avatar, AvatarInfo, generateLazyValidator, JSONSchema } from '@dcl/schemas'
+import { Avatar, AvatarInfo, generateLazyValidator, JSONSchema } from '@beland/schemas'
 
 /**
  * The schema validation requires strict IPFS "snapshots"

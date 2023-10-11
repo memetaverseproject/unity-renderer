@@ -1,4 +1,4 @@
-import type { Avatar } from '@dcl/schemas'
+import type { Avatar } from '@beland/schemas'
 import { ethereumConfigurations, ETHEREUM_NETWORK, RESET_TUTORIAL } from 'config'
 import defaultLogger from 'lib/logger'
 import { call, put, select } from 'redux-saga/effects'

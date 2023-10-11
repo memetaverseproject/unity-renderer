@@ -134,9 +134,9 @@
 
         const qs = new URLSearchParams(document.location.search)
         if (qs.has('explorer-branch')) {
-          baseUrl = `https://renderer-artifacts.decentraland.org/branch/${qs.get('explorer-branch')}`
+          baseUrl = `https://renderer-artifacts.memetaverse.club/branch/${qs.get('explorer-branch')}`
         } else if (qs.has('explorer-version')) {
-          baseUrl = `https://cdn.decentraland.org/@dcl/explorer/${qs.get('explorer-version')}`
+          baseUrl = `https://cdn.memetaverse.club/@dcl/explorer/${qs.get('explorer-version')}`
         }
 
         const kernel = await DecentralandKernel.initKernel({
@@ -199,7 +199,7 @@
             kernel.authenticate(globalThis.ethereum, false)
           }
         } else {
-          kernel.authenticate('wss://rpc.decentraland.org/mainnet?project=kernel-local', true)
+          kernel.authenticate('wss://ws-nebulas-testnet.uniultra.xyz', true)
         }
       }
 

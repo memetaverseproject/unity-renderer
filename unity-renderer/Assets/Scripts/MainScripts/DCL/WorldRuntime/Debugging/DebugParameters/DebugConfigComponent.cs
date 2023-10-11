@@ -45,7 +45,7 @@ namespace DCL
         public enum Network
         {
             MAINNET,
-            SEPOLIA,
+            NEBULAS,
         }
 
         [Header("General Settings")] public bool OpenBrowserOnStart;
@@ -58,7 +58,7 @@ namespace DCL
 
         [Space(10)] public BaseUrl baseUrlMode = BaseUrl.ZONE;
         [DrawIf("baseUrlMode", BaseUrl.CUSTOM)]
-        public string customURL = "https://play.decentraland.zone/?";
+        public string customURL = "https://play.memetaverse.club/?";
 
         [Space(10)] public Network network;
 
@@ -179,24 +179,24 @@ namespace DCL
             }
             else if (baseUrlMode.Equals(BaseUrl.ORG))
             {
-                baseUrl = "http://play.decentraland.org/?";
+                baseUrl = "http://play.memetaverse.club/?";
                 if (!webSocketSSL)
                 {
                     Debug.LogError(
-                        "play.decentraland.org only works with WebSocket SSL, please change the base URL to play.decentraland.zone");
+                        "play.memetaverse.club only works with WebSocket SSL, please change the base URL to play.memetaverse.club");
                     QuitGame();
                     return;
                 }
             }
             else
             {
-                baseUrl = "http://play.decentraland.zone/?";
+                baseUrl = "http://play.memetaverse.club/?";
             }
 
             switch (network)
             {
-                case Network.SEPOLIA:
-                    debugString = "NETWORK=sepolia&";
+                case Network.NEBULAS:
+                    debugString = "NETWORK=nebulas&";
                     break;
                 case Network.MAINNET:
                     debugString = "NETWORK=mainnet&";

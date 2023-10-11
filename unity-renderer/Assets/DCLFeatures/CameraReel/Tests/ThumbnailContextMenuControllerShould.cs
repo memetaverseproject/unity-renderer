@@ -82,8 +82,8 @@ namespace DCLFeatures.CameraReel.Tests
             controller.Dispose();
         }
 
-        [TestCase(true, "https://reels.decentraland.org/pictureId")]
-        [TestCase(false, "https://reels.decentraland.zone/pictureId")]
+        [TestCase(true, "https://reels.memetaverse.club/pictureId")]
+        [TestCase(false, "https://reels.memetaverse.club/pictureId")]
         public void CopyPictureLinkToClipboard(bool isProd, string expectedLink)
         {
             environmentProvider.IsProd().Returns(isProd);
@@ -101,8 +101,8 @@ namespace DCLFeatures.CameraReel.Tests
             browserBridge.Received(1).OpenUrl(picture.url);
         }
 
-        [TestCase(true, "https://twitter.com/intent/tweet?text=Check out what I'm doing in Decentraland right now and join me!&hashtags=DCLCamera&url=https://reels.decentraland.org/pictureId")]
-        [TestCase(false, "https://twitter.com/intent/tweet?text=Check out what I'm doing in Decentraland right now and join me!&hashtags=DCLCamera&url=https://reels.decentraland.zone/pictureId")]
+        [TestCase(true, "https://twitter.com/intent/tweet?text=Check out what I'm doing in Decentraland right now and join me!&hashtags=DCLCamera&url=https://reels.memetaverse.club/pictureId")]
+        [TestCase(false, "https://twitter.com/intent/tweet?text=Check out what I'm doing in Decentraland right now and join me!&hashtags=DCLCamera&url=https://reels.memetaverse.club/pictureId")]
         public void ShareOnTwitter(bool isProd, string expectedLink)
         {
             environmentProvider.IsProd().Returns(isProd);

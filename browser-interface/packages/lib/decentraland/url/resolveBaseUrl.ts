@@ -1,4 +1,4 @@
-import { resolveUrlFromUrn } from '@dcl/urn-resolver'
+import { resolveUrlFromUrn } from '@beland/urn-resolver'
 
 export async function resolveBaseUrl(urn: string): Promise<string> {
   if (urn.startsWith('urn:')) {

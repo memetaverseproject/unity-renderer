@@ -15,7 +15,7 @@ namespace MainScripts.DCL.AssetsEmbedment.Editor
     /// </summary>
     public static class WearablesEmbedment
     {
-        private const string ASSET_BUNDLES_URL_ORG = "https://content-assets-as-bundle.decentraland.org/v23/";
+        private const string ASSET_BUNDLES_URL_ORG = "https://content-assets-as-bundle.memetaverse.club/v23/";
         private const string TEXTURES_URL_ORG = "https://interconnected.online/content/contents/";
 
         private static bool inProgress;
