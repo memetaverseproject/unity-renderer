@@ -561,11 +561,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   femaleLocomotions:
-    idle: {fileID: 7400000, guid: c1cfe83f998cb0143882dfc298881e77, type: 2}
-    walk: {fileID: 7400000, guid: 33933863b397dd64fa9b1fa6441fbe9d, type: 2}
-    run: {fileID: 7400000, guid: 66785322b18eec3ee9e8f719cbc2e555, type: 2}
-    jump: {fileID: 7400000, guid: aaa2f55f2cf7f8092b0b55b2f6257eb0, type: 2}
-    fall: {fileID: 7400000, guid: 113c93ef80a7e6d8eab4dca0699d2e13, type: 2}
+    idle: {fileID: 7400000, guid: e8d851b395c4bb4de94aa7fdbb42ed52, type: 2}
+    walk: {fileID: 7400000, guid: 19c1705017cc3f71985ea933fa4a625d, type: 2}
+    run: {fileID: 7400000, guid: f80bc06726966b139983e3e503df0e64, type: 2}
+    jump: {fileID: 7400000, guid: bb62d7ac8b4618582943575f12dea17e, type: 2}
+    fall: {fileID: 7400000, guid: a89661262e4bfc8dba7f1b41f1c29479, type: 2}
   maleLocomotions:
     idle: {fileID: 7400000, guid: 958a899a25639cc96962fcffe9a6f6a2, type: 2}
     walk: {fileID: 7400000, guid: 958a899a25639cc96962fcffe9a6f6a2, type: 2}
