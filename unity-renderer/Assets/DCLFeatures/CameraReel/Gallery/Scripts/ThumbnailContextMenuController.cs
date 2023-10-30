@@ -34,7 +34,7 @@ namespace DCLFeatures.CameraReel.Gallery
 
             view.OnCopyPictureLinkRequested += () =>
             {
-                var url = $"https://reels.decentraland.{(environmentProviderService.IsProd() ? "org" : "zone")}/{picture.id}";
+                var url = $"https://reels.memetaverse.club/{picture.id}";
                 clipboard.WriteText(url);
                 analytics.Share("Explorer", "Copy");
             };
@@ -48,7 +48,7 @@ namespace DCLFeatures.CameraReel.Gallery
             view.OnShareToTwitterRequested += () =>
             {
                 var description = "Check out what I'm doing in Decentraland right now and join me!";
-                var url = $"https://reels.decentraland.{(environmentProviderService.IsProd() ? "org" : "zone")}/{picture.id}";
+                var url = $"https://reels.memetaverse.club/{picture.id}";
                 var twitterUrl = $"https://twitter.com/intent/tweet?text={description}&hashtags=DCLCamera&url={url}";
 
                 clipboard.WriteText(twitterUrl);

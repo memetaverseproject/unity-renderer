@@ -40,6 +40,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
+    m_ColorSpace: -1
     m_NumColorKeys: 8
     m_NumAlphaKeys: 2
   horizonColor:
@@ -69,6 +70,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
+    m_ColorSpace: -1
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
   groundColor:
@@ -98,11 +100,12 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
+    m_ColorSpace: -1
     m_NumColorKeys: 4
     m_NumAlphaKeys: 2
   horizonWidth: []
   horizonHeight: []
-  horizonMask: {fileID: 2800000, guid: 0da79a6b573fd2440888585d294e07d3, type: 3}
+  horizonMask: {fileID: 0}
   horizonMaskTiling: {x: 0, y: 0}
   horizonMaskOffset: {x: 0, y: 0}
   horizonPlaneTexture: {fileID: 0}
@@ -135,6 +138,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
+    m_ColorSpace: -1
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
   horizonPlaneHeight:
@@ -170,6 +174,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
+    m_ColorSpace: -1
     m_NumColorKeys: 6
     m_NumAlphaKeys: 2
   ambientEquatorColor:
@@ -199,6 +204,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
+    m_ColorSpace: -1
     m_NumColorKeys: 7
     m_NumAlphaKeys: 2
   ambientGroundColor:
@@ -228,6 +234,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
+    m_ColorSpace: -1
     m_NumColorKeys: 7
     m_NumAlphaKeys: 2
   useAvatarGradient: 1
@@ -258,6 +265,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
+    m_ColorSpace: -1
     m_NumColorKeys: 6
     m_NumAlphaKeys: 2
   avatarTintColor: {r: 0.26937425, g: 0.9339623, b: 0, a: 1}
@@ -291,6 +299,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
+    m_ColorSpace: -1
     m_NumColorKeys: 6
     m_NumAlphaKeys: 2
   avatarEditorTintColor: {r: 0.745283, g: 0.68967444, b: 0.6433339, a: 1}
@@ -325,6 +334,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
+    m_ColorSpace: -1
     m_NumColorKeys: 5
     m_NumAlphaKeys: 2
   fogDensity: 0.04
@@ -359,6 +369,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 8
       m_NumAlphaKeys: 2
     intensity:
@@ -376,7 +387,7 @@ MonoBehaviour:
     - percentage: 20
       value: {x: -0.6439244, y: -0.6619163, z: -0.29216662, w: -0.24873045}
     - percentage: 27.083334
-      value: {x: 0.66401047, y: 0.6414131, z: 0.243085, w: 0.2976393}
+      value: {x: 0.66401047, y: 0.64141303, z: 0.24308498, w: 0.29763934}
     - percentage: 50
       value: {x: 0.65027386, y: 0.26341134, z: -0.27774805, w: 0.65621215}
     - percentage: 50
@@ -412,13 +423,14 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 7
       m_NumAlphaKeys: 2
   layers:
   - slotID: 4
-    renderType: 0
+    renderType: 1
     layerType: 4
-    enabled: 1
+    enabled: 0
     nameInEditor: Mountains
     expandedInEditor: 0
     timeSpan_start: 0
@@ -428,7 +440,7 @@ MonoBehaviour:
     tintPercentage: 0
     renderDistance: []
     texture: {fileID: 0}
-    cubemap: {fileID: 8900000, guid: f61d7b727f05abf47bd40d677f08330d, type: 3}
+    cubemap: {fileID: 8900000, guid: 56a68e301a0ff55469ae441c0112d256, type: 3}
     color:
       serializedVersion: 2
       key0: {r: 0.17959554, g: 0.1709238, b: 0.21698111, a: 1}
@@ -456,6 +468,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 5
       m_NumAlphaKeys: 2
     tiling: {x: 1, y: 1}
@@ -490,9 +503,9 @@ MonoBehaviour:
     movementTypePlanar_Radial: 0
     movementTypeSatellite: 0
   - slotID: 0
-    renderType: 0
+    renderType: 1
     layerType: 1
-    enabled: 1
+    enabled: 0
     nameInEditor: Stars
     expandedInEditor: 0
     timeSpan_start: 18
@@ -530,6 +543,7 @@ MonoBehaviour:
       atime6: 65535
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 3
     tiling: {x: 27.3, y: 4}
@@ -570,7 +584,7 @@ MonoBehaviour:
   - slotID: 1
     renderType: 1
     layerType: 2
-    enabled: 1
+    enabled: 0
     nameInEditor: Big Sun
     expandedInEditor: 0
     timeSpan_start: 5
@@ -608,6 +622,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 6
       m_NumAlphaKeys: 4
     tiling: {x: 1, y: 1}
@@ -694,6 +709,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 8
       m_NumAlphaKeys: 4
     tiling: {x: 1, y: 1}
@@ -736,7 +752,7 @@ MonoBehaviour:
   - slotID: 1
     renderType: 1
     layerType: 2
-    enabled: 1
+    enabled: 0
     nameInEditor: Moon
     expandedInEditor: 0
     timeSpan_start: 21
@@ -774,6 +790,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 4
       m_NumAlphaKeys: 3
     tiling: {x: 1, y: 1}
@@ -822,9 +839,9 @@ MonoBehaviour:
     movementTypePlanar_Radial: 0
     movementTypeSatellite: 1
   - slotID: 2
-    renderType: 0
+    renderType: 1
     layerType: 4
-    enabled: 1
+    enabled: 0
     nameInEditor: Far Clouds
     expandedInEditor: 0
     timeSpan_start: 0
@@ -862,6 +879,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 5
       m_NumAlphaKeys: 5
     tiling: {x: 1, y: 1}
@@ -894,9 +912,9 @@ MonoBehaviour:
     movementTypePlanar_Radial: 0
     movementTypeSatellite: 0
   - slotID: 3
-    renderType: 0
+    renderType: 1
     layerType: 4
-    enabled: 1
+    enabled: 0
     nameInEditor: Near Clouds
     expandedInEditor: 0
     timeSpan_start: 0
@@ -934,6 +952,7 @@ MonoBehaviour:
       atime6: 0
       atime7: 0
       m_Mode: 0
+      m_ColorSpace: -1
       m_NumColorKeys: 5
       m_NumAlphaKeys: 5
     tiling: {x: 1, y: 1}

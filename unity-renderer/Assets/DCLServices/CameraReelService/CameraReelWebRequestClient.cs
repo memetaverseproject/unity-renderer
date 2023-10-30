@@ -24,8 +24,8 @@ namespace DCLServices.CameraReelService
             this.webRequestController = webRequestController;
             this.environmentProviderService = environmentProviderService;
 
-            imageBaseURL = $"https://camera-reel-service.decentraland.{(IsProdEnv() ? "org" : "zone")}/api/images";
-            userBaseURL = $"https://camera-reel-service.decentraland.{(IsProdEnv() ? "org" : "zone")}/api/users";
+            imageBaseURL = $"https://camera-reel-service.memetaverse.club/api/images";
+            userBaseURL = $"https://camera-reel-service.memetaverse.club/api/users";
         }
 
         private bool IsProdEnv() =>

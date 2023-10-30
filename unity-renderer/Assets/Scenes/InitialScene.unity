@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugConfig:
-    soloScene: 0
+    soloScene: 1
     soloSceneCoords: {x: 0, y: 0}
     ignoreGlobalScenes: 0
     msgStepByStep: 0
@@ -243,8 +243,8 @@ MonoBehaviour:
   kernelVersion: 
   useCustomContentServer: 0
   customContentServerUrl: http://localhost:1338/
-  baseUrlMode: 2
-  customURL: https://play.memetaverse.club/?
+  baseUrlMode: 3
+  customURL: http://13.215.194.88:50001/?
   network: 1
   realm: loki
   startInCoords: {x: 0, y: 0}
@@ -257,7 +257,7 @@ MonoBehaviour:
   enableDebugMode: 1
   debugPanelMode: 2
   disableGLTFDownloadThrottle: 1
-  multithreaded: 1
+  multithreaded: 0
   runPerformanceMeterToolDuringLoading: 0
 --- !u!4 &1444882337
 Transform:

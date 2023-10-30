@@ -60,12 +60,12 @@ public static class WearableLiterals
     {
         public static readonly IReadOnlyDictionary<(string, string), string> defaultWearables = new Dictionary<(string, string), string>
         {
-            { (BodyShapes.MALE, Categories.EYES), "urn:memetaverse:off-chain:base-avatars:eyes_00" },
+            { (BodyShapes.MALE, Categories.EYES), "urn:memetaverse:off-chain:base-avatars:m_eyes_00" },
             // { (BodyShapes.MALE, Categories.EYEBROWS), "urn:memetaverse:off-chain:base-avatars:eyebrows_00" },
             { (BodyShapes.MALE, Categories.MOUTH), "urn:memetaverse:off-chain:base-avatars:mouth_00" },
             // { (BodyShapes.MALE, Categories.HAIR), "urn:memetaverse:off-chain:base-avatars:hair_left_over" },
             // { (BodyShapes.MALE, Categories.FACIAL), "urn:memetaverse:off-chain:base-avatars:beard" },
-            // { (BodyShapes.MALE, Categories.UPPER_BODY), "urn:memetaverse:off-chain:base-avatars:brown_jacket" },
+            { (BodyShapes.MALE, Categories.UPPER_BODY), "urn:memetaverse:off-chain:base-avatars:f_ubody_01" },
             // { (BodyShapes.MALE, Categories.LOWER_BODY), "urn:memetaverse:off-chain:base-avatars:red_short" },
             // { (BodyShapes.MALE, Categories.FEET), "urn:memetaverse:off-chain:base-avatars:red_sandals" },
 
@@ -73,7 +73,7 @@ public static class WearableLiterals
             // { (BodyShapes.FEMALE, Categories.EYEBROWS), "urn:memetaverse:off-chain:base-avatars:f_eyebrows_00" },
             { (BodyShapes.FEMALE, Categories.MOUTH), "urn:memetaverse:off-chain:base-avatars:f_mouth_00" },
             // { (BodyShapes.FEMALE, Categories.HAIR), "urn:memetaverse:off-chain:base-avatars:standard_hair" },
-            // { (BodyShapes.FEMALE, Categories.UPPER_BODY), "urn:memetaverse:off-chain:base-avatars:light_green_jennie_short_dress" },
+            { (BodyShapes.FEMALE, Categories.UPPER_BODY), "urn:memetaverse:off-chain:base-avatars:m_ubody_01" },
             // { (BodyShapes.FEMALE, Categories.LOWER_BODY), "urn:memetaverse:off-chain:base-avatars:purple_pants" },
             // { (BodyShapes.FEMALE, Categories.FEET), "urn:memetaverse:off-chain:base-avatars:black_while_shoes" },
         };

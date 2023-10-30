@@ -105,7 +105,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 2
+    serializedVersion: 3
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -118,7 +118,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    buildHeightMesh: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -155,7 +155,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableSceneDependencies: 0
-  componentFactory: {fileID: 11400000, guid: 6710053fa2d5d5446b6a599e0e003053, type: 2}
   logWs: 1
 --- !u!114 &322303342
 MonoBehaviour:
@@ -176,13 +175,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 322303340}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1444882335
 GameObject:
@@ -219,22 +218,23 @@ MonoBehaviour:
     ignoreGlobalScenes: 0
     msgStepByStep: 0
     logWs: 0
+    overrideUserID: 
   OpenBrowserOnStart: 0
   webSocketSSL: 0
   kernelVersion: 
   useCustomContentServer: 0
   customContentServerUrl: http://localhost:1338/
-  baseUrlMode: 1
-  customURL: https://play.memetaverse.club/?
+  baseUrlMode: 3
+  customURL: http://13.215.194.88:50001/?
   network: 0
   realm: loki
   startInCoords: {x: 0, y: 0}
+  overrideUserID: 
   forceLocalComms: 0
   enableTutorial: 0
   builderInWorld: 0
   soloScene: 0
   disableAssetBundles: 0
-  enableGLTFast: 0
   enableDebugMode: 0
   debugPanelMode: 0
   disableGLTFDownloadThrottle: 0
@@ -247,11 +247,17 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444882335}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.5098898, y: -0.5752002, z: 7.8599234}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 322303343}
+  - {fileID: 1444882337}

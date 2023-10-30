@@ -561,17 +561,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   femaleLocomotions:
-    idle: {fileID: 7400000, guid: e8d851b395c4bb4de94aa7fdbb42ed52, type: 2}
-    walk: {fileID: 7400000, guid: 19c1705017cc3f71985ea933fa4a625d, type: 2}
-    run: {fileID: 7400000, guid: f80bc06726966b139983e3e503df0e64, type: 2}
-    jump: {fileID: 7400000, guid: bb62d7ac8b4618582943575f12dea17e, type: 2}
-    fall: {fileID: 7400000, guid: a89661262e4bfc8dba7f1b41f1c29479, type: 2}
+    idle: {fileID: 7400000, guid: d14b2337e11f258528626c9248c11954, type: 2}
+    walk: {fileID: 7400000, guid: 01f8ac94ed54390a0b5588a054d5dbfd, type: 2}
+    run: {fileID: 7400000, guid: 2edb7a086c2bf535bb2c4cfe81c8f120, type: 2}
+    jump: {fileID: 7400000, guid: f4da2b170d7185bf385a7ae5e157dcb8, type: 2}
+    fall: {fileID: 7400000, guid: 7b08169c12e005c71a7a8291cf12dc43, type: 2}
   maleLocomotions:
-    idle: {fileID: 7400000, guid: 958a899a25639cc96962fcffe9a6f6a2, type: 2}
-    walk: {fileID: 7400000, guid: 958a899a25639cc96962fcffe9a6f6a2, type: 2}
-    run: {fileID: 7400000, guid: 916369dcf45c5944e9f2409e0be10181, type: 2}
-    jump: {fileID: 7400000, guid: 958a899a25639cc96962fcffe9a6f6a2, type: 2}
-    fall: {fileID: 7400000, guid: 958a899a25639cc96962fcffe9a6f6a2, type: 2}
+    idle: {fileID: 7400000, guid: 8e6e455558b293e5ca499276f40015d6, type: 2}
+    walk: {fileID: 7400000, guid: 33a1c44e298757cf8a2d1edd1cd3e502, type: 2}
+    run: {fileID: 7400000, guid: 4c7d0dd5296a83b24b403a47cd607188, type: 2}
+    jump: {fileID: 7400000, guid: 9ad3ec79e3ceadac3ac8cf6d4a04a24b, type: 2}
+    fall: {fileID: 7400000, guid: 830df4924e00c45eba66b396f9b7dec0, type: 2}
   animation: {fileID: 0}
   blackboard:
     walkSpeedFactor: 0.5

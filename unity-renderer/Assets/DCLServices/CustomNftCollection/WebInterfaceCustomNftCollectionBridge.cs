@@ -40,7 +40,7 @@ namespace DCLServices.CustomNftCollection
             // Reworked into this approach. Using a UniTaskCompletionSource<IReadOnlyList<string>> emits an invalid string array
             // on WebGL. Seems like a IL2CPP issue, not sure. This workaround is the only one i found to make it work on all platforms
             await UniTask.WaitUntil(() => collections != null, cancellationToken: cancellationToken)
-                         .Timeout(TimeSpan.FromSeconds(30));
+                         .Timeout(TimeSpan.FromSeconds(2));
 
             return collections;
         }
@@ -55,7 +55,7 @@ namespace DCLServices.CustomNftCollection
             // Reworked into this approach. Using a UniTaskCompletionSource<IReadOnlyList<string>> emits an invalid string array
             // on WebGL. Seems like a IL2CPP issue, not sure. This workaround is the only one i found to make it work on all platforms
             await UniTask.WaitUntil(() => items != null, cancellationToken: cancellationToken)
-                         .Timeout(TimeSpan.FromSeconds(30));
+                         .Timeout(TimeSpan.FromSeconds(2));
 
             return items;
         }
