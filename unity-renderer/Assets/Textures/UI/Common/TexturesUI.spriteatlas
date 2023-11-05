@@ -70,6 +70,7 @@ SpriteAtlas:
     - 219eab3075e6f47e38920b886ba74eee: 21300000
     - 06109c30f10aa46efa2a63d176c8e94d: 21300000
     - 0187ad300d0014cd6a1aa5f9b694497d: 21300000
+    - 73721040a3e6d459eb53866af0a4926d: 21300000
     - 9d8a1240643c848f38c614260af68c76: 21300000
     - 88dde3500b2da42c89518050e5250b21: 21300000
     - 91681e50568d84e93b76b1767abc283f: 21300000
@@ -152,6 +153,7 @@ SpriteAtlas:
     - 94352b53817657c429ced2d35262394c: 21300000
     - db1616631e9344b4aa7ce7fdb5218656: 21300000
     - 09d7c763693b246d7bdb6df137a6f0cc: 21300000
+    - 82c5e5837348d41cea0b2231820b03ec: 21300000
     - c553839314f3e4d218eed6729f828916: 21300000
     - 3f0f9693166cb48a9b43e5e4bbd00332: 21300000
     - d254a3a3b9d5642e1ad6432c441d7f43: 21300000
@@ -354,6 +356,7 @@ SpriteAtlas:
     - c7140bdb251224b66aba206fd5ff73ee: 21300000
     - 07a400eb205264a4f9e2aad5d599b4a3: 21300000
     - 42eb1ceb0cb414d60b49ce912a143517: 21300000
+    - 58a52cebae9874d238193347e0a1c6f6: 21300000
     - 64b96cebc797f4e75ad10e05ff68466f: 21300000
     - 51bc4deb7ea0e8e408dc994774054af8: 21300000
     - b1fdbdeb128d64657bb427b7c93fbab4: 21300000
@@ -445,6 +448,7 @@ SpriteAtlas:
     - e917afbf829204e53b97fce8b275dafd: 21300000
     - 394362cf579a347f0b72a304db178ccb: 21300000
     - 95180acf19d8343baabfcdd0c10079d1: 21300000
+    - 82f744df0f4184d7e9991bcc243bc7a9: 21300000
     - 780ed9eff07384ade9aaa318dbbe63b7: 21300000
     - 270c3bffb7809438bbdcb901239beff2: 21300000
   m_MasterAtlas: {fileID: 0}
@@ -456,6 +460,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 219eab3075e6f47e38920b886ba74eee, type: 3}
   - {fileID: 21300000, guid: 06109c30f10aa46efa2a63d176c8e94d, type: 3}
   - {fileID: 21300000, guid: 0187ad300d0014cd6a1aa5f9b694497d, type: 3}
+  - {fileID: 21300000, guid: 73721040a3e6d459eb53866af0a4926d, type: 3}
   - {fileID: 21300000, guid: 9d8a1240643c848f38c614260af68c76, type: 3}
   - {fileID: 21300000, guid: 88dde3500b2da42c89518050e5250b21, type: 3}
   - {fileID: 21300000, guid: 91681e50568d84e93b76b1767abc283f, type: 3}
@@ -538,6 +543,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 94352b53817657c429ced2d35262394c, type: 3}
   - {fileID: 21300000, guid: db1616631e9344b4aa7ce7fdb5218656, type: 3}
   - {fileID: 21300000, guid: 09d7c763693b246d7bdb6df137a6f0cc, type: 3}
+  - {fileID: 21300000, guid: 82c5e5837348d41cea0b2231820b03ec, type: 3}
   - {fileID: 21300000, guid: c553839314f3e4d218eed6729f828916, type: 3}
   - {fileID: 21300000, guid: 3f0f9693166cb48a9b43e5e4bbd00332, type: 3}
   - {fileID: 21300000, guid: d254a3a3b9d5642e1ad6432c441d7f43, type: 3}
@@ -740,6 +746,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: c7140bdb251224b66aba206fd5ff73ee, type: 3}
   - {fileID: 21300000, guid: 07a400eb205264a4f9e2aad5d599b4a3, type: 3}
   - {fileID: 21300000, guid: 42eb1ceb0cb414d60b49ce912a143517, type: 3}
+  - {fileID: 21300000, guid: 58a52cebae9874d238193347e0a1c6f6, type: 3}
   - {fileID: 21300000, guid: 64b96cebc797f4e75ad10e05ff68466f, type: 3}
   - {fileID: 21300000, guid: 51bc4deb7ea0e8e408dc994774054af8, type: 3}
   - {fileID: 21300000, guid: b1fdbdeb128d64657bb427b7c93fbab4, type: 3}
@@ -831,6 +838,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: e917afbf829204e53b97fce8b275dafd, type: 3}
   - {fileID: 21300000, guid: 394362cf579a347f0b72a304db178ccb, type: 3}
   - {fileID: 21300000, guid: 95180acf19d8343baabfcdd0c10079d1, type: 3}
+  - {fileID: 21300000, guid: 82f744df0f4184d7e9991bcc243bc7a9, type: 3}
   - {fileID: 21300000, guid: 780ed9eff07384ade9aaa318dbbe63b7, type: 3}
   - {fileID: 21300000, guid: 270c3bffb7809438bbdcb901239beff2, type: 3}
   m_PackedSpriteNamesToIndex:
@@ -841,6 +849,7 @@ SpriteAtlas:
   - BuilderOn
   - Outline3Radius12Gradient
   - Publish
+  - ChatHeader
   - RadialGradient
   - CellBright
   - Mic off
@@ -923,6 +932,7 @@ SpriteAtlas:
   - Frame24
   - AcceptButton
   - CopyIcn
+  - ChatBg
   - IconBellActive
   - OkIcon
   - ContainerRadius20
@@ -1125,6 +1135,7 @@ SpriteAtlas:
   - EmotesOn
   - BackpackIconNew
   - Ellipse32
+  - Browser icon
   - ChatIcon
   - ConnectWalletLogo
   - RectRadiusStroke16
@@ -1216,6 +1227,7 @@ SpriteAtlas:
   - MinusIcon
   - CheckmarkRed
   - ArrowOutline
+  - Chat-Tab Frame
   - Container12OutlineGrey
   - MoreIcon
   m_RenderDataMap: {}
