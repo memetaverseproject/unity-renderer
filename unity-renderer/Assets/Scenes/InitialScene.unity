@@ -241,7 +241,7 @@ MonoBehaviour:
   OpenBrowserOnStart: 1
   webSocketSSL: 0
   kernelVersion: 
-  useCustomContentServer: 0
+  useCustomContentServer: 1
   customContentServerUrl: http://13.250.41.37:50001/?
   baseUrlMode: 3
   customURL: http://13.250.41.37:50001/?
