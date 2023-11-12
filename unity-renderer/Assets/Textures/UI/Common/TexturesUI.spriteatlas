@@ -223,6 +223,7 @@ SpriteAtlas:
     - d857d876066d545688aeec28176a1751: 21300000
     - 17536e862909d4b64b9f50455a6e17b7: 21300000
     - 8512d2a614988894b967cb17ea417d0b: 21300000
+    - a2505da6037204a1786facc3786e230c: 21300000
     - a55ecfa6bafe1486da42b025ec8edbd8: 21300000
     - c5fc95c665090482ea92c543b0d0d6d1: 21300000
     - 51bee6e6d6f314363a939973c91dff7a: 21300000
@@ -403,6 +404,7 @@ SpriteAtlas:
     - cf43c05d20914491481a6f7736f2eec6: 21300000
     - 59758d5dbedcd0746be3439895558d6a: 21300000
     - 871dd18d15e4c4712985e30bc63a6168: 21300000
+    - ab7c328dc27c1461981120a16e1a4cd2: 21300000
     - c6cb56bd6fdab4d49879218fffcfc7f7: 21300000
     - afc72abd3262c43798a1167db98081d9: 21300000
     - 463541cd13ac34ce992618e04bc5dc9f: 21300000
@@ -419,6 +421,7 @@ SpriteAtlas:
     - ffc3be3e8ae37400bb01f74051bbc912: 21300000
     - d01cf34e9364896468606aa1bd5246d0: 21300000
     - 8141c84e8680a488d8dd05453596b0cc: 21300000
+    - f8a5f94ec96af401f8ce252245c52116: 21300000
     - 590e1b5ec5d7e45379b7d1f4f3f4e1af: 21300000
     - 9542616ed37ec4213b07f1127bd8d938: 21300000
     - fa52936e6ce564a07ac976145f3d489a: 21300000
@@ -428,6 +431,7 @@ SpriteAtlas:
     - fb6df28e83ce34e9aa23cdc3683244a7: 21300000
     - c45d4d8e8fcf6424b8e469d188bf4db7: 21300000
     - 432e669e281824c2b85c65e94dffde8e: 21300000
+    - 91e430aea3c534dd098f3e8404e24939: 21300000
     - 7645aeaef9d16443fb2c511d64aef9ab: 21300000
     - 48839cbe5b4274e8699c1d592a48d375: 21300000
     - cdfa22ce5f6194faa94218aa69dc20f1: 21300000
@@ -618,6 +622,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: d857d876066d545688aeec28176a1751, type: 3}
   - {fileID: 21300000, guid: 17536e862909d4b64b9f50455a6e17b7, type: 3}
   - {fileID: 21300000, guid: 8512d2a614988894b967cb17ea417d0b, type: 3}
+  - {fileID: 21300000, guid: a2505da6037204a1786facc3786e230c, type: 3}
   - {fileID: 21300000, guid: a55ecfa6bafe1486da42b025ec8edbd8, type: 3}
   - {fileID: 21300000, guid: c5fc95c665090482ea92c543b0d0d6d1, type: 3}
   - {fileID: 21300000, guid: 51bee6e6d6f314363a939973c91dff7a, type: 3}
@@ -798,6 +803,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: cf43c05d20914491481a6f7736f2eec6, type: 3}
   - {fileID: 21300000, guid: 59758d5dbedcd0746be3439895558d6a, type: 3}
   - {fileID: 21300000, guid: 871dd18d15e4c4712985e30bc63a6168, type: 3}
+  - {fileID: 21300000, guid: ab7c328dc27c1461981120a16e1a4cd2, type: 3}
   - {fileID: 21300000, guid: c6cb56bd6fdab4d49879218fffcfc7f7, type: 3}
   - {fileID: 21300000, guid: afc72abd3262c43798a1167db98081d9, type: 3}
   - {fileID: 21300000, guid: 463541cd13ac34ce992618e04bc5dc9f, type: 3}
@@ -814,6 +820,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: ffc3be3e8ae37400bb01f74051bbc912, type: 3}
   - {fileID: 21300000, guid: d01cf34e9364896468606aa1bd5246d0, type: 3}
   - {fileID: 21300000, guid: 8141c84e8680a488d8dd05453596b0cc, type: 3}
+  - {fileID: 21300000, guid: f8a5f94ec96af401f8ce252245c52116, type: 3}
   - {fileID: 21300000, guid: 590e1b5ec5d7e45379b7d1f4f3f4e1af, type: 3}
   - {fileID: 21300000, guid: 9542616ed37ec4213b07f1127bd8d938, type: 3}
   - {fileID: 21300000, guid: fa52936e6ce564a07ac976145f3d489a, type: 3}
@@ -823,6 +830,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: fb6df28e83ce34e9aa23cdc3683244a7, type: 3}
   - {fileID: 21300000, guid: c45d4d8e8fcf6424b8e469d188bf4db7, type: 3}
   - {fileID: 21300000, guid: 432e669e281824c2b85c65e94dffde8e, type: 3}
+  - {fileID: 21300000, guid: 91e430aea3c534dd098f3e8404e24939, type: 3}
   - {fileID: 21300000, guid: 7645aeaef9d16443fb2c511d64aef9ab, type: 3}
   - {fileID: 21300000, guid: 48839cbe5b4274e8699c1d592a48d375, type: 3}
   - {fileID: 21300000, guid: cdfa22ce5f6194faa94218aa69dc20f1, type: 3}
@@ -1012,6 +1020,7 @@ SpriteAtlas:
   - MapOff
   - QuestOff
   - InputGray
+  - buttonFrame
   - CatalogIcon
   - DislikeSolidIcn
   - Frame10
@@ -1192,6 +1201,7 @@ SpriteAtlas:
   - EllipticalShadow
   - rectangle_100
   - LikeStrokeIcn
+  - memeLogo
   - EmotesOff
   - OutlineRightRect12
   - Cursor
@@ -1208,6 +1218,7 @@ SpriteAtlas:
   - CardBlockIcon
   - LiveContainer
   - Button10
+  - exploreButtonBg
   - Container12RectTop
   - ContainerRectTop
   - POI
@@ -1217,6 +1228,7 @@ SpriteAtlas:
   - GradientPlaces
   - Spinner30
   - BackTime
+  - menuBar
   - SettingsOn
   - BuilderOff
   - Outline1Radius24
