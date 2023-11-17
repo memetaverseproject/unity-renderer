@@ -93,7 +93,7 @@ SpriteAtlas:
   - WearablesImg
   - BuilderImg
   - DAOImg
-  - ProgressFill
+  - ProgressFillOld
   - LandImg
   - MarketplaceImg
   - GenesisPlazaImg

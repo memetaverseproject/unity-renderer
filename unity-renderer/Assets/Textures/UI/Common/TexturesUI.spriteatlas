@@ -452,6 +452,7 @@ SpriteAtlas:
     - d40ff76fa8b254a8c9ed7c57ce1c9e21: 21300000
     - d6993c6f413d843cd86f9221b1f98736: 21300000
     - 9760167f5e769f346901fb593d8ea864: 21300000
+    - 78e8ea8fdd86b471ca54b6273a5cd367: 21300000
     - 84c3dd8fce0244e49adb381f8a088f5f: 21300000
     - 4c6087aff340cef47b3f706424261aaf: 21300000
     - 60e92aaf3c91f4bc18ec574bed72f832: 21300000
@@ -856,6 +857,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: d40ff76fa8b254a8c9ed7c57ce1c9e21, type: 3}
   - {fileID: 21300000, guid: d6993c6f413d843cd86f9221b1f98736, type: 3}
   - {fileID: 21300000, guid: 9760167f5e769f346901fb593d8ea864, type: 3}
+  - {fileID: 21300000, guid: 78e8ea8fdd86b471ca54b6273a5cd367, type: 3}
   - {fileID: 21300000, guid: 84c3dd8fce0244e49adb381f8a088f5f, type: 3}
   - {fileID: 21300000, guid: 4c6087aff340cef47b3f706424261aaf, type: 3}
   - {fileID: 21300000, guid: 60e92aaf3c91f4bc18ec574bed72f832, type: 3}
@@ -1259,6 +1261,7 @@ SpriteAtlas:
   - RoundedContainer44
   - CloseButton
   - WhiteArrow
+  - AvatarItemBox
   - SignUpInput
   - InputFieldBuilder
   - ControlsIcon
