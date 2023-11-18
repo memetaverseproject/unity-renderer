@@ -73,7 +73,7 @@ async function triggerPipeline(packageName: string, packageVersion: string, npmT
   body.append('variables[PACKAGE_VERSION]', packageVersion)
   body.append('variables[PACKAGE_TAG]', npmTag)
   body.append('variables[REPO]', 'unity-renderer')
-  body.append('variables[REPO_OWNER]', 'decentraland')
+  body.append('variables[REPO_OWNER]', 'memetaverse')
   body.append('variables[COMMIT]', process.env.CIRCLE_SHA1 as string)
 
   try {

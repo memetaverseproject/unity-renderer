@@ -65,8 +65,7 @@ test/out
 .idea
 coverage
 
-static/unity.data
-static/unity.wasm
+static/unity*
 
 # ============================= #
 # Generated / Downloaded scenes #
