@@ -64,7 +64,7 @@ export async function sendAsync(message: RPCSendableMessage): Promise<any> {
   }
 
   if (!isWhitelistedRPC(message)) {
-    throw new Error(`The Ethereum method "${message.method}" is blacklisted on Decentraland Provider`)
+    throw new Error(`The Ethereum method "${message.method}" is blacklisted on Memetaverse Provider`)
   }
 
   lastSentId += 1

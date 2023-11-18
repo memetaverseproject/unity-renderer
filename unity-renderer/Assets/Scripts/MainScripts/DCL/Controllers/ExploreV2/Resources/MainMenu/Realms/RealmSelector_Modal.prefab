@@ -1183,7 +1183,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Decentraland servers are run by the community. Each server is an independent
+  m_text: Memetaverse servers are run by the community. Each server is an independent
     realm. Warp in between them to meet your friends or visit exclusive events in
     dedicated environments.
   m_isRightToLeft: 0
