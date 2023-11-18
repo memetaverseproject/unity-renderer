@@ -1,6 +1,6 @@
-# Decentraland Unity Renderer
+# Memetaverse Unity Renderer
 
-This repository contains the reference implementation of the [decentraland explorer](https://play.memetaverse.club). It includes two main big components, located in the folders:
+This repository contains the reference implementation of the [memetaverse explorer](https://play.memetaverse.club). It includes two main big components, located in the folders:
 
 * `unity-renderer` which contains the main 3D experience and UI
 * `browser-interface` to connect to the different aspects requiring of a web browser, such as connection with a wallet and WebRTC communications

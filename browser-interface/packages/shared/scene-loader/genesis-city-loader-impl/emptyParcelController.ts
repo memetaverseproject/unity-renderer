@@ -25,7 +25,7 @@ export class EmptyParcelController {
 
     const metadata: Scene = {
       display: { title: 'Empty parcel' },
-      contact: { name: 'Decentraland' },
+      contact: { name: 'Memetaverse' },
       owner: '',
       main: `bin/game.js`,
       tags: [],

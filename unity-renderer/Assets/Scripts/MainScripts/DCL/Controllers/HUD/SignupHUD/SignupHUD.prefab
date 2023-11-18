@@ -2008,8 +2008,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "1. Acceptance of Terms\r\n\r\nThe Decentraland Foundation (the \"Foundation\"),
-    acting for the benefit of the Decentraland community as a whole, holds the intellectual
+  m_text: "1. Acceptance of Terms\r\n\r\nThe Memetaverse Foundation (the \"Foundation\"),
+    acting for the benefit of the Memetaverse community as a whole, holds the intellectual
     property rights over, and makes available, (a) the DCL Client, the Desktop Client,
     the SDK 5.0, the Marketplace (https://market.memetaverse.club), the Builder,
     the Blog, Events, Agora, Forum, the Land Manager, the Command Line Interface,
@@ -2029,10 +2029,10 @@ MonoBehaviour:
     of participation issued by the Foundation from time to time. If you do not agree
     to the Terms, then you must not access or use the Tools or the Site.\r\n\r\nAs
     per the endowment received, the Foundation makes available the Tools and the
-    Site free of charge in order to allow different interactions with the Decentraland
-    platform (\"Decentraland\"), a decentralized virtual world. The Foundation does
-    not own or control Decentraland, as ownership and governance is decentralized
-    in the community through the DAO.\r\n\r\nDecentraland is governed by a decentralized
+    Site free of charge in order to allow different interactions with the Memetaverse
+    platform (\"Memetaverse\"), a decentralized virtual world. The Foundation does
+    not own or control Memetaverse, as ownership and governance is decentralized
+    in the community through the DAO.\r\n\r\nMemetaverse is governed by a decentralized
     autonomous organization (the \"DAO\"). For further information please see https://dao.memetaverse.club.\r\n\r\nThe
     Foundation has no continuing obligation to operate the Tools and the Site and
     may cease to operate one or more of the Tools in the future, at its exclusive
@@ -2055,7 +2055,7 @@ MonoBehaviour:
     Eligibility\r\n\r\nYou hereby represent and warrant that you are fully able and
     competent to enter into the terms, conditions, obligations, affirmations, representations
     and warranties set forth in these Terms and to abide by and comply with these
-    Terms. Decentraland is a global platform and by accessing the Content, the Site
+    Terms. Memetaverse is a global platform and by accessing the Content, the Site
     or Tools, you are representing and warranting that you are of the legal age of
     majority in your jurisdiction as is required to access such Tools and Content
     and enter into arrangements as provided by the Tools. You further represent that
@@ -2119,8 +2119,8 @@ MonoBehaviour:
     or covenants concerning any Content contained in or accessed through the Site,
     Tools, and the DAO and/or the Foundation will not be responsible or liable for
     the accuracy, copyright compliance, legality or decency of material contained
-    in or accessed through the Tools. The Content Policy over Decentraland is established
-    and enforced exclusively by the Decentraland community through the DAO.\r\n\r\n5.2
+    in or accessed through the Tools. The Content Policy over Memetaverse is established
+    and enforced exclusively by the Memetaverse community through the DAO.\r\n\r\n5.2
     Sophistication and Risk of Cryptographic Systems\r\n\r\nBy utilizing the Tools,
     the Site or interacting with the Tools or platform or anything contained or provided
     therein in any way, you represent that you understand the inherent risks associated
@@ -2129,7 +2129,7 @@ MonoBehaviour:
     intricacies of native cryptographic tokens, like Ether (ETH) and Bitcoin (BTC),
     smart contract based tokens such as those that follow the Ethereum Token Standard
     (https://github.com/ethereum/EIPs/issues/20), MANA (the ERC-20 token that allows
-    users to claim parcels of LAND and trade with each other within Decentraland),
+    users to claim parcels of LAND and trade with each other within Memetaverse),
     LAND (the ERC-721 token, associating each LAND parcel's x and y coordinates with
     a definition of a parcel's 3D scene that makes up the larger metaverse) and blockchain-based
     software systems.\r\n\r\n5.3 Risk of Regulatory Actions in One or More Jurisdictions\r\n\r\nThe
@@ -2185,7 +2185,7 @@ MonoBehaviour:
     determining what, if any, Taxes apply to your LAND parcel related transactions,
     and any other transaction conducted by you. The Foundation does not, and will
     not, have any insight into or control over any transactions conducted by you
-    in Decentraland, and thus is not responsible for determining the Taxes that apply
+    in Memetaverse, and thus is not responsible for determining the Taxes that apply
     to your transactions entered through the Tools or otherwise involving any LAND
     parcel, or any other related transaction, and is not to act as a withholding
     Tax agent in any circumstances whatsoever.\r\n\r\n5.9 Uses of the Tools\r\n\r\nYou
@@ -2224,7 +2224,7 @@ MonoBehaviour:
     over the amount of MANA involved in such transactions. Such MANA cost will be
     borne by the participants to the transaction. All MANA spent under the Marketplace
     Transaction Cost will be transferred to the treasury of the DAO. Please be aware
-    that transactions in third-party NFT marketplaces (inside or outside Decentraland)
+    that transactions in third-party NFT marketplaces (inside or outside Memetaverse)
     may be subject to the fees charged by said third-party marketplaces as per the
     respective terms and conditions. The Foundation and/or the DAO shall have no
     liability whatsoever with regards to transactions conducted in third-party marketplaces.\r\n\r\n6.4
@@ -2233,7 +2233,7 @@ MonoBehaviour:
     income) now or hereafter claimed or imposed by any governmental authority (collectively,
     \"Taxes\") associated with your use of the Tools (including, without limitation,
     any Taxes that may become payable as the result of your ownership, or transfer
-    of any NFT and any activity conducted by you in Decentraland). Except for income
+    of any NFT and any activity conducted by you in Memetaverse). Except for income
     taxes levied on the Foundation, you: (i) will pay or reimburse the Foundation
     for all national, federal, state, local or other taxes and assessments of any
     jurisdiction, including value added taxes and taxes as required by international
@@ -2344,10 +2344,10 @@ MonoBehaviour:
     OF ANY ISSUES WITH THE BLOCKCHAIN SUPPORTING THE ETHEREUM NETWORK, INCLUDING
     FORKS, TECHNICAL NODE ISSUES, OR ANY OTHER ISSUES HAVING FUND LOSSES AS A RESULT.\r\n\r\n10.9.
     SOME TOOLS, AS THE DESKTOP CLIENT PROVIDES YOU WITH FASTER ACCESS AND INTERACTION
-    WITH DECENTRALAND. THE DOWNLOAD AND USE OF THE DESKTOP CLIENT MAY INCLUDE THE
-    DOWNLOAD OF THE CONTENT CREATED BY THE USERS AND AVAILABLE AT DECENTRALAND TO
+    WITH Memetaverse. THE DOWNLOAD AND USE OF THE DESKTOP CLIENT MAY INCLUDE THE
+    DOWNLOAD OF THE CONTENT CREATED BY THE USERS AND AVAILABLE AT Memetaverse TO
     YOUR DEVICE, WHICH MAY BE ILLEGAL IN YOUR COUNTRY OR OFFENSIVE. THE DAO AND THE
-    FOUNDATION ARE NOT LIABLE FOR SUCH CONTENT. CONTENT AVAILABLE IN DECENTRALAND
+    FOUNDATION ARE NOT LIABLE FOR SUCH CONTENT. CONTENT AVAILABLE IN Memetaverse
     MAY REDIRECT YOU TO THIRD-PARTY LINKS FOR WHICH THE DAO AND/OR THE FOUNDATION
     ARE NOT RESPONSIBLE. YOU ARE SOLELY RESPONSIBLE FOR ALL DOWNLOADS OF THIRD-PARTY
     CONTENT AND DATA, AND FOR ALL THIRD-PARTY LINKS CLICKED ON. PLEASE NOTE THAT
@@ -2380,7 +2380,7 @@ MonoBehaviour:
     Rights\r\n\r\n12.1 All title, ownership and Intellectual Property Rights in and
     to the Site and the Tools are owned exclusively by the Foundation or its licensors.
     The Foundation holds these Intellectual Property Rights for the benefit of the
-    Decentraland community as a whole. You acknowledge and agree that the Site and
+    Memetaverse community as a whole. You acknowledge and agree that the Site and
     Tools contains proprietary and confidential information that is protected by
     applicable intellectual property and other laws. Except as expressly authorized
     in Section 13, you agree not to copy, modify, rent, lease, loan, sell, distribute,
@@ -2485,7 +2485,7 @@ MonoBehaviour:
     of the Content may impose its own terms, conditions and licenses for access and
     use of said Content. You are advised to review any such terms, conditions and
     policies before accessing any such Content. All Content must comply with the
-    Content Policy.\r\n\r\n12.5 The use of Decentraland logo and trademarks are regulated
+    Content Policy.\r\n\r\n12.5 The use of Memetaverse logo and trademarks are regulated
     in the Terms of use available at https://memetaverse.club/brand/\r\n\r\n13. Open
     Source License.\r\n\r\n13.1 Grant of Copyright License.\r\n\r\nSubject to the
     terms and conditions of this License, each Contributor hereby grants to you a
@@ -2546,7 +2546,7 @@ MonoBehaviour:
     have executed with the Foundation and/or its licensors regarding such Contributions.\r\n\r\n13.5
     Trademarks.\r\n\r\nThis License does not grant permission to use the trade names,
     logo, trademarks, service marks, or product names of the licensee and/or its
-    licensors, except as provided in the Terms of Use for Decentraland\xB4s Logo
+    licensors, except as provided in the Terms of Use for Memetaverse\xB4s Logo
     and Name.\r\n\r\n13.6 Disclaimer of Warranty.\r\n\r\nUnless required by applicable
     law or agreed to in writing, the Foundation and/or its licensors provide the
     Work (and each Contributor provides its Contributions) on an \"AS IS\" BASIS,

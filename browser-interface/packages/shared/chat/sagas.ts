@@ -129,7 +129,7 @@ function* handleSendMessage(action: SendMessage) {
       entry = {
         messageType: ChatMessageType.SYSTEM,
         messageId: uuid(),
-        sender: 'Decentraland',
+        sender: 'Memetaverse',
         body: `That command doesn’t exist. Type /help for a full list of commands.`,
         timestamp: Date.now()
       }
@@ -252,7 +252,7 @@ function initChatCommands() {
     return {
       messageId: uuid(),
       messageType: ChatMessageType.SYSTEM,
-      sender: 'Decentraland',
+      sender: 'Memetaverse',
       timestamp: Date.now(),
       body: response
     }
@@ -270,7 +270,7 @@ function initChatCommands() {
     return {
       messageId: uuid(),
       messageType: ChatMessageType.SYSTEM,
-      sender: 'Decentraland',
+      sender: 'Memetaverse',
       timestamp: Date.now(),
       body: response
     }
@@ -288,7 +288,7 @@ function initChatCommands() {
     return {
       messageId: uuid(),
       messageType: ChatMessageType.SYSTEM,
-      sender: 'Decentraland',
+      sender: 'Memetaverse',
       timestamp: Date.now(),
       body: response
     }
@@ -312,7 +312,7 @@ function initChatCommands() {
     return {
       messageId: uuid(),
       messageType: ChatMessageType.SYSTEM,
-      sender: 'Decentraland',
+      sender: 'Memetaverse',
       timestamp: Date.now(),
       body: strings ? `Players around you:\n${strings}` : 'No other players are near to your location'
     }
@@ -338,7 +338,7 @@ function initChatCommands() {
     return {
       messageId: uuid(),
       messageType: ChatMessageType.SYSTEM,
-      sender: 'Decentraland',
+      sender: 'Memetaverse',
       timestamp: Date.now(),
       body: `Your Display Name is ${currentUserProfile.name}.`
     }
@@ -352,7 +352,7 @@ function initChatCommands() {
         return {
           messageId: uuid(),
           messageType: ChatMessageType.SYSTEM,
-          sender: 'Decentraland',
+          sender: 'Memetaverse',
           timestamp: Date.now(),
           body: `Expression ${expression} is not one of ${validExpressions.map((_) => `"${_}"`).join(', ')}`
         }
@@ -370,7 +370,7 @@ function initChatCommands() {
       return {
         messageId: uuid(),
         messageType: ChatMessageType.SYSTEM,
-        sender: 'Decentraland',
+        sender: 'Memetaverse',
         timestamp: Date.now(),
         body: ''
       }
@@ -389,7 +389,7 @@ function initChatCommands() {
       return {
         messageId: uuid(),
         messageType: ChatMessageType.SYSTEM,
-        sender: 'Decentraland',
+        sender: 'Memetaverse',
         timestamp: Date.now(),
         body: `Cannot find user ${userName}`
       }
@@ -429,7 +429,7 @@ function initChatCommands() {
         return {
           messageId: uuid(),
           messageType: ChatMessageType.SYSTEM,
-          sender: 'Decentraland',
+          sender: 'Memetaverse',
           timestamp: Date.now(),
           body: `You cannot ${actionName} yourself.`
         }
@@ -440,7 +440,7 @@ function initChatCommands() {
       return {
         messageId: uuid(),
         messageType: ChatMessageType.SYSTEM,
-        sender: 'Decentraland',
+        sender: 'Memetaverse',
         timestamp: Date.now(),
         body: `You ${pastTense} user ${username}.`
       }
@@ -448,7 +448,7 @@ function initChatCommands() {
       return {
         messageId: uuid(),
         messageType: ChatMessageType.SYSTEM,
-        sender: 'Decentraland',
+        sender: 'Memetaverse',
         timestamp: Date.now(),
         body: `User not found ${JSON.stringify(username)}.`
       }
@@ -477,7 +477,7 @@ function initChatCommands() {
     return {
       messageId: uuid(),
       messageType: ChatMessageType.SYSTEM,
-      sender: 'Decentraland',
+      sender: 'Memetaverse',
       timestamp: Date.now(),
       body:
         `Click on the screen to lock the cursor, later you can unlock it with the [ESC] key.` +
@@ -496,7 +496,7 @@ function initChatCommands() {
     const explorerVersion = getExplorerVersion()
     return {
       messageId: uuid(),
-      sender: 'Decentraland',
+      sender: 'Memetaverse',
       messageType: ChatMessageType.SYSTEM,
       timestamp: Date.now(),
       body: `\nExplorer: ${explorerVersion}\n`
@@ -526,7 +526,7 @@ function initChatCommands() {
     return {
       messageId: uuid(),
       messageType: ChatMessageType.SYSTEM,
-      sender: 'Decentraland',
+      sender: 'Memetaverse',
       timestamp: Date.now(),
       body: 'Looking for other players...'
     }
@@ -537,7 +537,7 @@ function initChatCommands() {
       return {
         messageType: ChatMessageType.SYSTEM,
         messageId: uuid(),
-        sender: 'Decentraland',
+        sender: 'Memetaverse',
         body: `That command doesn’t exist. Type /help for a full list of commands.`,
         timestamp: Date.now()
       }
@@ -546,7 +546,7 @@ function initChatCommands() {
     if (!client) {
       return {
         messageId: uuid(),
-        sender: 'Decentraland',
+        sender: 'Memetaverse',
         messageType: ChatMessageType.SYSTEM,
         timestamp: Date.now(),
         body: 'Error joining/creating channel.'
@@ -558,7 +558,7 @@ function initChatCommands() {
 
     return {
       messageId: uuid(),
-      sender: 'Decentraland',
+      sender: 'Memetaverse',
       messageType: ChatMessageType.SYSTEM,
       timestamp: Date.now(),
       body: `Joining channel ${channelId}`
@@ -570,7 +570,7 @@ function initChatCommands() {
       return {
         messageType: ChatMessageType.SYSTEM,
         messageId: uuid(),
-        sender: 'Decentraland',
+        sender: 'Memetaverse',
         body: `That command doesn’t exist. Type /help for a full list of commands.`,
         timestamp: Date.now()
       }
@@ -579,7 +579,7 @@ function initChatCommands() {
 
     return {
       messageId: uuid(),
-      sender: 'Decentraland',
+      sender: 'Memetaverse',
       messageType: ChatMessageType.SYSTEM,
       timestamp: Date.now(),
       body: `Leaving channel`
@@ -593,7 +593,7 @@ function getDebugPanelMessage() {
 
   return {
     messageId: uuid(),
-    sender: 'Decentraland',
+    sender: 'Memetaverse',
     messageType: ChatMessageType.SYSTEM,
     timestamp: Date.now(),
     body: 'Toggling FPS counter'
@@ -626,7 +626,7 @@ function parseAndSendDetectABMessage(message: string) {
 
   return {
     messageId: uuid(),
-    sender: 'Decentraland',
+    sender: 'Memetaverse',
     messageType: ChatMessageType.SYSTEM,
     timestamp: Date.now(),
     body: 'Sending detect ABs message'

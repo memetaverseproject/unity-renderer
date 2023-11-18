@@ -6,7 +6,7 @@ In this document we are going to explore the main things we look for in a code r
 
 ## What to look for?
 
-Aside of general review guidelines that are applied everywhere, here's a list of needs that are addressed by code reviews and are particularly valued by the Decentraland collaborators. 
+Aside of general review guidelines that are applied everywhere, here's a list of needs that are addressed by code reviews and are particularly valued by the Memetaverse collaborators. 
 
 ### Ensure the general approach of the PR is the proper one
 The reviewer has to ensure that the general approach of the intended change is the proper one. 

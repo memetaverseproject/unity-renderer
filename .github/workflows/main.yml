@@ -7,7 +7,7 @@ on:
 jobs:
   deployment_notification:
     runs-on: ubuntu-latest
-    name: Decentraland Unity-Renderer Deployment Notification
+    name: Memetaverse Unity-Renderer Deployment Notification
     steps:
       - name: Comment PR
         uses: thollander/actions-comment-pull-request@main

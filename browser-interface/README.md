@@ -1,6 +1,6 @@
-# Decentraland Explorer
+# Memetaverse Explorer
 
-This is the [decentraland explorer](https://play.memetaverse.club) official repository.
+This is the [memetaverse explorer](https://play.memetaverse.club) official repository.
 
 This repository covers mainly the Browser Interface component of the explorer product. 
 

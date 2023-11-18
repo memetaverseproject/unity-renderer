@@ -191,5 +191,5 @@ public static class EventsCardsConfigurator
         $"Public, Organized by {eventFromAPI.user_name}";
 
     internal static string FormatEventPlace(EventFromAPIModel eventFromAPI) =>
-        string.IsNullOrEmpty(eventFromAPI.scene_name) ? "Decentraland" : eventFromAPI.scene_name;
+        string.IsNullOrEmpty(eventFromAPI.scene_name) ? "Memetaverse" : eventFromAPI.scene_name;
 }

@@ -1,4 +1,4 @@
-import { createUnsafeIdentity } from '@dcl/crypto/dist/crypto'
+import { createUnsafeIdentity } from '@beland/crypto/dist/crypto'
 import { Vector3 } from '@dcl/ecs-math'
 import { Avatar } from '@beland/schemas'
 import { parseParcelPosition } from 'lib/decentraland/parcels/parseParcelPosition'

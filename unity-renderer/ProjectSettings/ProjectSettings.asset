@@ -279,14 +279,14 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: ea6fac4bffb934ed7bac25adbadc1ad9, type: 3}
+      m_Icon: {fileID: 2800000, guid: e7c3fea207308db7daf0f35bf41db99b, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
   - m_BuildTarget: Standalone
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: ea6fac4bffb934ed7bac25adbadc1ad9, type: 3}
+      m_Icon: {fileID: 0}
       m_Width: 1024
       m_Height: 1024
       m_Kind: 0
@@ -841,12 +841,13 @@ PlayerSettings:
   blurSplashScreenBackground: 1
   spritePackerPolicy: 
   webGLMemorySize: 512
-  webGLExceptionSupport: 1
+  webGLExceptionSupport: 2
   webGLNameFilesAsHashes: 0
   webGLShowDiagnostics: 0
   webGLDataCaching: 0
   webGLDebugSymbols: 1
-  webGLEmscriptenArgs: ' --profiling-funcs '
+  webGLEmscriptenArgs: ' --profiling-funcs -s ALLOW_MEMORY_GROWTH=1 -s MAXIMUM_MEMORY=4GB
+    -s ERROR_ON_UNDEFINED_SYMBOLS=0 '
   webGLModulesDirectory: 
   webGLTemplate: PROJECT:decentraland
   webGLAnalyzeBuildSize: 1

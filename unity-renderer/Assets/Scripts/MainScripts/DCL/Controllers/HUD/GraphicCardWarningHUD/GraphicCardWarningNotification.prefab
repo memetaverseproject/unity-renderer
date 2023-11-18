@@ -416,7 +416,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Your machine is not using a dedicated graphics card to run Decentraland.
+  m_text: Your machine is not using a dedicated graphics card to run Memetaverse.
     This might lead to performance issues. Check your browser and OS configuration
     and restart the experience.
   m_isRightToLeft: 0

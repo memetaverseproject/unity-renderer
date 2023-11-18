@@ -68,7 +68,7 @@ The best way to test the ABs conversion went fine is the following sequence:
 1. Check out the visual test results for each asset at `unity-renderer/unity-renderer/TestResources/VisualTests/CurrentTestImages/`
 2. start a webserver at the asset bundles output folder at port `1338` for example with `npx serve --cors -l 1338` (other options could be `http-server -p 1338` or `python -m SimpleHTTPServer 1338`), to serve those newly created asset bundles
 3. Go back to Unity Editor and select the DebugConfig GameObject in the InitialScene unity scene. Check the "Use Custom Content Server" toggle and make sure the custom content server url is [`http://localhost:1338/`](http://localhost:1338/)
-4. Clear the editor's Asset Bundles cache by going to the menu item at **Decentraland → Clear Asset Bundles Cache**
+4. Clear the editor's Asset Bundles cache by going to the menu item at **Memetaverse → Clear Asset Bundles Cache**
 5. Enter the world running the explorer from the editor, and make sure the pertinent loaded meshes name doesn't say "GLTF:HASH" that way you can make sure it's an asset bundle that's being loaded (the parent of the mesh GameObject may say GLTFShape but that's fine since that's the SDK component name)
 
 ## Pre-process pipeline

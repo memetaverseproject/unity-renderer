@@ -1,5 +1,5 @@
 import { ILogger, createLogger } from 'lib/logger'
-import { Authenticator } from '@dcl/crypto'
+import { Authenticator } from '@beland/crypto'
 import { future } from 'fp-future'
 import { Writer } from 'protobufjs/minimal'
 import { ExplorerIdentity } from 'shared/session/types'

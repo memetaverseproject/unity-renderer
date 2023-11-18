@@ -47,7 +47,7 @@ namespace DCLFeatures.CameraReel.Gallery
 
             view.OnShareToTwitterRequested += () =>
             {
-                var description = "Check out what I'm doing in Decentraland right now and join me!";
+                var description = "Check out what I'm doing in Memetaverse right now and join me!";
                 var url = $"https://reels.memetaverse.club/{picture.id}";
                 var twitterUrl = $"https://twitter.com/intent/tweet?text={description}&hashtags=DCLCamera&url={url}";
 

@@ -6,7 +6,7 @@ import {
   requestMethodToJSON,
   GetSignedHeadersResponse
 } from 'shared/protocol/decentraland/renderer/kernel_services/sign_request.gen'
-import { Authenticator } from '@dcl/crypto/dist/Authenticator'
+import { Authenticator } from '@beland/crypto/dist/Authenticator'
 import { store } from 'shared/store/isolatedStore'
 import { getCurrentIdentity } from 'shared/session/selectors'
 import {getAuthChainSignature, getSignedHeaders} from 'lib/decentraland/authentication/signedFetch'

@@ -1,4 +1,4 @@
-import { Authenticator } from '@dcl/crypto'
+import { Authenticator } from '@beland/crypto'
 import { getSignedHeaders, signedFetch } from 'lib/decentraland/authentication/signedFetch'
 import { ETHEREUM_NETWORK } from 'config'
 import { getSelectedNetwork } from 'shared/dao/selectors'

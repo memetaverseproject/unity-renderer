@@ -4,7 +4,7 @@ import * as rfc5 from 'shared/protocol/decentraland/kernel/comms/rfc5/ws_comms.g
 import { Writer } from 'protobufjs/minimal'
 import { ILogger, createLogger } from 'lib/logger'
 import { ExplorerIdentity } from 'shared/session/types'
-import { Authenticator } from '@dcl/crypto'
+import { Authenticator } from '@beland/crypto'
 import mitt from 'mitt'
 import { CommsAdapterEvents, MinimumCommunicationsAdapter, SendHints } from './types'
 import { createOpusVoiceHandler } from './voice/opusVoiceHandler'

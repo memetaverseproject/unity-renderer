@@ -113,8 +113,8 @@ async function initializeWebRenderer(options: RendererOptions): Promise<Decentra
     frameworkUrl: resolveWithBaseUrl(generatedFiles.frameworkUrl + postfix),
     codeUrl: resolveWithBaseUrl(generatedFiles.codeUrl + postfix),
     streamingAssetsUrl: new URL('StreamingAssets', baseUrl).toString(),
-    companyName: 'Decentraland',
-    productName: 'Decentraland World Client',
+    companyName: 'Memetaverse',
+    productName: 'Memetaverse World Client',
     productVersion: '0.1',
     ...(options.extraConfig || {})
   }
