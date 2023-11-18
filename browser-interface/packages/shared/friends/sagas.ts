@@ -1,5 +1,5 @@
-import type { AuthChain } from '@dcl/crypto'
-import { Authenticator } from '@dcl/crypto'
+import type { AuthChain } from '@beland/crypto'
+import { Authenticator } from '@beland/crypto'
 import {
   FriendRequestInfo,
   FriendshipErrorCode
@@ -1779,7 +1779,7 @@ function* handleJoinOrCreateChannel(action: JoinOrCreateChannel) {
         getUnityInstance().AddMessageToChatWindow({
           messageType: ChatMessageType.SYSTEM,
           messageId: uuid(),
-          sender: 'Decentraland',
+          sender: 'Memetaverse',
           body: `Ups, sorry! It seems you don't have permissions to create a channel.`,
           timestamp: Date.now()
         })

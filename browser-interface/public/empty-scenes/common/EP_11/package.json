@@ -1,7 +1,7 @@
 {
   "name": "4de4f548-e83c-47c4-8dba-72f9c8545c0e",
   "version": "1.0.0",
-  "description": "My new Decentraland project",
+  "description": "My new Memetaverse project",
   "scripts": {
     "start": "dcl start",
     "build": "build-ecs",

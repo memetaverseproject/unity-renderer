@@ -161,14 +161,14 @@ async function createPackageJson() {
         tag: process.env.CIRCLE_TAG,
         commit: process.env.CIRCLE_SHA1,
         branch: process.env.CIRCLE_BRANCH,
-        author: 'Decentraland Contributors',
+        author: 'Memetaverse Contributors',
         license: 'Apache-2.0',
         publishConfig: {
           access: 'public'
         },
         repository: {
           type: 'git',
-          url: 'https://github.com/decentraland/unity-renderer.git'
+          url: 'https://github.com/memetaverseproject/unity-renderer.git'
         }
       },
       null,

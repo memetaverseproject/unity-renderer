@@ -3,13 +3,13 @@
   "main": "index.js",
   "typings": "index.d.ts",
   "version": "1.0.0-development-20200220202020.commit-",
-  "author": "Decentraland Contributors",
+  "author": "Memetaverse Contributors",
   "license": "Apache-2.0",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/decentraland/unity-renderer.git"
+    "url": "https://github.com/memetaverseproject/unity-renderer.git"
   }
 }

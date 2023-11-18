@@ -173,7 +173,7 @@ namespace DCLFeatures.CameraReel.ScreenshotViewer
 
         private void ShareOnTwitter()
         {
-            var description = "Check out what I'm doing in Decentraland right now and join me!";
+            var description = "Check out what I'm doing in Memetaverse right now and join me!";
             var url = $"https://reels.memetaverse.club/{currentScreenshot.id}";
             var twitterUrl = $"https://twitter.com/intent/tweet?text={description}&hashtags=DCLCamera&url={url}";
 

@@ -1,5 +1,5 @@
-import { AuthIdentity, Authenticator } from '@dcl/crypto'
-import { createUnsafeIdentity } from '@dcl/crypto/dist/crypto'
+import { AuthIdentity, Authenticator } from '@beland/crypto'
+import { createUnsafeIdentity } from '@beland/crypto/dist/crypto'
 import * as SingleSignOn from '@dcl/single-sign-on-client'
 import {
   DEBUG_KERNEL_LOG,

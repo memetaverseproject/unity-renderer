@@ -1,4 +1,4 @@
-import { Authenticator } from '@dcl/crypto'
+import { Authenticator } from '@beland/crypto'
 import { ExplorerIdentity } from 'shared/session/types'
 
 const AUTH_CHAIN_HEADER_PREFIX = 'x-identity-auth-chain-'

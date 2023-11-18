@@ -470,30 +470,30 @@ MonoBehaviour:
   tipsText: {fileID: 8432273451817263002}
   tipsImage: {fileID: 1519202232515467586}
   defaultTips:
-  - text: "MANA is Decentraland\u2019s virtual currency, and can be used to buy LAND,
+  - text: "MTV is Memetaverse\u2019s virtual currency, and can be used to buy LAND,
       Wearables for your avatar, and vote on the governance of the project."
     sprite: {fileID: 21300000, guid: c6536212dc1f24674904faa55732f64c, type: 3}
-  - text: You can use the Decentraland Marketplace to buy and sell Decentraland NFTs,
+  - text: You can use the Memetaverse Marketplace to buy and sell Memetaverse NFTs,
       such as a NAME, LAND, Emotes or Wearables for your avatar.
     sprite: {fileID: 21300000, guid: dfb614ec29ae64410a9cb17a66431d03, type: 3}
-  - text: "In the Decentraland Builder, you can manage the scenes on LAND you own,
+  - text: "In the Memetaverse Builder, you can manage the scenes on LAND you own,
       create new Wearables, and manage your Avatar\u2019s NAME."
     sprite: {fileID: 21300000, guid: 8955cba7efb204195bf48ea239760527, type: 3}
-  - text: Do you know the basics of programming? Use the accessible Decentraland
+  - text: Do you know the basics of programming? Use the accessible Memetaverse
       SDK to create interactive scenes and upload them to the decentralized Catalyst
       Network!
     sprite: {fileID: 21300000, guid: 9932402d6a77c484999857fc085618a0, type: 3}
-  - text: 'Decentraland is made up of over 90,000 LANDs: virtual spaces backed by
+  - text: 'Memetaverse is made up of over 90,000 LANDs: virtual spaces backed by
       NFTs. All the content in this virtual world is created by its users!'
     sprite: {fileID: 21300000, guid: 7d674afaaca5844098399b4413b743fa, type: 3}
-  - text: Decentraland is the first virtual world owned by its users. Its network
+  - text: Memetaverse is the first virtual world owned by its users. Its network
       of decentralized servers run by the community host the content (such as 3D
       models and sounds) required to render the world.
     sprite: {fileID: 21300000, guid: 7a23dbd753bf44e2fa14e2860cd16083, type: 3}
   - text: Expand the universe of clothing your avatar can use by getting new Wearable
-      NFTs on the Decentraland Marketplace.
+      NFTs on the Memetaverse Marketplace.
     sprite: {fileID: 21300000, guid: c1e81be26094f46b4b00b853ca617eca, type: 3}
-  - text: The Decentraland DAO (Decentralized Autonomous Organization) is a blockchain-based
+  - text: The Memetaverse DAO (Decentralized Autonomous Organization) is a blockchain-based
       governance mechanism that the community uses to find agreement on the present
       and future of this virtual platform.
     sprite: {fileID: 21300000, guid: 7a23dbd753bf44e2fa14e2860cd16083, type: 3}
@@ -1120,7 +1120,7 @@ GameObject:
   - component: {fileID: 7667520720730113191}
   - component: {fileID: 7413004321553603315}
   m_Layer: 5
-  m_Name: DecentralandLogo
+  m_Name: MemetaverseLogo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

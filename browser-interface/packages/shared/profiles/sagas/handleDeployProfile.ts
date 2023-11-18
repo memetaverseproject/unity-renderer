@@ -1,4 +1,4 @@
-import { Authenticator } from '@dcl/crypto'
+import { Authenticator } from '@beland/crypto'
 import { hashV1 } from '@dcl/hashing'
 import { Avatar, EntityType, Profile, Snapshots } from '@beland/schemas'
 import {

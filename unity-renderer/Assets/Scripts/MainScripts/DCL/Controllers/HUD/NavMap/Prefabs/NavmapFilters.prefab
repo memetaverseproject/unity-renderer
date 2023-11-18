@@ -2457,7 +2457,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Points of interest are notable locations in Decentraland voted by the community
+  m_text: Points of interest are notable locations in Memetaverse voted by the community
     through the <color=#FF2D55>DAO</color>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a02669827dd9144f39b4b164e753a21a, type: 2}

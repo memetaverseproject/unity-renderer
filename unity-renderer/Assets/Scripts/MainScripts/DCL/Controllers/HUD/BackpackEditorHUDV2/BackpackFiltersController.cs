@@ -58,7 +58,7 @@ namespace DCL.Backpack
                 try
                 {
                     WearableCollectionsAPIData.Collection[] collections = await wearablesCatalogService.GetThirdPartyCollectionsAsync(cancellationToken);
-                    WearableCollectionsAPIData.Collection defaultCollection = new () { urn = DECENTRALAND_COLLECTION_ID, name = "Decentraland" };
+                    WearableCollectionsAPIData.Collection defaultCollection = new () { urn = DECENTRALAND_COLLECTION_ID, name = "Memetaverse" };
 
                     loadedCollections.Clear();
                     loadedCollections.Add(defaultCollection.urn);

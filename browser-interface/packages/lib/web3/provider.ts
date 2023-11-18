@@ -1,4 +1,4 @@
-import { AuthIdentity } from '@dcl/crypto'
+import { AuthIdentity } from '@beland/crypto'
 import { RequestManager } from 'eth-connect'
 import { now } from 'lib/javascript/now'
 
