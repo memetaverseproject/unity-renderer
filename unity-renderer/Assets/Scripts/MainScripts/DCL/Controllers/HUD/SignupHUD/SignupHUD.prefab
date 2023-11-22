@@ -2128,12 +2128,12 @@ MonoBehaviour:
     usage, risks, potential bugs based on novel technology (where applicable), and
     intricacies of native cryptographic tokens, like Ether (ETH) and Bitcoin (BTC),
     smart contract based tokens such as those that follow the Ethereum Token Standard
-    (https://github.com/ethereum/EIPs/issues/20), MANA (the ERC-20 token that allows
+    (https://github.com/ethereum/EIPs/issues/20), MTV (the ERC-20 token that allows
     users to claim parcels of LAND and trade with each other within Memetaverse),
     LAND (the ERC-721 token, associating each LAND parcel's x and y coordinates with
     a definition of a parcel's 3D scene that makes up the larger metaverse) and blockchain-based
     software systems.\r\n\r\n5.3 Risk of Regulatory Actions in One or More Jurisdictions\r\n\r\nThe
-    Foundation, MANA, LAND and ETH could be impacted by one or more regulatory inquiries
+    Foundation, MTV, LAND and ETH could be impacted by one or more regulatory inquiries
     or regulatory action, which could impede or limit your ability to access or use
     the Tools or Ethereum blockchain.\r\n\r\n5.4 Risk of Weaknesses or Exploits in
     the Field of Cryptography\r\n\r\nYou acknowledge and agree that cryptography
@@ -2142,8 +2142,8 @@ MonoBehaviour:
     cryptocurrencies and the Tools, which could result in the theft or loss of your
     cryptographic tokens or property, among other potential consequences. By using
     the Tools you acknowledge and agree to undertake these risks.\r\n\r\n5.5 Use
-    of Crypto Assets\r\n\r\nSome Tools allow the use of MANA, ETH or other similar
-    blockchain technologies. You acknowledge and agree that MANA, Ether and blockchain
+    of Crypto Assets\r\n\r\nSome Tools allow the use of MTV, ETH or other similar
+    blockchain technologies. You acknowledge and agree that MTV, Ether and blockchain
     technologies and associated assets, and other assets are highly volatile due
     to many factors including but not limited to popularity, adoption, speculation,
     regulation, technology and security risks. You also acknowledge and agree that
@@ -2220,9 +2220,9 @@ MonoBehaviour:
     accept that the payment of the Gas Fee is inherent to the nature of the Ethereum
     network and alien to the Foundation or due to the use of the Tools.\r\n\r\n6.3
     As per a DAO\u2019s decision, transactions taking place in the Marketplace will
-    be subject to a 2.5% MANA cost (the \"Marketplace Transaction Cost\") calculated
-    over the amount of MANA involved in such transactions. Such MANA cost will be
-    borne by the participants to the transaction. All MANA spent under the Marketplace
+    be subject to a 2.5% MTV cost (the \"Marketplace Transaction Cost\") calculated
+    over the amount of MTV involved in such transactions. Such MTV cost will be
+    borne by the participants to the transaction. All MTV spent under the Marketplace
     Transaction Cost will be transferred to the treasury of the DAO. Please be aware
     that transactions in third-party NFT marketplaces (inside or outside Memetaverse)
     may be subject to the fees charged by said third-party marketplaces as per the
@@ -2332,12 +2332,12 @@ MonoBehaviour:
     NETWORK. ALL SMART CONTRACTS ARE CONDUCTED AND OCCUR ON THE DECENTRALIZED LEDGER
     WITHIN THE ETHEREUM PLATFORM. THE FOUNDATION HAS NO CONTROL OVER AND MAKES NO
     GUARANTEES OR PROMISES WITH RESPECT TO THE OWNERSHIP RECORD OR SMART CONTRACTS.\r\n\r\n10.7
-    MANA ARE INTANGIBLE DIGITAL ASSETS THAT EXIST ONLY BY VIRTUE OF THE OWNERSHIP
+    MTV ARE INTANGIBLE DIGITAL ASSETS THAT EXIST ONLY BY VIRTUE OF THE OWNERSHIP
     RECORD MAINTAINED IN THE ETHEREUM NETWORK. ALL SMART CONTRACTS ARE CONDUCTED
     AND OCCUR ON THE DECENTRALIZED LEDGER WITHIN THE ETHEREUM PLATFORM. THE FOUNDATION
     HAS NO CONTROL OVER AND MAKE NO GUARANTEES OR PROMISES WITH RESPECT TO THE OWNERSHIP
     RECORD OR SMART CONTRACTS. THE FOUNDATION MAKES NO OFFER OR INVITATION TO ACQUIRE,
-    PURCHASE, TRANSFER, SELL OR OTHERWISE DEAL IN MANA.\r\n\r\n10.8. THE FOUNDATION
+    PURCHASE, TRANSFER, SELL OR OTHERWISE DEAL IN MTV.\r\n\r\n10.8. THE FOUNDATION
     IS NOT RESPONSIBLE FOR LOSSES DUE TO BLOCKCHAIN OR ANY OTHER FEATURES OF THE
     ETHEREUM NETWORK OR THE METAMASK OR OTHER ELECTRONIC WALLET, INCLUDING BUT NOT
     LIMITED TO LATE REPORT BY DEVELOPERS OR REPRESENTATIVES (OR NO REPORT AT ALL)
