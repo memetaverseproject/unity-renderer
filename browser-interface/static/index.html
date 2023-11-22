@@ -136,7 +136,7 @@
         if (qs.has('explorer-branch')) {
           baseUrl = `https://renderer-artifacts.memetaverse.club/branch/${qs.get('explorer-branch')}`
         } else if (qs.has('explorer-version')) {
-          baseUrl = `https://cdn.memetaverse.club/@dcl/explorer/${qs.get('explorer-version')}`
+          baseUrl = `https://cdn.memetaverse.club/@beland/explorer/${qs.get('explorer-version')}`
         }
 
         const kernel = await DecentralandKernel.initKernel({

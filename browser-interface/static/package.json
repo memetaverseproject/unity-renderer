@@ -1,5 +1,5 @@
 {
-  "name": "@dcl/explorer",
+  "name": "@beland/explorer",
   "main": "index.js",
   "typings": "index.d.ts",
   "version": "1.0.0-development-20200220202020.commit-",

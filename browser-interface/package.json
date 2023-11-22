@@ -1,6 +1,6 @@
 {
-  "name": "dcl-kernel",
-  "version": "6.4.2",
+  "name": "@beland/kernel",
+  "version": "1.0.0-development",
   "license": "Apache-2.0",
   "scripts": {
     "start": "make watch",

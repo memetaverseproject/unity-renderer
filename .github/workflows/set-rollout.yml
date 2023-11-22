@@ -25,7 +25,7 @@ jobs:
 
           # Rollout information
           deploymentDomain: "play.memetaverse.club"
-          deploymentName: "@dcl/explorer"
+          deploymentName: "@beland/explorer"
           percentage: 100
 
       - name: set-rollout-today
@@ -43,7 +43,7 @@ jobs:
 
           # Rollout information
           deploymentDomain: "play.memetaverse.club"
-          deploymentName: "@dcl/explorer"
+          deploymentName: "@beland/explorer"
           percentage: 100
 
       - name: set-rollout-org
@@ -61,5 +61,5 @@ jobs:
 
           # Rollout information
           deploymentDomain: "play.memetaverse.club"
-          deploymentName: "@dcl/explorer"
+          deploymentName: "@beland/explorer"
           percentage: 0
