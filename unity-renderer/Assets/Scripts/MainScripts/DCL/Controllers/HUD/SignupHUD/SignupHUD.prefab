@@ -616,8 +616,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8890651973664796486}
   m_HandleRect: {fileID: 4030468191070943104}
   m_Direction: 2
-  m_Value: 0.99999994
-  m_Size: 0.013214337
+  m_Value: 1
+  m_Size: 0.013214339
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2546,8 +2546,8 @@ MonoBehaviour:
     have executed with the Foundation and/or its licensors regarding such Contributions.\r\n\r\n13.5
     Trademarks.\r\n\r\nThis License does not grant permission to use the trade names,
     logo, trademarks, service marks, or product names of the licensee and/or its
-    licensors, except as provided in the Terms of Use for Memetaverse\xB4s Logo
-    and Name.\r\n\r\n13.6 Disclaimer of Warranty.\r\n\r\nUnless required by applicable
+    licensors, except as provided in the Terms of Use for Memetaverse\xB4s Logo and
+    Name.\r\n\r\n13.6 Disclaimer of Warranty.\r\n\r\nUnless required by applicable
     law or agreed to in writing, the Foundation and/or its licensors provide the
     Work (and each Contributor provides its Contributions) on an \"AS IS\" BASIS,
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including,
@@ -3409,7 +3409,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: -248.74915}
+  m_SizeDelta: {x: 115.46179, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9164550496647836826
 CanvasRenderer:
@@ -3461,8 +3461,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86710e43de46f6f4bac7c8e50813a599, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AspectMode: 2
-  m_AspectRatio: 4
+  m_AspectMode: 1
+  m_AspectRatio: 4.75
 --- !u!1 &4998507799658168344
 GameObject:
   m_ObjectHideFlags: 0
