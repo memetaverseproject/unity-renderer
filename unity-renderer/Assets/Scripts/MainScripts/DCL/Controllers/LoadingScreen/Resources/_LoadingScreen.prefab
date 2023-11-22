@@ -1985,6 +1985,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
+      objectReference: {fileID: 11400000, guid: 8702017a23a29458b9cd2271e65081d4,
+        type: 2}
+    - target: {fileID: 316622536944760797, guid: 97e9067bfed47423b9e491675f0c6d06,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 608093966221723960, guid: 97e9067bfed47423b9e491675f0c6d06,
         type: 3}
@@ -2005,6 +2011,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
+      objectReference: {fileID: 11400000, guid: 8702017a23a29458b9cd2271e65081d4,
+        type: 2}
+    - target: {fileID: 2441657625429816719, guid: 97e9067bfed47423b9e491675f0c6d06,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5219746172366103467, guid: 97e9067bfed47423b9e491675f0c6d06,
         type: 3}
