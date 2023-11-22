@@ -3153,7 +3153,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Buy MANA
+  m_text: 'Buy MTV
 
 '
   m_isRightToLeft: 0
@@ -7060,7 +7060,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Buy Polygon MANA
+  m_text: 'Buy U2U MTV
 
 '
   m_isRightToLeft: 0
