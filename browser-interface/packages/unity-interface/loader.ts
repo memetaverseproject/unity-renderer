@@ -102,8 +102,8 @@ async function initializeWebRenderer(options: RendererOptions): Promise<Decentra
   // only assets deployed to DCL's CDN, the @dcl/cdn-uploader takes care of that compression
   // this optimization is important, please do not remove
   const enableBrotli =
-    baseUrl.startsWith('https://renderer-artifacts.decentraland.org') ||
-    baseUrl.startsWith('https://cdn.decentraland.org') ||
+    baseUrl.startsWith('https://renderer-artifacts.memetaverse.club') ||
+    baseUrl.startsWith('https://cdn.memetaverse.club') ||
     false
 
   const postfix = enableBrotli ? '.br' : ''
@@ -113,8 +113,8 @@ async function initializeWebRenderer(options: RendererOptions): Promise<Decentra
     frameworkUrl: resolveWithBaseUrl(generatedFiles.frameworkUrl + postfix),
     codeUrl: resolveWithBaseUrl(generatedFiles.codeUrl + postfix),
     streamingAssetsUrl: new URL('StreamingAssets', baseUrl).toString(),
-    companyName: 'Decentraland',
-    productName: 'Decentraland World Client',
+    companyName: 'Memetaverse',
+    productName: 'Memetaverse World Client',
     productVersion: '0.1',
     ...(options.extraConfig || {})
   }

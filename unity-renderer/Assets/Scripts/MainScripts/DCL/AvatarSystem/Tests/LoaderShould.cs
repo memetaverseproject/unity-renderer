@@ -20,18 +20,18 @@ namespace Test.AvatarSystem
 {
     public class LoaderShould
     {
-        private const string FEMALE_ID = "urn:decentraland:off-chain:base-avatars:BaseFemale";
-        private const string EYES_ID = "urn:decentraland:off-chain:base-avatars:f_eyes_00";
-        private const string EYEBROWS_ID = "urn:decentraland:off-chain:base-avatars:f_eyebrows_00";
-        private const string MOUTH_ID = "urn:decentraland:off-chain:base-avatars:f_mouth_00";
+        private const string FEMALE_ID = "urn:memetaverse:off-chain:base-avatars:BaseFemale";
+        private const string EYES_ID = "urn:memetaverse:off-chain:base-avatars:f_eyes_00";
+        private const string EYEBROWS_ID = "urn:memetaverse:off-chain:base-avatars:f_eyebrows_00";
+        private const string MOUTH_ID = "urn:memetaverse:off-chain:base-avatars:f_mouth_00";
         private static readonly string[] WEARABLE_IDS = new[]
         {
-            "urn:decentraland:off-chain:base-avatars:black_sun_glasses",
-            "urn:decentraland:off-chain:base-avatars:bear_slippers",
-            "urn:decentraland:off-chain:base-avatars:hair_anime_01",
-            "urn:decentraland:off-chain:base-avatars:f_african_leggins",
-            "urn:decentraland:off-chain:base-avatars:blue_bandana",
-            "urn:decentraland:off-chain:base-avatars:bee_t_shirt"
+            "urn:memetaverse:off-chain:base-avatars:black_sun_glasses",
+            "urn:memetaverse:off-chain:base-avatars:bear_slippers",
+            "urn:memetaverse:off-chain:base-avatars:hair_anime_01",
+            "urn:memetaverse:off-chain:base-avatars:f_african_leggins",
+            "urn:memetaverse:off-chain:base-avatars:blue_bandana",
+            "urn:memetaverse:off-chain:base-avatars:bee_t_shirt"
         };
 
         private IWearableLoaderFactory wearableLoaderFactory;

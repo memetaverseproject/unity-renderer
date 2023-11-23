@@ -25,7 +25,7 @@ namespace DCLServices.Lambdas.Tests
             public int value = 3;
         }
 
-        private const string TEST_URL = "https://peer.decentraland.org/lambd2";
+        private const string TEST_URL = "https://testnet-peer.memetaverse.club/lambd2";
         private const string END_POINT = "testEndpoint";
 
         private LambdasService lambdasService;

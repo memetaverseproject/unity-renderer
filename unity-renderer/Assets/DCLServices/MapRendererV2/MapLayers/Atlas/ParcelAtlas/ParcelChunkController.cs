@@ -11,7 +11,7 @@ namespace DCLServices.MapRendererV2.MapLayers.Atlas
     public class ParcelChunkController : IChunkController
     {
         private const int PIXELS_PER_UNIT = 50;
-        private const string CHUNKS_API = "https://api.decentraland.org/v1/map.png";
+        private const string CHUNKS_API = "https://testnet-api.memetaverse.club/v1/map.png";
 
         private readonly SpriteRenderer spriteRenderer;
 

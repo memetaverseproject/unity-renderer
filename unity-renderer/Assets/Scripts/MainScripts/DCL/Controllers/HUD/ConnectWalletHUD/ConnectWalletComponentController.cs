@@ -5,7 +5,7 @@ namespace DCL.Guests.HUD.ConnectWallet
 {
     public class ConnectWalletComponentController : IDisposable
     {
-        private const string HELP_URL = "https://docs.decentraland.org/player/blockchain-integration/get-a-wallet/";
+        private const string HELP_URL = "https://docs.memetaverse.club/player/blockchain-integration/get-a-wallet/";
 
         private readonly IConnectWalletComponentView connectWalletView;
         private readonly IBrowserBridge browserBridge;

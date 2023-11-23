@@ -1,4 +1,4 @@
-import type { Avatar } from '@dcl/schemas'
+import type { Avatar } from '@beland/schemas'
 import { call, select, takeLatest } from 'redux-saga/effects'
 import { AvatarMessageType } from 'shared/comms/interface/types'
 import { avatarMessageObservable } from 'shared/comms/peers'

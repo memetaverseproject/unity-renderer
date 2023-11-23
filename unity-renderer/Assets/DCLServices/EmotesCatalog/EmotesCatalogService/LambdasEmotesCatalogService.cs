@@ -40,7 +40,7 @@ public class LambdasEmotesCatalogService : IEmotesCatalogService
     private CancellationTokenSource addressableCts;
     private int retryCount = 3;
 
-    private string assetBundlesUrl => dataStore.featureFlags.flags.Get().IsFeatureEnabled("ab-new-cdn") ? "https://ab-cdn.decentraland.org/" : "https://content-assets-as-bundle.decentraland.org/";
+    private string assetBundlesUrl => dataStore.featureFlags.flags.Get().IsFeatureEnabled("ab-new-cdn") ? "https://ab-cdn.memetaverse.club/" : "https://content-assets-as-bundle.memetaverse.club/";
 
     public LambdasEmotesCatalogService(IEmotesRequestSource emoteSource,
         IAddressableResourceProvider addressableResourceProvider,
@@ -105,7 +105,7 @@ public class LambdasEmotesCatalogService : IEmotesCatalogService
 
     public async UniTask<WearableItem> RequestEmoteFromBuilderAsync(string emoteId, CancellationToken cancellationToken)
     {
-        const string TEMPLATE_URL = "https://builder-api.decentraland.org/v1/items/:emoteId/";
+        const string TEMPLATE_URL = "https://builder-api.memetaverse.club/v1/items/:emoteId/";
         string url = TEMPLATE_URL.Replace(":emoteId", emoteId);
 
         try
@@ -119,7 +119,7 @@ public class LambdasEmotesCatalogService : IEmotesCatalogService
                 throw new Exception($"The request of wearables from builder '{emoteId}' failed!");
 
             WearableItem wearable = response.data.ToWearableItem(
-                "https://builder-api.decentraland.org/v1/storage/contents/",
+                "https://builder-api.memetaverse.club/v1/storage/contents/",
                 assetBundlesUrl);
 
             if (!wearable.IsEmote()) return null;
@@ -160,7 +160,7 @@ public class LambdasEmotesCatalogService : IEmotesCatalogService
 
     public async UniTask<IReadOnlyList<WearableItem>> RequestOwnedEmotesAsync(string userId, CancellationToken ct = default)
     {
-        const int TIMEOUT = 60;
+        const int TIMEOUT = 2;
         CancellationTokenSource timeoutCTS = new CancellationTokenSource();
         var timeout = timeoutCTS.CancelAfterSlim(TimeSpan.FromSeconds(TIMEOUT));
         var promise = RequestOwnedEmotes(userId);
@@ -253,7 +253,7 @@ public class LambdasEmotesCatalogService : IEmotesCatalogService
 
     public async UniTask<WearableItem> RequestEmoteAsync(string id, CancellationToken ct = default)
     {
-        const int TIMEOUT = 45;
+        const int TIMEOUT = 2;
         CancellationTokenSource timeoutCTS = new CancellationTokenSource();
         var timeout = timeoutCTS.CancelAfterSlim(TimeSpan.FromSeconds(TIMEOUT));
         ct.ThrowIfCancellationRequested();
@@ -350,7 +350,7 @@ public class LambdasEmotesCatalogService : IEmotesCatalogService
     public async UniTask<IReadOnlyList<WearableItem>> RequestEmoteCollectionInBuilderAsync(IEnumerable<string> collectionIds,
         CancellationToken cancellationToken, List<WearableItem> emoteBuffer = null)
     {
-        const string TEMPLATE_URL = "https://builder-api.decentraland.org/v1/collections/:collectionId/items/";
+        const string TEMPLATE_URL = "https://builder-api.memetaverse.club/v1/collections/:collectionId/items/";
 
         var emotes = emoteBuffer ?? new List<WearableItem>();
 
@@ -375,7 +375,7 @@ public class LambdasEmotesCatalogService : IEmotesCatalogService
 
             foreach (BuilderWearable bw in response.data.results)
             {
-                var wearable = bw.ToWearableItem("https://builder-api.decentraland.org/v1/storage/contents/",
+                var wearable = bw.ToWearableItem("https://builder-api.memetaverse.club/v1/storage/contents/",
                     assetBundlesUrl);
                 if (!wearable.IsEmote()) continue;
                 emotes.Add(wearable);

@@ -13,7 +13,7 @@ import type { PortContext } from './context'
 import { CommunicationsControllerServiceDefinition } from 'shared/protocol/decentraland/kernel/apis/communications_controller.gen'
 
 /**
- * The CommunicationsControllerService connects messages from the comms controller with the scenes of Decentraland,
+ * The CommunicationsControllerService connects messages from the comms controller with the scenes of Memetaverse,
  * particularly the `AvatarScene` that hosts the avatars of other players.
  *
  * @param port connection to scene

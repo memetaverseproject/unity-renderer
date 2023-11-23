@@ -20,10 +20,10 @@ namespace Test.AvatarSystem
 {
     public class BodyshapeLoaderShould
     {
-        private const string FEMALE_ID = "urn:decentraland:off-chain:base-avatars:BaseFemale";
-        private const string EYES_ID = "urn:decentraland:off-chain:base-avatars:eyes_00";
-        private const string EYEBROWS_ID = "urn:decentraland:off-chain:base-avatars:eyebrows_00";
-        private const string MOUTH_ID = "urn:decentraland:off-chain:base-avatars:mouth_00";
+        private const string FEMALE_ID = "urn:memetaverse:off-chain:base-avatars:BaseFemale";
+        private const string EYES_ID = "urn:memetaverse:off-chain:base-avatars:eyes_00";
+        private const string EYEBROWS_ID = "urn:memetaverse:off-chain:base-avatars:eyebrows_00";
+        private const string MOUTH_ID = "urn:memetaverse:off-chain:base-avatars:mouth_00";
         private const string WEARABLE_SHADER_PATH = "DCL/Universal Render Pipeline/Lit";
 
         private BodyShapeLoader bodyshapeLoader;

@@ -19,8 +19,8 @@ namespace Test.AvatarSystem
 {
     public class WearableLoaderShould
     {
-        private const string GLASSES_WEARABLE_ID = "urn:decentraland:matic:collections-v2:0x7c688630370a2900960f5ffd7573d2f66f179733:0";
-        private const string EYES_ID = "urn:decentraland:off-chain:base-avatars:eyes_00";
+        private const string GLASSES_WEARABLE_ID = "urn:memetaverse:matic:collections-v2:0x7c688630370a2900960f5ffd7573d2f66f179733:0";
+        private const string EYES_ID = "urn:memetaverse:off-chain:base-avatars:eyes_00";
 
         private WearableLoader loader;
         private IWearableRetriever retriever;

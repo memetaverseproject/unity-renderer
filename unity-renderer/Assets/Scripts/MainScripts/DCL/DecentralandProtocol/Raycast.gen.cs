@@ -73,7 +73,7 @@ namespace DCL.ECSComponents {
 
   #region Messages
   /// <summary>
-  /// The PBRaycast component and PBRaycastResult are defined in https://adr.decentraland.org/adr/ADR-200
+  /// The PBRaycast component and PBRaycastResult are defined in https://adr.memetaverse.club/adr/ADR-200
   ///
   /// The Raycast component allows scenes to request raycasting from the game engine. The results will
   /// be available in a RaycastResult component set later on the same Entity.

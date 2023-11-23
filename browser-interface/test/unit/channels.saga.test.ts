@@ -25,28 +25,28 @@ import {
 } from 'shared/types'
 import sinon from 'sinon'
 import { getUnityInstance } from 'unity-interface/IUnityInterface'
-import { Avatar } from '@dcl/schemas'
+import { Avatar } from '@beland/schemas'
 
 const channelMessages: TextMessage[] = [
   {
     id: '1',
     timestamp: Date.now(),
     text: 'Hi there, how are you?',
-    sender: '@0xa1:decentraland.org',
+    sender: '@0xa1:memetaverse.club',
     status: MessageStatus.READ
   },
   {
     id: '2',
     timestamp: Date.now(),
     text: 'Hi, it is all good',
-    sender: '@0xb1:decentraland.org',
+    sender: '@0xb1:memetaverse.club',
     status: MessageStatus.READ
   },
   {
     id: '3',
     timestamp: Date.now(),
     text: 'Hey folks, great over here.',
-    sender: '@0xc1:decentraland.org',
+    sender: '@0xc1:memetaverse.club',
     status: MessageStatus.READ
   }
 ]

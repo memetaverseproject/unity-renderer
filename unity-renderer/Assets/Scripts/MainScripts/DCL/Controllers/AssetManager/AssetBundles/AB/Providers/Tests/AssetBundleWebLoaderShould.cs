@@ -9,7 +9,7 @@ namespace DCL.Providers.Tests
         [Test]
         public void ComputeVersionedHash()
         {
-            const string CONTENT_URL = "https://content-assets-as-bundle.decentraland.org/v125/";
+            const string CONTENT_URL = "https://content-assets-as-bundle.memetaverse.club/v125/";
             const string HASH = "QmfNvE3nKmahA5emnBnXN2LzydpYncHVz4xy4piw84Er1D";
 
             Assert.AreEqual(Hash128.Compute("v125QmfNvE3nKmahA5emnBnXN2LzydpYncHVz4xy4piw84Er1D"), AssetBundleWebLoader.ComputeHash(CONTENT_URL, HASH));
@@ -18,7 +18,7 @@ namespace DCL.Providers.Tests
         [Test]
         public void ComputeUnversionedHash()
         {
-            const string CONTENT_URL = "https://content-assets-as-bundle.decentraland.org/";
+            const string CONTENT_URL = "https://content-assets-as-bundle.memetaverse.club/";
             const string HASH = "QmfNvE3nKmahA5emnBnXN2LzydpYncHVz4xy4piw84Er1D";
 
             Assert.AreEqual(Hash128.Compute("QmfNvE3nKmahA5emnBnXN2LzydpYncHVz4xy4piw84Er1D"), AssetBundleWebLoader.ComputeHash(CONTENT_URL, HASH));

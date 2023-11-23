@@ -701,8 +701,8 @@ namespace DCL.Backpack
         {
             const int WEARABLE_TOTAL_AMOUNT = 18;
             const string CATEGORY = "shoes";
-            const string ON_CHAIN_COLLECTION = "urn:decentraland:on:chain";
-            const string BASE_OFF_CHAIN_COLLECTION = "urn:decentraland:off-chain:base-avatars:male";
+            const string ON_CHAIN_COLLECTION = "urn:memetaverse:on:chain";
+            const string BASE_OFF_CHAIN_COLLECTION = "urn:memetaverse:off-chain:base-avatars:male";
             const string THIRD_PARTY_COLLECTION = "urn:collections-thirdparty:woah";
             const string NAME = "awesome";
 
@@ -748,7 +748,7 @@ namespace DCL.Backpack
 
             view.OnGoToMarketplace += Raise.Event<Action>();
 
-            browserBridge.Received(1).OpenUrl("https://market.decentraland.org/browse?section=wearables");
+            browserBridge.Received(1).OpenUrl("https://market.memetaverse.club/browse?section=wearables");
         }
 
         [Test]
@@ -764,7 +764,7 @@ namespace DCL.Backpack
 
             view.OnGoToMarketplace += Raise.Event<Action>();
 
-            browserBridge.Received(1).OpenUrl("https://docs.decentraland.org/get-a-wallet");
+            browserBridge.Received(1).OpenUrl("https://docs.memetaverse.club/get-a-wallet");
         }
 
         [UnityTest]

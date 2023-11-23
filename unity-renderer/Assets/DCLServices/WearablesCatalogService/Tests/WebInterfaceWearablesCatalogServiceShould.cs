@@ -83,7 +83,7 @@ namespace DCLServices.WearablesCatalogService
             UniTask.ToCoroutine(async () =>
             {
                 GivenWearableCollectionResponse("BaseWearables",
-                    "urn:decentraland:off-chain:base-avatars",
+                    "urn:memetaverse:off-chain:base-avatars",
                     new[]
                     {
                         GivenValidWearableItem("w1"),
@@ -103,7 +103,7 @@ namespace DCLServices.WearablesCatalogService
         public IEnumerator FailRequestWhenRequestingBaseWearables() =>
             UniTask.ToCoroutine(async () =>
             {
-                GivenWearableCollectionResponseError("BaseWearables", "urn:decentraland:off-chain:base-avatars");
+                GivenWearableCollectionResponseError("BaseWearables", "urn:memetaverse:off-chain:base-avatars");
 
                 try
                 {

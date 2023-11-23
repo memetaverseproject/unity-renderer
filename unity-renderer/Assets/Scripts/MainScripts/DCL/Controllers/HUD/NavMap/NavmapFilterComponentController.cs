@@ -7,7 +7,7 @@ using System;
 
 public class NavmapFilterComponentController : IDisposable
 {
-    private const string DAO_LINK = "https://governance.decentraland.org/";
+    private const string DAO_LINK = "https://governance.memetaverse.club/";
 
     private Service<IMapRenderer> mapRenderer;
     private INavmapFilterComponentView view;

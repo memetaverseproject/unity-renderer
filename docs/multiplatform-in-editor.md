@@ -12,7 +12,7 @@ In Editor it will let you select which platform to launch (through prefab instan
 
 Each platform should only carry the common assets plus their specifics, Therefore the build process will strip whatever is not needed.
 
-You can also simulate these conditions using the top menu `Decentraland/Set Platform`. The assets stripping is performed renaming the root folder of the platform following [Unity's special folder naming](https://docs.unity3d.com/Manual/SpecialFolders.html). Currently all the WebGL specifics is part of the core of the project, so we cannot strip it, but luckily Desktop (and other platforms as VRs) have been built to dealt with this. In the future we will extract all these specifics to a new path `Assets/WebGL` and the core to `Assets/_Common`. So to summarize:
+You can also simulate these conditions using the top menu `Memetaverse/Set Platform`. The assets stripping is performed renaming the root folder of the platform following [Unity's special folder naming](https://docs.unity3d.com/Manual/SpecialFolders.html). Currently all the WebGL specifics is part of the core of the project, so we cannot strip it, but luckily Desktop (and other platforms as VRs) have been built to dealt with this. In the future we will extract all these specifics to a new path `Assets/WebGL` and the core to `Assets/_Common`. So to summarize:
 
 - `Only WebGL`: Would delete everything under `Assets/Desktop` as the CI would do (and in the future any other platform we might have).
 - `Only Desktop`: For now will restore `Assets/Desktop` and nothing else. In the future it should remove an hypothetical `Assets/WebGL` folder or any other platform.

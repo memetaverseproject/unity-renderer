@@ -23,10 +23,10 @@ using Categories = WearableLiterals.Categories;
 public class AvatarEditorHUDController : IHUD
 {
     private const string LOADING_OWNED_WEARABLES_ERROR_MESSAGE = "There was a problem loading your wearables";
-    private const string URL_MARKET_PLACE = "https://market.decentraland.org/browse?section=wearables";
-    private const string URL_GET_A_WALLET = "https://docs.decentraland.org/get-a-wallet";
-    private const string URL_SELL_COLLECTIBLE_GENERIC = "https://market.decentraland.org/account";
-    private const string URL_SELL_SPECIFIC_COLLECTIBLE = "https://market.decentraland.org/contracts/{collectionId}/tokens/{tokenId}";
+    private const string URL_MARKET_PLACE = "https://market.memetaverse.club/browse?section=wearables";
+    private const string URL_GET_A_WALLET = "https://docs.memetaverse.club/get-a-wallet";
+    private const string URL_SELL_COLLECTIBLE_GENERIC = "https://market.memetaverse.club/account";
+    private const string URL_SELL_SPECIFIC_COLLECTIBLE = "https://market.memetaverse.club/contracts/{collectionId}/tokens/{tokenId}";
     private const string THIRD_PARTY_COLLECTIONS_FEATURE_FLAG = "third_party_collections";
     private const int REQUESTS_COOLDOWN_TIME = 60;
     internal const string EQUIP_WEARABLE_METRIC = "equip_wearable";

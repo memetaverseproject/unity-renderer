@@ -54,7 +54,7 @@ public class GPUSkinningVisualTests : VisualTestsBase
         originalCombiner.uploadMeshToGpu = false;
 
         GameObject originalGO = CreateTestGameObject("_Original", new Vector3(8, 0, 8));
-        yield return LoadWearable("urn:decentraland:off-chain:base-avatars:bee_t_shirt", WearableLiterals.BodyShapes.FEMALE, originalGO, originalCombiner);
+        yield return LoadWearable("urn:memetaverse:off-chain:base-avatars:bee_t_shirt", WearableLiterals.BodyShapes.FEMALE, originalGO, originalCombiner);
         Animation originalAnim = originalGO.transform.GetChild(0).gameObject.AddComponent<Animation>();
         originalAnim.AddClip(animationClip, animationClip.name);
         AnimationState originalState = originalAnim.PlayQueued(animationClip.name);
@@ -67,7 +67,7 @@ public class GPUSkinningVisualTests : VisualTestsBase
         gpuSkinningCombiner.prepareMeshForGpuSkinning = true;
 
         GameObject gpuSkinningGO = CreateTestGameObject("_Original", new Vector3(7, 0, 8));
-        yield return LoadWearable("urn:decentraland:off-chain:base-avatars:bee_t_shirt", WearableLiterals.BodyShapes.FEMALE, gpuSkinningGO, gpuSkinningCombiner);
+        yield return LoadWearable("urn:memetaverse:off-chain:base-avatars:bee_t_shirt", WearableLiterals.BodyShapes.FEMALE, gpuSkinningGO, gpuSkinningCombiner);
         Animation gpuSkinningAnim = gpuSkinningGO.transform.GetChild(0).gameObject.AddComponent<Animation>();
         gpuSkinningAnim.AddClip(animationClip, animationClip.name);
         AnimationState gpuSkinningState = gpuSkinningAnim.PlayQueued(animationClip.name);

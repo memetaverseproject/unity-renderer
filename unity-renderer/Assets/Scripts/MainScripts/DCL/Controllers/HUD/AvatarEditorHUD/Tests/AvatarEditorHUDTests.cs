@@ -76,7 +76,7 @@ namespace AvatarEditorHUD_Tests
         [Test]
         public void BeAddedWhenEquiped()
         {
-            var sunglassesId = "urn:decentraland:off-chain:base-avatars:black_sun_glasses";
+            var sunglassesId = "urn:memetaverse:off-chain:base-avatars:black_sun_glasses";
             var sunglasses = wearablesCatalogService.WearablesCatalog.Get(sunglassesId);
 
             controller.WearableClicked(sunglassesId);
@@ -86,9 +86,9 @@ namespace AvatarEditorHUD_Tests
         [Test]
         public void BeReplacedByGeneralReplaces()
         {
-            var sunglassesId = "urn:decentraland:off-chain:base-avatars:black_sun_glasses";
+            var sunglassesId = "urn:memetaverse:off-chain:base-avatars:black_sun_glasses";
             var sunglasses = wearablesCatalogService.WearablesCatalog.Get(sunglassesId);
-            var bandanaId = "urn:decentraland:off-chain:base-avatars:blue_bandana";
+            var bandanaId = "urn:memetaverse:off-chain:base-avatars:blue_bandana";
             var bandana = wearablesCatalogService.WearablesCatalog.Get(bandanaId);
 
             bandana.data.replaces = new[] { sunglasses.data.category };
@@ -102,9 +102,9 @@ namespace AvatarEditorHUD_Tests
         [Test]
         public void NotBeReplacedByWrongGeneralReplaces()
         {
-            var sunglassesId = "urn:decentraland:off-chain:base-avatars:black_sun_glasses";
+            var sunglassesId = "urn:memetaverse:off-chain:base-avatars:black_sun_glasses";
             var sunglasses = wearablesCatalogService.WearablesCatalog.Get(sunglassesId);
-            var bandanaId = "urn:decentraland:off-chain:base-avatars:blue_bandana";
+            var bandanaId = "urn:memetaverse:off-chain:base-avatars:blue_bandana";
             var bandana = wearablesCatalogService.WearablesCatalog.Get(bandanaId);
 
             bandana.data.replaces = new[] { "NonExistentCategory" };
@@ -118,9 +118,9 @@ namespace AvatarEditorHUD_Tests
         [Test]
         public void BeReplacedByOverrideReplaces()
         {
-            var sunglassesId = "urn:decentraland:off-chain:base-avatars:black_sun_glasses";
+            var sunglassesId = "urn:memetaverse:off-chain:base-avatars:black_sun_glasses";
             var sunglasses = wearablesCatalogService.WearablesCatalog.Get(sunglassesId);
-            var bandanaId = "urn:decentraland:off-chain:base-avatars:blue_bandana";
+            var bandanaId = "urn:memetaverse:off-chain:base-avatars:blue_bandana";
             var bandana = wearablesCatalogService.WearablesCatalog.Get(bandanaId);
 
             bandana.GetRepresentation(userProfile.avatar.bodyShape).overrideReplaces = new[] { sunglasses.data.category };
@@ -134,9 +134,9 @@ namespace AvatarEditorHUD_Tests
         [Test]
         public void NotBeReplacedByWrongOverrideReplaces()
         {
-            var sunglassesId = "urn:decentraland:off-chain:base-avatars:black_sun_glasses";
+            var sunglassesId = "urn:memetaverse:off-chain:base-avatars:black_sun_glasses";
             var sunglasses = wearablesCatalogService.WearablesCatalog.Get(sunglassesId);
-            var bandanaId = "urn:decentraland:off-chain:base-avatars:blue_bandana";
+            var bandanaId = "urn:memetaverse:off-chain:base-avatars:blue_bandana";
             var bandana = wearablesCatalogService.WearablesCatalog.Get(bandanaId);
 
             bandana.GetRepresentation(WearableLiterals.BodyShapes.MALE)

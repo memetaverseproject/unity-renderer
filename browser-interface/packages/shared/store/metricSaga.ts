@@ -21,7 +21,7 @@ import {
 } from '../loading/types'
 import { PARCEL_LOADING_STARTED } from 'shared/renderer/types'
 import { INIT_SESSION } from 'shared/session/actions'
-import { Avatar } from '@dcl/schemas'
+import { Avatar } from '@beland/schemas'
 import { getCurrentUserProfile } from 'shared/profiles/selectors'
 import { SAVE_DELTA_PROFILE_REQUEST } from 'shared/profiles/actions'
 

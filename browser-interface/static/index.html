@@ -3,7 +3,7 @@
 
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <title>Decentraland Kernel Debugger</title>
+    <title>Memetaverse Kernel Debugger</title>
     <style>
       html,
       body {
@@ -127,16 +127,16 @@
 
         const DecentralandKernel = globalThis.DecentralandKernel
 
-        if (!DecentralandKernel) throw new Error('DecentralandKernel could not be loaded')
+        if (!DecentralandKernel) throw new Error('MemetaverseKernel could not be loaded')
 
         const explorerBaseUrl = new URL('./', location.toString()).toString()
         let baseUrl = explorerBaseUrl
 
         const qs = new URLSearchParams(document.location.search)
         if (qs.has('explorer-branch')) {
-          baseUrl = `https://renderer-artifacts.decentraland.org/branch/${qs.get('explorer-branch')}`
+          baseUrl = `https://renderer-artifacts.memetaverse.club/branch/${qs.get('explorer-branch')}`
         } else if (qs.has('explorer-version')) {
-          baseUrl = `https://cdn.decentraland.org/@dcl/explorer/${qs.get('explorer-version')}`
+          baseUrl = `https://cdn.memetaverse.club/@beland/explorer/${qs.get('explorer-version')}`
         }
 
         const kernel = await DecentralandKernel.initKernel({
@@ -199,7 +199,7 @@
             kernel.authenticate(globalThis.ethereum, false)
           }
         } else {
-          kernel.authenticate('wss://rpc.decentraland.org/mainnet?project=kernel-local', true)
+          kernel.authenticate('wss://ws-nebulas-testnet.uniultra.xyz', true)
         }
       }
 

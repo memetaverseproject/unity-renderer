@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-    <title>Decentraland Preview</title>
+    <title>Memetaverse Preview</title>
     <style>
       html,
       body {
@@ -628,15 +628,15 @@
         }
 
         if (qs.has('explorer-branch')) {
-          return `https://renderer-artifacts.decentraland.org/branch/${qs.get('explorer-branch')}`
+          return `https://renderer-artifacts.memetaverse.club/branch/${qs.get('explorer-branch')}`
         }
 
         if (qs.has('explorer-version')) {
-          return `https://cdn.decentraland.org/@dcl/explorer/${qs.get('explorer-version')}`
+          return `https://cdn.memetaverse.club/@beland/explorer/${qs.get('explorer-version')}`
         }
 
         // the CLI tool binds @/explorer to a static server serving the contents of
-        // the @dcl/explorer package, it has the same behavior as the CDNs listed
+        // the @beland/explorer package, it has the same behavior as the CDNs listed
         // above
         return new URL('@/explorer', location.toString()).toString()
       }
@@ -645,11 +645,11 @@
         const qs = new URLSearchParams(document.location.search)
 
         if (qs.has('renderer-branch')) {
-          return `https://renderer-artifacts.decentraland.org/branch/${qs.get('renderer-branch')}`
+          return `https://renderer-artifacts.memetaverse.club/branch/${qs.get('renderer-branch')}`
         }
 
         if (qs.has('renderer-version')) {
-          return `https://cdn.decentraland.org/@dcl/explorer/${qs.get('renderer-version')}`
+          return `https://cdn.memetaverse.club/@beland/explorer/${qs.get('renderer-version')}`
         }
       }
 
@@ -663,7 +663,7 @@
         const container = document.getElementById('gameContainer')
         const DecentralandKernel = globalThis.DecentralandKernel
 
-        if (!DecentralandKernel) throw new Error('DecentralandKernel could not be loaded')
+        if (!DecentralandKernel) throw new Error('MemetaverseKernel could not be loaded')
 
         const kernel = await DecentralandKernel.initKernel({
           kernelOptions: {
@@ -740,7 +740,7 @@
             kernel.authenticate(globalThis.ethereum, false)
           }
         } else {
-          kernel.authenticate('wss://rpc.decentraland.org/mainnet?project=cli-preview', true)
+          kernel.authenticate('wss://ws-nebulas-testnet.uniultra.xyz', true)
         }
 
         if (isElectron()) {

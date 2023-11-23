@@ -19,23 +19,23 @@ try {
 const downloadUrls = new Set()
 
 const filterUrn = new Set([
-  "urn:decentraland:off-chain:base-avatars:BaseFemale",
-  "urn:decentraland:off-chain:base-avatars:bun_shoes",
-  "urn:decentraland:off-chain:base-avatars:f_eyebrows_00",
-  "urn:decentraland:off-chain:base-avatars:f_eyes_00",
-  "urn:decentraland:off-chain:base-avatars:f_jeans",
-  "urn:decentraland:off-chain:base-avatars:f_mouth_00",
-  "urn:decentraland:off-chain:base-avatars:f_sweater",
-  "urn:decentraland:off-chain:base-avatars:standard_hair",
+  "urn:memetaverse:off-chain:base-avatars:BaseFemale",
+  "urn:memetaverse:off-chain:base-avatars:bun_shoes",
+  "urn:memetaverse:off-chain:base-avatars:f_eyebrows_00",
+  "urn:memetaverse:off-chain:base-avatars:f_eyes_00",
+  "urn:memetaverse:off-chain:base-avatars:f_jeans",
+  "urn:memetaverse:off-chain:base-avatars:f_mouth_00",
+  "urn:memetaverse:off-chain:base-avatars:f_sweater",
+  "urn:memetaverse:off-chain:base-avatars:standard_hair",
 ])
 
 async function main() {
   const response = await fetch(
-    "https://peer.decentraland.org/lambdas/collections/wearables?collectionId=urn:decentraland:off-chain:base-avatars"
+    "https://testnet-peer.memetaverse.club/lambdas/collections/wearables?collectionId=urn:memetaverse:off-chain:base-avatars"
   )
   if (!response.ok)
     throw new Error(
-      "https://peer.decentraland.org/lambdas/collections/wearables?collectionId=urn:decentraland:off-chain:base-avatars not ok"
+      "https://testnet-peer.memetaverse.club/lambdas/collections/wearables?collectionId=urn:memetaverse:off-chain:base-avatars not ok"
     )
   const catalog = await response.json()
 

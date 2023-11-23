@@ -1,4 +1,4 @@
-import type { Avatar } from '@dcl/schemas'
+import type { Avatar } from '@beland/schemas'
 import { FETCH_REMOTE_PROFILE_RETRIES } from 'config'
 import { generateRandomUserProfile } from 'lib/decentraland/profiles/generateRandomUserProfile'
 import { ensureAvatarCompatibilityFormat } from 'lib/decentraland/profiles/transformations/profileToServerFormat'

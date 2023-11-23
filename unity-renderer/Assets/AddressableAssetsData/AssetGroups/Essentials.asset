@@ -43,18 +43,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d46b1af13bd8fd94eabb1ee09e49475e
-    m_Address: dab.anim
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - TestResources
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 155565c20994e334ea44df2fc77b9097
-    m_Address: tik.anim
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - TestResources
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3484a1b33c5bb0545b5a70bd5b7d65a8
     m_Address: ToSPopupHUD
     m_ReadOnly: 0

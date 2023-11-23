@@ -21,7 +21,7 @@ namespace DCLServices.WorldsAPIService
 
     public class WorldsAPIClient : IWorldsAPIClient
     {
-        private const string BASE_URL = "https://places.decentraland.org/api/worlds";
+        private const string BASE_URL = "https://places.memetaverse.club/api/worlds";
 
         private readonly IWebRequestController webRequestController;
 

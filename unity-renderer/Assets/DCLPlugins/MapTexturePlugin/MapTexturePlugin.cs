@@ -12,8 +12,8 @@ public class MapTexturePlugin : IPlugin
     private readonly IAddressableResourceProvider resourceProvider;
 
     private const int RETRY_TIME = 10;
-    private const string MAIN_TEXTURE_URL = "https://api.decentraland.org/v1/minimap.png";
-    private const string ESTATES_TEXTURE_URL = "https://api.decentraland.org/v1/estatemap.png";
+    private const string MAIN_TEXTURE_URL = "https://testnet-api.memetaverse.club/v1/minimap.png";
+    private const string ESTATES_TEXTURE_URL = "https://testnet-api.memetaverse.club/v1/estatemap.png";
 
     private CancellationTokenSource cts;
 

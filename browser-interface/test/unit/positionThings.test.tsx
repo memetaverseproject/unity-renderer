@@ -1,6 +1,6 @@
 import { expect } from 'chai'
 import { pickWorldSpawnpoint } from 'shared/world/positionThings'
-import { isInsideWorldLimits, Scene } from '@dcl/schemas'
+import { isInsideWorldLimits, Scene } from '@beland/schemas'
 import { Vector3 } from '@dcl/ecs-math'
 import { parcelSize } from 'lib/decentraland'
 

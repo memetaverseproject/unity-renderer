@@ -39,8 +39,8 @@ export async function adapterForRealmConfig(
     scenesUrn: [],
     minimap: {
       enabled: true,
-      dataImage: 'https://api.decentraland.org/v1/minimap.png',
-      estateImage: 'https://api.decentraland.org/v1/estatemap.png'
+      dataImage: 'https://testnet-api.memetaverse.club/v1/minimap.png',
+      estateImage: 'https://testnet-api.memetaverse.club/v1/estatemap.png'
     },
     ...about.configurations
   }
@@ -76,7 +76,7 @@ export function isEns(str: string | undefined): str is `${string}.eth` {
 }
 
 export function dclWorldUrl(dclName: string) {
-  return `https://worlds-content-server.decentraland.org/world/${encodeURIComponent(dclName.toLowerCase())}`
+  return `https://worlds-content-server.memetaverse.club/world/${encodeURIComponent(dclName.toLowerCase())}`
 }
 
 export function realmToConnectionString(realm: IRealmAdapter) {

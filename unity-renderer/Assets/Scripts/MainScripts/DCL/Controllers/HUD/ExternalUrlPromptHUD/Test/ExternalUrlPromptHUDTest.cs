@@ -39,7 +39,7 @@ namespace Tests
         [UnityTest]
         public IEnumerator PromptWhenExternalUrlIsRequested()
         {
-            controller.ProcessOpenUrlRequest(scene, "https://decentraland.org/press");
+            controller.ProcessOpenUrlRequest(scene, "https://memetaverse.club/press");
             Assert.True(controller.view.showHideAnimator.isVisible, "ExternalUrlPromptHUD content should be visible");
             yield break;
         }
@@ -48,7 +48,7 @@ namespace Tests
         [Test]
         public void PromptWhenExternalUrlIsRequestedByRpcService()
         {
-            restrictedActionsContext.OpenExternalUrlPrompt("https://decentraland.org/press", scene.sceneData.sceneNumber);
+            restrictedActionsContext.OpenExternalUrlPrompt("https://memetaverse.club/press", scene.sceneData.sceneNumber);
             Assert.True(controller.view.showHideAnimator.isVisible, "ExternalUrlPromptHUD content should be visible");
         }
 
@@ -74,17 +74,17 @@ namespace Tests
         [UnityTest]
         public IEnumerator RememberTrustedDomains()
         {
-            controller.ProcessOpenUrlRequest(scene, "https://decentraland.org/press");
+            controller.ProcessOpenUrlRequest(scene, "https://memetaverse.club/press");
             Assert.True(controller.view.showHideAnimator.isVisible, "ExternalUrlPromptHUD content should be visible");
 
             controller.view.trustToggle.isOn = true;
             controller.view.continueButton.onClick.Invoke();
             Assert.True(!controller.view.showHideAnimator.isVisible, "ExternalUrlPromptHUD content should NOT be visible");
             Assert.True(controller.trustedDomains.ContainsKey(scene.sceneData.sceneNumber)
-                        && controller.trustedDomains[scene.sceneData.sceneNumber].Contains("decentraland.org"),
+                        && controller.trustedDomains[scene.sceneData.sceneNumber].Contains("memetaverse.club"),
                 "domain not set as trusted");
 
-            controller.ProcessOpenUrlRequest(scene, "https://decentraland.org/press");
+            controller.ProcessOpenUrlRequest(scene, "https://memetaverse.club/press");
             Assert.True(!controller.view.showHideAnimator.isVisible, "ExternalUrlPromptHUD content should NOT be visible cause we trust this domain");
 
             yield break;

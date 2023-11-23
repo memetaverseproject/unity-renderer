@@ -68,7 +68,7 @@ public class QuestsPlugin : IPlugin
         await rpc.EnsureRpc();
         var rpcSignRequest = new RPCSignRequest(rpc);
 
-        AuthedWebSocketClientTransport webSocketClientTransport = new AuthedWebSocketClientTransport(rpcSignRequest, "wss://quests-rpc.decentraland.zone");
+        AuthedWebSocketClientTransport webSocketClientTransport = new AuthedWebSocketClientTransport(rpcSignRequest, "wss://quests-rpc.memetaverse.club");
 
         //TODO Quest Server is not accepting the correct url and by now it needs "/". Change it as soon as QuestServer is ready to have a generic authed WebSocket Client
         await webSocketClientTransport.Connect("/");

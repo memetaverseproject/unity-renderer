@@ -109,8 +109,8 @@ namespace DCL.Wallet
                 catch (Exception)
                 {
                     Debug.LogError(network == TheGraphNetwork.Ethereum ?
-                        "Error requesting Ethereum MANA balance from TheGraph!" :
-                        "Error requesting Polygon MANA balance from TheGraph!");
+                        "Error requesting Ethereum MTV balance from TheGraph!" :
+                        "Error requesting U2U MTV balance from TheGraph!");
                 }
                 finally
                 {

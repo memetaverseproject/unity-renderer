@@ -9,7 +9,7 @@ import { FriendshipAction, AntiSpamConfig, UsersAllowed } from 'shared/types'
  * @param userId a string with the matrixUserId pattern
  *
  * @example
- * from: '@0x1111ada11111:decentraland.org'
+ * from: '@0x1111ada11111:memetaverse.club'
  * to: '0x1111ada11111'
  * */
 export function getUserIdFromMatrix(userId: string) {
@@ -26,14 +26,14 @@ export function getUserIdFromMatrix(userId: string) {
  *
  * @example
  * from: '0x1111ada11111'
- * to: '@0x1111ada11111:decentraland.org'
+ * to: '@0x1111ada11111:memetaverse.club'
  *
  * @example
- * from: '@0x1111ada11111:decentraland.org'
- * to: '@0x1111ada11111:decentraland.org'
+ * from: '@0x1111ada11111:memetaverse.club'
+ * to: '@0x1111ada11111:memetaverse.club'
  * */
 export function getMatrixIdFromUser(userId: string) {
-  const domain = store.getState().friends.client?.getDomain() ?? 'decentraland.org'
+  const domain = store.getState().friends.client?.getDomain() ?? 'memetaverse.club'
   if (userId.startsWith('@') && userId.endsWith(domain)) {
     return userId
   }
@@ -45,7 +45,7 @@ export function getMatrixIdFromUser(userId: string) {
  * @param name a string with the name
  *
  * @example
- * from: '#rapanui:decentraland.zone'
+ * from: '#rapanui:memetaverse.club'
  * to: 'rapanui'
  * */
 export function getNormalizedRoomName(name: string) {

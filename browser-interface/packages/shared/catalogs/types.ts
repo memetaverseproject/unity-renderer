@@ -1,4 +1,4 @@
-import type { EmoteDataADR74 } from '@dcl/schemas'
+import type { EmoteDataADR74 } from '@beland/schemas'
 
 export type Catalog = PartialWearableV2[]
 

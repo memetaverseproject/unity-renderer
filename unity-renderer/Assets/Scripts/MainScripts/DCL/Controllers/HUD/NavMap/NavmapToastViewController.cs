@@ -15,7 +15,7 @@ namespace DCL
 {
     public class NavmapToastViewController : IDisposable, INavmapToastViewController
     {
-        private const string COPY_LINK = "https://play.decentraland.org/?position={0},{1}";
+        private const string COPY_LINK = "https://play.memetaverse.club/?position={0},{1}";
 
         private readonly MinimapMetadata minimapMetadata;
         private readonly NavmapToastView view;
@@ -76,10 +76,10 @@ namespace DCL
 
         private void OpenTwitter(Vector2Int coordinates, string sceneName)
         {
-            var description = $"Check out {sceneName}, a cool place I found in Decentraland!".Replace(" ", "%20");
-            var twitterUrl = $"https://twitter.com/intent/tweet?text={description}&hashtags=DCLPlace&url={string.Format(COPY_LINK, coordinates.x, coordinates.y)}";
+            // var description = $"Check out {sceneName}, a cool place I found in Memetaverse!".Replace(" ", "%20");
+            // var twitterUrl = $"https://twitter.com/intent/tweet?text={description}&hashtags=DCLPlace&url={string.Format(COPY_LINK, coordinates.x, coordinates.y)}";
 
-            browserBridge.OpenUrl(twitterUrl);
+            // browserBridge.OpenUrl(twitterUrl);
         }
 
         private void CopyLink(Vector2Int coordinates)

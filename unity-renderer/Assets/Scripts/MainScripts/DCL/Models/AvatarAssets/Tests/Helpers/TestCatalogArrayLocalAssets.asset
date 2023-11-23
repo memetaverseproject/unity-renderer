@@ -16,7 +16,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: BaseFemale.glb
         contents:
         - key: Avatar_FemaleSkinBase.png
@@ -48,9 +48,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:BaseFemale
+    id: urn:memetaverse:off-chain:base-avatars:BaseFemale
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -65,7 +65,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
         mainFile: BaseMale.glb
         contents:
         - key: Avatar_MaleSkinBase.png
@@ -97,9 +97,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:BaseMale
+    id: urn:memetaverse:off-chain:base-avatars:BaseMale
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -114,7 +114,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
         mainFile: F_Eyewear_BlackSunglasses.glb
         contents:
         - key: AvatarWearables_TX.png
@@ -126,7 +126,7 @@ MonoBehaviour:
         overrideHides: []
         overrideReplaces: []
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: F_Eyewear_BlackSunglasses.glb
         contents:
         - key: AvatarWearables_TX.png
@@ -151,9 +151,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:black_sun_glasses
+    id: urn:memetaverse:off-chain:base-avatars:black_sun_glasses
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -168,7 +168,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
         mainFile: BlueBandana.glb
         contents:
         - key: AvatarWearables_TX.png
@@ -180,7 +180,7 @@ MonoBehaviour:
         overrideHides: []
         overrideReplaces: []
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: BlueBandana.glb
         contents:
         - key: AvatarWearables_TX.png
@@ -208,9 +208,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:blue_bandana
+    id: urn:memetaverse:off-chain:base-avatars:blue_bandana
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -225,7 +225,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
         mainFile: M_Eyes_00.png
         contents:
         - key: M_Eyes_00.png
@@ -246,9 +246,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:eyes_00
+    id: urn:memetaverse:off-chain:base-avatars:eyes_00
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -263,7 +263,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
         mainFile: M_EyeBrows_00.png
         contents:
         - key: M_EyeBrows_00.png
@@ -284,9 +284,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:eyebrows_00
+    id: urn:memetaverse:off-chain:base-avatars:eyebrows_00
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -301,7 +301,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
         mainFile: M_Mouth_00.png
         contents:
         - key: M_Mouth_00.png
@@ -322,9 +322,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:mouth_00
+    id: urn:memetaverse:off-chain:base-avatars:mouth_00
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -339,7 +339,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
         mainFile: M_Hair_Standard_01.glb
         contents:
         - key: AvatarWearables_TX.png
@@ -362,9 +362,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:casual_hair_01
+    id: urn:memetaverse:off-chain:base-avatars:casual_hair_01
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -379,7 +379,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
         mainFile: Beard_01.glb
         contents:
         - key: AvatarWearables_TX.png
@@ -402,9 +402,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:beard
+    id: urn:memetaverse:off-chain:base-avatars:beard
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -419,7 +419,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
         mainFile: M_uBody_Hoodie_01.glb
         contents:
         - key: AvatarWearables_TX.png
@@ -445,9 +445,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:green_hoodie
+    id: urn:memetaverse:off-chain:base-avatars:green_hoodie
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -462,7 +462,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
         mainFile: Sneakers_01.glb
         contents:
         - key: AvatarWearables_TX.png
@@ -477,7 +477,7 @@ MonoBehaviour:
         overrideHides: []
         overrideReplaces: []
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: Sneakers_01.glb
         contents:
         - key: AvatarWearables_TX.png
@@ -505,9 +505,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:sneakers
+    id: urn:memetaverse:off-chain:base-avatars:sneakers
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -522,7 +522,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: F_Eyes_00.png
         contents:
         - key: F_Eyes_00.png
@@ -543,9 +543,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:f_eyes_00
+    id: urn:memetaverse:off-chain:base-avatars:f_eyes_00
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -560,7 +560,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: F_Eyebrows_00.png
         contents:
         - key: F_Eyebrows_00.png
@@ -581,9 +581,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:f_eyebrows_00
+    id: urn:memetaverse:off-chain:base-avatars:f_eyebrows_00
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -598,7 +598,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: F_Mouth_00.png
         contents:
         - key: F_Mouth_00.png
@@ -619,9 +619,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:f_mouth_00
+    id: urn:memetaverse:off-chain:base-avatars:f_mouth_00
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -636,7 +636,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: F_Hair_Standard.glb
         contents:
         - key: AvatarWearables_TX.png.001.png
@@ -659,9 +659,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:standard_hair
+    id: urn:memetaverse:off-chain:base-avatars:standard_hair
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -676,7 +676,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: F_uBody_Sweater_01.glb
         contents:
         - key: AvatarWearables_TX.png
@@ -702,9 +702,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:f_sweater
+    id: urn:memetaverse:off-chain:base-avatars:f_sweater
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -719,7 +719,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: F_lBody_Jeans_01.glb
         contents:
         - key: AvatarWearables_TX.png
@@ -742,9 +742,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:f_jeans
+    id: urn:memetaverse:off-chain:base-avatars:f_jeans
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -759,7 +759,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: F_BunShoes_01.glb
         contents:
         - key: AvatarWearables_TX.png
@@ -785,9 +785,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:bun_shoes
+    id: urn:memetaverse:off-chain:base-avatars:bun_shoes
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -802,7 +802,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: F_Eyebrows_01.png
         contents:
         - key: F_Eyebrows_01.png
@@ -823,9 +823,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:f_eyebrows_01
+    id: urn:memetaverse:off-chain:base-avatars:f_eyebrows_01
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -840,7 +840,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
         mainFile: BearSlippers_01.glb
         contents:
         - key: AvatarWearables_TX.png
@@ -855,7 +855,7 @@ MonoBehaviour:
         overrideHides: []
         overrideReplaces: []
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: BearSlippers_01.glb
         contents:
         - key: AvatarWearables_TX.png
@@ -883,9 +883,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:bear_slippers
+    id: urn:memetaverse:off-chain:base-avatars:bear_slippers
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -900,7 +900,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: F_lBody_AfricanLeggings.glb
         contents:
         - key: AvatarWearables_TX.png
@@ -923,9 +923,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:f_african_leggins
+    id: urn:memetaverse:off-chain:base-avatars:f_african_leggins
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -940,7 +940,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: F_uBody_BeeTShirt.glb
         contents:
         - key: AvatarWearables_TX.png
@@ -966,9 +966,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:bee_t_shirt
+    id: urn:memetaverse:off-chain:base-avatars:bee_t_shirt
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -983,7 +983,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
         mainFile: M_lBody_LongPants_01.glb
         contents:
         - key: AvatarWearables_TX.png
@@ -1009,9 +1009,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:brown_pants
+    id: urn:memetaverse:off-chain:base-avatars:brown_pants
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -1026,7 +1026,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: F_Eyewear_CatStyle.glb
         contents:
         - key: AvatarWearables_TX.png
@@ -1049,9 +1049,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:f_glasses_cat_style
+    id: urn:memetaverse:off-chain:base-avatars:f_glasses_cat_style
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -1066,7 +1066,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: F_Eyebrows_02.png
         contents:
         - key: F_Eyebrows_02.png
@@ -1087,9 +1087,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:f_eyebrows_02
+    id: urn:memetaverse:off-chain:base-avatars:f_eyebrows_02
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -1104,7 +1104,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
         mainFile: M_uBody_Clown.glb
         contents:
         - key: AvatarWearables_TX.png
@@ -1132,9 +1132,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:halloween_2019:sad_clown_upper_body
+    id: urn:memetaverse:off-chain:halloween_2019:sad_clown_upper_body
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -1149,7 +1149,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: F_Eyes_01.png
         contents:
         - key: F_Eyes_01.png
@@ -1173,9 +1173,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:f_eyes_01
+    id: urn:memetaverse:off-chain:base-avatars:f_eyes_01
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -1190,7 +1190,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: dracula_mouth.png
         contents:
         - key: dracula_mouth.png
@@ -1214,9 +1214,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:dracula_mouth
+    id: urn:memetaverse:off-chain:base-avatars:dracula_mouth
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -1231,7 +1231,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
         mainFile: M_EyeBrows_02.png
         contents:
         - key: M_EyeBrows_02.png
@@ -1252,9 +1252,9 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:eyebrows_02
+    id: urn:memetaverse:off-chain:base-avatars:eyebrows_02
     entityId: 
-    baseUrl: https://content.decentraland.org/contents/
+    baseUrl: https://content.memetaverse.club/contents/
     baseUrlBundles: 
     i18n:
     - code: en
@@ -1269,7 +1269,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: Eyewear_Raver.glb
         contents:
         - key: AvatarWearables_Emissive_TX.png
@@ -1287,7 +1287,7 @@ MonoBehaviour:
         overrideHides: []
         overrideReplaces: []
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
         mainFile: Eyewear_Raver.glb
         contents:
         - key: AvatarWearables_Emissive_TX.png
@@ -1323,7 +1323,7 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:ethereum:collections-v1:community_contest:cw_raver_eyewear
+    id: urn:memetaverse:ethereum:collections-v1:community_contest:cw_raver_eyewear
     entityId: 
     baseUrl: 
     baseUrlBundles: 
@@ -1332,7 +1332,7 @@ MonoBehaviour:
       text: Raver Googles
     - code: es
       text: Antiparras de Raver
-    thumbnail: https://peer.decentraland.org/content/contents/QmPe2CPbt9JLdjpoH5sKAy9KYYL8bsYuUm1ddr3ipUMh6n
+    thumbnail: https://testnet-peer.memetaverse.club/content/contents/QmPe2CPbt9JLdjpoH5sKAy9KYYL8bsYuUm1ddr3ipUMh6n
     thumbnailSprite: {fileID: 0}
     rarity: legendary
     description: 
@@ -1340,7 +1340,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
         mainFile: M_niftyblocksmith_boots.glb
         contents:
         - key: M_niftyblocksmith_boots.glb
@@ -1355,7 +1355,7 @@ MonoBehaviour:
         overrideHides: []
         overrideReplaces: []
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: M_niftyblocksmith_boots.glb
         contents:
         - key: M_niftyblocksmith_boots.glb
@@ -1382,14 +1382,14 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:ethereum:collections-v1:dc_niftyblocksmith:blocksmith_feet
+    id: urn:memetaverse:ethereum:collections-v1:dc_niftyblocksmith:blocksmith_feet
     entityId: 
     baseUrl: 
     baseUrlBundles: 
     i18n:
     - code: en
       text: DC Nifty Blocksmith Boots
-    thumbnail: https://peer.decentraland.org/content/contents/QmehBEhwZQmuYaKE1Ck5sazZxcpML8f12cyE2WZusRPBcQ
+    thumbnail: https://testnet-peer.memetaverse.club/content/contents/QmehBEhwZQmuYaKE1Ck5sazZxcpML8f12cyE2WZusRPBcQ
     thumbnailSprite: {fileID: 0}
     rarity: legendary
     description: These boots will leave digital footprints wherever you go
@@ -1397,7 +1397,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
         mainFile: Techtribal_Beast_Mask.glb
         contents:
         - key: DCL-TechTribal-Alphas.png
@@ -1412,7 +1412,7 @@ MonoBehaviour:
         overrideHides: []
         overrideReplaces: []
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: Techtribal_Beast_Mask.glb
         contents:
         - key: DCL-TechTribal-Alphas.png
@@ -1451,7 +1451,7 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:ethereum:collections-v1:tech_tribal_marc0matic:techtribal_beast_mask
+    id: urn:memetaverse:ethereum:collections-v1:tech_tribal_marc0matic:techtribal_beast_mask
     entityId: 
     baseUrl: 
     baseUrlBundles: 
@@ -1460,7 +1460,7 @@ MonoBehaviour:
       text: Tech Tribal Beast Mask
     - code: es
       text: "M\xE1scara de Bestia Tribal de Tecnolog\xEDas"
-    thumbnail: https://peer.decentraland.org/content/contents/Qme3E7qbVmRh51v9CAnXVG5U8yok9jYp8JiSGCxUCESWCq
+    thumbnail: https://testnet-peer.memetaverse.club/content/contents/Qme3E7qbVmRh51v9CAnXVG5U8yok9jYp8JiSGCxUCESWCq
     thumbnailSprite: {fileID: 0}
     rarity: legendary
     description: VR Infused Beast Mask created by Marc0Matic
@@ -1468,7 +1468,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
         mainFile: COLDIE_3D.glb
         contents:
         - key: COLDIE_3D.glb
@@ -1479,7 +1479,7 @@ MonoBehaviour:
         - helmet
         - mask
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: COLDIE_3D.glb
         contents:
         - key: COLDIE_3D.glb
@@ -1502,14 +1502,14 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:matic:collections-v2:0x7c688630370a2900960f5ffd7573d2f66f179733:0
+    id: urn:memetaverse:matic:collections-v2:0x7c688630370a2900960f5ffd7573d2f66f179733:0
     entityId: 
     baseUrl: 
     baseUrlBundles: 
     i18n:
     - code: en
       text: COLDIE 3D shades
-    thumbnail: https://peer-eu1.decentraland.org/content/contents/QmUQkjk13EHRinBDABH4PVNx17xHMuVWVHfY6sQjqPjy7f
+    thumbnail: https://peer-eu1.memetaverse.club/content/contents/QmUQkjk13EHRinBDABH4PVNx17xHMuVWVHfY6sQjqPjy7f
     thumbnailSprite: {fileID: 0}
     rarity: legendary
     description: 'Legendary Coldie 3D shades designed by SugarClub '
@@ -1517,7 +1517,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
         mainFile: warrior.glb
         contents:
         - key: warrior.glb
@@ -1532,7 +1532,7 @@ MonoBehaviour:
         - hair
         overrideReplaces: []
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: warrior.glb
         contents:
         - key: warrior.glb
@@ -1564,14 +1564,14 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:matic:collections-v2:0x3bb75349bfd21176b4e41f8b9afe96b4b86059db:0
+    id: urn:memetaverse:matic:collections-v2:0x3bb75349bfd21176b4e41f8b9afe96b4b86059db:0
     entityId: 
     baseUrl: 
     baseUrlBundles: 
     i18n:
     - code: en
       text: Fire Warrior Face
-    thumbnail: https://peer-eu1.decentraland.org/content/contents/QmZAo85c5kuu9YWLxypwBEf3kF3HXHjQ13GjL7FEi7ZSxE
+    thumbnail: https://peer-eu1.memetaverse.club/content/contents/QmZAo85c5kuu9YWLxypwBEf3kF3HXHjQ13GjL7FEi7ZSxE
     thumbnailSprite: {fileID: 0}
     rarity: legendary
     description: Fire Warrior Face For Battle.
@@ -1579,7 +1579,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
         mainFile: steampunk_jacket_male.glb
         contents:
         - key: Buckle7.png
@@ -1597,7 +1597,7 @@ MonoBehaviour:
         overrideHides: []
         overrideReplaces: []
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: steampunk_corset_female.glb
         contents:
         - key: Buckle7.png
@@ -1634,7 +1634,7 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:ethereum:collections-v1:wonderzone_steampunk:steampunk_jacket
+    id: urn:memetaverse:ethereum:collections-v1:wonderzone_steampunk:steampunk_jacket
     entityId: 
     baseUrl: 
     baseUrlBundles: 
@@ -1643,7 +1643,7 @@ MonoBehaviour:
       text: Steampunk Jacket
     - code: es
       text: Saco formal del Steampunk
-    thumbnail: https://peer.decentraland.org/content/contents/QmZv8xpUbyQgyLyJNKNGUSmXg8pcysjZdBP7hLQngkSCf7
+    thumbnail: https://testnet-peer.memetaverse.club/content/contents/QmZv8xpUbyQgyLyJNKNGUSmXg8pcysjZdBP7hLQngkSCf7
     thumbnailSprite: {fileID: 0}
     rarity: legendary
     description: Elegant Steampunk jacket. Gives a bonus in the WonderMine game.
@@ -1652,7 +1652,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
         mainFile: steampunk_hat_male.glb
         contents:
         - key: SteampunkHatFlat1.png
@@ -1673,7 +1673,7 @@ MonoBehaviour:
         overrideHides: []
         overrideReplaces: []
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
         mainFile: steampunk_hat_female.glb
         contents:
         - key: SteampunkHatFlat1.png
@@ -1711,7 +1711,7 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:ethereum:collections-v1:wonderzone_steampunk:steampunk_hat
+    id: urn:memetaverse:ethereum:collections-v1:wonderzone_steampunk:steampunk_hat
     entityId: 
     baseUrl: 
     baseUrlBundles: 
@@ -1722,7 +1722,7 @@ MonoBehaviour:
       text: Sombrero de Steampunk
     - code: fr
       text: Chapeau haut-de-forme Steampunk
-    thumbnail: https://peer.decentraland.org/content/contents/QmUP7THwKQshPSUAEtczkUwKSEppz4Jgn8tvgbKGN26PCC
+    thumbnail: https://testnet-peer.memetaverse.club/content/contents/QmUP7THwKQshPSUAEtczkUwKSEppz4Jgn8tvgbKGN26PCC
     thumbnailSprite: {fileID: 0}
     rarity: legendary
     description: Steampunk top hat. Gives a bonus in the WonderMine game. Created
@@ -1731,7 +1731,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
         mainFile: steampunk_hat_male.glb
         contents:
         - key: SteampunkHatFlat1.png
@@ -1759,7 +1759,7 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:m_sweater_02
+    id: urn:memetaverse:off-chain:base-avatars:m_sweater_02
     entityId: 
     baseUrl: 
     baseUrlBundles: 
@@ -1770,7 +1770,7 @@ MonoBehaviour:
       text: Sombrero de Steampunk
     - code: fr
       text: Chapeau haut-de-forme Steampunk
-    thumbnail: https://peer.decentraland.org/content/contents/QmUP7THwKQshPSUAEtczkUwKSEppz4Jgn8tvgbKGN26PCC
+    thumbnail: https://testnet-peer.memetaverse.club/content/contents/QmUP7THwKQshPSUAEtczkUwKSEppz4Jgn8tvgbKGN26PCC
     thumbnailSprite: {fileID: 0}
     rarity: legendary
     description: Steampunk top hat. Gives a bonus in the WonderMine game. Created
@@ -1779,7 +1779,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
         mainFile: steampunk_hat_male.glb
         contents:
         - key: SteampunkHatFlat1.png
@@ -1807,7 +1807,7 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:comfortablepants
+    id: urn:memetaverse:off-chain:base-avatars:comfortablepants
     entityId: 
     baseUrl: 
     baseUrlBundles: 
@@ -1818,7 +1818,7 @@ MonoBehaviour:
       text: Sombrero de Steampunk
     - code: fr
       text: Chapeau haut-de-forme Steampunk
-    thumbnail: https://peer.decentraland.org/content/contents/QmUP7THwKQshPSUAEtczkUwKSEppz4Jgn8tvgbKGN26PCC
+    thumbnail: https://testnet-peer.memetaverse.club/content/contents/QmUP7THwKQshPSUAEtczkUwKSEppz4Jgn8tvgbKGN26PCC
     thumbnailSprite: {fileID: 0}
     rarity: legendary
     description: Steampunk top hat. Gives a bonus in the WonderMine game. Created
@@ -1827,7 +1827,7 @@ MonoBehaviour:
   - data:
       representations:
       - bodyShapes:
-        - urn:decentraland:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
         mainFile: steampunk_hat_male.glb
         contents:
         - key: SteampunkHatFlat1.png
@@ -1855,7 +1855,7 @@ MonoBehaviour:
       loop: 0
     emoteDataV0:
       loop: 0
-    id: urn:decentraland:off-chain:base-avatars:soccer_pants
+    id: urn:memetaverse:off-chain:base-avatars:soccer_pants
     entityId: 
     baseUrl: 
     baseUrlBundles: 
@@ -1866,7 +1866,7 @@ MonoBehaviour:
       text: Sombrero de Steampunk
     - code: fr
       text: Chapeau haut-de-forme Steampunk
-    thumbnail: https://peer.decentraland.org/content/contents/QmUP7THwKQshPSUAEtczkUwKSEppz4Jgn8tvgbKGN26PCC
+    thumbnail: https://testnet-peer.memetaverse.club/content/contents/QmUP7THwKQshPSUAEtczkUwKSEppz4Jgn8tvgbKGN26PCC
     thumbnailSprite: {fileID: 0}
     rarity: legendary
     description: Steampunk top hat. Gives a bonus in the WonderMine game. Created

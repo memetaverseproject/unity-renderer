@@ -14,7 +14,7 @@ using UnityEngine.EventSystems;
 
 public class TaskbarHUDController : IHUD
 {
-    private const string INTERCOM_URL = "https://intercom.decentraland.org/";
+    private const string INTERCOM_URL = "https://intercom.memetaverse.club/";
 
     private readonly IChatController chatController;
     private readonly IFriendsController friendsController;

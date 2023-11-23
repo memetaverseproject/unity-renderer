@@ -1,8 +1,8 @@
 import { apply, call, delay, fork, put, race, select, take, takeEvery, takeLatest } from 'redux-saga/effects'
 
 import * as rfc4 from 'shared/protocol/decentraland/kernel/comms/rfc4/comms.gen'
-import { IPFSv2 } from '@dcl/schemas'
-import type { Avatar, Snapshots } from '@dcl/schemas'
+import { IPFSv2 } from '@beland/schemas'
+import type { Avatar, Snapshots } from '@beland/schemas'
 import { genericAvatarSnapshots } from 'lib/decentraland/profiles/transformations/profileToRendererFormat'
 import { signedFetch } from 'lib/decentraland/authentication/signedFetch'
 import { deepEqual } from 'lib/javascript/deepEqual'

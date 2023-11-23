@@ -280,7 +280,7 @@ public class WearableItem
         if (id == null)
             return false;
 
-        return !id.StartsWith("urn:decentraland:off-chain:base-avatars:");
+        return !id.StartsWith("urn:memetaverse:off-chain:base-avatars:");
     }
 
     public bool IsSkin() =>
@@ -389,7 +389,7 @@ public class WearableItem
     //To retrieve this properly first we need the catalyst to send the net of each wearable, not just the ID
     public bool IsInL2()
     {
-        if (id.StartsWith("urn:decentraland:matic") || id.StartsWith("urn:decentraland:mumbai"))
+        if (id.StartsWith("urn:memetaverse:matic") || id.StartsWith("urn:memetaverse:mumbai"))
             return true;
 
         return false;
@@ -416,7 +416,7 @@ public class WearableItem
         if (!IsCollectible())
             return "";
 
-        const string MARKETPLACE = "https://market.decentraland.org/contracts/{0}/items/{1}";
+        const string MARKETPLACE = "https://market.memetaverse.club/contracts/{0}/items/{1}";
         var split = id.Split(":");
 
         if (split.Length < 2)

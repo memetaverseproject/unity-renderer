@@ -1,4 +1,4 @@
-import * as contractInfo from '@dcl/urn-resolver/dist/contracts'
+import * as contractInfo from '@beland/urn-resolver/dist/contracts'
 import { getFeatureFlagEnabled } from 'shared/meta/selectors'
 import { now } from 'lib/javascript/now'
 import { isURL } from 'lib/javascript/isURL'
@@ -16,7 +16,7 @@ export const WORLD_EXPLORER = !PREVIEW
 export const RENDERER_WS = location.search.includes('ws')
 
 // Development
-const ENV_OVERRIDE = location.search.includes('ENV')
+//const ENV_OVERRIDE = location.search.includes('ENV')
 export const GIF_WORKERS = location.search.includes('GIF_WORKERS')
 
 const qs = new URLSearchParams(location.search)
@@ -79,9 +79,9 @@ export const QS_MAX_VISIBLE_PEERS =
   typeof qs.get('MAX_VISIBLE_PEERS') === 'string' ? parseInt(qs.get('MAX_VISIBLE_PEERS')!, 10) : undefined
 
 export const BUILDER_SERVER_URL =
-  ensureSingleString(qs.get('BUILDER_SERVER_URL')) ?? 'https://builder-api.decentraland.org/v1'
+  ensureSingleString(qs.get('BUILDER_SERVER_URL')) ?? 'https://builder-api.memetaverse.club/v1'
 
-const SSO_URL = ensureQueryStringUrl(qs.get('SSO_URL')) ?? 'https://id.decentraland.org'
+const SSO_URL = ensureQueryStringUrl(qs.get('SSO_URL')) ?? 'https://id.memetaverse.club'
 export function getSSOUrl() {
   const sso = new URL(SSO_URL)
   const ssoHost = sso.hostname.split('.').reverse()
@@ -114,7 +114,7 @@ export const PIN_CATALYST = PREVIEW
 
 export const BYPASS_CONTENT_ALLOWLIST = qs.has('BYPASS_CONTENT_ALLOWLIST')
   ? qs.get('BYPASS_CONTENT_ALLOWLIST') === 'true'
-  : PIN_CATALYST || globalThis.location.hostname !== 'play.decentraland.org'
+  : PIN_CATALYST || globalThis.location.hostname !== 'play.memetaverse.club'
 
 const META_CONFIG_URL = ensureSingleString(qs.get('META_CONFIG_URL'))
 
@@ -126,23 +126,22 @@ export const commConfigurations = {
   voiceChatUseHRTF: location.search.includes('VOICE_CHAT_USE_HRTF')
 }
 
-// take address from http://contracts.decentraland.org/addresses.json
+// take address from http://contracts.memetaverse.club/addresses.json
 
 export enum ETHEREUM_NETWORK {
   MAINNET = 'mainnet',
-  SEPOLIA = 'sepolia'
+  NEBULAS = 'nebulas'
 }
 
-const knownTLDs = ['zone', 'org', 'today']
 
 // return one of org zone today
 export function getTLD() {
-  if (ENV_OVERRIDE) {
-    return location.search.match(/ENV=(\w+)/)![1]
-  }
-  const previsionalTld = location.hostname.match(/(\w+)$/)![0]
-  if (knownTLDs.includes(previsionalTld)) return previsionalTld
-  return 'org'
+  // if (ENV_OVERRIDE) {
+  //   return location.search.match(/ENV=(\w+)/)![1]
+  // }
+  // const previsionalTld = location.hostname.match(/(\w+)$/)![0]
+  // if (knownTLDs.includes(previsionalTld)) return previsionalTld
+  return 'club'
 }
 
 export const WITH_FIXED_ITEMS = (qs.get('WITH_ITEMS') && ensureSingleString(qs.get('WITH_ITEMS'))) || ''
@@ -167,28 +166,28 @@ export function getAssetBundlesBaseUrl(network: ETHEREUM_NETWORK): string {
 }
 
 function getDefaultAssetBundlesBaseUrl(network: ETHEREUM_NETWORK): string {
-  const tld = network === ETHEREUM_NETWORK.MAINNET ? 'org' : 'zone'
-  return `https://content-assets-as-bundle.decentraland.${tld}`
+  const tld = network === ETHEREUM_NETWORK.MAINNET ? '' : 'testnet-'
+  return `https://${tld}content-assets-as-bundle.memetaverse.club`
 }
 
 function getNewDefaultAssetBundlesBaseUrl(network: ETHEREUM_NETWORK): string {
-  const tld = network === ETHEREUM_NETWORK.MAINNET ? 'org' : 'zone'
-  return `https://ab-cdn.decentraland.${tld}`
+  const tld = network === ETHEREUM_NETWORK.MAINNET ? '' : 'testnet-'
+  return `https://${tld}ab-cdn..memetaverse.club`
 }
 
 export function getAvatarTextureAPIBaseUrl(network: ETHEREUM_NETWORK): string {
-  const tld = network === ETHEREUM_NETWORK.MAINNET ? 'org' : 'zone'
+  const tld = network === ETHEREUM_NETWORK.MAINNET ? '' : 'testnet-'
   // TODO!: Change this to point to social once the rollout is complete
-  return `https://synapse.decentraland.${tld}/profile-pictures/`
+  return `https://${tld}synapse.memetaverse.club/profile-pictures/`
 }
 
 export function getServerConfigurations(network: ETHEREUM_NETWORK) {
-  const tld = network === ETHEREUM_NETWORK.MAINNET ? 'org' : 'zone'
+  const tld = network === ETHEREUM_NETWORK.MAINNET ? '' : 'testnet-'
 
-  const metaConfigBaseUrl = META_CONFIG_URL || `https://config.decentraland.${tld}/explorer.json`
+  const metaConfigBaseUrl = META_CONFIG_URL || `https://${tld}config.memetaverse.club/explorer.json`
 
   const questsUrl =
-    ensureSingleString(qs.get('QUESTS_SERVER_URL')) ?? `https://quests-api.decentraland.${network ? 'org' : 'io'}`
+    ensureSingleString(qs.get('QUESTS_SERVER_URL')) ?? `https://${tld}quests-api.decentraland.memetaverse.club`
 
   return {
     explorerConfiguration: `${metaConfigBaseUrl}?t=${now()}`,
@@ -203,28 +202,28 @@ function assertValue<T>(val: T | undefined | null): T {
 
 export namespace ethereumConfigurations {
   export const mainnet = {
-    wss: 'wss://rpc.decentraland.org/mainnet',
-    http: 'https://rpc.decentraland.org/mainnet',
-    etherscan: 'https://etherscan.io',
-    names: 'https://api.thegraph.com/subgraphs/name/decentraland/marketplace',
-
-    // contracts
-    LANDProxy: assertValue(contractInfo.mainnet.LANDProxy),
-    EstateProxy: assertValue(contractInfo.mainnet.EstateProxy),
-    CatalystProxy: assertValue(contractInfo.mainnet.CatalystProxy),
-    MANAToken: assertValue(contractInfo.mainnet.MANAToken)
-  }
-  export const sepolia = {
-    wss: 'wss://rpc.decentraland.org/sepolia',
-    http: 'https://rpc.decentraland.org/sepolia',
-    etherscan: 'https://sepolia.etherscan.io',
+    wss: 'wss://ws-nebulas-testnet.uniultra.xyz',
+    http: 'https://rpc-nebulas-testnet.uniultra.xyz',
+    etherscan: 'https://testnet.u2uscan.xyz',
     names: 'https://api.studio.thegraph.com/query/49472/marketplace-sepolia/version/latest',
 
     // contracts
-    LANDProxy: assertValue(contractInfo.sepolia.LANDProxy),
-    EstateProxy: assertValue(contractInfo.sepolia.EstateProxy),
-    CatalystProxy: assertValue(contractInfo.sepolia.Catalyst),
-    MANAToken: assertValue(contractInfo.sepolia.MANAToken)
+    LANDProxy: assertValue(contractInfo.nebulas.Land),
+    EstateProxy: assertValue(contractInfo.nebulas.Estate),
+    CatalystProxy: assertValue(contractInfo.nebulas.Catalyst),
+    MANAToken: assertValue(contractInfo.nebulas.MTVToken)
+  }
+  export const nebulas = {
+    wss: 'wss://ws-nebulas-testnet.uniultra.xyz',
+    http: 'https://rpc-nebulas-testnet.uniultra.xyz',
+    etherscan: 'https://testnet.u2uscan.xyz',
+    names: 'https://api.studio.thegraph.com/query/49472/marketplace-sepolia/version/latest',
+
+    // contracts
+    LANDProxy: assertValue(contractInfo.nebulas.Land),
+    EstateProxy: assertValue(contractInfo.nebulas.Estate),
+    CatalystProxy: assertValue(contractInfo.nebulas.Catalyst),
+    MANAToken: assertValue(contractInfo.nebulas.MTVToken)
   }
 }
 

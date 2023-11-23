@@ -1,5 +1,5 @@
 import type { Vector3 } from 'lib/math/Vector3'
-import { Avatar } from '@dcl/schemas'
+import { Avatar } from '@beland/schemas'
 import { getPerformanceInfo } from '../session/getPerformanceInfo'
 import { ChatMessagePlayerType, ChatMessageType } from '../types'
 

@@ -9,7 +9,7 @@ using Environment = DCL.Environment;
 
 public class GLTFLoadingTestController : MonoBehaviour
 {
-    public string dataTrackingURL = "https://tracking.decentraland.org/track";
+    public string dataTrackingURL = "https://tracking.memetaverse.club/track";
 
     float loadingStartingTime;
 

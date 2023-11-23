@@ -16,8 +16,8 @@ namespace DCL.Backpack
 {
     public class BackpackEmotesSectionController : IBackpackEmotesSectionController
     {
-        private const string URL_SELL_COLLECTIBLE_GENERIC = "https://market.decentraland.org/account";
-        private const string URL_SELL_SPECIFIC_COLLECTIBLE = "https://market.decentraland.org/contracts/{collectionId}/tokens/{tokenId}";
+        private const string URL_SELL_COLLECTIBLE_GENERIC = "https://market.memetaverse.club/account";
+        private const string URL_SELL_SPECIFIC_COLLECTIBLE = "https://market.memetaverse.club/contracts/{collectionId}/tokens/{tokenId}";
 
         public event Action<string> OnNewEmoteAdded;
         public event Action<string> OnEmotePreviewed;

@@ -50,7 +50,7 @@ namespace DCL.Providers
             }
         }
 
-        // According to https://adr.decentraland.org/adr/ADR-11
+        // According to https://adr.memetaverse.club/adr/ADR-11
         // we use /vX for versioning so caching system should respect it
         internal static Hash128 ComputeHash(string contentUrl, string hash)
         {

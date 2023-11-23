@@ -1,6 +1,6 @@
 import { Vector3 } from '@dcl/ecs-math'
 import { QuestForRenderer } from '@dcl/ecs-quests/@dcl/types'
-import { Avatar, ContentMapping } from '@dcl/schemas'
+import { Avatar, ContentMapping } from '@beland/schemas'
 import type { UnityGame } from 'unity-interface/loader'
 import { RENDERER_WS, RESET_TUTORIAL, WORLD_EXPLORER, WSS_ENABLED } from 'config'
 import future, { IFuture } from 'fp-future'
@@ -72,7 +72,7 @@ export class UnityInterface implements IUnityInterface {
 
   public SetTargetHeight(height: number): void {
     // above 2000 is assumed "Match display", below that it is "Normal"
-    // as defined in https://rfc.decentraland.org/adr/ADR-83
+    // as defined in https://rfc.memetaverse.club/adr/ADR-83
     if (height >= 2000) {
       devicePixelRatio = originalPixelRatio
     } else {

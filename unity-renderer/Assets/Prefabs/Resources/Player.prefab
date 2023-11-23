@@ -218,19 +218,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 573743093, guid: bc570f5e94906eb47814191e0beaee7a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.93591976
+      value: 0.941044
       objectReference: {fileID: 0}
     - target: {fileID: 573743093, guid: bc570f5e94906eb47814191e0beaee7a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.29096857
+      value: -0.29256165
       objectReference: {fileID: 0}
     - target: {fileID: 573743093, guid: bc570f5e94906eb47814191e0beaee7a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.18596354
+      value: 0.15913047
       objectReference: {fileID: 0}
     - target: {fileID: 573743093, guid: bc570f5e94906eb47814191e0beaee7a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.06934813
+      value: -0.059341744
       objectReference: {fileID: 0}
     - target: {fileID: 573743094, guid: bc570f5e94906eb47814191e0beaee7a, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
@@ -266,19 +266,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1404322283, guid: bc570f5e94906eb47814191e0beaee7a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8759677
+      value: 0.87989134
       objectReference: {fileID: 0}
     - target: {fileID: 1404322283, guid: bc570f5e94906eb47814191e0beaee7a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.44808954
+      value: -0.4500966
       objectReference: {fileID: 0}
     - target: {fileID: 1404322283, guid: bc570f5e94906eb47814191e0beaee7a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.17553121
+      value: 0.14971584
       objectReference: {fileID: 0}
     - target: {fileID: 1404322283, guid: bc570f5e94906eb47814191e0beaee7a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.032943904
+      value: -0.028098851
       objectReference: {fileID: 0}
     - target: {fileID: 1404322284, guid: bc570f5e94906eb47814191e0beaee7a, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
@@ -294,19 +294,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2072030609, guid: bc570f5e94906eb47814191e0beaee7a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.94109035
+      value: 0.9419929
       objectReference: {fileID: 0}
     - target: {fileID: 2072030609, guid: bc570f5e94906eb47814191e0beaee7a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.32823622
+      value: -0.32855102
       objectReference: {fileID: 0}
     - target: {fileID: 2072030609, guid: bc570f5e94906eb47814191e0beaee7a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.077103294
+      value: 0.06504221
       objectReference: {fileID: 0}
     - target: {fileID: 2072030609, guid: bc570f5e94906eb47814191e0beaee7a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.025788212
+      value: -0.021754226
       objectReference: {fileID: 0}
     - target: {fileID: 2072030610, guid: bc570f5e94906eb47814191e0beaee7a, type: 3}
       propertyPath: m_Lens.m_SensorSize.x
@@ -385,22 +385,27 @@ PrefabInstance:
     - target: {fileID: 1526003882666009685, guid: bc570f5e94906eb47814191e0beaee7a,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9966691
+      value: 0.9976249
       objectReference: {fileID: 0}
     - target: {fileID: 1526003882666009685, guid: bc570f5e94906eb47814191e0beaee7a,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.0063902745
+      value: -0.006396406
       objectReference: {fileID: 0}
     - target: {fileID: 1526003882666009685, guid: bc570f5e94906eb47814191e0beaee7a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.08129993
+      value: 0.06858238
       objectReference: {fileID: 0}
     - target: {fileID: 1526003882666009685, guid: bc570f5e94906eb47814191e0beaee7a,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000521265
+      value: 0.00043972512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3202392186591585866, guid: bc570f5e94906eb47814191e0beaee7a,
+        type: 3}
+      propertyPath: far clip plane
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 3920995719202391552, guid: bc570f5e94906eb47814191e0beaee7a,
         type: 3}
@@ -661,9 +666,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4484426042789304097, guid: 68bb549c9718c7649abcfc45e6ad7190,
         type: 3}
+      propertyPath: maleLocomotions.idle
+      value: 
+      objectReference: {fileID: 7400000, guid: 8e6e455558b293e5ca499276f40015d6, type: 2}
+    - target: {fileID: 4484426042789304097, guid: 68bb549c9718c7649abcfc45e6ad7190,
+        type: 3}
+      propertyPath: maleLocomotions.jump
+      value: 
+      objectReference: {fileID: 7400000, guid: 9ad3ec79e3ceadac3ac8cf6d4a04a24b, type: 2}
+    - target: {fileID: 4484426042789304097, guid: 68bb549c9718c7649abcfc45e6ad7190,
+        type: 3}
+      propertyPath: femaleLocomotions.run
+      value: 
+      objectReference: {fileID: 7400000, guid: 2edb7a086c2bf535bb2c4cfe81c8f120, type: 2}
+    - target: {fileID: 4484426042789304097, guid: 68bb549c9718c7649abcfc45e6ad7190,
+        type: 3}
+      propertyPath: femaleLocomotions.fall
+      value: 
+      objectReference: {fileID: 7400000, guid: 7b08169c12e005c71a7a8291cf12dc43, type: 2}
+    - target: {fileID: 4484426042789304097, guid: 68bb549c9718c7649abcfc45e6ad7190,
+        type: 3}
       propertyPath: femaleLocomotions.idle
       value: 
-      objectReference: {fileID: 7400000, guid: 4fef0b7f5be12aa48a2e9d8facaaa42b, type: 2}
+      objectReference: {fileID: 7400000, guid: d14b2337e11f258528626c9248c11954, type: 2}
+    - target: {fileID: 4484426042789304097, guid: 68bb549c9718c7649abcfc45e6ad7190,
+        type: 3}
+      propertyPath: femaleLocomotions.jump
+      value: 
+      objectReference: {fileID: 7400000, guid: f4da2b170d7185bf385a7ae5e157dcb8, type: 2}
+    - target: {fileID: 4484426042789304097, guid: 68bb549c9718c7649abcfc45e6ad7190,
+        type: 3}
+      propertyPath: femaleLocomotions.walk
+      value: 
+      objectReference: {fileID: 7400000, guid: 01f8ac94ed54390a0b5588a054d5dbfd, type: 2}
     - target: {fileID: 6922703132412175459, guid: 68bb549c9718c7649abcfc45e6ad7190,
         type: 3}
       propertyPath: m_RootOrder

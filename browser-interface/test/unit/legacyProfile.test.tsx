@@ -31,8 +31,8 @@ describe('legacy spec conversion', () => {
         ]
       },
       snapshots: {
-        face256: 'https://s3.amazonaws.com/avatars-storage.decentraland.org/email%7C5d056a5302751940134de62c/face.png',
-        body: 'https://s3.amazonaws.com/avatars-storage.decentraland.org/email%7C5d056a5302751940134de62c/body.png'
+        face256: 'https://s3.amazonaws.com/avatars-storage.memetaverse.club/email%7C5d056a5302751940134de62c/face.png',
+        body: 'https://s3.amazonaws.com/avatars-storage.memetaverse.club/email%7C5d056a5302751940134de62c/body.png'
       }
     }
 
@@ -64,8 +64,8 @@ describe('legacy spec conversion', () => {
         ]
       },
       snapshots: {
-        face256: 'https://s3.amazonaws.com/avatars-storage.decentraland.org/email%7C5d056a5302751940134de62c/face.png',
-        body: 'https://s3.amazonaws.com/avatars-storage.decentraland.org/email%7C5d056a5302751940134de62c/body.png'
+        face256: 'https://s3.amazonaws.com/avatars-storage.memetaverse.club/email%7C5d056a5302751940134de62c/face.png',
+        body: 'https://s3.amazonaws.com/avatars-storage.memetaverse.club/email%7C5d056a5302751940134de62c/body.png'
       }
     }
 

@@ -39,11 +39,11 @@ export function* metaSaga(): any {
 }
 
 async function fetchFeatureFlagsAndVariants(network: ETHEREUM_NETWORK): Promise<FeatureFlagsResult> {
-  const tld = network === ETHEREUM_NETWORK.MAINNET ? 'org' : 'zone'
+  const tld = network === ETHEREUM_NETWORK.MAINNET ? '' : 'testnet-'
 
   const explorerFeatureFlags = PREVIEW
     ? `${rootURLPreviewMode()}/feature-flags/`
-    : `https://feature-flags.decentraland.${tld}`
+    : `https://${tld}feature-flags.memetaverse.club`
 
   const flagsAndVariants = await fetchFlags({ applicationName: 'explorer', featureFlagsUrl: explorerFeatureFlags })
 
@@ -120,9 +120,9 @@ async function fetchMetaConfiguration(network: ETHEREUM_NETWORK): Promise<Partia
       },
       bannedUsers: {},
       synapseUrl:
-        network === ETHEREUM_NETWORK.MAINNET ? 'https://synapse.decentraland.org' : 'https://synapse.decentraland.zone',
+        network === ETHEREUM_NETWORK.MAINNET ? 'https://synapse.memetaverse.club' : 'https://testnet-synapse.memetaverse.club',
       socialServerUrl:
-        network === ETHEREUM_NETWORK.MAINNET ? 'https://social.decentraland.org' : 'https://social.decentraland.zone',
+        network === ETHEREUM_NETWORK.MAINNET ? 'https://social.memetaverse.club' : 'https://testnet-social.memetaverse.club',
       world: {
         pois: []
       }

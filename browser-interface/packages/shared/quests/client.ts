@@ -1,5 +1,5 @@
 import { getServerConfigurations } from 'config'
-import { Authenticator } from '@dcl/crypto'
+import { Authenticator } from '@beland/crypto'
 import { ClientResponse, QuestsClient } from 'dcl-quests-client'
 import { onLoginCompleted } from 'shared/session/onLoginCompleted'
 import { store } from 'shared/store/isolatedStore'

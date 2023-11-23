@@ -94,7 +94,7 @@ namespace DCL
         {
             DataStore.i.textureConfig.gltfMaxSize.Set(TextureCompressionSettings.GLTF_TEX_MAX_SIZE_WEB);
             DataStore.i.textureConfig.generalMaxSize.Set(TextureCompressionSettings.GENERAL_TEX_MAX_SIZE_WEB);
-            DataStore.i.avatarConfig.useHologramAvatar.Set(true);
+            //DataStore.i.avatarConfig.useHologramAvatar.Set(true);
         }
 
         protected virtual void InitializeCommunication()

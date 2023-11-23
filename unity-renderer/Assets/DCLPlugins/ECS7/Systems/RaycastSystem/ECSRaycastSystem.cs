@@ -20,7 +20,7 @@ namespace ECSSystems.ECSRaycastSystem
     /// <summary>
     /// This system executes the needed raycasts on every entity that has a Raycast component and
     /// adds a RaycastResult component to the corresponding raycasting entities, complying with
-    /// ADR-200: https://adr.decentraland.org/adr/ADR-200
+    /// ADR-200: https://adr.memetaverse.club/adr/ADR-200
     /// </summary>
     public class ECSRaycastSystem
     {

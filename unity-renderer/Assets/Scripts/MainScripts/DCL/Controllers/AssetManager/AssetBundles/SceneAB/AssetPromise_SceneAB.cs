@@ -20,7 +20,7 @@ namespace MainScripts.DCL.Controllers.AssetManager.AssetBundles.SceneAB
 
     public class AssetPromise_SceneAB : AssetPromise_WithUrl<Asset_SceneAB>
     {
-        private const string URN_PREFIX = "urn:decentraland:entity:";
+        private const string URN_PREFIX = "urn:memetaverse:entity:";
         private readonly CancellationTokenSource cancellationTokenSource;
         private Service<IWebRequestController> webRequestController;
 

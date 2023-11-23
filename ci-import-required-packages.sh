@@ -10,7 +10,7 @@ else
     packagesFile='requiredPackages-webgl.unitypackage.gpg'
 fi
 
-curl -L "https://renderer-artifacts.decentraland.org/artifacts/${packagesFile}" -o requiredPackages.unitypackage.gpg
+curl -L "https://renderer-artifacts.memetaverse.club/artifacts/${packagesFile}" -o requiredPackages.unitypackage.gpg
 
 gpg --output requiredPackages.unitypackage --decrypt requiredPackages.unitypackage.gpg
 

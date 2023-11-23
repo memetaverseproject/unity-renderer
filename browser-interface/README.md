@@ -1,6 +1,6 @@
-# Decentraland Explorer
+# Memetaverse Explorer
 
-This is the [decentraland explorer](https://play.decentraland.org) official repository.
+This is the [memetaverse explorer](https://play.memetaverse.club) official repository.
 
 This repository covers mainly the Browser Interface component of the explorer product. 
 
@@ -65,7 +65,7 @@ If you get the "missing xcrun" error when trying to run the `make watch` command
 
 When any commit is pushed to a branch on the server, a build is generated and deployed to:
 
-    https://play.decentraland.zone/branch/<branch-name>/index.html
+    https://play.memetaverse.club/branch/<branch-name>/index.html
 
 If the CI succeeds, you can browse to the generated link and test your changes. Bear in mind that any push will kick the CI, and there's no need to create a pull request.
 

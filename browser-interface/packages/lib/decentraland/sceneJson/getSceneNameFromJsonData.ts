@@ -1,4 +1,4 @@
-import { Scene } from '@dcl/schemas'
+import { Scene } from '@beland/schemas'
 
 export function getSceneNameFromJsonData(jsonData?: Scene): string {
   let title = jsonData?.display?.title

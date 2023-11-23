@@ -37,7 +37,7 @@ public class AvatarModel : BaseModel
         {
             id = $"{name}_{id}",
             name = name,
-            bodyShape = "urn:decentraland:off-chain:base-avatars:BaseMale",
+            bodyShape = "urn:memetaverse:off-chain:base-avatars:BaseFemale",
 
             skinColor = new Color(0.800f, 0.608f, 0.467f),
             hairColor = new Color(0.596f, 0.373f, 0.216f),

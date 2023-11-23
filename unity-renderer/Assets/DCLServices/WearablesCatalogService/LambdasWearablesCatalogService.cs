@@ -55,7 +55,7 @@ namespace DCLServices.WearablesCatalogService
         private readonly DataStore dataStore;
         private readonly ICatalyst catalyst;
 
-        private string assetBundlesUrl => featureFlags.Get().IsFeatureEnabled("ab-new-cdn") ? "https://ab-cdn.decentraland.org/" : "https://content-assets-as-bundle.decentraland.org/";
+        private string assetBundlesUrl => featureFlags.Get().IsFeatureEnabled("ab-new-cdn") ? "https://ab-cdn.memetaverse.club/" : "https://content-assets-as-bundle.memetaverse.club/";
 
         private CancellationTokenSource serviceCts;
         private UniTaskCompletionSource<IReadOnlyList<WearableItem>> lastRequestSource;
@@ -143,8 +143,8 @@ namespace DCLServices.WearablesCatalogService
 
             if (IsLocalPreview())
             {
-                explorerUrl = "https://peer.decentraland.org/explorer/";
-                contentUrl = "https://peer.decentraland.org/content/contents/";
+                explorerUrl = "https://testnet-peer.memetaverse.club/explorer/";
+                contentUrl = "https://testnet-peer.memetaverse.club/content/contents/";
             }
             else
             {
@@ -292,7 +292,7 @@ namespace DCLServices.WearablesCatalogService
                 return wearable;
             }
 
-            const string TEMPLATE_URL = "https://builder-api.decentraland.org/v1/items/:wearableId/";
+            const string TEMPLATE_URL = "https://builder-api.memetaverse.club/v1/items/:wearableId/";
             string url = TEMPLATE_URL.Replace(":wearableId", wearableId);
 
             (WearableItemResponseFromBuilder response, bool success) = await lambdasService.GetFromSpecificUrl<WearableItemResponseFromBuilder>(
@@ -306,7 +306,7 @@ namespace DCLServices.WearablesCatalogService
             List<WearableItem> ws = new List<WearableItem>
             {
                 response.data.ToWearableItem(
-                    "https://builder-api.decentraland.org/v1/storage/contents/",
+                    "https://builder-api.memetaverse.club/v1/storage/contents/",
                     assetBundlesUrl),
             };
 
@@ -353,7 +353,7 @@ namespace DCLServices.WearablesCatalogService
         public async UniTask<IReadOnlyList<WearableItem>> RequestWearableCollectionInBuilder(IEnumerable<string> collectionIds,
             CancellationToken cancellationToken, List<WearableItem> collectionBuffer = null)
         {
-            const string TEMPLATE_URL = "https://builder-api.decentraland.org/v1/collections/:collectionId/items/";
+            const string TEMPLATE_URL = "https://builder-api.memetaverse.club/v1/collections/:collectionId/items/";
 
             var wearables = collectionBuffer ?? new List<WearableItem>();
 
@@ -378,7 +378,7 @@ namespace DCLServices.WearablesCatalogService
 
                 List<WearableItem> ws = response.data.results
                                                 .Select(bw => bw.ToWearableItem(
-                                                     "https://builder-api.decentraland.org/v1/storage/contents/",
+                                                     "https://builder-api.memetaverse.club/v1/storage/contents/",
                                                      assetBundlesUrl))
                                                 .Where(bw => !bw.IsEmote())
                                                 .ToList();

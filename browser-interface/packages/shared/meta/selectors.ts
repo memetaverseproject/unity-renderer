@@ -122,10 +122,10 @@ export function getFeatureFlags(store: RootMetaState): FeatureFlag {
 
 export const getSynapseUrl = (store: RootMetaState): string => {
   if (getFeatureFlagEnabled(store, 'use-synapse-server')) {
-    return store.meta.config.synapseUrl ?? 'https://synapse.decentraland.zone'
+    return store.meta.config.synapseUrl ?? 'https://synapse.memetaverse.club'
   }
 
-  const defaultSocialServerUrl = store.meta.config.socialServerUrl ?? 'https://social.decentraland.zone'
+  const defaultSocialServerUrl = store.meta.config.socialServerUrl ?? 'https://social.memetaverse.club'
 
   return SOCIAL_SERVER_URL ?? defaultSocialServerUrl
 }

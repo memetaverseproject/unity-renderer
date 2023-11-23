@@ -42,7 +42,7 @@ public class WearablesVisualTests : VisualTestsBase
     [Category("Visual Tests")]
     public IEnumerator EmissiveWearable()
     {
-        const string EMISSIVE_WEARABLE_ID = "urn:decentraland:ethereum:collections-v1:dc_niftyblocksmith:blocksmith_feet";
+        const string EMISSIVE_WEARABLE_ID = "urn:memetaverse:ethereum:collections-v1:dc_niftyblocksmith:blocksmith_feet";
 
         //Arrange
         VisualTestUtils.RepositionVisualTestsCamera(camera, new Vector3(7.5f, 1.8f, 11), new Vector3(7.5f, 1.75f, 8));
@@ -64,7 +64,7 @@ public class WearablesVisualTests : VisualTestsBase
     [Category("Visual Tests")]
     public IEnumerator AlphaBlendWearable()
     {
-        const string ALPHA_BLEND_WEARABLE_ID = "urn:decentraland:ethereum:collections-v1:community_contest:cw_raver_eyewear";
+        const string ALPHA_BLEND_WEARABLE_ID = "urn:memetaverse:ethereum:collections-v1:community_contest:cw_raver_eyewear";
 
         //Arrange
         VisualTestUtils.RepositionVisualTestsCamera(camera, new Vector3(7.5f, 1.8f, 11), new Vector3(7.5f, 1.75f, 8));
@@ -84,7 +84,7 @@ public class WearablesVisualTests : VisualTestsBase
     [Explicit, Category("Explicit")]
     public IEnumerator AlphaTestWearable()
     {
-        const string ALPHA_TEST_WEARABLE_ID = "urn:decentraland:ethereum:collections-v1:tech_tribal_marc0matic:techtribal_beast_mask";
+        const string ALPHA_TEST_WEARABLE_ID = "urn:memetaverse:ethereum:collections-v1:tech_tribal_marc0matic:techtribal_beast_mask";
 
         //Arrange
         VisualTestUtils.RepositionVisualTestsCamera(camera, new Vector3(8, 1.8f, 9), new Vector3(8, 1.75f, 8));
@@ -105,7 +105,7 @@ public class WearablesVisualTests : VisualTestsBase
     [Category("Visual Tests")]
     public IEnumerator AlphaBlendWearableWithTransparentBaseColor()
     {
-        const string WEARABLE_ID = "urn:decentraland:matic:collections-v2:0x7c688630370a2900960f5ffd7573d2f66f179733:0";
+        const string WEARABLE_ID = "urn:memetaverse:matic:collections-v2:0x7c688630370a2900960f5ffd7573d2f66f179733:0";
 
         //Arrange
         VisualTestUtils.RepositionVisualTestsCamera(camera, new Vector3(8, 1.8f, 9), new Vector3(8, 1.75f, 8));
@@ -127,7 +127,7 @@ public class WearablesVisualTests : VisualTestsBase
     [Category("Visual Tests")]
     public IEnumerator EmissiveWearableWithNoEmissionMap()
     {
-        const string WEARABLE_ID = "urn:decentraland:matic:collections-v2:0x3bb75349bfd21176b4e41f8b9afe96b4b86059db:0";
+        const string WEARABLE_ID = "urn:memetaverse:matic:collections-v2:0x3bb75349bfd21176b4e41f8b9afe96b4b86059db:0";
 
         //Arrange
         VisualTestUtils.RepositionVisualTestsCamera(camera, new Vector3(7.75f, 1.8f, 8.75f), new Vector3(8, 1.75f, 8));
@@ -148,8 +148,8 @@ public class WearablesVisualTests : VisualTestsBase
     [Category("Visual Tests")]
     public IEnumerator SkinAndHairMaterialsAreNotReplacedIncorrectly()
     {
-        const string JACKET_ID = "urn:decentraland:ethereum:collections-v1:wonderzone_steampunk:steampunk_jacket";
-        const string HAT_ID = "urn:decentraland:ethereum:collections-v1:wonderzone_steampunk:steampunk_hat";
+        const string JACKET_ID = "urn:memetaverse:ethereum:collections-v1:wonderzone_steampunk:steampunk_jacket";
+        const string HAT_ID = "urn:memetaverse:ethereum:collections-v1:wonderzone_steampunk:steampunk_hat";
 
         //Arrange
         VisualTestUtils.RepositionVisualTestsCamera(camera, new Vector3(8f, 1.8f, 9.3f), new Vector3(8, 1.75f, 8));

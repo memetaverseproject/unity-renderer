@@ -1,4 +1,4 @@
-import type { Avatar, Outfits } from '@dcl/schemas'
+import type { Avatar, Outfits } from '@beland/schemas'
 import { action } from 'typesafe-actions'
 
 // Profile fetching

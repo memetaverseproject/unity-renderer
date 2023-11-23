@@ -2,7 +2,7 @@
   "name": "com.decentraland.unity-renderer",
   "version": "1.0.0",
   "displayName": "DCL Unity Renderer",
-  "description": "Decentraland Unity Renderer Package",
+  "description": "Memetaverse Unity Renderer Package",
   "unity": "2021.3",
   "unityRelease": "14f1",
   "gitDependencies": {
@@ -64,12 +64,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/decentraland/unity-renderer.git?path=desktop#desktop"
+    "url": "git+https://github.com/memetaverseproject/unity-renderer.git?path=desktop#desktop"
   },
   "keywords": [],
   "author": {
-    "name": "Decentraland",
-    "email": "contact@decentraland.org",
-    "url": "https://www.decentraland.org"
+    "name": "Memetaverse",
+    "email": "contact@memetaverse.club",
+    "url": "https://www.memetaverse.club"
   }
 }

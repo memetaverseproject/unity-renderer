@@ -1,6 +1,6 @@
 {
   "name": "Test",
-  "bodyShape": "urn:decentraland:off-chain:base-avatars:BaseFemale",
+  "bodyShape": "urn:memetaverse:off-chain:base-avatars:BaseFemale",
   "skinColor": {
     "r": 0.80078125,
     "g": 0.609375,
@@ -20,14 +20,14 @@
     "a": 1
   },
   "wearables": [
-    "urn:decentraland:off-chain:base-avatars:f_eyebrows_00",
-    "urn:decentraland:off-chain:base-avatars:f_eyes_00",
-    "urn:decentraland:off-chain:base-avatars:black_sun_glasses",
-    "urn:decentraland:off-chain:base-avatars:bear_slippers",
-    "urn:decentraland:off-chain:base-avatars:hair_anime_01",
-    "urn:decentraland:off-chain:base-avatars:f_african_leggins",
-    "urn:decentraland:off-chain:base-avatars:dracula_mouth",
-    "urn:decentraland:off-chain:base-avatars:blue_bandana",
-    "urn:decentraland:off-chain:base-avatars:bee_t_shirt"
+    "urn:memetaverse:off-chain:base-avatars:f_eyebrows_00",
+    "urn:memetaverse:off-chain:base-avatars:f_eyes_00",
+    "urn:memetaverse:off-chain:base-avatars:black_sun_glasses",
+    "urn:memetaverse:off-chain:base-avatars:bear_slippers",
+    "urn:memetaverse:off-chain:base-avatars:hair_anime_01",
+    "urn:memetaverse:off-chain:base-avatars:f_african_leggins",
+    "urn:memetaverse:off-chain:base-avatars:dracula_mouth",
+    "urn:memetaverse:off-chain:base-avatars:blue_bandana",
+    "urn:memetaverse:off-chain:base-avatars:bee_t_shirt"
   ]
 }

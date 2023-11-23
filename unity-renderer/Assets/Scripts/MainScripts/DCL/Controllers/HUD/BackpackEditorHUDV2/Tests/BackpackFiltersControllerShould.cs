@@ -47,7 +47,7 @@ namespace DCL.Backpack
             // Assert
             backpackFiltersComponentView.Received(1).LoadCollectionDropdown(
                 testCollections,
-                Arg.Is<WearableCollectionsAPIData.Collection>(x => x.urn == "decentraland" && x.name == "Decentraland"));
+                Arg.Is<WearableCollectionsAPIData.Collection>(x => x.urn == "memetaverse" && x.name == "Memetaverse"));
         }
 
         [Test]
@@ -81,7 +81,7 @@ namespace DCL.Backpack
 
             // Act
             backpackFiltersComponentView.OnCollectionChanged += Raise.Event<Action<HashSet<string>>>(
-                new HashSet<string> { containsDecentralandCollection ? "decentraland" : "testCollection1", "testCollection2", "testCollection3" });
+                new HashSet<string> { containsDecentralandCollection ? "memetaverse" : "testCollection1", "testCollection2", "testCollection3" });
 
             // Assert
             Assert.AreEqual(containsDecentralandCollection, (testCollectionType & NftCollectionType.OnChain) != 0);

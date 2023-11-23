@@ -1,4 +1,4 @@
-import type { Avatar, AvatarInfo, Profile } from '@dcl/schemas'
+import type { Avatar, AvatarInfo, Profile } from '@beland/schemas'
 import { generateRandomUserProfile } from 'lib/decentraland/profiles/generateRandomUserProfile'
 import type { AvatarForUserData } from 'lib/decentraland/profiles/sceneRuntime'
 import defaultLogger from 'lib/logger'
@@ -17,7 +17,7 @@ export function ensureAvatarCompatibilityFormat(profile: Readonly<Avatar | OldAv
   const avatar: AvatarForUserData | AvatarInfo = profile.avatar || generateRandomUserProfile(profile.userId).avatar
 
   // These mappings from legacy id are here just in case they still have the legacy id in local storage
-  avatarInfo.bodyShape = mapLegacyIdToUrn(avatar?.bodyShape) || 'urn:decentraland:off-chain:base-avatars:BaseFemale'
+  avatarInfo.bodyShape = mapLegacyIdToUrn(avatar?.bodyShape) || 'urn:memetaverse:off-chain:base-avatars:BaseFemale'
   avatarInfo.wearables = (avatar?.wearables || []).map(mapLegacyIdToUrn).filter(Boolean) as string[]
   avatarInfo.forceRender = avatar?.forceRender
   avatarInfo.emotes = avatar?.emotes
@@ -89,10 +89,10 @@ function mapLegacyIdToUrn(wearableId: string): string | null {
   }
   if (wearableId.startsWith('dcl://base-avatars')) {
     const name = wearableId.substring(wearableId.lastIndexOf('/') + 1)
-    return `urn:decentraland:off-chain:base-avatars:${name}`
+    return `urn:memetaverse:off-chain:base-avatars:${name}`
   } else {
     const [collectionName, wearableName] = wearableId.replace('dcl://', '').split('/')
-    return `urn:decentraland:ethereum:collections-v1:${collectionName}:${wearableName}`
+    return `urn:memetaverse:ethereum:collections-v1:${collectionName}:${wearableName}`
   }
 }
 

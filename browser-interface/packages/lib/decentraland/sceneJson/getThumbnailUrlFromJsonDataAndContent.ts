@@ -1,4 +1,4 @@
-import { ContentMapping, Scene } from '@dcl/schemas'
+import { ContentMapping, Scene } from '@beland/schemas'
 
 export function getThumbnailUrlFromJsonDataAndContent(
   jsonData: Scene | undefined,
@@ -44,5 +44,5 @@ function getThumbnailUrlFromBuilderProjectId(projectId: string | undefined): str
     return undefined
   }
 
-  return `https://builder-api.decentraland.org/v1/projects/${projectId}/media/preview.png`
+  return `https://builder-api.memetaverse.club/v1/projects/${projectId}/media/preview.png`
 }

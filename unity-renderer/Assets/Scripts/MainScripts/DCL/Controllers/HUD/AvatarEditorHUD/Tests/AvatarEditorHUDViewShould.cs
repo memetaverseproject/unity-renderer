@@ -72,8 +72,8 @@ namespace AvatarEditorHUD_Tests
         }
 
         [Test]
-        [TestCase("urn:decentraland:off-chain:base-avatars:f_african_leggins", WearableLiterals.BodyShapes.FEMALE)]
-        [TestCase("urn:decentraland:off-chain:base-avatars:eyebrows_02", WearableLiterals.BodyShapes.MALE)]
+        [TestCase("urn:memetaverse:off-chain:base-avatars:f_african_leggins", WearableLiterals.BodyShapes.FEMALE)]
+        [TestCase("urn:memetaverse:off-chain:base-avatars:eyebrows_02", WearableLiterals.BodyShapes.MALE)]
         public void Activate_CompatibleWithBodyShape_ItemToggle(string wearableId, string bodyShape)
         {
             userProfile.UpdateData(new UserProfileModel
@@ -101,8 +101,8 @@ namespace AvatarEditorHUD_Tests
         }
 
         [Test]
-        [TestCase("urn:decentraland:off-chain:base-avatars:f_african_leggins", WearableLiterals.BodyShapes.MALE)]
-        [TestCase("urn:decentraland:off-chain:base-avatars:eyebrows_02", WearableLiterals.BodyShapes.FEMALE)]
+        [TestCase("urn:memetaverse:off-chain:base-avatars:f_african_leggins", WearableLiterals.BodyShapes.MALE)]
+        [TestCase("urn:memetaverse:off-chain:base-avatars:eyebrows_02", WearableLiterals.BodyShapes.FEMALE)]
         public void IncompatibleWithBodyShape_ItemToggle(string wearableId, string bodyShape)
         {
             userProfile.UpdateData(new UserProfileModel
@@ -126,17 +126,17 @@ namespace AvatarEditorHUD_Tests
         }
 
         [Test]
-        [TestCase("urn:decentraland:off-chain:base-avatars:f_mouth_00")]
-        [TestCase("urn:decentraland:off-chain:base-avatars:bee_t_shirt")]
-        [TestCase("urn:decentraland:off-chain:base-avatars:m_mountainshoes.glb")]
-        [TestCase("urn:decentraland:off-chain:base-avatars:moptop")]
+        [TestCase("urn:memetaverse:off-chain:base-avatars:f_mouth_00")]
+        [TestCase("urn:memetaverse:off-chain:base-avatars:bee_t_shirt")]
+        [TestCase("urn:memetaverse:off-chain:base-avatars:m_mountainshoes.glb")]
+        [TestCase("urn:memetaverse:off-chain:base-avatars:moptop")]
         public void NotAdd_BaseWearables_ToCollectibles(string wearableId)
         {
             Assert.IsFalse(controller.myView.collectiblesItemSelector.currentItemToggles.ContainsKey(wearableId));
         }
 
         [Test]
-        [TestCase("urn:decentraland:off-chain:halloween_2019:sad_clown_upper_body")]
+        [TestCase("urn:memetaverse:off-chain:halloween_2019:sad_clown_upper_body")]
         public void Add_Exclusives_ToCollectibles(string wearableId)
         {
             userProfile.SetInventory(new[] { wearableId });
@@ -195,7 +195,7 @@ namespace AvatarEditorHUD_Tests
         [Test]
         public void NotShowAmmountIfOnlyOneItemIsPossesed()
         {
-            var wearableId = "urn:decentraland:off-chain:halloween_2019:sad_clown_upper_body";
+            var wearableId = "urn:memetaverse:off-chain:halloween_2019:sad_clown_upper_body";
             userProfile.SetInventory(new[] { wearableId });
 
             userProfile.UpdateData(new UserProfileModel
@@ -221,7 +221,7 @@ namespace AvatarEditorHUD_Tests
         [TestCase(10)]
         public void ShowAndUpdateAmount(int amount)
         {
-            var wearableId = "urn:decentraland:off-chain:halloween_2019:sad_clown_upper_body";
+            var wearableId = "urn:memetaverse:off-chain:halloween_2019:sad_clown_upper_body";
             userProfile.SetInventory(Enumerable.Repeat(wearableId, amount));
 
             userProfile.UpdateData(new UserProfileModel
@@ -249,7 +249,7 @@ namespace AvatarEditorHUD_Tests
         [TestCase(10)]
         public void ShowAndUpdateAmountInCollectibleTab(int amount)
         {
-            var wearableId = "urn:decentraland:off-chain:halloween_2019:sad_clown_upper_body";
+            var wearableId = "urn:memetaverse:off-chain:halloween_2019:sad_clown_upper_body";
             userProfile.SetInventory(Enumerable.Repeat(wearableId, amount));
 
             userProfile.UpdateData(new UserProfileModel

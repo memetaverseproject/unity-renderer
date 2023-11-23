@@ -30,19 +30,19 @@ describe('Comms resolver', () => {
         },
         content: {
           healthy: true,
-          publicUrl: 'https://peer.decentraland.org/content'
+          publicUrl: 'https://testnet-peer.memetaverse.club/content'
         },
         healthy: true,
         lambdas: {
           healthy: true,
-          publicUrl: 'https://peer.decentraland.org/lambdas'
+          publicUrl: 'https://testnet-peer.memetaverse.club/lambdas'
         },
         acceptingUsers: true
       },
-      baseUrl: 'https://peer.decentraland.org'
+      baseUrl: 'https://testnet-peer.memetaverse.club'
     })
 
-    eq(await resolveRealmConfigFromString('offline?baseUrl=peer.decentraland.zone'), {
+    eq(await resolveRealmConfigFromString('offline?baseUrl=peer.memetaverse.club'), {
       about: {
         bff: undefined,
         comms: {
@@ -51,7 +51,7 @@ describe('Comms resolver', () => {
           adapter: 'offline:offline'
         },
         configurations: {
-          realmName: 'offline?baseUrl=peer.decentraland.zone',
+          realmName: 'offline?baseUrl=peer.memetaverse.club',
           networkId: 1,
           globalScenesUrn: [],
           scenesUrn: [],
@@ -59,18 +59,18 @@ describe('Comms resolver', () => {
         },
         content: {
           healthy: true,
-          publicUrl: 'https://peer.decentraland.zone/content'
+          publicUrl: 'https://peer.memetaverse.club/content'
         },
         healthy: true,
         lambdas: {
           healthy: true,
-          publicUrl: 'https://peer.decentraland.zone/lambdas'
+          publicUrl: 'https://peer.memetaverse.club/lambdas'
         },
         acceptingUsers: true
       },
-      baseUrl: 'https://peer.decentraland.zone'
+      baseUrl: 'https://peer.memetaverse.club'
     })
-    eq(await resolveRealmConfigFromString('offline?baseUrl=https://peer.decentraland.zone'), {
+    eq(await resolveRealmConfigFromString('offline?baseUrl=https://peer.memetaverse.club'), {
       about: {
         bff: undefined,
         comms: {
@@ -79,7 +79,7 @@ describe('Comms resolver', () => {
           adapter: 'offline:offline'
         },
         configurations: {
-          realmName: 'offline?baseUrl=https://peer.decentraland.zone',
+          realmName: 'offline?baseUrl=https://peer.memetaverse.club',
           networkId: 1,
           globalScenesUrn: [],
           scenesUrn: [],
@@ -87,18 +87,18 @@ describe('Comms resolver', () => {
         },
         content: {
           healthy: true,
-          publicUrl: 'https://peer.decentraland.zone/content'
+          publicUrl: 'https://peer.memetaverse.club/content'
         },
         healthy: true,
         lambdas: {
           healthy: true,
-          publicUrl: 'https://peer.decentraland.zone/lambdas'
+          publicUrl: 'https://peer.memetaverse.club/lambdas'
         },
         acceptingUsers: true
       },
-      baseUrl: 'https://peer.decentraland.zone'
+      baseUrl: 'https://peer.memetaverse.club'
     })
-    eq(await resolveRealmConfigFromString('offline?baseUrl=http://peer.decentraland.zone'), {
+    eq(await resolveRealmConfigFromString('offline?baseUrl=http://peer.memetaverse.club'), {
       about: {
         bff: undefined,
         comms: {
@@ -107,7 +107,7 @@ describe('Comms resolver', () => {
           adapter: 'offline:offline'
         },
         configurations: {
-          realmName: 'offline?baseUrl=http://peer.decentraland.zone',
+          realmName: 'offline?baseUrl=http://peer.memetaverse.club',
           networkId: 1,
           globalScenesUrn: [],
           scenesUrn: [],
@@ -115,16 +115,16 @@ describe('Comms resolver', () => {
         },
         content: {
           healthy: true,
-          publicUrl: 'http://peer.decentraland.zone/content'
+          publicUrl: 'http://peer.memetaverse.club/content'
         },
         healthy: true,
         lambdas: {
           healthy: true,
-          publicUrl: 'http://peer.decentraland.zone/lambdas'
+          publicUrl: 'http://peer.memetaverse.club/lambdas'
         },
         acceptingUsers: true
       },
-      baseUrl: 'http://peer.decentraland.zone'
+      baseUrl: 'http://peer.memetaverse.club'
     })
   })
   it('resolveCommsConnectionString', async () => {

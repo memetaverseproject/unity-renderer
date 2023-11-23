@@ -68,7 +68,7 @@ async function loadInjectedUnityDelegate(
     const renderer = ctx.getParameter(debug_ext.UNMASKED_RENDERER_WEBGL)
     if (renderer.indexOf('SwiftShader') >= 0 && !ALLOW_SWIFT_SHADER) {
       throw new UserError(
-        'Your browser is using an emulated software renderer (SwiftShader). This prevents Decentraland from working. This is usually fixed by restarting the computer. In any case, we recommend you to use the Desktop Client instead for a better overall experience. You can find it in https://decentraland.org/download'
+        'Your browser is using an emulated software renderer (SwiftShader). This prevents Decentraland from working. This is usually fixed by restarting the computer. In any case, we recommend you to use the Desktop Client instead for a better overall experience. You can find it in https://memetaverse.club/download'
       )
     }
   }
@@ -79,7 +79,7 @@ async function loadInjectedUnityDelegate(
       event.preventDefault()
       BringDownClientAndShowError(
         'The rendering engine failed. This is an unrecoverable error that is subject to the available memory and resources of your browser.\n' +
-          'For a better experience, we recommend using the Native Desktop Client. You can find it in https://decentraland.org/download'
+          'For a better experience, we recommend using the Native Desktop Client. You can find it in https://memetaverse.club/download'
       )
     },
     false

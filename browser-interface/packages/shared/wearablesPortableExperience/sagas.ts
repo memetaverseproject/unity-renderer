@@ -1,4 +1,4 @@
-import { EntityType, Scene } from '@dcl/schemas'
+import { EntityType, Scene } from '@beland/schemas'
 import { call, select, takeEvery, takeLatest } from '@redux-saga/core/effects'
 import { jsonFetch } from 'lib/javascript/jsonFetch'
 import { put } from 'redux-saga-test-plan/matchers'

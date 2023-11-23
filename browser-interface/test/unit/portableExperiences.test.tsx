@@ -1,4 +1,4 @@
-import { EntityType } from '@dcl/schemas'
+import { EntityType } from '@beland/schemas'
 import { expect } from 'chai'
 import { PORTABLE_EXPERIENCES_DEBOUNCE_DELAY } from 'config'
 import { expectSaga } from 'redux-saga-test-plan'
@@ -253,7 +253,7 @@ describe('Portable experiences sagas test', () => {
   })
 
   describe('santi use case', async () => {
-    const px = createLoadablePX('urn:decentraland:off-chain:static-portable-experiences:radio')
+    const px = createLoadablePX('urn:memetaverse:off-chain:static-portable-experiences:radio')
 
     // add debug px
     it('add the debug px, the desired PX should contain it', () =>

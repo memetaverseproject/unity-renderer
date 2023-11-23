@@ -18,8 +18,8 @@ public class Catalyst : ICatalyst
     public string lambdasUrl { get; private set; }
 
     private UniTaskCompletionSource<string> lambdasUrlCs = new UniTaskCompletionSource<string>();
-    private string realmDomain = "https://peer.decentraland.org";
-    private string realmContentServerUrl = "https://peer.decentraland.org/content/";
+    private string realmDomain = "https://testnet-peer.memetaverse.club";
+    private string realmContentServerUrl = "https://testnet-peer.memetaverse.club/content/";
 
     private readonly IDataCache<CatalystSceneEntityPayload[]> deployedScenesCache = new DataCache<CatalystSceneEntityPayload[]>();
 
@@ -83,9 +83,9 @@ public class Catalyst : ICatalyst
 
     private string GetNormalizedUrl(string url)
     {
-        if (string.IsNullOrEmpty(url)) return url;
-        if (!url.EndsWith('/'))
-            url += "/";
+        // if (string.IsNullOrEmpty(url)) return url;
+        // if (!url.EndsWith('/'))
+        //     url += "/";
 
         return url;
     }

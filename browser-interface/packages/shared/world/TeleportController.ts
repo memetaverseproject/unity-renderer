@@ -1,4 +1,4 @@
-import { getWorld, isInsideWorldLimits } from '@dcl/schemas'
+import { getWorld, isInsideWorldLimits } from '@beland/schemas'
 
 import { countParcelsCloseTo, ParcelArray } from 'shared/comms/interface/utils'
 import defaultLogger from 'lib/logger'

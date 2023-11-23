@@ -1,5 +1,5 @@
-import type { ContentMapping, Scene } from '@dcl/schemas'
-import { EntityType } from '@dcl/schemas'
+import type { ContentMapping, Scene } from '@beland/schemas'
+import { EntityType } from '@beland/schemas'
 import { jsonFetch } from 'lib/javascript/jsonFetch'
 import type { LoadableScene } from 'shared/types'
 import { unsignedCRC32 } from 'lib/encoding/crc32'
@@ -25,7 +25,7 @@ export class EmptyParcelController {
 
     const metadata: Scene = {
       display: { title: 'Empty parcel' },
-      contact: { name: 'Decentraland' },
+      contact: { name: 'Memetaverse' },
       owner: '',
       main: `bin/game.js`,
       tags: [],

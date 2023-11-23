@@ -1977,7 +1977,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Reserve your Unique NAME in Decentraland to access exclusive platform features.
+  m_text: Reserve your Unique NAME in Memetaverse to access exclusive platform features.
     Host your own Worlds, obtain extra slots for outfits, claim private channels
     and more!
   m_isRightToLeft: 0
@@ -4487,7 +4487,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Complete the fields bellow with information that your will like to share
-    with the rest of the Decentraland community about you!
+    with the rest of the Memetaverse community about you!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6708c7eadd49b49f4ac3469e5104e7c9, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: dd1effe058ec94479a0dd10765262662, type: 2}
@@ -5191,10 +5191,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "By introducing your information in your profile you acknowledge and confirm
-    that this information shall be public and visible for all users and that Decentraland
+    that this information shall be public and visible for all users and that Memetaverse
     is not responsible for the availability of this information in your profile and/or
     the use of this information by third parties. The Terms of Use and the Privacy
-    Policies of Decentraland apply.\r"
+    Policies of Memetaverse apply.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6708c7eadd49b49f4ac3469e5104e7c9, type: 2}
   m_sharedMaterial: {fileID: -6676260188536263158, guid: 6708c7eadd49b49f4ac3469e5104e7c9,

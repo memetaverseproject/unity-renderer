@@ -117,7 +117,7 @@ const coolDownOfFriendRequests: Map<string, number> = new Map(coolDownOfFriendRe
 
 const lastStatusOfFriendsEntries = [
   [
-    '@0xa1:decentraland.org',
+    '@0xa1:memetaverse.club',
     {
       realm: {
         layer: '',
@@ -179,7 +179,7 @@ const stubClient = {
     }
     return m
   },
-  getDomain: () => 'decentraland.org',
+  getDomain: () => 'memetaverse.club',
   setStatus: () => Promise.resolve(),
   getOwnId: () => '0xa2',
   getMessageBody: () => undefined,

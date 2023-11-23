@@ -5,7 +5,7 @@ import { parseParcelPosition } from 'lib/decentraland/parcels/parseParcelPositio
 import { isWorldPositionInsideParcels } from 'lib/decentraland/parcels/isWorldPositionInsideParcels'
 import { gridToWorld } from 'lib/decentraland/parcels/gridToWorld'
 import { DEBUG, playerHeight } from 'config'
-import { isInsideWorldLimits, Scene, SpawnPoint } from '@dcl/schemas'
+import { isInsideWorldLimits, Scene, SpawnPoint } from '@beland/schemas'
 import { halfParcelSize } from 'lib/decentraland/parcels/limits'
 
 export type PositionReport = {

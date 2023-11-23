@@ -1,4 +1,4 @@
-import { Entity } from '@dcl/schemas'
+import { Entity } from '@beland/schemas'
 import future, { IFuture } from 'fp-future'
 import { LoadableScene } from 'shared/types'
 import { EmptyParcelController } from './emptyParcelController'

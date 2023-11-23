@@ -1,4 +1,4 @@
-import { Scene } from '@dcl/schemas'
+import { Scene } from '@beland/schemas'
 
 export function getOwnerNameFromJsonData(jsonData?: Scene) {
   let ownerName = jsonData?.contact?.name

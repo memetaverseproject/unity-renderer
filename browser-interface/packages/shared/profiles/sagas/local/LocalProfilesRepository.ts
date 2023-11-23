@@ -1,4 +1,4 @@
-import { Avatar } from '@dcl/schemas'
+import { Avatar } from '@beland/schemas'
 import {
   getFromPersistentStorage,
   removeFromPersistentStorage,

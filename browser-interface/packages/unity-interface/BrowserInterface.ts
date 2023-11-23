@@ -1,7 +1,7 @@
 import { EcsMathReadOnlyQuaternion, EcsMathReadOnlyVector3 } from '@dcl/ecs-math'
 
-import { Authenticator } from '@dcl/crypto'
-import { Avatar, generateLazyValidator, JSONSchema, Outfits, WearableCategory } from '@dcl/schemas'
+import { Authenticator } from '@beland/crypto'
+import { Avatar, generateLazyValidator, JSONSchema, Outfits, WearableCategory } from '@beland/schemas'
 import {
   DEBUG,
   ethereumConfigurations,
@@ -492,7 +492,7 @@ export class BrowserInterface {
 
   public MotdConfirmClicked() {
     if (!hasWallet(store.getState())) {
-      globalObservable.emit('openUrl', { url: 'https://docs.decentraland.org/get-a-wallet/' })
+      globalObservable.emit('openUrl', { url: 'https://docs.memetaverse.club/get-a-wallet/' })
     }
   }
 
@@ -1299,12 +1299,12 @@ export class BrowserInterface {
 
   public ToSPopupRejected() {
     trackEvent('seamless_login tos rejected', {})
-    window.location.href = 'https://decentraland.org'
+    window.location.href = 'https://memetaverse.club'
   }
 
   public ToSPopupGoToToS() {
     trackEvent('seamless_login go to tos', {})
-    globalObservable.emit('openUrl', { url: 'https://decentraland.org/terms' })
+    globalObservable.emit('openUrl', { url: 'https://memetaverse.club/terms' })
   }
 }
 

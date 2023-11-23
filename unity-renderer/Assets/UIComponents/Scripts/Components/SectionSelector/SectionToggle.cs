@@ -79,6 +79,7 @@ public class SectionToggle : MonoBehaviour, ISectionToggle
 
     [Header("Visual Configuration When Selected")]
     [SerializeField] private Image selectedIcon;
+    [SerializeField] private GameObject selectedBackground;
     [SerializeField] private TMP_Text selectedTitle;
     [SerializeField] private ColorBlock backgroundTransitionColorsForSelected;
     [SerializeField] private Color selectedTextColor;
@@ -86,6 +87,7 @@ public class SectionToggle : MonoBehaviour, ISectionToggle
 
     [Header("Visual Configuration When Unselected")]
     [SerializeField] private Image unselectedIcon;
+    [SerializeField] private GameObject unselectedBackground;
     [SerializeField] private TMP_Text unselectedTitle;
     [SerializeField] private ColorBlock backgroundTransitionColorsForUnselected;
     [SerializeField] private Color unselectedTextColor;
@@ -193,6 +195,13 @@ public class SectionToggle : MonoBehaviour, ISectionToggle
         if (unselectedIcon != null)
             unselectedIcon.gameObject.SetActive(false);
 
+        if (selectedBackground != null)
+            selectedBackground.gameObject.SetActive(true);
+
+        if (unselectedBackground != null)
+            unselectedBackground.gameObject.SetActive(false);
+
+
         if (selectedTitle != null)
             selectedTitle.gameObject.SetActive(true);
 
@@ -209,6 +218,12 @@ public class SectionToggle : MonoBehaviour, ISectionToggle
 
         if (unselectedIcon != null)
             unselectedIcon.gameObject.SetActive(true);
+
+        if (selectedBackground != null)
+            selectedBackground.gameObject.SetActive(false);
+
+        if (unselectedBackground != null)
+            unselectedBackground.gameObject.SetActive(true);
 
         if (selectedTitle != null)
             selectedTitle.gameObject.SetActive(false);
