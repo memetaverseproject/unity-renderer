@@ -68,7 +68,7 @@ async function loadInjectedUnityDelegate(
     const renderer = ctx.getParameter(debug_ext.UNMASKED_RENDERER_WEBGL)
     if (renderer.indexOf('SwiftShader') >= 0 && !ALLOW_SWIFT_SHADER) {
       throw new UserError(
-        'Your browser is using an emulated software renderer (SwiftShader). This prevents Decentraland from working. This is usually fixed by restarting the computer. In any case, we recommend you to use the Desktop Client instead for a better overall experience. You can find it in https://memetaverse.club/download'
+        'Your browser is using an emulated software renderer (SwiftShader). This prevents Memetaverse from working. This is usually fixed by restarting the computer. In any case, we recommend you to use the Desktop Client instead for a better overall experience. You can find it in https://memetaverse.club/download'
       )
     }
   }

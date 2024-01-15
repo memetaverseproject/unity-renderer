@@ -173,7 +173,7 @@ export async function requirePayment(toAddress: string, amount: number, currency
  * @return {object} - Promise of message and signature in an object.
  */
 export async function messageToString(dict: MessageDict) {
-  const header = `# DCL Signed message\n`
+  const header = `# Memetaverse Signed message\n`
   const payload = Object.entries(dict)
     .map(([key, value]) => `${key}: ${value}`)
     .join('\n')
@@ -194,7 +194,7 @@ export async function signMessage(messageDict: MessageDict) {
 
   const messageToSign = await messageToString(messageDict)
 
-  if (messageToSign.indexOf('# DCL Signed message') === -1) {
+  if (messageToSign.indexOf('# Memetaverse Signed message') === -1) {
     throw new Error(`Message is not in a right format.`)
   }
 
@@ -216,8 +216,8 @@ export async function signMessage(messageDict: MessageDict) {
 export async function convertMessageToObject(message: string): Promise<MessageDict> {
   let parsedMessage = message
 
-  // Remove `# DCL Signed message` header
-  if (message.indexOf('# DCL Signed message') === 0) {
+  // Remove `# Memetaverse Signed message` header
+  if (message.indexOf('# Memetaverse Signed message') === 0) {
     parsedMessage = message.slice(21)
   }
   // First, split the string parts into nested array
