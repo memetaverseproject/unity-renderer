@@ -32,11 +32,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1249344623874386417}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 166.35, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 162.38, y: -21.19895}
   m_SizeDelta: {x: 0, y: 42.3979}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &614359584630007217
@@ -69,8 +68,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Generic without button notification message.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a02669827dd9144f39b4b164e753a21a, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 74b83fa9a54124695b9bdd8bea96fa17, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6708c7eadd49b49f4ac3469e5104e7c9, type: 2}
+  m_sharedMaterial: {fileID: -6676260188536263158, guid: 6708c7eadd49b49f4ac3469e5104e7c9,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -156,6 +156,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 451023837465298196, guid: 0282a050c09634ed299130b8e9c2c035,
@@ -539,6 +540,25 @@ PrefabInstance:
       value: 4.1484
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 471081646976459722, guid: 0282a050c09634ed299130b8e9c2c035,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4173193658195068790}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7620855262146842723, guid: 0282a050c09634ed299130b8e9c2c035,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1658589713059782416}
+    - targetCorrespondingSourceObject: {fileID: 7620855262146842723, guid: 0282a050c09634ed299130b8e9c2c035,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3488303137360909397}
+    - targetCorrespondingSourceObject: {fileID: 843795059806328015, guid: 0282a050c09634ed299130b8e9c2c035,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 294388734802826306}
   m_SourcePrefab: {fileID: 100100000, guid: 0282a050c09634ed299130b8e9c2c035, type: 3}
 --- !u!224 &1249344623874386417 stripped
 RectTransform:

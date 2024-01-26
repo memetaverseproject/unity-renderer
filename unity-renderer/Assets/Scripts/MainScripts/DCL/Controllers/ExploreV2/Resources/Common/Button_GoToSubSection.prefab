@@ -5,6 +5,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 54622623229548845, guid: fb037d81b9c10ad439a13e356a17bab6,
@@ -178,7 +179,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: a02669827dd9144f39b4b164e753a21a,
+      objectReference: {fileID: 11400000, guid: 6708c7eadd49b49f4ac3469e5104e7c9,
         type: 2}
     - target: {fileID: 4469143239268576428, guid: fb037d81b9c10ad439a13e356a17bab6,
         type: 3}
@@ -209,7 +210,8 @@ PrefabInstance:
         type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 2100000, guid: 74b83fa9a54124695b9bdd8bea96fa17, type: 2}
+      objectReference: {fileID: -6676260188536263158, guid: 6708c7eadd49b49f4ac3469e5104e7c9,
+        type: 2}
     - target: {fileID: 4469143239268576428, guid: fb037d81b9c10ad439a13e356a17bab6,
         type: 3}
       propertyPath: m_fontColor32.rgba
@@ -298,7 +300,7 @@ PrefabInstance:
     - target: {fileID: 5170059318450306070, guid: fb037d81b9c10ad439a13e356a17bab6,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 168.29
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5170059318450306070, guid: fb037d81b9c10ad439a13e356a17bab6,
         type: 3}
@@ -324,17 +326,17 @@ PrefabInstance:
     - target: {fileID: 7518669975530283665, guid: fb037d81b9c10ad439a13e356a17bab6,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.33333334
+      value: 0.90588236
       objectReference: {fileID: 0}
     - target: {fileID: 7518669975530283665, guid: fb037d81b9c10ad439a13e356a17bab6,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.1764706
+      value: 0.25882354
       objectReference: {fileID: 0}
     - target: {fileID: 7518669975530283665, guid: fb037d81b9c10ad439a13e356a17bab6,
         type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.57254905
       objectReference: {fileID: 0}
     - target: {fileID: 8360437818873036568, guid: fb037d81b9c10ad439a13e356a17bab6,
         type: 3}
@@ -387,6 +389,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 295322807238159221, guid: fb037d81b9c10ad439a13e356a17bab6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4846088230411170683}
   m_SourcePrefab: {fileID: 100100000, guid: fb037d81b9c10ad439a13e356a17bab6, type: 3}
 --- !u!1 &3045419584404654864 stripped
 GameObject:

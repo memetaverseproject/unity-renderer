@@ -4,7 +4,7 @@ import { toHex } from 'eth-connect'
 
 describe('EthereumService tests', function() {
   it('calling convertMessageToObject()', async () => {
-    const message = `# DCL Signed message
+    const message = `# Memetaverse Signed message
 Attacker: 4
 Defender: 387
 Timestamp: 1531404397`
@@ -19,14 +19,14 @@ Timestamp: 1531404397`
 
     const ret = await messageToString(dict)
     expect(ret).to.be.a('string')
-    expect(ret).to.equal(`# DCL Signed message
+    expect(ret).to.equal(`# Memetaverse Signed message
 First: one
 Second: another one
 Timestamp: DDMMYYYY`)
   })
 
   it('checks the hex of message', async () => {
-    const message = `# DCL Signed message
+    const message = `# Memetaverse Signed message
 Attacker: 4
 Defender: 387
 Timestamp: 1531404397`

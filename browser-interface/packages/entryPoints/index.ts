@@ -92,7 +92,7 @@ function ensureHLSCapability() {
 function ensureWebGLCapability() {
   if (!isWebGLCompatible()) {
     throw new UserError(
-      "A WebGL2 could not be created. It is necessary to make Decentraland run, your browser may not be compatible. This error may also happen when many tabs are open and the browser doesn't have enough resources available to start Memetaverse, if that's the case, please try closing other tabs and specially other Memetaverse instances."
+      "A WebGL2 could not be created. It is necessary to make Memetaverse run, your browser may not be compatible. This error may also happen when many tabs are open and the browser doesn't have enough resources available to start Memetaverse, if that's the case, please try closing other tabs and specially other Memetaverse instances."
     )
   }
 }
