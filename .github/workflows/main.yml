@@ -21,7 +21,7 @@ jobs:
             - https://play.memetaverse.club/?explorer-branch=${{ github.head_ref }}
 
             ### Desktop:
-            If you have the launcher installed ([download launcher](https://github.com/decentraland/explorer-desktop-launcher/releases)) you can press open on the following link:
+            If you have the launcher installed ([download launcher](https://github.com/memetaverseproject/explorer-desktop-launcher/releases)) you can press open on the following link:
             - [Open custom protocol](https://renderer-artifacts.memetaverse.club/desktop/index.html?dcl://DESKTOP-BRANCH=${{ github.head_ref }})
             - [Open custom protocol with Developer Mode](https://renderer-artifacts.memetaverse.club/desktop/index.html?dcl://DESKTOP-BRANCH=${{ github.head_ref }}&DESKTOP-DEVELOPER-MODE)
 

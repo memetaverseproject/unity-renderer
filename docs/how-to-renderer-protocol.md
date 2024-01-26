@@ -2,7 +2,7 @@
 
 ## What?
 
-The Renderer Protocol consists of messages that are sent between the [Browser Interface](http://github.com/decentraland/unity-renderer/tree/dev/browser-interface) and the [Renderer](http://github.com/decentraland/unity-renderer/tree/dev/unity-renderer). These messages are defined in the [Renderer Protocol] folder (http://github.com/decentraland/unity-renderer/tree/dev/renderer-protocol) using the proto3 format.
+The Renderer Protocol consists of messages that are sent between the [Browser Interface](http://github.com/memetaverseproject/unity-renderer/tree/dev/browser-interface) and the [Renderer](http://github.com/memetaverseproject/unity-renderer/tree/dev/unity-renderer). These messages are defined in the [Renderer Protocol] folder (http://github.com/memetaverseproject/unity-renderer/tree/dev/renderer-protocol) using the proto3 format.
 
 ## Types of messages
 
@@ -10,11 +10,11 @@ The message exchange is defined by RPC calls, which are bi-directional Services.
 
 ## How to add a message
 
-To add a message to the Renderer Protocol, you must first add it to the [protocol definition](https://github.com/decentraland/unity-renderer/tree/dev/renderer-protocol)
+To add a message to the Renderer Protocol, you must first add it to the [protocol definition](https://github.com/memetaverseproject/unity-renderer/tree/dev/renderer-protocol)
 
-[Example](https://github.com/decentraland/protocol/blob/9fcad98380eb95544e50490cc1213b55e0df1f17/proto/decentraland/renderer/renderer_services/emotes_renderer.proto) of `RendererService`.
+[Example](https://github.com/memetaverseproject/protocol/blob/9fcad98380eb95544e50490cc1213b55e0df1f17/proto/memetaverseproject/renderer/renderer_services/emotes_renderer.proto) of `RendererService`.
 
-[Example](https://github.com/decentraland/protocol/blob/9fcad98380eb95544e50490cc1213b55e0df1f17/proto/decentraland/renderer/kernel_services/analytics.proto) of `KernelService`.
+[Example](https://github.com/memetaverseproject/protocol/blob/9fcad98380eb95544e50490cc1213b55e0df1f17/proto/memetaverseproject/renderer/kernel_services/analytics.proto) of `KernelService`.
 
 After adding a `KernelService` or `RendererService`, you must run `npm run build` to regenerate the Renderer Protocol.
 
@@ -121,8 +121,8 @@ getRendererModules(store.getState())
 
 #### Example with PR
 
-- protocol: https://github.com/decentraland/protocol/pull/81
-- unity-renderer: https://github.com/decentraland/unity-renderer/pull/3605
+- protocol: https://github.com/memetaverseproject/protocol/pull/81
+- unity-renderer: https://github.com/memetaverseproject/unity-renderer/pull/3605
 
 ### **Browser Interface Side:**
 #### Step by step
@@ -133,7 +133,7 @@ In: `packages/renderer-protocol/inverseRpc/services/emotesService.ts`
 import { RpcServerPort } from '@dcl/rpc'
 import { RendererProtocolContext } from '../context'
 import * as codegen from '@dcl/rpc/dist/codegen'
-import { EmotesKernelServiceDefinition } from 'shared/protocol/decentraland/renderer/kernel_services/emotes_kernel.gen'
+import { EmotesKernelServiceDefinition } from 'shared/protocol/memetaverseproject/renderer/kernel_services/emotes_kernel.gen'
 import { allScenesEvent } from '../../../shared/world/parcelSceneManager'
 import { sendPublicChatMessage } from '../../../shared/comms'
 

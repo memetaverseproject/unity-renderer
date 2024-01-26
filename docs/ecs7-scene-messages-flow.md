@@ -6,7 +6,7 @@ slug: "/contributor/unity-renderer/components/scene-messages-flow"
 # Scene Messages
 
 Scene messages are sent using RPC in a Protobuf message.
-(https://github.com/decentraland/protocol/blob/main/renderer-protocol/RendererProtocol.proto)
+(https://github.com/memetaverseproject/protocol/blob/main/renderer-protocol/RendererProtocol.proto)
 Payload of such message is a byte array
 
 ## Message structure

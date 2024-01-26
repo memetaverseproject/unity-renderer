@@ -6,19 +6,19 @@ In order to serve GLTFs more efficiently using less CPU in runtime, they are con
 
 ## Unity: assets conversion flow
 
-Currently, the Asset Bundles Converter code lives inside [unity-renderer repo](https://github.com/decentraland/unity-renderer). Eventually we'll probably move it to its own repo.
+Currently, the Asset Bundles Converter code lives inside [unity-renderer repo](https://github.com/memetaverseproject/unity-renderer). Eventually we'll probably move it to its own repo.
 
 The most relevant classes are:
 
-- [unity-renderer/Assets/ABConverter/Core.cs](https://github.com/decentraland/unity-renderer/blob/master/unity-renderer/Assets/ABConverter/Core.cs)
+- [unity-renderer/Assets/ABConverter/Core.cs](https://github.com/memetaverseproject/unity-renderer/blob/master/unity-renderer/Assets/ABConverter/Core.cs)
     - Downloads assets (and their dependencies) and flags them to be converted
     - Converts downloaded assets to AB
     - Triggers visual tests check after conversion
-- [unity-renderer/Assets/ABConverter/SceneClient.cs](https://github.com/decentraland/unity-renderer/blob/master/unity-renderer/Assets/ABConverter/SceneClient.cs)
+- [unity-renderer/Assets/ABConverter/SceneClient.cs](https://github.com/memetaverseproject/unity-renderer/blob/master/unity-renderer/Assets/ABConverter/SceneClient.cs)
     - Entrypoint for converting scenes and their assets
     - Uses the Core to trigger different type of conversions (Scene, Asset)
     - Has the batch-mode entrypoint for converting a scene (`ExportSceneToAssetBundles()`**)**
-- [unity-renderer/Assets/ABConverter/WearablesCollectionClient.cs](https://github.com/decentraland/unity-renderer/blob/master/unity-renderer/Assets/ABConverter/WearablesCollectionClient.cs)
+- [unity-renderer/Assets/ABConverter/WearablesCollectionClient.cs](https://github.com/memetaverseproject/unity-renderer/blob/master/unity-renderer/Assets/ABConverter/WearablesCollectionClient.cs)
     - Entrypoint for converting wearable collections
     - Uses the Core to trigger wearable and wearable collection conversions
 
@@ -49,9 +49,9 @@ For dumping/converting assets locally we use our **Decentralanad →Asset Bundle
 
 ![Screen Shot 2021-11-16 at 13.26.56.png](how-to-use-asset-bundle-coverter/Screen_Shot_2021-11-16_at_13.26.56.png)
 
-Those menu items can be edited at `[Assets/ABConverter/AssetBundleMenuItems.cs](https://github.com/decentraland/unity-renderer/blob/master/unity-renderer/Assets/ABConverter/AssetBundleMenuItems.cs)`
+Those menu items can be edited at `[Assets/ABConverter/AssetBundleMenuItems.cs](https://github.com/memetaverseproject/unity-renderer/blob/master/unity-renderer/Assets/ABConverter/AssetBundleMenuItems.cs)`
 
-Another option is to call the converter locally from the terminal in headless mode [as it’s done in the converter service](https://github.com/decentraland/unity-renderer/blob/master/convert-asset-bundles.sh) e.g. `/Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/MacOS/Unity -batchmode -projectPath "/Users/pravus/git/unity-renderer/unity-renderer" -batchmode -executeMethod DCL.ABConverter.SceneClient.ExportSceneToAssetBundles -sceneCid "QmXMzPLZNx5EHiYi3tK9MT5g9HqjAqgyAoZUu2LfAXJcSM" -output "/Users/pravus/git/unity-renderer/unity-renderer/AssetBundles"`
+Another option is to call the converter locally from the terminal in headless mode [as it’s done in the converter service](https://github.com/memetaverseproject/unity-renderer/blob/master/convert-asset-bundles.sh) e.g. `/Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/MacOS/Unity -batchmode -projectPath "/Users/pravus/git/unity-renderer/unity-renderer" -batchmode -executeMethod DCL.ABConverter.SceneClient.ExportSceneToAssetBundles -sceneCid "QmXMzPLZNx5EHiYi3tK9MT5g9HqjAqgyAoZUu2LfAXJcSM" -output "/Users/pravus/git/unity-renderer/unity-renderer/AssetBundles"`
 
 ### Scenes
 
