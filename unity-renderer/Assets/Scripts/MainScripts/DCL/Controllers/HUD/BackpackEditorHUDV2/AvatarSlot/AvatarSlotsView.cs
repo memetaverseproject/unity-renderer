@@ -35,8 +35,8 @@ namespace DCL.Backpack
         {
             avatarSlotSections.Add(sectionName, Instantiate(avatarSlotSectionPrefab, avatarSlotsContainer).transform);
 
-            if (addSeparator)
-                Instantiate(sectionSeparator, avatarSlotsContainer);
+            // if (addSeparator)
+            //     Instantiate(sectionSeparator, avatarSlotsContainer);
         }
 
         public void RebuildLayout()

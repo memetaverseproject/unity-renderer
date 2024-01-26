@@ -29,11 +29,4 @@ MonoBehaviour:
     - feet
   - key: accessories
     value:
-    - hat
-    - eyewear
-    - earring
-    - mask
-    - tiara
-    - top_head
-    - helmet
     - skin
