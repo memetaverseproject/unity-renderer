@@ -64,7 +64,7 @@ export type DecentralandRendererInstance = {
    */
   engineStartedFuture: Promise<any>
 
-  // soon there will be more protocol functions here https://github.com/decentraland/renderer-protocol
+  // soon there will be more protocol functions here https://github.com/memetaverseproject/renderer-protocol
   // and originalUnity will be deprecated to decouple the kernel from unity's impl internals
   originalUnity: UnityGame
 }
@@ -122,7 +122,7 @@ async function initializeWebRenderer(options: RendererOptions): Promise<Decentra
   const engineStartedFuture = future<any>()
 
   // The namespace DCL is exposed to global because the unity template uses it to send the messages
-  // @see https://github.com/decentraland/unity-renderer/blob/bc2bf1ee0d685132c85606055e592bac038b3471/unity-renderer/Assets/Plugins/JSFunctions.jslib#L6-L29
+  // @see https://github.com/memetaverseproject/unity-renderer/blob/bc2bf1ee0d685132c85606055e592bac038b3471/unity-renderer/Assets/Plugins/JSFunctions.jslib#L6-L29
   ;(globalThis as any).DCL = {
     // This function get's called by the engine
     EngineStarted() {

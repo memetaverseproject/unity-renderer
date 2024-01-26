@@ -4,7 +4,7 @@ This is the [memetaverse explorer](https://play.memetaverse.club) official repos
 
 This repository covers mainly the Browser Interface component of the explorer product. 
 
-The Browser Interface component responsibility includes running the SDK scenes, handling back-end business logic and more. This said, you can clone this repo and run the browser version of Explorer. If you want to contribute to our renderer, please check out the unity-renderer repo: https://github.com/decentraland/unity-renderer/pulls. Unity-renderer repo outputs a npm package that's used on this one for publishing the Explorer.
+The Browser Interface component responsibility includes running the SDK scenes, handling back-end business logic and more. This said, you can clone this repo and run the browser version of Explorer. If you want to contribute to our renderer, please check out the unity-renderer repo: https://github.com/memetaverseproject/unity-renderer/pulls. Unity-renderer repo outputs a npm package that's used on this one for publishing the Explorer.
 
 ## Before you start
 
@@ -80,8 +80,8 @@ If the CI succeeds, you can browse to the generated link and test your changes. 
 - [How to create typescript workers](docs/how-to-create-typescript-workers.md)
 - [How to add/update protobuf-compiled components](docs/how-to-add-or-update-protobuf-compiled-components.md)
 
-For more advanced topics, don't forget to check out our [Architecture Decisions Records](https://github.com/decentraland/adr) (ADR) repository.
+For more advanced topics, don't forget to check out our [Architecture Decisions Records](https://github.com/memetaverseproject/adr) (ADR) repository.
 
 ## Copyright info
 
-This repository is protected with a standard Apache 2 license. See the terms and conditions in the [LICENSE](https://github.com/decentraland/unity-client/blob/master/LICENSE) file.
+This repository is protected with a standard Apache 2 license. See the terms and conditions in the [LICENSE](https://github.com/memetaverseproject/unity-client/blob/master/LICENSE) file.

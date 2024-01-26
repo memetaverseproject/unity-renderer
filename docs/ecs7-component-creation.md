@@ -8,19 +8,19 @@ slug: "/contributor/unity-renderer/components/how-to-create-components"
 To create new components, we need to do a couple of things before starting coding them in the renderer.
 There is a step-by-step guide that you need to follow. I will list all the steps, and then you can follow each step with a longer explanation.
 
-1. Create the proto definition in [@dcl/protocol](https://github.com/decentraland/protocol)
-2. Generate the new proto TypeScript code in the [js-sdk-toolchain](https://github.com/decentraland/js-sdk-toolchain)
+1. Create the proto definition in [@dcl/protocol](https://github.com/memetaverseproject/protocol)
+2. Generate the new proto TypeScript code in the [js-sdk-toolchain](https://github.com/memetaverseproject/js-sdk-toolchain)
 3. Create a test for `js-sdk-toolchain`
 4. Generate the new proto C# code in the project
 5. Code the new component
 6. Ensure that the component follows the convention
 
 
-## Create the proto definition in [@dcl/protocol](https://github.com/decentraland/protocol)
+## Create the proto definition in [@dcl/protocol](https://github.com/memetaverseproject/protocol)
 
-To create a definition, you must go to this repo: https://github.com/decentraland/protocol
+To create a definition, you must go to this repo: https://github.com/memetaverseproject/protocol
 
-1. Create the proto definition in this folder: https://github.com/decentraland/protocol/tree/main/ecs/components
+1. Create the proto definition in this folder: https://github.com/memetaverseproject/protocol/tree/main/ecs/components
 2. Create a PR with the news changes
 
 > **_NOTE:_**  After creating the PR, a GitHub Bot will comment with the package link to test the PR. You can use that link for testing in the following steps
@@ -51,11 +51,11 @@ message PBAudioSource {
 }
 ```
 
-## Generate the new proto TypeScript code in the [js-sdk-toolchain](https://github.com/decentraland/js-sdk-toolchain)
+## Generate the new proto TypeScript code in the [js-sdk-toolchain](https://github.com/memetaverseproject/js-sdk-toolchain)
 
-Download the following repo: https://github.com/decentraland/js-sdk-toolchain
+Download the following repo: https://github.com/memetaverseproject/js-sdk-toolchain
 
-Run the following command at the root of the [js-sdk-toolchain](https://github.com/decentraland/js-sdk-toolchain) project:
+Run the following command at the root of the [js-sdk-toolchain](https://github.com/memetaverseproject/js-sdk-toolchain) project:
 
 ```
 npm install @dcl/protocol@next
@@ -74,7 +74,7 @@ And push the generated code.
 
 ## Generate the new proto C# code in the project
 
-To generate the C# code, we need to go to the [`scripts`](https://github.com/decentraland/unity-renderer/tree/dev/scripts) path in the root of the [@decentraland/unity-renderer](https://github.com/decentraland/unity-renderer) repository. And execute the following commands:
+To generate the C# code, we need to go to the [`scripts`](https://github.com/memetaverseproject/unity-renderer/tree/dev/scripts) path in the root of the [@decentraland/unity-renderer](https://github.com/memetaverseproject/unity-renderer) repository. And execute the following commands:
 
 ```
 npm install

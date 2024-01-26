@@ -55,7 +55,7 @@ To test against a build made on this repository, you can use a link with this fo
 1. [Contribution Guidelines](.github/CONTRIBUTING.md)
 2. [Coding Guidelines](docs/style-guidelines.md)
 3. [Code Review Standards](docs/code-review-standards.md)
-4. [Architecture](https://github.com/decentraland/architecture)
+4. [Architecture](https://github.com/memetaverseproject/architecture)
 
 # Advanced debugging scenarios
 
@@ -109,7 +109,7 @@ When the steps are followed, you will be able to run the local Unity build by go
 7. If you need a Unity re-build, you can just replace the files and reload the browser without restarting the `make watch` process.
 
 Alternatively you can go through these 2 steps after step 3 and load the build locally using `localhost:3000` 
-1. Make sure you have the [explorer website repository](https://github.com/decentraland/explorer-website) cloned.
+1. Make sure you have the [explorer website repository](https://github.com/memetaverseproject/explorer-website) cloned.
 2. Make sure you have the local website up and running by executing `npm run start:linked` in the cloned repo directory (`npm i` first just in case).
 3. When the WebGL build finishes, copy all the files inside the resulting `/build` folder (`unity.loader.js` is not necessary as we use a modified loader) and paste them inside `explorer-website/node_modules/@dcl/unity-renderer`.
 4. Access using `localhost:3000`
@@ -134,8 +134,7 @@ If the local WebGL build always fails with the error `System.ComponentModel.Win3
 
 - [How to use Unity visual tests](docs/how-to-use-unity-visual-tests.md)
 - [How to profile a local Unity build remotely](docs/how-to-profile-a-local-unity-build-remotely.md)
-- [How to connect the Editor with play.memetaverse.club](docs/how-to-connect-with-play-decentraland-org.md)
-  - For more advanced topics, don't forget to check out our [Architecture Decisions Records](https://github.com/decentraland/adr) (ADR) repository.
+- [How to connect the Editor with play.memetaverse.club](docs/how-to-connect-with-play-memetaverseproject-club.md)
 - [How to create new components for ECS7](docs/ecs7-component-creation.md)
 - [How to modify the Renderer Protocol](docs/how-to-renderer-protocol.md)
 - [How to use Asset Bundle Converter](docs/how-to-use-asset-bundle-coverter.md)
@@ -147,4 +146,4 @@ If the local WebGL build always fails with the error `System.ComponentModel.Win3
 ## Copyright info
 
 This repository is protected with a standard Apache 2 license. See the terms and conditions in
-the [LICENSE](https://github.com/decentraland/unity-renderer/blob/master/LICENSE) file.
+the [LICENSE](https://github.com/memetaverseproject/unity-renderer/blob/master/LICENSE) file.

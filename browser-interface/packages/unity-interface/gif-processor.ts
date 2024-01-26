@@ -3,7 +3,7 @@ import { GifAsset, ProcessorMessageData, WorkerMessage, WorkerMessageData } from
 
 declare const Worker: any
 
-// @see https://github.com/decentraland/unity-renderer/blob/bc2bf1ee0d685132c85606055e592bac038b3471/unity-renderer/Assets/Plugins/JSFunctions.jslib#L11
+// @see https://github.com/memetaverseproject/unity-renderer/blob/bc2bf1ee0d685132c85606055e592bac038b3471/unity-renderer/Assets/Plugins/JSFunctions.jslib#L11
 declare const DCL: { GL: any }
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
