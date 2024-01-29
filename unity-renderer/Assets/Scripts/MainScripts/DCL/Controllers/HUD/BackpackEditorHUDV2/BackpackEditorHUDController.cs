@@ -31,13 +31,12 @@ namespace DCL.Backpack
         {
             {"urn:memetaverse:off-chain:base-avatars:BaseFemale", new Dictionary<string, string>
             {
-                // {WearableLiterals.Categories.UPPER_BODY, "urn:memetaverse:off-chain:base-avatars:light_green_jennie_short_dress"},
-                // {WearableLiterals.Categories.LOWER_BODY, "urn:memetaverse:off-chain:base-avatars:purple_pants"},
-                // {WearableLiterals.Categories.FEET, "urn:memetaverse:off-chain:base-avatars:black_while_shoes"},
-                // {WearableLiterals.Categories.HAIR, "urn:memetaverse:off-chain:base-avatars:standard_hair"},
-                {WearableLiterals.Categories.MOUTH, "urn:memetaverse:off-chain:base-avatars:f_mouth_00"},
-                // {WearableLiterals.Categories.EYEBROWS, "urn:memetaverse:off-chain:base-avatars:f_eyebrows_00"},
+                {WearableLiterals.Categories.UPPER_BODY, "urn:memetaverse:off-chain:base-avatars:f_ubody_10"},
+                {WearableLiterals.Categories.LOWER_BODY, "urn:memetaverse:off-chain:base-avatars:f_lbody_02"},
+                {WearableLiterals.Categories.FEET, "urn:memetaverse:off-chain:base-avatars:f_feet_05"},
+                {WearableLiterals.Categories.HAIR, "urn:memetaverse:off-chain:base-avatars:f_hair_06"},
                 {WearableLiterals.Categories.EYES, "urn:memetaverse:off-chain:base-avatars:f_eyes_00"},
+                {WearableLiterals.Categories.MOUTH, "urn:memetaverse:off-chain:base-avatars:f_mouth_00"},
             }}
         };
 

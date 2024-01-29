@@ -62,20 +62,19 @@ public static class WearableLiterals
         {
             { (BodyShapes.MALE, Categories.EYES), "urn:memetaverse:off-chain:base-avatars:m_eyes_00" },
             // { (BodyShapes.MALE, Categories.EYEBROWS), "urn:memetaverse:off-chain:base-avatars:eyebrows_00" },
-            { (BodyShapes.MALE, Categories.MOUTH), "urn:memetaverse:off-chain:base-avatars:mouth_00" },
-            // { (BodyShapes.MALE, Categories.HAIR), "urn:memetaverse:off-chain:base-avatars:hair_left_over" },
+            { (BodyShapes.MALE, Categories.MOUTH), "urn:memetaverse:off-chain:base-avatars:m_mouth_00" },
+            { (BodyShapes.MALE, Categories.HAIR), "urn:memetaverse:off-chain:base-avatars:m_hair_02" },
             // { (BodyShapes.MALE, Categories.FACIAL), "urn:memetaverse:off-chain:base-avatars:beard" },
-            { (BodyShapes.MALE, Categories.UPPER_BODY), "urn:memetaverse:off-chain:base-avatars:f_ubody_01" },
+            { (BodyShapes.MALE, Categories.UPPER_BODY), "urn:memetaverse:off-chain:base-avatars:m_ubody_09" },
             // { (BodyShapes.MALE, Categories.LOWER_BODY), "urn:memetaverse:off-chain:base-avatars:red_short" },
-            // { (BodyShapes.MALE, Categories.FEET), "urn:memetaverse:off-chain:base-avatars:red_sandals" },
+            { (BodyShapes.MALE, Categories.FEET), "urn:memetaverse:off-chain:base-avatars:m_feet_01" },
 
             { (BodyShapes.FEMALE, Categories.EYES), "urn:memetaverse:off-chain:base-avatars:f_eyes_00" },
-            // { (BodyShapes.FEMALE, Categories.EYEBROWS), "urn:memetaverse:off-chain:base-avatars:f_eyebrows_00" },
+            { (BodyShapes.FEMALE, Categories.HAIR), "urn:memetaverse:off-chain:base-avatars:f_hair_06" },
+            { (BodyShapes.FEMALE, Categories.UPPER_BODY), "urn:memetaverse:off-chain:base-avatars:f_ubody_10" },
+            { (BodyShapes.FEMALE, Categories.LOWER_BODY), "urn:memetaverse:off-chain:base-avatars:f_lbody_02" },
+            { (BodyShapes.FEMALE, Categories.FEET), "urn:memetaverse:off-chain:base-avatars:f_feet_05" },
             { (BodyShapes.FEMALE, Categories.MOUTH), "urn:memetaverse:off-chain:base-avatars:f_mouth_00" },
-            // { (BodyShapes.FEMALE, Categories.HAIR), "urn:memetaverse:off-chain:base-avatars:standard_hair" },
-            { (BodyShapes.FEMALE, Categories.UPPER_BODY), "urn:memetaverse:off-chain:base-avatars:m_ubody_01" },
-            // { (BodyShapes.FEMALE, Categories.LOWER_BODY), "urn:memetaverse:off-chain:base-avatars:purple_pants" },
-            // { (BodyShapes.FEMALE, Categories.FEET), "urn:memetaverse:off-chain:base-avatars:black_while_shoes" },
         };
 
         public static string[] GetDefaultWearables() => defaultWearables.Values.Distinct().ToArray();

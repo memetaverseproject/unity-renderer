@@ -20,13 +20,12 @@ namespace DCL.ECSComponents
 
         private static readonly RepeatedField<string> defaultWearables = new RepeatedField<string>()
         {
+            "urn:memetaverse:off-chain:base-avatars:f_ubody_10",
+            "urn:memetaverse:off-chain:base-avatars:f_hair_06",
+            "urn:memetaverse:off-chain:base-avatars:f_lbody_02",
+            "urn:memetaverse:off-chain:base-avatars:f_feet_05",
             "urn:memetaverse:off-chain:base-avatars:f_eyes_00",
-            // "urn:memetaverse:off-chain:base-avatars:f_eyebrows_00",
-            "urn:memetaverse:off-chain:base-avatars:f_mouth_00",
-            // "urn:memetaverse:off-chain:base-avatars:standard_hair",
-            // "urn:memetaverse:off-chain:base-avatars:light_green_jennie_short_dress",
-            // "urn:memetaverse:off-chain:base-avatars:purple_pants",
-            // "urn:memetaverse:off-chain:base-avatars:black_while_shoes"
+            "urn:memetaverse:off-chain:base-avatars:f_mouth_00"
         };
 
         public static long GetExpressionTriggerTimestamp(this PBAvatarShape self)
