@@ -4,26 +4,20 @@ const bodyShapeWearables = [
   {
     bodyShape: 'urn:memetaverse:off-chain:base-avatars:BaseFemale',
     wearables: [
-      // 'urn:memetaverse:off-chain:base-avatars:eyes_00',
-      // 'urn:memetaverse:off-chain:base-avatars:eyebrows_00',
-      // 'urn:memetaverse:off-chain:base-avatars:mouth_00',
-      // 'urn:memetaverse:off-chain:base-avatars:hair_left_over',
-      // 'urn:memetaverse:off-chain:base-avatars:beard',
-      // 'urn:memetaverse:off-chain:base-avatars:brown_jacket',
-      // 'urn:memetaverse:off-chain:base-avatars:red_short',
-      // 'urn:memetaverse:off-chain:base-avatars:red_sandals'
+      'urn:memetaverse:off-chain:base-avatars:f_eyes_00',
+      'urn:memetaverse:off-chain:base-avatars:f_hair_06',
+      'urn:memetaverse:off-chain:base-avatars:f_ubody_10',
+      'urn:memetaverse:off-chain:base-avatars:f_lbody_02',
+      'urn:memetaverse:off-chain:base-avatars:f_feet_05'
     ]
   },
   {
     bodyShape: 'urn:memetaverse:off-chain:base-avatars:BaseMale',
     wearables: [
-      // 'urn:memetaverse:off-chain:base-avatars:f_eyes_00',
-      // 'urn:memetaverse:off-chain:base-avatars:f_eyebrows_00',
-      // 'urn:memetaverse:off-chain:base-avatars:f_mouth_00',
-      // 'urn:memetaverse:off-chain:base-avatars:standard_hair',
-      // 'urn:memetaverse:off-chain:base-avatars:light_green_jennie_short_dress',
-      // 'urn:memetaverse:off-chain:base-avatars:purple_pants',
-      // 'urn:memetaverse:off-chain:base-avatars:black_while_shoes'
+      'urn:memetaverse:off-chain:base-avatars:m_eyes_00',
+      'urn:memetaverse:off-chain:base-avatars:m_hair_02',
+      'urn:memetaverse:off-chain:base-avatars:m_ubody_06',
+      'urn:memetaverse:off-chain:base-avatars:m_feet_01'
     ]
   }
 ]
