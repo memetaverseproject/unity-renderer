@@ -8,22 +8,22 @@ namespace DCL
     {
         public static Transform GetLeftHand(Transform[] bodyParts)
         {
-            return GetBodyPart(bodyParts, "Avatar_LeftHand");
+            return GetBodyPart(bodyParts, "Wrist_L");
         }
 
         public static Transform GetRightHand(Transform[] bodyParts)
         {
-            return GetBodyPart(bodyParts, "Avatar_RightHand");
+            return GetBodyPart(bodyParts, "Wrist_R");
         }
 
         public static Transform GetLeftToe(Transform[] bodyParts)
         {
-            return GetBodyPart(bodyParts, "Avatar_LeftToeBase");
+            return GetBodyPart(bodyParts, "Toes_L");
         }
 
         public static Transform GetRightToe(Transform[] bodyParts)
         {
-            return GetBodyPart(bodyParts, "Avatar_RightToeBase");
+            return GetBodyPart(bodyParts, "Toes_R");
         }
 
         private static Transform GetBodyPart(Transform[] bodyParts, string name)

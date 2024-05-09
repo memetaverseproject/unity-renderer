@@ -252,7 +252,7 @@ Transform:
   m_GameObject: {fileID: 3355893819437101396}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.3, z: 0}
+  m_LocalPosition: {x: 0, y: 2.1, z: -0}
   m_LocalScale: {x: -10, y: 0.1, z: -10}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -312,8 +312,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3569267310167974304}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.1263908, y: -0, z: -0, w: 0.99198055}
+  m_LocalPosition: {x: 0, y: -237, z: -63}
   m_LocalScale: {x: 1.568627, y: 1.568627, z: 1.568627}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -322,7 +322,7 @@ Transform:
   - {fileID: 6765015854197648131}
   - {fileID: 6705057966129581724}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 14.522, y: 0, z: 0}
 --- !u!114 &4064226640794097003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -561,17 +561,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   femaleLocomotions:
-    idle: {fileID: 7400000, guid: d14b2337e11f258528626c9248c11954, type: 2}
-    walk: {fileID: 7400000, guid: 01f8ac94ed54390a0b5588a054d5dbfd, type: 2}
-    run: {fileID: 7400000, guid: 2edb7a086c2bf535bb2c4cfe81c8f120, type: 2}
-    jump: {fileID: 7400000, guid: f4da2b170d7185bf385a7ae5e157dcb8, type: 2}
-    fall: {fileID: 7400000, guid: 7b08169c12e005c71a7a8291cf12dc43, type: 2}
+    idle: {fileID: 7400000, guid: 1daa9ef5490971c4595a4427fd2bb839, type: 2}
+    walk: {fileID: 7400000, guid: 3a74825e70836b9479d8364e9c589696, type: 2}
+    run: {fileID: 7400000, guid: 6590d19ae20d985498cd761bfd0ce6e3, type: 2}
+    jump: {fileID: 7400000, guid: 7a54ec42d8bafba42bae8b0633ee8b70, type: 2}
+    fall: {fileID: 7400000, guid: b7396055474538742962ca1262dece62, type: 2}
   maleLocomotions:
-    idle: {fileID: 7400000, guid: 8e6e455558b293e5ca499276f40015d6, type: 2}
-    walk: {fileID: 7400000, guid: 33a1c44e298757cf8a2d1edd1cd3e502, type: 2}
-    run: {fileID: 7400000, guid: 4c7d0dd5296a83b24b403a47cd607188, type: 2}
-    jump: {fileID: 7400000, guid: 9ad3ec79e3ceadac3ac8cf6d4a04a24b, type: 2}
-    fall: {fileID: 7400000, guid: 830df4924e00c45eba66b396f9b7dec0, type: 2}
+    idle: {fileID: 7400000, guid: 135339c3f5f3e8a439cbd266de2f214b, type: 2}
+    walk: {fileID: 7400000, guid: d996aa5af58cf3a459375a79bd85a668, type: 2}
+    run: {fileID: 7400000, guid: c2b5d50859b023f43b2ae0ada46c896d, type: 2}
+    jump: {fileID: 7400000, guid: ba5f88b1e95f3a64f8d901eb417f96af, type: 2}
+    fall: {fileID: 7400000, guid: 72f22cf7416bc9f45a3d096c6d816cc8, type: 2}
   animation: {fileID: 0}
   blackboard:
     walkSpeedFactor: 0.5
@@ -673,7 +673,7 @@ Transform:
   m_GameObject: {fileID: 8241678440887229371}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.996631, z: -0.08201647, w: 0}
-  m_LocalPosition: {x: 0, y: 1.4, z: 3.5}
+  m_LocalPosition: {x: 0, y: 1, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
