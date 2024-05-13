@@ -26,10 +26,10 @@ for (let dir of dirs) {
         )
       }
     }
-  } else if (builder.version === 9) {
-    const ids = Object.keys(builder.scene.assets)
+  } else if (builder.version === 11) {
+    const ids = Object.keys(builder.scene.sdk6.assets)
     for (let id of ids) {
-      const assets = builder.scene.assets[id].contents
+      const assets = builder.scene.sdk6.assets[id].contents
       for (let asset of Object.keys(assets)) {
         sceneMappings.push({ file: 'models/' + asset, hash: assets[asset] })
         fs.copyFileSync(path.join(__dirname, dir, 'models', asset), path.join(__dirname, 'contents', assets[asset]))

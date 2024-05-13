@@ -1,34 +1,65 @@
 {
-  "display": {
-    "title": "interactive-text",
-    "favicon": "favicon_asset"
-  },
-  "owner": "",
   "contact": {
-    "name": "author-name",
+    "name": "Guest#9d12",
     "email": ""
   },
+  "default": {
+    "display": {
+      "title": "interactive-text",
+      "favicon": "favicon_asset"
+    },
+    "owner": "",
+    "contact": {
+      "name": "Guest#9d12",
+      "email": ""
+    },
+    "main": "bin/game.js",
+    "tags": [],
+    "scene": {
+      "parcels": [
+        "0,0"
+      ],
+      "base": "0,0"
+    },
+    "communications": {
+      "type": "webrtc",
+      "signalling": "https://signalling-01.decentraland.org"
+    },
+    "policy": {
+      "contentRating": "E",
+      "fly": true,
+      "voiceEnabled": true,
+      "blacklist": [],
+      "teleportPosition": ""
+    }
+  },
+  "display": {
+    "title": "New scene",
+    "favicon": "favicon_asset",
+    "description": "",
+    "navmapThumbnail": "scene-thumbnail.png"
+  },
   "main": "bin/game.js",
-  "tags": [],
+  "owner": "",
   "scene": {
     "parcels": [
       "0,0"
     ],
     "base": "0,0"
   },
-  "communications": {
-    "type": "webrtc",
-    "signalling": "https://signalling-01.memetaverse.club"
-  },
-  "policy": {
-    "contentRating": "E",
-    "fly": true,
-    "voiceEnabled": true,
-    "blacklist": [],
-    "teleportPosition": ""
-  },
+  "tags": [],
   "source": {
+    "version": 1,
     "origin": "builder",
-    "projectId": "4de4f548-e83c-47c4-8dba-72f9c8545c0e"
+    "projectId": "47ab2deb-ee81-4202-ab7d-31df93328a3e",
+    "point": {
+      "x": 0,
+      "y": 0
+    },
+    "rotation": "east",
+    "layout": {
+      "rows": 1,
+      "cols": 1
+    }
   }
 }
