@@ -10,7 +10,7 @@ namespace DCL.Social.Chat
 {
     public class ChannelMembersHUDController : IDisposable
     {
-        private const int LOAD_TIMEOUT = 2;
+        private const int LOAD_TIMEOUT = 30;
         private const int LOAD_PAGE_SIZE = 30;
         private const int MINUTES_FOR_AUTOMATIC_RELOADING = 1;
 

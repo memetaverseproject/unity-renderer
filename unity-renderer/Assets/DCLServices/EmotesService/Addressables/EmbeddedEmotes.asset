@@ -12,5 +12,74 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f494ac66935f40baa4a19f7ec11c7608, type: 3}
   m_Name: EmbeddedEmotes
   m_EditorClassIdentifier: 
-  emotes: []
+  emotes:
+  - data:
+      representations: []
+      category: 
+      tags: []
+      replaces: []
+      hides: []
+      removesDefaultHiding: []
+      loop: 0
+    emoteDataV0:
+      loop: 0
+    id: win
+    entityId: 
+    baseUrl: 
+    baseUrlBundles: 
+    i18n: []
+    thumbnail: 
+    thumbnailSprite: {fileID: 0}
+    rarity: 
+    description: 
+    issuedId: 0
+    femaleAnimation: {fileID: 0}
+    maleAnimation: {fileID: 7400000, guid: 9d57254f2c8ff5b379bd958bebfac257, type: 2}
+    dontShowInBackpack: 0
+  - data:
+      representations: []
+      category: 
+      tags: []
+      replaces: []
+      hides: []
+      removesDefaultHiding: []
+      loop: 0
+    emoteDataV0:
+      loop: 0
+    id: wave
+    entityId: 
+    baseUrl: 
+    baseUrlBundles: 
+    i18n: []
+    thumbnail: 
+    thumbnailSprite: {fileID: 0}
+    rarity: 
+    description: 
+    issuedId: 0
+    femaleAnimation: {fileID: 0}
+    maleAnimation: {fileID: 7400000, guid: 885537099d3475c729a42f87429997f3, type: 2}
+    dontShowInBackpack: 0
+  - data:
+      representations: []
+      category: 
+      tags: []
+      replaces: []
+      hides: []
+      removesDefaultHiding: []
+      loop: 0
+    emoteDataV0:
+      loop: 0
+    id: like
+    entityId: 
+    baseUrl: 
+    baseUrlBundles: 
+    i18n: []
+    thumbnail: 
+    thumbnailSprite: {fileID: 0}
+    rarity: 
+    description: 
+    issuedId: 0
+    femaleAnimation: {fileID: 0}
+    maleAnimation: {fileID: 7400000, guid: 461caa41bc31c1989965d5474ba07463, type: 2}
+    dontShowInBackpack: 0
   extendedEmotes: []
