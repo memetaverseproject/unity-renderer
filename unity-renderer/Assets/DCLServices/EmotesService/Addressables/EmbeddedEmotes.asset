@@ -29,7 +29,7 @@ MonoBehaviour:
     baseUrlBundles: 
     i18n: []
     thumbnail: 
-    thumbnailSprite: {fileID: 0}
+    thumbnailSprite: {fileID: 21300000, guid: fb2a51422f4f0f84ca589e9716428e06, type: 3}
     rarity: 
     description: 
     issuedId: 0
@@ -52,7 +52,7 @@ MonoBehaviour:
     baseUrlBundles: 
     i18n: []
     thumbnail: 
-    thumbnailSprite: {fileID: 0}
+    thumbnailSprite: {fileID: 21300000, guid: 5ff44e022ab99054bb0a1f79b2077c4f, type: 3}
     rarity: 
     description: 
     issuedId: 0
@@ -75,7 +75,7 @@ MonoBehaviour:
     baseUrlBundles: 
     i18n: []
     thumbnail: 
-    thumbnailSprite: {fileID: 0}
+    thumbnailSprite: {fileID: 21300000, guid: fb2a51422f4f0f84ca589e9716428e06, type: 3}
     rarity: 
     description: 
     issuedId: 0
