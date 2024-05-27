@@ -1752,6 +1752,12 @@ PrefabInstance:
       propertyPath: model.slotNumber
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 8875235463942680543, guid: fc8ae579143d63741bc0f33c409ca892,
+        type: 3}
+      propertyPath: defaultEmotePicture
+      value: 
+      objectReference: {fileID: 21300000, guid: ab7c328dc27c1461981120a16e1a4cd2,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1946,6 +1952,12 @@ PrefabInstance:
       propertyPath: model.slotNumber
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 8875235463942680543, guid: fc8ae579143d63741bc0f33c409ca892,
+        type: 3}
+      propertyPath: defaultEmotePicture
+      value: 
+      objectReference: {fileID: 21300000, guid: ab7c328dc27c1461981120a16e1a4cd2,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2294,7 +2306,7 @@ PrefabInstance:
     - target: {fileID: 2026062374757361563, guid: a0b08d9ca8421644db83c1bd3f2e2e48,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2026062374757361563, guid: a0b08d9ca8421644db83c1bd3f2e2e48,
         type: 3}
@@ -2304,7 +2316,7 @@ PrefabInstance:
     - target: {fileID: 2026062374757361563, guid: a0b08d9ca8421644db83c1bd3f2e2e48,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2026062374757361563, guid: a0b08d9ca8421644db83c1bd3f2e2e48,
         type: 3}
@@ -2359,7 +2371,7 @@ PrefabInstance:
     - target: {fileID: 2026062374757361563, guid: a0b08d9ca8421644db83c1bd3f2e2e48,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2026062374757361563, guid: a0b08d9ca8421644db83c1bd3f2e2e48,
         type: 3}
@@ -2564,12 +2576,12 @@ PrefabInstance:
     - target: {fileID: 7829080691771640198, guid: a0b08d9ca8421644db83c1bd3f2e2e48,
         type: 3}
       propertyPath: m_Spacing.x
-      value: 32
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 7829080691771640198, guid: a0b08d9ca8421644db83c1bd3f2e2e48,
         type: 3}
       propertyPath: m_Spacing.y
-      value: 36
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 7829080691771640198, guid: a0b08d9ca8421644db83c1bd3f2e2e48,
         type: 3}
@@ -3344,6 +3356,12 @@ PrefabInstance:
       propertyPath: model.slotNumber
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 8875235463942680543, guid: fc8ae579143d63741bc0f33c409ca892,
+        type: 3}
+      propertyPath: defaultEmotePicture
+      value: 
+      objectReference: {fileID: 21300000, guid: ab7c328dc27c1461981120a16e1a4cd2,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3538,6 +3556,12 @@ PrefabInstance:
       propertyPath: model.slotNumber
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 8875235463942680543, guid: fc8ae579143d63741bc0f33c409ca892,
+        type: 3}
+      propertyPath: defaultEmotePicture
+      value: 
+      objectReference: {fileID: 21300000, guid: ab7c328dc27c1461981120a16e1a4cd2,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3732,6 +3756,12 @@ PrefabInstance:
       propertyPath: model.slotNumber
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8875235463942680543, guid: fc8ae579143d63741bc0f33c409ca892,
+        type: 3}
+      propertyPath: defaultEmotePicture
+      value: 
+      objectReference: {fileID: 21300000, guid: ab7c328dc27c1461981120a16e1a4cd2,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3926,6 +3956,12 @@ PrefabInstance:
       propertyPath: model.slotNumber
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 8875235463942680543, guid: fc8ae579143d63741bc0f33c409ca892,
+        type: 3}
+      propertyPath: defaultEmotePicture
+      value: 
+      objectReference: {fileID: 21300000, guid: ab7c328dc27c1461981120a16e1a4cd2,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4556,6 +4592,12 @@ PrefabInstance:
       propertyPath: model.slotNumber
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 8875235463942680543, guid: fc8ae579143d63741bc0f33c409ca892,
+        type: 3}
+      propertyPath: defaultEmotePicture
+      value: 
+      objectReference: {fileID: 21300000, guid: ab7c328dc27c1461981120a16e1a4cd2,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4755,6 +4797,12 @@ PrefabInstance:
       propertyPath: model.slotNumber
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8875235463942680543, guid: fc8ae579143d63741bc0f33c409ca892,
+        type: 3}
+      propertyPath: defaultEmotePicture
+      value: 
+      objectReference: {fileID: 21300000, guid: ab7c328dc27c1461981120a16e1a4cd2,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4939,6 +4987,12 @@ PrefabInstance:
       propertyPath: model.hasSeparator
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8875235463942680543, guid: fc8ae579143d63741bc0f33c409ca892,
+        type: 3}
+      propertyPath: defaultEmotePicture
+      value: 
+      objectReference: {fileID: 21300000, guid: ab7c328dc27c1461981120a16e1a4cd2,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5138,6 +5192,12 @@ PrefabInstance:
       propertyPath: model.slotNumber
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8875235463942680543, guid: fc8ae579143d63741bc0f33c409ca892,
+        type: 3}
+      propertyPath: defaultEmotePicture
+      value: 
+      objectReference: {fileID: 21300000, guid: ab7c328dc27c1461981120a16e1a4cd2,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

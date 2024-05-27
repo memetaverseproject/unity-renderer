@@ -152,7 +152,7 @@ namespace DCLServices.EmotesCatalog.EmotesCatalogService
 
         public async UniTask<IReadOnlyList<WearableItem>> RequestOwnedEmotesAsync(string userId, CancellationToken ct = default)
         {
-            const int TIMEOUT = 2;
+            const int TIMEOUT = 30;
             CancellationTokenSource timeoutCTS = new CancellationTokenSource();
             var timeout = timeoutCTS.CancelAfterSlim(TimeSpan.FromSeconds(TIMEOUT));
             var promise = RequestOwnedEmotes(userId);
@@ -213,7 +213,7 @@ namespace DCLServices.EmotesCatalog.EmotesCatalogService
 
         public async UniTask<WearableItem> RequestEmoteAsync(string id, CancellationToken ct = default)
         {
-            const int TIMEOUT = 2;
+            const int TIMEOUT = 30;
             CancellationTokenSource timeoutCTS = new CancellationTokenSource();
             var timeout = timeoutCTS.CancelAfterSlim(TimeSpan.FromSeconds(TIMEOUT));
             ct.ThrowIfCancellationRequested();

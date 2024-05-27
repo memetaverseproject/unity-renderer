@@ -11,7 +11,7 @@ namespace DCL.Social.Chat
 {
     public class SearchChannelsWindowController : IHUD
     {
-        private const int LOAD_TIMEOUT = 2;
+        private const int LOAD_TIMEOUT = 30;
         internal const int LOAD_PAGE_SIZE = 15;
 
         private readonly IChatController chatController;

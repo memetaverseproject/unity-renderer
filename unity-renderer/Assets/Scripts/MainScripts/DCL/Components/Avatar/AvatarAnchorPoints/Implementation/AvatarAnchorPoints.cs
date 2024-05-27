@@ -6,8 +6,8 @@ public class AvatarAnchorPoints : IAvatarAnchorPoints
 {
     private static readonly Dictionary<AvatarAnchorPointIds, string> boneMapping = new Dictionary<AvatarAnchorPointIds, string>()
     {
-        { AvatarAnchorPointIds.LeftHand, "Avatar_LeftHand" },
-        { AvatarAnchorPointIds.RightHand, "Avatar_RightHand" },
+        { AvatarAnchorPointIds.LeftHand, "Wrist_L" },
+        { AvatarAnchorPointIds.RightHand, "Wrist_R" },
     };
 
     private readonly Dictionary<AvatarAnchorPointIds, Transform> boneTransformMapping = new Dictionary<AvatarAnchorPointIds, Transform>();
