@@ -42,7 +42,7 @@ namespace DCL.GLTFast.Wrappers
             var asyncOp = await webRequestController.GetAsync(
                 url: finalUrl,
                 downloadHandler: new DownloadHandlerBuffer(),
-                timeout: 30,
+                timeout: 300,
                 requestAttemps: 3);
 
             GltfDownloaderWrapper wrapper = new GltfDownloaderWrapper(asyncOp);

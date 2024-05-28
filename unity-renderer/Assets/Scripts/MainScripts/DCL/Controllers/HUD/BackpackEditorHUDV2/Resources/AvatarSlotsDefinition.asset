@@ -27,6 +27,13 @@ MonoBehaviour:
     - hands_wear
     - lower_body
     - feet
+    - skin
   - key: accessories
     value:
-    - skin
+    - hat
+    - helmet
+    - earring
+    - tiara
+    - mask
+    - eyewear
+    - top_head
