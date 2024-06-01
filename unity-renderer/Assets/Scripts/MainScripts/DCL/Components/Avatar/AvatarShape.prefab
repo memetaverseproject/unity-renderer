@@ -159,11 +159,11 @@ MonoBehaviour:
     jump: {fileID: 0}
     fall: {fileID: 0}
   maleLocomotions:
-    idle: {fileID: 7400000, guid: 715c446d93e0fff48b0caeb5121c0177, type: 2}
-    walk: {fileID: 7400000, guid: 14d1bb7946d21e84a973f71e651acc3b, type: 2}
-    run: {fileID: 7400000, guid: ac1dd49474d88b54bb72c75c1a2b3b8a, type: 2}
-    jump: {fileID: 7400000, guid: 863af83465add6c46b97c5ef9dc0e43c, type: 2}
-    fall: {fileID: 7400000, guid: a6a4b34f37b60594e8e7fbd2874ab736, type: 2}
+    idle: {fileID: 7400000, guid: 0204bc320aa1b0a5bb199db0a79d2fae, type: 2}
+    walk: {fileID: 7400000, guid: 663ecf231cc06fb718f9b853a88999fe, type: 2}
+    run: {fileID: 7400000, guid: 989f164af770cb9a9be5873709cc8cf1, type: 2}
+    jump: {fileID: 7400000, guid: 42eb383f170fee42cb350d065f244b28, type: 2}
+    fall: {fileID: 7400000, guid: 8a64584f0002cdfb0ba188dac09929d3, type: 2}
   animation: {fileID: 0}
   blackboard:
     walkSpeedFactor: 0.5
