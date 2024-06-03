@@ -66,8 +66,6 @@ SpriteAtlas:
     - 4a803782af3694d97b17f31e269c04d1: 21300000
     - 73a448e25759f4f1db4acdf472113ecf: 21300000
     - 0a7bc003ee72446d8b987131213b19f1: 21300000
-    - f1868e7375b824840bfdda3e3afe4fda: 21300000
-    - 0bfef183260d34c50b8d971b1400499e: 21300000
     - 8c8891934b1424617b1b798b02fccfc8: 21300000
     - 29b3c29329eb84defb2412248b12a449: 21300000
     - 3f256ac367a7f4a9baa188f3fc73dd76: 21300000
@@ -78,6 +76,7 @@ SpriteAtlas:
     - 1a1d2bd47f28a47c28035a04ee136edd: 21300000
     - d7329df45ca12414f9cc799103d596bf: 21300000
     - fb5041354a9234cab900dc6cc03446ea: 21300000
+    - b7de97555392de94e9a172ecf5473067: 21300000
     - 57331f65928794d50a05a8610b3a975b: 21300000
     - 2dc807c5b399c4301b1732ad95786f55: 21300000
     - 946f30660ef2f4261b313ca749c4127c: 21300000
@@ -88,15 +87,14 @@ SpriteAtlas:
     - 2b4d7ff7848124b81bf757259f34eea4: 21300000
     - 665a0e081e71c4699b07e587f9578d1d: 21300000
     - 15c0a1185bb524f0c9d7b118e081501f: 21300000
+    - 52e1b1c826178cc43bc9936d6c61e1c8: 21300000
     - 4454cae867deb4aea91f4d26c5bc88b1: 21300000
-    - 18cc300911ff74c3c922eb3a9b346f3c: 21300000
     - f0288429bd10b4d738028837ef4041db: 21300000
     - a3837a59671b94a699e1f72ece4c8d8d: 21300000
     - d4ee93e9eb8464972b0fd5598a452f50: 21300000
     - 2a24a45ae661148d2af4bc9f390fdd66: 21300000
     - c7f41b8bc4324443a82a0e197610125d: 21300000
     - 59b6b5bb7ec0348ef9f9d2890faa3efe: 21300000
-    - 84c790cbe3a484378906dc785b6c5995: 21300000
     - 866efedbbcc38498f9e6136d65695c9c: 21300000
     - 7df132fb4eb304d619c7dd33841261a1: 21300000
     - 3a17402d714be4824b651c091e883d42: 21300000
@@ -122,8 +120,6 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 4a803782af3694d97b17f31e269c04d1, type: 3}
   - {fileID: 21300000, guid: 73a448e25759f4f1db4acdf472113ecf, type: 3}
   - {fileID: 21300000, guid: 0a7bc003ee72446d8b987131213b19f1, type: 3}
-  - {fileID: 21300000, guid: f1868e7375b824840bfdda3e3afe4fda, type: 3}
-  - {fileID: 21300000, guid: 0bfef183260d34c50b8d971b1400499e, type: 3}
   - {fileID: 21300000, guid: 8c8891934b1424617b1b798b02fccfc8, type: 3}
   - {fileID: 21300000, guid: 29b3c29329eb84defb2412248b12a449, type: 3}
   - {fileID: 21300000, guid: 3f256ac367a7f4a9baa188f3fc73dd76, type: 3}
@@ -134,6 +130,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 1a1d2bd47f28a47c28035a04ee136edd, type: 3}
   - {fileID: 21300000, guid: d7329df45ca12414f9cc799103d596bf, type: 3}
   - {fileID: 21300000, guid: fb5041354a9234cab900dc6cc03446ea, type: 3}
+  - {fileID: 21300000, guid: b7de97555392de94e9a172ecf5473067, type: 3}
   - {fileID: 21300000, guid: 57331f65928794d50a05a8610b3a975b, type: 3}
   - {fileID: 21300000, guid: 2dc807c5b399c4301b1732ad95786f55, type: 3}
   - {fileID: 21300000, guid: 946f30660ef2f4261b313ca749c4127c, type: 3}
@@ -144,15 +141,14 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 2b4d7ff7848124b81bf757259f34eea4, type: 3}
   - {fileID: 21300000, guid: 665a0e081e71c4699b07e587f9578d1d, type: 3}
   - {fileID: 21300000, guid: 15c0a1185bb524f0c9d7b118e081501f, type: 3}
+  - {fileID: 21300000, guid: 52e1b1c826178cc43bc9936d6c61e1c8, type: 3}
   - {fileID: 21300000, guid: 4454cae867deb4aea91f4d26c5bc88b1, type: 3}
-  - {fileID: 21300000, guid: 18cc300911ff74c3c922eb3a9b346f3c, type: 3}
   - {fileID: 21300000, guid: f0288429bd10b4d738028837ef4041db, type: 3}
   - {fileID: 21300000, guid: a3837a59671b94a699e1f72ece4c8d8d, type: 3}
   - {fileID: 21300000, guid: d4ee93e9eb8464972b0fd5598a452f50, type: 3}
   - {fileID: 21300000, guid: 2a24a45ae661148d2af4bc9f390fdd66, type: 3}
   - {fileID: 21300000, guid: c7f41b8bc4324443a82a0e197610125d, type: 3}
   - {fileID: 21300000, guid: 59b6b5bb7ec0348ef9f9d2890faa3efe, type: 3}
-  - {fileID: 21300000, guid: 84c790cbe3a484378906dc785b6c5995, type: 3}
   - {fileID: 21300000, guid: 866efedbbcc38498f9e6136d65695c9c, type: 3}
   - {fileID: 21300000, guid: 7df132fb4eb304d619c7dd33841261a1, type: 3}
   - {fileID: 21300000, guid: 3a17402d714be4824b651c091e883d42, type: 3}
@@ -177,8 +173,6 @@ SpriteAtlas:
   - EarringsIcon
   - UniqueBackground
   - NFTCorner
-  - EmotesIcon
-  - SkinsIcon
   - CollectiblesIcon
   - CellUniqueFill
   - CardInfoUniqueContainer
@@ -189,6 +183,7 @@ SpriteAtlas:
   - ContainerGradientCard
   - FavIcon
   - CellNFTframe
+  - SkinIcon
   - DoneIcon
   - FemaleIcon
   - HairIcon
@@ -199,16 +194,15 @@ SpriteAtlas:
   - CardInfoContainer
   - CellNFTUniqueframe
   - HelmetIcon
+  - EyebrowsIcon
   - TiaraIcon
-  - EyewareIcon
   - SaleIcon
   - StarIcon
   - BottomIcon
   - CellGradient
   - InfoIcon
   - ColorSelected
-  - EyebrowIcon
-  - MouthICon
+  - MouthIcon
   - BodyIcon
   - CellFill
   - MaskIcon

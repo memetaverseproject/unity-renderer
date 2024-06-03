@@ -18,7 +18,7 @@ MonoBehaviour:
   - key: mouth
     value: {fileID: 21300000, guid: 866efedbbcc38498f9e6136d65695c9c, type: 3}
   - key: eyebrows
-    value: {fileID: 21300000, guid: 84c790cbe3a484378906dc785b6c5995, type: 3}
+    value: {fileID: 21300000, guid: 52e1b1c826178cc43bc9936d6c61e1c8, type: 3}
   - key: hair
     value: {fileID: 21300000, guid: 946f30660ef2f4261b313ca749c4127c, type: 3}
   - key: upper_body
@@ -38,17 +38,17 @@ MonoBehaviour:
   - key: helmet
     value: {fileID: 21300000, guid: 15c0a1185bb524f0c9d7b118e081501f, type: 3}
   - key: skin
-    value: {fileID: 21300000, guid: 0bfef183260d34c50b8d971b1400499e, type: 3}
+    value: {fileID: 21300000, guid: b7de97555392de94e9a172ecf5473067, type: 3}
   - key: mask
     value: {fileID: 21300000, guid: 90e673ad913664a27b245b61ccdf31bf, type: 3}
   - key: eyewear
-    value: {fileID: 21300000, guid: 18cc300911ff74c3c922eb3a9b346f3c, type: 3}
+    value: {fileID: 21300000, guid: b90a97a10e3a7452988bced1ec1aaf84, type: 3}
   - key: top_head
     value: {fileID: 21300000, guid: 17e4c961a88d74262a222ea008152618, type: 3}
   - key: earring
     value: {fileID: 21300000, guid: 4a803782af3694d97b17f31e269c04d1, type: 3}
   - key: emote
-    value: {fileID: 21300000, guid: 05bc7d6b12857fb4b9b7634bf2a4f440, type: 3}
+    value: {fileID: 21300000, guid: 67c605c80d2145844a56cd465cbd2687, type: 3}
   - key: body_shape
     value: {fileID: 21300000, guid: 7df132fb4eb304d619c7dd33841261a1, type: 3}
   - key: hands_wear
