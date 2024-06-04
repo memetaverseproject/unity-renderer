@@ -561,7 +561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   femaleLocomotions:
-    idle: {fileID: 7400000, guid: 1daa9ef5490971c4595a4427fd2bb839, type: 2}
+    idle: {fileID: 7400000, guid: 9bf25630c2932633fa9e71f4fc9b576a, type: 2}
     walk: {fileID: 7400000, guid: 3a74825e70836b9479d8364e9c589696, type: 2}
     run: {fileID: 7400000, guid: 6590d19ae20d985498cd761bfd0ce6e3, type: 2}
     jump: {fileID: 7400000, guid: 7a54ec42d8bafba42bae8b0633ee8b70, type: 2}

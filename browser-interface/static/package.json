@@ -2,7 +2,8 @@
   "name": "@beland/explorer",
   "main": "index.js",
   "typings": "index.d.ts",
-  "version": "1.0.0-development-20200220202020.commit-",
+  "version": "1.0.0-development-20240603073946.commit-e6d54fc",
+  "commit": "e6d54fce5a59d32e03c6c066109572d4fe59e5e9",
   "author": "Memetaverse Contributors",
   "license": "Apache-2.0",
   "publishConfig": {

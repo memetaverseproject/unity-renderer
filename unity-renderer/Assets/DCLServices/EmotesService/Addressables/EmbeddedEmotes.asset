@@ -33,7 +33,7 @@ MonoBehaviour:
     rarity: 
     description: 
     issuedId: 0
-    femaleAnimation: {fileID: 7400000, guid: dd8136105fafa866c9be5137476440cd, type: 2}
+    femaleAnimation: {fileID: 7400000, guid: c6136e44f4ea38b38b228f0d89f4800a, type: 2}
     maleAnimation: {fileID: 7400000, guid: dd8136105fafa866c9be5137476440cd, type: 2}
     dontShowInBackpack: 0
   - data:
@@ -56,7 +56,7 @@ MonoBehaviour:
     rarity: 
     description: 
     issuedId: 0
-    femaleAnimation: {fileID: 7400000, guid: 85f62b4aa090723428fc058aad1b8185, type: 2}
+    femaleAnimation: {fileID: 7400000, guid: 8bcae1198a52d19a58dde1752eea2475, type: 2}
     maleAnimation: {fileID: 7400000, guid: 85f62b4aa090723428fc058aad1b8185, type: 2}
     dontShowInBackpack: 0
   - data:
@@ -79,7 +79,7 @@ MonoBehaviour:
     rarity: 
     description: 
     issuedId: 0
-    femaleAnimation: {fileID: 7400000, guid: 621703f8abe23600bb9bdc0e36f1d6a8, type: 2}
+    femaleAnimation: {fileID: 7400000, guid: 9b01414892c8b5ad0a6e5df8dc7e9a56, type: 2}
     maleAnimation: {fileID: 7400000, guid: 621703f8abe23600bb9bdc0e36f1d6a8, type: 2}
     dontShowInBackpack: 0
   - data:
@@ -102,7 +102,7 @@ MonoBehaviour:
     rarity: 
     description: 
     issuedId: 0
-    femaleAnimation: {fileID: 7400000, guid: d7c4963dbcaa9db5e8497d02cfd780d3, type: 2}
+    femaleAnimation: {fileID: 7400000, guid: 5212ff7b08bac5504a3dd5370a8c738e, type: 2}
     maleAnimation: {fileID: 7400000, guid: d7c4963dbcaa9db5e8497d02cfd780d3, type: 2}
     dontShowInBackpack: 0
   - data:
@@ -125,7 +125,7 @@ MonoBehaviour:
     rarity: 
     description: 
     issuedId: 0
-    femaleAnimation: {fileID: 7400000, guid: cffe73f3c0fe8012d852044d78a3a732, type: 2}
+    femaleAnimation: {fileID: 7400000, guid: 51ce1ba61c6c15bfc89cb2689247d847, type: 2}
     maleAnimation: {fileID: 7400000, guid: cffe73f3c0fe8012d852044d78a3a732, type: 2}
     dontShowInBackpack: 0
   - data:
@@ -148,7 +148,7 @@ MonoBehaviour:
     rarity: 
     description: 
     issuedId: 0
-    femaleAnimation: {fileID: 7400000, guid: 4cd73b8019e06674badd553167039a0c, type: 2}
+    femaleAnimation: {fileID: 7400000, guid: 9a87cfa10a54feb5b9f81a163846ec6c, type: 2}
     maleAnimation: {fileID: 7400000, guid: 4cd73b8019e06674badd553167039a0c, type: 2}
     dontShowInBackpack: 0
   extendedEmotes: []
