@@ -250,17 +250,16 @@ namespace DCL.Backpack
                 view.SetLoadingActive(true);
 
                 List<WearableItem> wearables = new ();
-
+                string currentBodyShapeId = dataStoreBackpackV2.previewBodyShape.Get();
                 (IReadOnlyList<WearableItem> ownedWearables, int totalAmount) = await wearablesCatalogService.RequestOwnedWearablesAsync(
                     ownUserId,
                     page,
                     PAGE_SIZE, cancellationToken,
                     categoryFilter, NftRarity.None, collectionTypeMask,
                     thirdPartyCollectionIdsFilter,
-                    nameFilter, wearableSorting);
+                    nameFilter, wearableSorting, currentBodyShapeId);
 
                 wearables.AddRange(ownedWearables);
-
                 try
                 {
                     int customWearablesCount = wearables.Count;

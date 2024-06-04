@@ -17,6 +17,7 @@ namespace DCL.Backpack
         [SerializeField] internal NftTypeColorSupportingSO typeColorSupporting;
         [SerializeField] internal NftTypePreviewCameraFocusConfig previewCameraFocus;
         [SerializeField] internal NftTypeIconSO typeIcons;
+        [SerializeField] internal NftTypeSelectIconSO typeSelectIcons;
         [SerializeField] internal RectTransform nftContainer;
         [SerializeField] internal NftRarityBackgroundSO rarityBackgrounds;
         [SerializeField] internal Image typeImage;
@@ -148,6 +149,7 @@ namespace DCL.Backpack
             model.allowsColorChange = typeColorSupporting.IsColorSupportedByType(category);
             model.previewCameraFocus = previewCameraFocus.GetPreviewCameraFocus(category);
             typeImage.sprite = typeIcons.GetTypeImage(category);
+            selectedImage.sprite = typeSelectIcons.GetTypeImage(category);
             WearableItem.CATEGORIES_READABLE_MAPPING.TryGetValue(category, out string readableCategory);
             tooltipCategoryText.text = readableCategory;
         }
@@ -212,8 +214,8 @@ namespace DCL.Backpack
         {
             if (!isSelected) return;
             isSelected = false;
-
             ScaleDownAndResetAnimation(selectedImage);
+            
 
             if (notify)
                 OnSelectAvatarSlot?.Invoke(model, isSelected);
@@ -223,6 +225,7 @@ namespace DCL.Backpack
         {
             isSelected = false;
             selectedImage.enabled = false;
+            typeImage.enabled = true;
         }
 
         private void ScaleUpAnimation(Transform targetTransform)
@@ -237,6 +240,7 @@ namespace DCL.Backpack
             {
                 targetImage.enabled = false;
                 targetImage.transform.localScale = new Vector3(1, 1, 1);
+                typeImage.enabled = true;
             });
         }
 
@@ -249,6 +253,7 @@ namespace DCL.Backpack
 
             isSelected = true;
             selectedImage.enabled = true;
+            typeImage.enabled = false;
             ScaleUpAnimation(selectedImage.transform);
 
             if (notify)

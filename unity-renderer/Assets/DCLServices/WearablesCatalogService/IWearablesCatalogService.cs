@@ -19,7 +19,7 @@ namespace DCLServices.WearablesCatalogService
             string category = null, NftRarity rarity = NftRarity.None,
             NftCollectionType collectionTypeMask = NftCollectionType.All,
             ICollection<string> thirdPartyCollectionIds = null,
-            string name = null, (NftOrderByOperation type, bool directionAscendent)? orderBy = null);
+            string name = null, (NftOrderByOperation type, bool directionAscendent)? orderBy = null, string bodyShapeId = null);
         UniTask<(IReadOnlyList<WearableItem> wearables, int totalAmount)> RequestOwnedWearablesAsync(string userId, int pageNumber, int pageSize, bool cleanCachedPages, CancellationToken ct);
         UniTask RequestBaseWearablesAsync(CancellationToken ct);
         UniTask<(IReadOnlyList<WearableItem> wearables, int totalAmount)> RequestThirdPartyWearablesByCollectionAsync(string userId, string collectionId, int pageNumber, int pageSize, bool cleanCachedPages, CancellationToken ct);

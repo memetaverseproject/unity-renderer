@@ -389,6 +389,7 @@ MonoBehaviour:
     type: 2}
   previewCameraFocus: {fileID: 11400000, guid: 543045de3924ff346b48c222f9100fe0, type: 2}
   typeIcons: {fileID: 11400000, guid: 9525caf9cd97d4aa1b91f145f3a604e3, type: 2}
+  typeSelectIcons: {fileID: 11400000, guid: 3aa6f28ce5f402744bb16d1fe35e1a74, type: 2}
   nftContainer: {fileID: 3382390140976046251}
   rarityBackgrounds: {fileID: 11400000, guid: 3f361f63120234ae8972eac66a946fa0, type: 2}
   typeImage: {fileID: 4329488436158027747}
@@ -609,15 +610,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7098778, g: 0, b: 0.7735849, a: 0.41568628}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f02af068e11cb4902a1a4faad10b890a, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 6ea656191d7b1744790b0b41a548ea9e, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1713,7 +1714,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2656d95f5138e0645ac2f3f798da4797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7df132fb4eb304d619c7dd33841261a1, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
