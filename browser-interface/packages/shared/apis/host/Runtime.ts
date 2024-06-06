@@ -7,10 +7,23 @@ import { RuntimeServiceDefinition } from 'shared/protocol/decentraland/kernel/ap
 import type { PortContextService } from './context'
 import { getDecentralandTime } from './EnvironmentAPI'
 import { urlWithProtocol } from 'shared/realm/resolver'
-import { PREVIEW } from 'config'
+import { PREVIEW, RENDERER_WS, getServerConfigurations } from 'config'
+import { getSelectedNetwork } from 'shared/dao/selectors'
+import { Platform } from '../IEnvironmentAPI'
 
 export function registerRuntimeServiceServerImplementation(port: RpcServerPort<PortContextService<'sceneData'>>) {
   codegen.registerService(port, RuntimeServiceDefinition, async () => ({
+    async getExplorerInformation() {
+      const questsServerUrl = getServerConfigurations(getSelectedNetwork(store.getState())).questsUrl
+      const platform = RENDERER_WS ? Platform.DESKTOP : Platform.BROWSER
+
+      return {
+        agent: 'explorer-kernel',
+        platform,
+        configurations: { questsServerUrl }
+      }
+    },
+    
     async getWorldTime(): Promise<GetWorldTimeResponse> {
       const time = getDecentralandTime()
 

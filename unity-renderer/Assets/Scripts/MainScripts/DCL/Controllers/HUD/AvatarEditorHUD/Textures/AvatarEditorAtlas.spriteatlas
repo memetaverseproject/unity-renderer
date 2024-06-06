@@ -232,7 +232,7 @@ SpriteAtlas:
   - EyesOnIcon
   - InfoIcon
   - ColorSelected
-  - MouthIcon
+  - MouthICon
   - BodyIcon
   - CellFill
   - MaskIcon
