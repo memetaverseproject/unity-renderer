@@ -154,6 +154,7 @@ export async function wearableToSceneEntity(wearable: WearableV2, defaultBaseUrl
     baseUrl,
     parentCid: 'avatar',
     entity: {
+      id: wearable.id,
       content,
       metadata,
       pointers: [wearable.id],

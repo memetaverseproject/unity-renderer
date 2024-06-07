@@ -76,7 +76,7 @@ namespace DCLServices.WearablesCatalogService
             NftRarity rarity = NftRarity.None,
             NftCollectionType collectionTypeMask = NftCollectionType.All,
             ICollection<string> thirdPartyCollectionIds = null, string name = null,
-            (NftOrderByOperation type, bool directionAscendent)? orderBy = null) =>
+            (NftOrderByOperation type, bool directionAscendent)? orderBy = null, string bodyShapeId = null) =>
             throw new NotImplementedException("Supported by LambdasWearablesCatalogService");
 
         public async UniTask<(IReadOnlyList<WearableItem> wearables, int totalAmount)> RequestOwnedWearablesAsync(string userId, int pageNumber, int pageSize, bool cleanCachedPages, CancellationToken ct)

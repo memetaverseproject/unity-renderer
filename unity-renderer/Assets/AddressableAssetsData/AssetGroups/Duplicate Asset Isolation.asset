@@ -757,11 +757,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a6be5747f33e34c91922c7512b0f445a
-    m_Address: ChatOn
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f00094572a9874a0e92b4d347ce91bba
     m_Address: QuestIcon
     m_ReadOnly: 0
@@ -1197,11 +1192,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 05bc7d6b12857fb4b9b7634bf2a4f440
-    m_Address: EmotesIcon
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 911a877bf7e9744ca83cbffbf9a38267
     m_Address: AddFriendIcon
     m_ReadOnly: 0
@@ -1259,11 +1249,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c7f8f6db5623d8f4c935edeff9912df8
     m_Address: rectangle_gray_corner_radius_8
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c7140bdb251224b66aba206fd5ff73ee
-    m_Address: EmotesOn
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -1377,11 +1362,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: cfa089dc4012b4f59964c220fbf31fba
-    m_Address: ChatOff
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3576a9dcb9ec94ac1b908b89c3571e75
     m_Address: LinearGradientNFTs
     m_ReadOnly: 0
@@ -1449,11 +1429,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 59758d5dbedcd0746be3439895558d6a
     m_Address: rectangle_100
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: c6cb56bd6fdab4d49879218fffcfc7f7
-    m_Address: EmotesOff
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

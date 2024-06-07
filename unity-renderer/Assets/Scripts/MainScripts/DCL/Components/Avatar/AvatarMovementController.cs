@@ -92,10 +92,9 @@ namespace DCL
             AvatarTransform.position = PositionUtils.WorldToUnityPosition(currentWorldPosition);
         }
 
-        public void OnTransformChanged(object model)
+        public void OnTransformChanged(Vector3 newPosition, Quaternion newRotation)
         {
-            DCLTransform.Model transformModel = (DCLTransform.Model)model;
-            OnTransformChanged(transformModel.position, transformModel.rotation, false);
+            OnTransformChanged(newPosition, newRotation, false);
         }
 
         public void OnTransformChanged(in Vector3 position, in Quaternion rotation, bool inmediate)

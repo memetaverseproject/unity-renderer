@@ -101,7 +101,7 @@ namespace DCLServices.WearablesCatalogService
             NftRarity rarity = NftRarity.None,
             NftCollectionType collectionTypeMask = NftCollectionType.All,
             ICollection<string> thirdPartyCollectionIds = null,
-            string name = null, (NftOrderByOperation type, bool directionAscendent)? orderBy = null)
+            string name = null, (NftOrderByOperation type, bool directionAscendent)? orderBy = null, string bodyShapeId = null)
         {
             var queryParams = new List<(string name, string value)>
             {
@@ -118,6 +118,9 @@ namespace DCLServices.WearablesCatalogService
 
             if (!string.IsNullOrEmpty(name))
                 queryParams.Add(("name", name));
+
+            if (!string.IsNullOrEmpty(bodyShapeId))
+                queryParams.Add(("bodyShapeId", bodyShapeId));
 
             if (orderBy != null)
             {
