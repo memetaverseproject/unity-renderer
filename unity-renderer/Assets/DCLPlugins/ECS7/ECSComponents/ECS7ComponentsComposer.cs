@@ -46,6 +46,7 @@ namespace DCL.ECSComponents
         private readonly GltfContainerLoadingStateRegister gltfContainerLoadingStateRegister;
         private readonly EngineInfoRegister engineInfoRegister;
         private readonly UiCanvasInformationRegister uiCanvasInformationRegister;
+        private readonly TweenStateRegister tweenStateRegister;
 
         public ECS7ComponentsComposer(ECSComponentsFactory componentsFactory, IECSComponentWriter componentsWriter, IInternalECSComponents internalComponents)
         {
@@ -87,6 +88,7 @@ namespace DCL.ECSComponents
             gltfContainerLoadingStateRegister = new GltfContainerLoadingStateRegister(ComponentID.GLTF_CONTAINER_LOADING_STATE, componentsFactory, componentsWriter);
             engineInfoRegister = new EngineInfoRegister(ComponentID.ENGINE_INFO, componentsFactory, componentsWriter);
             uiCanvasInformationRegister = new UiCanvasInformationRegister(ComponentID.UI_CANVAS_INFORMATION, componentsFactory, componentsWriter);
+            tweenStateRegister = new TweenStateRegister(ComponentID.TWEEN_STATE, componentsFactory, componentsWriter);
         }
 
         public void Dispose()
@@ -127,6 +129,7 @@ namespace DCL.ECSComponents
             videoEventRegister.Dispose();
             engineInfoRegister.Dispose();
             uiCanvasInformationRegister.Dispose();
+            tweenStateRegister.Dispose();
         }
     }
 }
