@@ -25,7 +25,7 @@ namespace DCL.ECSComponents {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ci5kZWNlbnRyYWxhbmQvc2RrL2NvbXBvbmVudHMvdWlfdHJhbnNmb3JtLnBy",
-            "b3RvEhtkZWNlbnRyYWxhbmQuc2RrLmNvbXBvbmVudHMikhIKDVBCVWlUcmFu",
+            "b3RvEhtkZWNlbnRyYWxhbmQuc2RrLmNvbXBvbmVudHMilBMKDVBCVWlUcmFu",
             "c2Zvcm0SDgoGcGFyZW50GAEgASgFEhAKCHJpZ2h0X29mGAIgASgFEkAKDWFs",
             "aWduX2NvbnRlbnQYAyABKA4yJC5kZWNlbnRyYWxhbmQuc2RrLmNvbXBvbmVu",
             "dHMuWUdBbGlnbkgAiAEBEj4KC2FsaWduX2l0ZW1zGAQgASgOMiQuZGVjZW50",
@@ -75,32 +75,36 @@ namespace DCL.ECSComponents {
             "Ej8KEnBhZGRpbmdfcmlnaHRfdW5pdBgwIAEoDjIjLmRlY2VudHJhbGFuZC5z",
             "ZGsuY29tcG9uZW50cy5ZR1VuaXQSFQoNcGFkZGluZ19yaWdodBgxIAEoAhJA",
             "ChNwYWRkaW5nX2JvdHRvbV91bml0GDIgASgOMiMuZGVjZW50cmFsYW5kLnNk",
-            "ay5jb21wb25lbnRzLllHVW5pdBIWCg5wYWRkaW5nX2JvdHRvbRgzIAEoAkIQ",
-            "Cg5fYWxpZ25fY29udGVudEIOCgxfYWxpZ25faXRlbXNCDAoKX2ZsZXhfd3Jh",
-            "cEIOCgxfZmxleF9zaHJpbmsqNgoOWUdQb3NpdGlvblR5cGUSEQoNWUdQVF9S",
-            "RUxBVElWRRAAEhEKDVlHUFRfQUJTT0xVVEUQASqdAQoHWUdBbGlnbhIMCghZ",
-            "R0FfQVVUTxAAEhIKDllHQV9GTEVYX1NUQVJUEAESDgoKWUdBX0NFTlRFUhAC",
-            "EhAKDFlHQV9GTEVYX0VORBADEg8KC1lHQV9TVFJFVENIEAQSEAoMWUdBX0JB",
-            "U0VMSU5FEAUSFQoRWUdBX1NQQUNFX0JFVFdFRU4QBhIUChBZR0FfU1BBQ0Vf",
-            "QVJPVU5EEAcqSQoGWUdVbml0EhEKDVlHVV9VTkRFRklORUQQABINCglZR1Vf",
-            "UE9JTlQQARIPCgtZR1VfUEVSQ0VOVBACEgwKCFlHVV9BVVRPEAMqXwoPWUdG",
-            "bGV4RGlyZWN0aW9uEgwKCFlHRkRfUk9XEAASDwoLWUdGRF9DT0xVTU4QARIX",
-            "ChNZR0ZEX0NPTFVNTl9SRVZFUlNFEAISFAoQWUdGRF9ST1dfUkVWRVJTRRAD",
-            "Kj0KBllHV3JhcBIPCgtZR1dfTk9fV1JBUBAAEgwKCFlHV19XUkFQEAESFAoQ",
-            "WUdXX1dSQVBfUkVWRVJTRRACKoQBCglZR0p1c3RpZnkSEgoOWUdKX0ZMRVhf",
-            "U1RBUlQQABIOCgpZR0pfQ0VOVEVSEAESEAoMWUdKX0ZMRVhfRU5EEAISFQoR",
-            "WUdKX1NQQUNFX0JFVFdFRU4QAxIUChBZR0pfU1BBQ0VfQVJPVU5EEAQSFAoQ",
-            "WUdKX1NQQUNFX0VWRU5MWRAFKj0KCllHT3ZlcmZsb3cSDwoLWUdPX1ZJU0lC",
-            "TEUQABIOCgpZR09fSElEREVOEAESDgoKWUdPX1NDUk9MTBACKicKCVlHRGlz",
-            "cGxheRIMCghZR0RfRkxFWBAAEgwKCFlHRF9OT05FEAEqkQEKBllHRWRnZRIM",
-            "CghZR0VfTEVGVBAAEgsKB1lHRV9UT1AQARINCglZR0VfUklHSFQQAhIOCgpZ",
-            "R0VfQk9UVE9NEAMSDQoJWUdFX1NUQVJUEAQSCwoHWUdFX0VORBAFEhIKDllH",
-            "RV9IT1JJWk9OVEFMEAYSEAoMWUdFX1ZFUlRJQ0FMEAcSCwoHWUdFX0FMTBAI",
+            "ay5jb21wb25lbnRzLllHVW5pdBIWCg5wYWRkaW5nX2JvdHRvbRgzIAEoAhJL",
+            "Cg5wb2ludGVyX2ZpbHRlchg0IAEoDjIuLmRlY2VudHJhbGFuZC5zZGsuY29t",
+            "cG9uZW50cy5Qb2ludGVyRmlsdGVyTW9kZUgEiAEBEhQKB29wYWNpdHkYNSAB",
+            "KAJIBYgBAUIQCg5fYWxpZ25fY29udGVudEIOCgxfYWxpZ25faXRlbXNCDAoK",
+            "X2ZsZXhfd3JhcEIOCgxfZmxleF9zaHJpbmtCEQoPX3BvaW50ZXJfZmlsdGVy",
+            "QgoKCF9vcGFjaXR5KjYKDllHUG9zaXRpb25UeXBlEhEKDVlHUFRfUkVMQVRJ",
+            "VkUQABIRCg1ZR1BUX0FCU09MVVRFEAEqnQEKB1lHQWxpZ24SDAoIWUdBX0FV",
+            "VE8QABISCg5ZR0FfRkxFWF9TVEFSVBABEg4KCllHQV9DRU5URVIQAhIQCgxZ",
+            "R0FfRkxFWF9FTkQQAxIPCgtZR0FfU1RSRVRDSBAEEhAKDFlHQV9CQVNFTElO",
+            "RRAFEhUKEVlHQV9TUEFDRV9CRVRXRUVOEAYSFAoQWUdBX1NQQUNFX0FST1VO",
+            "RBAHKkkKBllHVW5pdBIRCg1ZR1VfVU5ERUZJTkVEEAASDQoJWUdVX1BPSU5U",
+            "EAESDwoLWUdVX1BFUkNFTlQQAhIMCghZR1VfQVVUTxADKl8KD1lHRmxleERp",
+            "cmVjdGlvbhIMCghZR0ZEX1JPVxAAEg8KC1lHRkRfQ09MVU1OEAESFwoTWUdG",
+            "RF9DT0xVTU5fUkVWRVJTRRACEhQKEFlHRkRfUk9XX1JFVkVSU0UQAyo9CgZZ",
+            "R1dyYXASDwoLWUdXX05PX1dSQVAQABIMCghZR1dfV1JBUBABEhQKEFlHV19X",
+            "UkFQX1JFVkVSU0UQAiqEAQoJWUdKdXN0aWZ5EhIKDllHSl9GTEVYX1NUQVJU",
+            "EAASDgoKWUdKX0NFTlRFUhABEhAKDFlHSl9GTEVYX0VORBACEhUKEVlHSl9T",
+            "UEFDRV9CRVRXRUVOEAMSFAoQWUdKX1NQQUNFX0FST1VORBAEEhQKEFlHSl9T",
+            "UEFDRV9FVkVOTFkQBSo9CgpZR092ZXJmbG93Eg8KC1lHT19WSVNJQkxFEAAS",
+            "DgoKWUdPX0hJRERFThABEg4KCllHT19TQ1JPTEwQAionCglZR0Rpc3BsYXkS",
+            "DAoIWUdEX0ZMRVgQABIMCghZR0RfTk9ORRABKpEBCgZZR0VkZ2USDAoIWUdF",
+            "X0xFRlQQABILCgdZR0VfVE9QEAESDQoJWUdFX1JJR0hUEAISDgoKWUdFX0JP",
+            "VFRPTRADEg0KCVlHRV9TVEFSVBAEEgsKB1lHRV9FTkQQBRISCg5ZR0VfSE9S",
+            "SVpPTlRBTBAGEhAKDFlHRV9WRVJUSUNBTBAHEgsKB1lHRV9BTEwQCCowChFQ",
+            "b2ludGVyRmlsdGVyTW9kZRIMCghQRk1fTk9ORRAAEg0KCVBGTV9CTE9DSxAB",
             "QhSqAhFEQ0wuRUNTQ29tcG9uZW50c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::DCL.ECSComponents.YGPositionType), typeof(global::DCL.ECSComponents.YGAlign), typeof(global::DCL.ECSComponents.YGUnit), typeof(global::DCL.ECSComponents.YGFlexDirection), typeof(global::DCL.ECSComponents.YGWrap), typeof(global::DCL.ECSComponents.YGJustify), typeof(global::DCL.ECSComponents.YGOverflow), typeof(global::DCL.ECSComponents.YGDisplay), typeof(global::DCL.ECSComponents.YGEdge), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::DCL.ECSComponents.PBUiTransform), global::DCL.ECSComponents.PBUiTransform.Parser, new[]{ "Parent", "RightOf", "AlignContent", "AlignItems", "FlexWrap", "FlexShrink", "PositionType", "AlignSelf", "FlexDirection", "JustifyContent", "Overflow", "Display", "FlexBasisUnit", "FlexBasis", "FlexGrow", "WidthUnit", "Width", "HeightUnit", "Height", "MinWidthUnit", "MinWidth", "MinHeightUnit", "MinHeight", "MaxWidthUnit", "MaxWidth", "MaxHeightUnit", "MaxHeight", "PositionLeftUnit", "PositionLeft", "PositionTopUnit", "PositionTop", "PositionRightUnit", "PositionRight", "PositionBottomUnit", "PositionBottom", "MarginLeftUnit", "MarginLeft", "MarginTopUnit", "MarginTop", "MarginRightUnit", "MarginRight", "MarginBottomUnit", "MarginBottom", "PaddingLeftUnit", "PaddingLeft", "PaddingTopUnit", "PaddingTop", "PaddingRightUnit", "PaddingRight", "PaddingBottomUnit", "PaddingBottom" }, new[]{ "AlignContent", "AlignItems", "FlexWrap", "FlexShrink" }, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::DCL.ECSComponents.YGPositionType), typeof(global::DCL.ECSComponents.YGAlign), typeof(global::DCL.ECSComponents.YGUnit), typeof(global::DCL.ECSComponents.YGFlexDirection), typeof(global::DCL.ECSComponents.YGWrap), typeof(global::DCL.ECSComponents.YGJustify), typeof(global::DCL.ECSComponents.YGOverflow), typeof(global::DCL.ECSComponents.YGDisplay), typeof(global::DCL.ECSComponents.YGEdge), typeof(global::DCL.ECSComponents.PointerFilterMode), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::DCL.ECSComponents.PBUiTransform), global::DCL.ECSComponents.PBUiTransform.Parser, new[]{ "Parent", "RightOf", "AlignContent", "AlignItems", "FlexWrap", "FlexShrink", "PositionType", "AlignSelf", "FlexDirection", "JustifyContent", "Overflow", "Display", "FlexBasisUnit", "FlexBasis", "FlexGrow", "WidthUnit", "Width", "HeightUnit", "Height", "MinWidthUnit", "MinWidth", "MinHeightUnit", "MinHeight", "MaxWidthUnit", "MaxWidth", "MaxHeightUnit", "MaxHeight", "PositionLeftUnit", "PositionLeft", "PositionTopUnit", "PositionTop", "PositionRightUnit", "PositionRight", "PositionBottomUnit", "PositionBottom", "MarginLeftUnit", "MarginLeft", "MarginTopUnit", "MarginTop", "MarginRightUnit", "MarginRight", "MarginBottomUnit", "MarginBottom", "PaddingLeftUnit", "PaddingLeft", "PaddingTopUnit", "PaddingTop", "PaddingRightUnit", "PaddingRight", "PaddingBottomUnit", "PaddingBottom", "PointerFilter", "Opacity" }, new[]{ "AlignContent", "AlignItems", "FlexWrap", "FlexShrink", "PointerFilter", "Opacity" }, null, null, null)
           }));
     }
     #endregion
@@ -173,6 +177,11 @@ namespace DCL.ECSComponents {
     [pbr::OriginalName("YGE_HORIZONTAL")] YgeHorizontal = 6,
     [pbr::OriginalName("YGE_VERTICAL")] YgeVertical = 7,
     [pbr::OriginalName("YGE_ALL")] YgeAll = 8,
+  }
+
+  public enum PointerFilterMode {
+    [pbr::OriginalName("PFM_NONE")] PfmNone = 0,
+    [pbr::OriginalName("PFM_BLOCK")] PfmBlock = 1,
   }
 
   #endregion
@@ -265,6 +274,8 @@ namespace DCL.ECSComponents {
       paddingRight_ = other.paddingRight_;
       paddingBottomUnit_ = other.paddingBottomUnit_;
       paddingBottom_ = other.paddingBottom_;
+      pointerFilter_ = other.pointerFilter_;
+      opacity_ = other.opacity_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1025,6 +1036,62 @@ namespace DCL.ECSComponents {
       }
     }
 
+    /// <summary>Field number for the "pointer_filter" field.</summary>
+    public const int PointerFilterFieldNumber = 52;
+    private global::DCL.ECSComponents.PointerFilterMode pointerFilter_;
+    /// <summary>
+    /// default: PointerFilterMode.PFM_NONE
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::DCL.ECSComponents.PointerFilterMode PointerFilter {
+      get { if ((_hasBits0 & 16) != 0) { return pointerFilter_; } else { return global::DCL.ECSComponents.PointerFilterMode.PfmNone; } }
+      set {
+        _hasBits0 |= 16;
+        pointerFilter_ = value;
+      }
+    }
+    /// <summary>Gets whether the "pointer_filter" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasPointerFilter {
+      get { return (_hasBits0 & 16) != 0; }
+    }
+    /// <summary>Clears the value of the "pointer_filter" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearPointerFilter() {
+      _hasBits0 &= ~16;
+    }
+
+    /// <summary>Field number for the "opacity" field.</summary>
+    public const int OpacityFieldNumber = 53;
+    private float opacity_;
+    /// <summary>
+    /// default: 1
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float Opacity {
+      get { if ((_hasBits0 & 32) != 0) { return opacity_; } else { return 0F; } }
+      set {
+        _hasBits0 |= 32;
+        opacity_ = value;
+      }
+    }
+    /// <summary>Gets whether the "opacity" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasOpacity {
+      get { return (_hasBits0 & 32) != 0; }
+    }
+    /// <summary>Clears the value of the "opacity" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearOpacity() {
+      _hasBits0 &= ~32;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -1091,6 +1158,8 @@ namespace DCL.ECSComponents {
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(PaddingRight, other.PaddingRight)) return false;
       if (PaddingBottomUnit != other.PaddingBottomUnit) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(PaddingBottom, other.PaddingBottom)) return false;
+      if (PointerFilter != other.PointerFilter) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Opacity, other.Opacity)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1149,6 +1218,8 @@ namespace DCL.ECSComponents {
       if (PaddingRight != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(PaddingRight);
       if (PaddingBottomUnit != global::DCL.ECSComponents.YGUnit.YguUndefined) hash ^= PaddingBottomUnit.GetHashCode();
       if (PaddingBottom != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(PaddingBottom);
+      if (HasPointerFilter) hash ^= PointerFilter.GetHashCode();
+      if (HasOpacity) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Opacity);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1371,6 +1442,14 @@ namespace DCL.ECSComponents {
         output.WriteRawTag(157, 3);
         output.WriteFloat(PaddingBottom);
       }
+      if (HasPointerFilter) {
+        output.WriteRawTag(160, 3);
+        output.WriteEnum((int) PointerFilter);
+      }
+      if (HasOpacity) {
+        output.WriteRawTag(173, 3);
+        output.WriteFloat(Opacity);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1585,6 +1664,14 @@ namespace DCL.ECSComponents {
         output.WriteRawTag(157, 3);
         output.WriteFloat(PaddingBottom);
       }
+      if (HasPointerFilter) {
+        output.WriteRawTag(160, 3);
+        output.WriteEnum((int) PointerFilter);
+      }
+      if (HasOpacity) {
+        output.WriteRawTag(173, 3);
+        output.WriteFloat(Opacity);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1746,6 +1833,12 @@ namespace DCL.ECSComponents {
         size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) PaddingBottomUnit);
       }
       if (PaddingBottom != 0F) {
+        size += 2 + 4;
+      }
+      if (HasPointerFilter) {
+        size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) PointerFilter);
+      }
+      if (HasOpacity) {
         size += 2 + 4;
       }
       if (_unknownFields != null) {
@@ -1912,6 +2005,12 @@ namespace DCL.ECSComponents {
       }
       if (other.PaddingBottom != 0F) {
         PaddingBottom = other.PaddingBottom;
+      }
+      if (other.HasPointerFilter) {
+        PointerFilter = other.PointerFilter;
+      }
+      if (other.HasOpacity) {
+        Opacity = other.Opacity;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2132,6 +2231,14 @@ namespace DCL.ECSComponents {
             PaddingBottom = input.ReadFloat();
             break;
           }
+          case 416: {
+            PointerFilter = (global::DCL.ECSComponents.PointerFilterMode) input.ReadEnum();
+            break;
+          }
+          case 429: {
+            Opacity = input.ReadFloat();
+            break;
+          }
         }
       }
     #endif
@@ -2349,6 +2456,14 @@ namespace DCL.ECSComponents {
           }
           case 413: {
             PaddingBottom = input.ReadFloat();
+            break;
+          }
+          case 416: {
+            PointerFilter = (global::DCL.ECSComponents.PointerFilterMode) input.ReadEnum();
+            break;
+          }
+          case 429: {
+            Opacity = input.ReadFloat();
             break;
           }
         }

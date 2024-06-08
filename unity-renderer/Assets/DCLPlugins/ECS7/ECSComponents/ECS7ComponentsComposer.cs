@@ -43,6 +43,7 @@ namespace DCL.ECSComponents
         private readonly CameraModeRegister cameraModeRegister;
         private readonly PointerLockRegister pointerLockRegister;
         private readonly VideoEventRegister videoEventRegister;
+        private readonly TweenRegister tweenRegister;
         private readonly GltfContainerLoadingStateRegister gltfContainerLoadingStateRegister;
         private readonly EngineInfoRegister engineInfoRegister;
         private readonly UiCanvasInformationRegister uiCanvasInformationRegister;
@@ -70,7 +71,8 @@ namespace DCL.ECSComponents
             visibilityComponentRegister = new VisibilityComponentRegister(ComponentID.VISIBILITY_COMPONENT, componentsFactory, componentsWriter, internalComponents);
             videoPlayerRegister = new VideoPlayerRegister(ComponentID.VIDEO_PLAYER, componentsFactory, componentsWriter, internalComponents);
             videoEventRegister = new VideoEventRegister(ComponentID.VIDEO_EVENT, componentsFactory, componentsWriter);
-
+            tweenRegister = new TweenRegister(ComponentID.TWEEN, componentsFactory, componentsWriter, internalComponents);
+            
             // Multi-purposed components
             pointerEvents = new PointerEventsRegister(ComponentID.POINTER_EVENTS, componentsFactory, componentsWriter, internalComponents.PointerEventsComponent);
 
@@ -112,6 +114,7 @@ namespace DCL.ECSComponents
             meshColliderRegister.Dispose();
             visibilityComponentRegister.Dispose();
             videoPlayerRegister.Dispose();
+            tweenRegister.Dispose();
 
             // UI components
             uiTransformRegister.Dispose();
