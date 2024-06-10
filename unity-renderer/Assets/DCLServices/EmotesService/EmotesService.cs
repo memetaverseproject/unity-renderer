@@ -16,6 +16,8 @@ namespace DCL.Emotes
         //Embedded Emotes are only temporary until they can be retrieved from the content server
         private const string FEMALE = "urn:memetaverse:off-chain:base-avatars:BaseFemale";
         private const string MALE = "urn:memetaverse:off-chain:base-avatars:BaseMale";
+        private const string MONKEY = "urn:memetaverse:off-chain:base-avatars:BaseMonkey";
+        private const string KID_MONKEY = "urn:memetaverse:off-chain:base-avatars:BaseKidMonkey";
 
         private readonly EmoteAnimationLoaderFactory emoteAnimationLoaderFactory;
         private readonly IEmotesCatalogService emotesCatalogService;
@@ -63,6 +65,12 @@ namespace DCL.Emotes
 
                 if (embeddedEmote.femaleAnimation != null)
                     SetupEmbeddedClip(embeddedEmote, embeddedEmote.femaleAnimation, FEMALE);
+                
+                if (embeddedEmote.monkeyAnimation != null)
+                    SetupEmbeddedClip(embeddedEmote, embeddedEmote.monkeyAnimation, MONKEY);
+                
+                if (embeddedEmote.kidMonkeyAnimation != null)
+                    SetupEmbeddedClip(embeddedEmote, embeddedEmote.kidMonkeyAnimation, KID_MONKEY);
             }
 
             foreach (ExtendedEmote embeddedEmote in embedEmotes.GetExtendedEmbeddedEmotes())
