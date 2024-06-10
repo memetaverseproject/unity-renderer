@@ -46,7 +46,7 @@ public static class WearableLiterals
         public const string FEMALE = "urn:memetaverse:off-chain:base-avatars:BaseFemale";
         public const string MALE = "urn:memetaverse:off-chain:base-avatars:BaseMale";
         public const string MONKEY = "urn:memetaverse:off-chain:base-avatars:BaseMonkey";
-        //public const string KID_MONKEY = "urn:memetaverse:off-chain:base-avatars:BaseKidMonkey";
+        public const string KID_MONKEY = "urn:memetaverse:off-chain:base-avatars:BaseKidMonkey";
     }
 
     public static class ItemRarity

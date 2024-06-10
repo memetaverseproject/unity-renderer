@@ -572,6 +572,12 @@ MonoBehaviour:
     run: {fileID: 7400000, guid: 989f164af770cb9a9be5873709cc8cf1, type: 2}
     jump: {fileID: 7400000, guid: 42eb383f170fee42cb350d065f244b28, type: 2}
     fall: {fileID: 7400000, guid: 8a64584f0002cdfb0ba188dac09929d3, type: 2}
+  monkeyLocomotions:
+    idle: {fileID: 7400000, guid: 0195d04dc2808563198ec6bffe6c0057, type: 2}
+    walk: {fileID: 7400000, guid: 1b4340f8417af0b81ab09244d2ecd4cf, type: 2}
+    run: {fileID: 7400000, guid: 15e9a00d0d3ae466dbf0e039189da79c, type: 2}
+    jump: {fileID: 7400000, guid: 74a43894e2fc8ba1098c15aa8f9f768a, type: 2}
+    fall: {fileID: 7400000, guid: 0f3554005ecae1ab9932277a5acd28b7, type: 2}
   animation: {fileID: 0}
   blackboard:
     walkSpeedFactor: 0.5
