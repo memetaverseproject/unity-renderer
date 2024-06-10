@@ -82,6 +82,7 @@ public class AvatarAnimatorLegacy : MonoBehaviour, IPoolLifecycleHandler, IAnima
 
     [SerializeField] internal AvatarLocomotion femaleLocomotions;
     [SerializeField] internal AvatarLocomotion maleLocomotions;
+    [SerializeField] internal AvatarLocomotion monkeyLocomotions;
     AvatarLocomotion currentLocomotions;
 
     public new Animation animation;
@@ -165,6 +166,10 @@ public class AvatarAnimatorLegacy : MonoBehaviour, IPoolLifecycleHandler, IAnima
         else if (bodyshapeId.Contains(WearableLiterals.BodyShapes.FEMALE))
         {
             currentLocomotions = femaleLocomotions;
+        }
+        else if (bodyshapeId.Contains(WearableLiterals.BodyShapes.Monkey))
+        {
+            currentLocomotions = monkeyLocomotions;
         }
 
         EquipBaseClip(currentLocomotions.idle);
