@@ -65,7 +65,7 @@
     "@dcl/protocol": "1.0.0-7716486147.commit-7433b10",
     "@dcl/rpc": "^1.1.2",
     "@dcl/scene-runtime": "7.0.6-20230915161611.commit-59578a0",
-    "@beland/schemas": "1.1.1",
+    "@mtvproject/schemas": "1.0.2",
     "@beland/urn-resolver": "1.0.0",
     "@dcl/single-sign-on-client": "^0.1.0",
     "@types/mocha": "^10.0.1",

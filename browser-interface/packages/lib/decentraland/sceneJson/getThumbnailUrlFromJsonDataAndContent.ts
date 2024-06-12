@@ -1,4 +1,4 @@
-import { ContentMapping, Scene } from '@beland/schemas'
+import { ContentMapping, Scene } from '@mtvproject/schemas'
 
 export function getThumbnailUrlFromJsonDataAndContent(
   jsonData: Scene | undefined,

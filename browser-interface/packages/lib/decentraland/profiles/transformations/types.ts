@@ -1,5 +1,5 @@
 import type { ReadOnlyColor4 } from '@dcl/ecs-math'
-import type { Snapshots } from '@beland/schemas'
+import type { Snapshots } from '@mtvproject/schemas'
 
 export type AvatarForRenderer = {
   bodyShape: string

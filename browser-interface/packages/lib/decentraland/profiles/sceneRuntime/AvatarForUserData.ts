@@ -1,4 +1,4 @@
-import type { Snapshots, WearableCategory, WearableId } from '@beland/schemas'
+import type { Snapshots, WearableCategory, WearableId } from '@mtvproject/schemas'
 
 export type AvatarForUserData = {
   bodyShape: WearableId

@@ -1,5 +1,5 @@
 import { Authenticator } from '@beland/crypto'
-import { EntityType, Outfits } from '@beland/schemas'
+import { EntityType, Outfits } from '@mtvproject/schemas'
 import { BuildEntityOptions, ContentClient, DeploymentData } from 'dcl-catalyst-client'
 import defaultLogger from 'lib/logger'
 import { call, select } from 'redux-saga/effects'

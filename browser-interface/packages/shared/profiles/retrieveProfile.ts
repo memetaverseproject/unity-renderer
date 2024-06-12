@@ -1,4 +1,4 @@
-import type { Avatar } from '@beland/schemas'
+import type { Avatar } from '@mtvproject/schemas'
 import { store } from 'shared/store/isolatedStore'
 import { sagaMiddleware } from 'shared/store/store'
 import { profileRequest } from './actions'

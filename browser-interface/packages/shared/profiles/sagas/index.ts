@@ -1,5 +1,5 @@
 import { debounce, fork, put, takeEvery } from 'redux-saga/effects'
-import type { Avatar } from '@beland/schemas'
+import type { Avatar } from '@mtvproject/schemas'
 import { unsignedCRC32 } from 'lib/encoding/crc32'
 import defaultLogger from 'lib/logger'
 import { generateRandomUserProfile as buildRandomProfile } from 'lib/decentraland/profiles/generateRandomUserProfile'

@@ -1,4 +1,4 @@
-import { Avatar, AvatarInfo, generateLazyValidator, JSONSchema } from '@beland/schemas'
+import { Avatar, AvatarInfo, generateLazyValidator, JSONSchema } from '@mtvproject/schemas'
 
 /**
  * The schema validation requires strict IPFS "snapshots"

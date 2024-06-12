@@ -1,4 +1,4 @@
-import { Scene } from '@beland/schemas'
+import { Scene } from '@mtvproject/schemas'
 
 export function getOwnerNameFromJsonData(jsonData?: Scene) {
   let ownerName = jsonData?.contact?.name

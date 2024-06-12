@@ -1,4 +1,4 @@
-import type { Avatar } from '@beland/schemas'
+import type { Avatar } from '@mtvproject/schemas'
 import type { ETHEREUM_NETWORK } from 'config'
 import type { ExplorerIdentity } from 'shared/session/types'
 import { apply, put, select } from 'redux-saga/effects'

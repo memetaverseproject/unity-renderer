@@ -54,7 +54,7 @@ import {
 } from './selectors'
 import { ISceneLoader, SceneLoaderPositionReport, SetDesiredScenesCommand } from './types'
 import { createWorldLoader } from './world-loader-impl'
-import { Entity } from '@beland/schemas'
+import { Entity } from '@mtvproject/schemas'
 import { getContentService } from '../dao/selectors'
 
 export function* sceneLoaderSaga() {

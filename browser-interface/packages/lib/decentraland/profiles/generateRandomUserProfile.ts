@@ -1,4 +1,4 @@
-import type { Avatar } from '@beland/schemas'
+import type { Avatar } from '@mtvproject/schemas'
 
 const bodyShapeWearables = [
   {

@@ -1,4 +1,4 @@
-import { Scene } from '@beland/schemas'
+import { Scene } from '@mtvproject/schemas'
 
 export function getSceneNameFromJsonData(jsonData?: Scene): string {
   let title = jsonData?.display?.title

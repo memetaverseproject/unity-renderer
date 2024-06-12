@@ -25,7 +25,7 @@ import {
 } from 'shared/types'
 import sinon from 'sinon'
 import { getUnityInstance } from 'unity-interface/IUnityInterface'
-import { Avatar } from '@beland/schemas'
+import { Avatar } from '@mtvproject/schemas'
 
 const channelMessages: TextMessage[] = [
   {

@@ -1,7 +1,7 @@
 import { UserActionModuleServiceDefinition } from 'shared/protocol/decentraland/kernel/apis/user_action_module.gen'
 import type { RpcServerPort } from '@dcl/rpc'
 import * as codegen from '@dcl/rpc/dist/codegen'
-import type { Scene } from '@beland/schemas'
+import type { Scene } from '@mtvproject/schemas'
 import { getOwnerNameFromJsonData } from 'lib/decentraland/sceneJson/getOwnerNameFromJsonData'
 import { getSceneNameFromJsonData } from 'lib/decentraland/sceneJson/getSceneNameFromJsonData'
 import { getThumbnailUrlFromJsonDataAndContent } from 'lib/decentraland/sceneJson/getThumbnailUrlFromJsonDataAndContent'

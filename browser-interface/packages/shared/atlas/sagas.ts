@@ -1,4 +1,4 @@
-import { Scene } from '@beland/schemas'
+import { Scene } from '@mtvproject/schemas'
 import { saveToPersistentStorage } from 'lib/browser/persistentStorage'
 import { getTilesRectFromCenter } from 'lib/decentraland/parcels/getTilesRectFromCenter'
 import { parcelSize } from 'lib/decentraland/parcels/limits'
@@ -45,7 +45,7 @@ import {
 import { getPoiTiles, postProcessSceneName } from './selectors'
 import { RootAtlasState } from './types'
 import { homePointKey } from './utils'
-import { Entity } from '@beland/schemas'
+import { Entity } from '@mtvproject/schemas'
 
 export function* atlasSaga(): any {
   yield takeEvery(SCENE_LOAD, checkAndReportAround)
