@@ -27,15 +27,26 @@ namespace DCL.ECSComponents {
             "CjJkZWNlbnRyYWxhbmQvc2RrL2NvbXBvbmVudHMvY2FtZXJhX21vZGVfYXJl",
             "YS5wcm90bxIbZGVjZW50cmFsYW5kLnNkay5jb21wb25lbnRzGiFkZWNlbnRy",
             "YWxhbmQvY29tbW9uL3ZlY3RvcnMucHJvdG8aNGRlY2VudHJhbGFuZC9zZGsv",
-            "Y29tcG9uZW50cy9jb21tb24vY2FtZXJhX3R5cGUucHJvdG8ifAoQUEJDYW1l",
-            "cmFNb2RlQXJlYRIqCgRhcmVhGAEgASgLMhwuZGVjZW50cmFsYW5kLmNvbW1v",
-            "bi5WZWN0b3IzEjwKBG1vZGUYAiABKA4yLi5kZWNlbnRyYWxhbmQuc2RrLmNv",
-            "bXBvbmVudHMuY29tbW9uLkNhbWVyYVR5cGVCFKoCEURDTC5FQ1NDb21wb25l",
-            "bnRzYgZwcm90bzM="));
+            "Y29tcG9uZW50cy9jb21tb24vY2FtZXJhX3R5cGUucHJvdG8inAIKEFBCQ2Ft",
+            "ZXJhTW9kZUFyZWESKgoEYXJlYRgBIAEoCzIcLmRlY2VudHJhbGFuZC5jb21t",
+            "b24uVmVjdG9yMxI8CgRtb2RlGAIgASgOMi4uZGVjZW50cmFsYW5kLnNkay5j",
+            "b21wb25lbnRzLmNvbW1vbi5DYW1lcmFUeXBlEk8KEmNpbmVtYXRpY19zZXR0",
+            "aW5ncxgDIAEoCzIuLmRlY2VudHJhbGFuZC5zZGsuY29tcG9uZW50cy5DaW5l",
+            "bWF0aWNTZXR0aW5nc0gAiAEBEh8KEnVzZV9jb2xsaWRlcl9yYW5nZRgEIAEo",
+            "CEgBiAEBQhUKE19jaW5lbWF0aWNfc2V0dGluZ3NCFQoTX3VzZV9jb2xsaWRl",
+            "cl9yYW5nZSKoAgoRQ2luZW1hdGljU2V0dGluZ3MSFQoNY2FtZXJhX2VudGl0",
+            "eRgBIAEoDRIiChVhbGxvd19tYW51YWxfcm90YXRpb24YAiABKAhIAIgBARIW",
+            "Cgl5YXdfcmFuZ2UYAyABKAJIAYgBARIYCgtwaXRjaF9yYW5nZRgEIAEoAkgC",
+            "iAEBEhcKCnJvbGxfcmFuZ2UYBSABKAJIA4gBARIVCgh6b29tX21pbhgGIAEo",
+            "AkgEiAEBEhUKCHpvb21fbWF4GAcgASgCSAWIAQFCGAoWX2FsbG93X21hbnVh",
+            "bF9yb3RhdGlvbkIMCgpfeWF3X3JhbmdlQg4KDF9waXRjaF9yYW5nZUINCgtf",
+            "cm9sbF9yYW5nZUILCglfem9vbV9taW5CCwoJX3pvb21fbWF4QhSqAhFEQ0wu",
+            "RUNTQ29tcG9uZW50c2IGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Decentraland.Common.VectorsReflection.Descriptor, global::DCL.ECSComponents.CameraTypeReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::DCL.ECSComponents.PBCameraModeArea), global::DCL.ECSComponents.PBCameraModeArea.Parser, new[]{ "Area", "Mode" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::DCL.ECSComponents.PBCameraModeArea), global::DCL.ECSComponents.PBCameraModeArea.Parser, new[]{ "Area", "Mode", "CinematicSettings", "UseColliderRange" }, new[]{ "CinematicSettings", "UseColliderRange" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DCL.ECSComponents.CinematicSettings), global::DCL.ECSComponents.CinematicSettings.Parser, new[]{ "CameraEntity", "AllowManualRotation", "YawRange", "PitchRange", "RollRange", "ZoomMin", "ZoomMax" }, new[]{ "AllowManualRotation", "YawRange", "PitchRange", "RollRange", "ZoomMin", "ZoomMax" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +55,7 @@ namespace DCL.ECSComponents {
   #region Messages
   /// <summary>
   /// The CameraModeArea component can be attached to an Entity to define a region of space where 
-  /// the player's camera mode (1st-person or 3rd-person) is overridden.
+  /// the player's camera mode (1st-person, 3rd-person or cinematic) is overridden.
   ///
   /// The Entity's Transform position determines the center-point of the region, while its size is 
   /// given as a vector in the `area` property below. The Transform rotation is applied, but the scale 
@@ -54,6 +65,8 @@ namespace DCL.ECSComponents {
   ///
   /// Note that, while commonly used to delineate a 2D area in a scene (hence the name), the region
   /// is actually a 3D volume.
+  ///
+  /// When mode is set to CtCinematic, the cinematic_settings field must also be provided.
   /// </summary>
   public sealed partial class PBCameraModeArea : pb::IMessage<PBCameraModeArea>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -62,6 +75,7 @@ namespace DCL.ECSComponents {
   {
     private static readonly pb::MessageParser<PBCameraModeArea> _parser = new pb::MessageParser<PBCameraModeArea>(() => new PBCameraModeArea());
     private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PBCameraModeArea> Parser { get { return _parser; } }
@@ -89,8 +103,11 @@ namespace DCL.ECSComponents {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PBCameraModeArea(PBCameraModeArea other) : this() {
+      _hasBits0 = other._hasBits0;
       area_ = other.area_ != null ? other.area_.Clone() : null;
       mode_ = other.mode_;
+      cinematicSettings_ = other.cinematicSettings_ != null ? other.cinematicSettings_.Clone() : null;
+      useColliderRange_ = other.useColliderRange_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -130,6 +147,46 @@ namespace DCL.ECSComponents {
       }
     }
 
+    /// <summary>Field number for the "cinematic_settings" field.</summary>
+    public const int CinematicSettingsFieldNumber = 3;
+    private global::DCL.ECSComponents.CinematicSettings cinematicSettings_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::DCL.ECSComponents.CinematicSettings CinematicSettings {
+      get { return cinematicSettings_; }
+      set {
+        cinematicSettings_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "use_collider_range" field.</summary>
+    public const int UseColliderRangeFieldNumber = 4;
+    private bool useColliderRange_;
+    /// <summary>
+    /// if true, the player will be considered inside the area when they are within 0.3m of the area. default true
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool UseColliderRange {
+      get { if ((_hasBits0 & 1) != 0) { return useColliderRange_; } else { return false; } }
+      set {
+        _hasBits0 |= 1;
+        useColliderRange_ = value;
+      }
+    }
+    /// <summary>Gets whether the "use_collider_range" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasUseColliderRange {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "use_collider_range" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearUseColliderRange() {
+      _hasBits0 &= ~1;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -147,6 +204,8 @@ namespace DCL.ECSComponents {
       }
       if (!object.Equals(Area, other.Area)) return false;
       if (Mode != other.Mode) return false;
+      if (!object.Equals(CinematicSettings, other.CinematicSettings)) return false;
+      if (UseColliderRange != other.UseColliderRange) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -156,6 +215,8 @@ namespace DCL.ECSComponents {
       int hash = 1;
       if (area_ != null) hash ^= Area.GetHashCode();
       if (Mode != global::DCL.ECSComponents.CameraType.CtFirstPerson) hash ^= Mode.GetHashCode();
+      if (cinematicSettings_ != null) hash ^= CinematicSettings.GetHashCode();
+      if (HasUseColliderRange) hash ^= UseColliderRange.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -182,6 +243,14 @@ namespace DCL.ECSComponents {
         output.WriteRawTag(16);
         output.WriteEnum((int) Mode);
       }
+      if (cinematicSettings_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(CinematicSettings);
+      }
+      if (HasUseColliderRange) {
+        output.WriteRawTag(32);
+        output.WriteBool(UseColliderRange);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -200,6 +269,14 @@ namespace DCL.ECSComponents {
         output.WriteRawTag(16);
         output.WriteEnum((int) Mode);
       }
+      if (cinematicSettings_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(CinematicSettings);
+      }
+      if (HasUseColliderRange) {
+        output.WriteRawTag(32);
+        output.WriteBool(UseColliderRange);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -215,6 +292,12 @@ namespace DCL.ECSComponents {
       }
       if (Mode != global::DCL.ECSComponents.CameraType.CtFirstPerson) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Mode);
+      }
+      if (cinematicSettings_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(CinematicSettings);
+      }
+      if (HasUseColliderRange) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -236,6 +319,15 @@ namespace DCL.ECSComponents {
       }
       if (other.Mode != global::DCL.ECSComponents.CameraType.CtFirstPerson) {
         Mode = other.Mode;
+      }
+      if (other.cinematicSettings_ != null) {
+        if (cinematicSettings_ == null) {
+          CinematicSettings = new global::DCL.ECSComponents.CinematicSettings();
+        }
+        CinematicSettings.MergeFrom(other.CinematicSettings);
+      }
+      if (other.HasUseColliderRange) {
+        UseColliderRange = other.UseColliderRange;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -263,6 +355,17 @@ namespace DCL.ECSComponents {
             Mode = (global::DCL.ECSComponents.CameraType) input.ReadEnum();
             break;
           }
+          case 26: {
+            if (cinematicSettings_ == null) {
+              CinematicSettings = new global::DCL.ECSComponents.CinematicSettings();
+            }
+            input.ReadMessage(CinematicSettings);
+            break;
+          }
+          case 32: {
+            UseColliderRange = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -287,6 +390,532 @@ namespace DCL.ECSComponents {
           }
           case 16: {
             Mode = (global::DCL.ECSComponents.CameraType) input.ReadEnum();
+            break;
+          }
+          case 26: {
+            if (cinematicSettings_ == null) {
+              CinematicSettings = new global::DCL.ECSComponents.CinematicSettings();
+            }
+            input.ReadMessage(CinematicSettings);
+            break;
+          }
+          case 32: {
+            UseColliderRange = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class CinematicSettings : pb::IMessage<CinematicSettings>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<CinematicSettings> _parser = new pb::MessageParser<CinematicSettings>(() => new CinematicSettings());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<CinematicSettings> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::DCL.ECSComponents.CameraModeAreaReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CinematicSettings() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CinematicSettings(CinematicSettings other) : this() {
+      _hasBits0 = other._hasBits0;
+      cameraEntity_ = other.cameraEntity_;
+      allowManualRotation_ = other.allowManualRotation_;
+      yawRange_ = other.yawRange_;
+      pitchRange_ = other.pitchRange_;
+      rollRange_ = other.rollRange_;
+      zoomMin_ = other.zoomMin_;
+      zoomMax_ = other.zoomMax_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public CinematicSettings Clone() {
+      return new CinematicSettings(this);
+    }
+
+    /// <summary>Field number for the "camera_entity" field.</summary>
+    public const int CameraEntityFieldNumber = 1;
+    private uint cameraEntity_;
+    /// <summary>
+    /// Entity that defines the cinematic camera transform.
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint CameraEntity {
+      get { return cameraEntity_; }
+      set {
+        cameraEntity_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "allow_manual_rotation" field.</summary>
+    public const int AllowManualRotationFieldNumber = 2;
+    private bool allowManualRotation_;
+    /// <summary>
+    /// Position -> camera's position
+    /// Rotation -> camera's direction
+    /// scale.z -> zoom level
+    /// scale.x and scale.y -> unused
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool AllowManualRotation {
+      get { if ((_hasBits0 & 1) != 0) { return allowManualRotation_; } else { return false; } }
+      set {
+        _hasBits0 |= 1;
+        allowManualRotation_ = value;
+      }
+    }
+    /// <summary>Gets whether the "allow_manual_rotation" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAllowManualRotation {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "allow_manual_rotation" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAllowManualRotation() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "yaw_range" field.</summary>
+    public const int YawRangeFieldNumber = 3;
+    private float yawRange_;
+    /// <summary>
+    /// how far the camera can rotate around the y-axis / look left/right, in radians. default unrestricted
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float YawRange {
+      get { if ((_hasBits0 & 2) != 0) { return yawRange_; } else { return 0F; } }
+      set {
+        _hasBits0 |= 2;
+        yawRange_ = value;
+      }
+    }
+    /// <summary>Gets whether the "yaw_range" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasYawRange {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "yaw_range" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearYawRange() {
+      _hasBits0 &= ~2;
+    }
+
+    /// <summary>Field number for the "pitch_range" field.</summary>
+    public const int PitchRangeFieldNumber = 4;
+    private float pitchRange_;
+    /// <summary>
+    /// how far the camera can rotate around the x-axis / look up-down, in radians. default unrestricted
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float PitchRange {
+      get { if ((_hasBits0 & 4) != 0) { return pitchRange_; } else { return 0F; } }
+      set {
+        _hasBits0 |= 4;
+        pitchRange_ = value;
+      }
+    }
+    /// <summary>Gets whether the "pitch_range" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasPitchRange {
+      get { return (_hasBits0 & 4) != 0; }
+    }
+    /// <summary>Clears the value of the "pitch_range" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearPitchRange() {
+      _hasBits0 &= ~4;
+    }
+
+    /// <summary>Field number for the "roll_range" field.</summary>
+    public const int RollRangeFieldNumber = 5;
+    private float rollRange_;
+    /// <summary>
+    /// note: cameras can never look up/down further than Vec3::Y
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float RollRange {
+      get { if ((_hasBits0 & 8) != 0) { return rollRange_; } else { return 0F; } }
+      set {
+        _hasBits0 |= 8;
+        rollRange_ = value;
+      }
+    }
+    /// <summary>Gets whether the "roll_range" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasRollRange {
+      get { return (_hasBits0 & 8) != 0; }
+    }
+    /// <summary>Clears the value of the "roll_range" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearRollRange() {
+      _hasBits0 &= ~8;
+    }
+
+    /// <summary>Field number for the "zoom_min" field.</summary>
+    public const int ZoomMinFieldNumber = 6;
+    private float zoomMin_;
+    /// <summary>
+    /// minimum zoom level. must be greater than 0. defaults to the input zoom level
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float ZoomMin {
+      get { if ((_hasBits0 & 16) != 0) { return zoomMin_; } else { return 0F; } }
+      set {
+        _hasBits0 |= 16;
+        zoomMin_ = value;
+      }
+    }
+    /// <summary>Gets whether the "zoom_min" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasZoomMin {
+      get { return (_hasBits0 & 16) != 0; }
+    }
+    /// <summary>Clears the value of the "zoom_min" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearZoomMin() {
+      _hasBits0 &= ~16;
+    }
+
+    /// <summary>Field number for the "zoom_max" field.</summary>
+    public const int ZoomMaxFieldNumber = 7;
+    private float zoomMax_;
+    /// <summary>
+    /// maximum zoom level. must be greater than 0. defaults to the input zoom level
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float ZoomMax {
+      get { if ((_hasBits0 & 32) != 0) { return zoomMax_; } else { return 0F; } }
+      set {
+        _hasBits0 |= 32;
+        zoomMax_ = value;
+      }
+    }
+    /// <summary>Gets whether the "zoom_max" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasZoomMax {
+      get { return (_hasBits0 & 32) != 0; }
+    }
+    /// <summary>Clears the value of the "zoom_max" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearZoomMax() {
+      _hasBits0 &= ~32;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as CinematicSettings);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(CinematicSettings other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (CameraEntity != other.CameraEntity) return false;
+      if (AllowManualRotation != other.AllowManualRotation) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(YawRange, other.YawRange)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(PitchRange, other.PitchRange)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(RollRange, other.RollRange)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ZoomMin, other.ZoomMin)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(ZoomMax, other.ZoomMax)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (CameraEntity != 0) hash ^= CameraEntity.GetHashCode();
+      if (HasAllowManualRotation) hash ^= AllowManualRotation.GetHashCode();
+      if (HasYawRange) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(YawRange);
+      if (HasPitchRange) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(PitchRange);
+      if (HasRollRange) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(RollRange);
+      if (HasZoomMin) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ZoomMin);
+      if (HasZoomMax) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(ZoomMax);
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (CameraEntity != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(CameraEntity);
+      }
+      if (HasAllowManualRotation) {
+        output.WriteRawTag(16);
+        output.WriteBool(AllowManualRotation);
+      }
+      if (HasYawRange) {
+        output.WriteRawTag(29);
+        output.WriteFloat(YawRange);
+      }
+      if (HasPitchRange) {
+        output.WriteRawTag(37);
+        output.WriteFloat(PitchRange);
+      }
+      if (HasRollRange) {
+        output.WriteRawTag(45);
+        output.WriteFloat(RollRange);
+      }
+      if (HasZoomMin) {
+        output.WriteRawTag(53);
+        output.WriteFloat(ZoomMin);
+      }
+      if (HasZoomMax) {
+        output.WriteRawTag(61);
+        output.WriteFloat(ZoomMax);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (CameraEntity != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(CameraEntity);
+      }
+      if (HasAllowManualRotation) {
+        output.WriteRawTag(16);
+        output.WriteBool(AllowManualRotation);
+      }
+      if (HasYawRange) {
+        output.WriteRawTag(29);
+        output.WriteFloat(YawRange);
+      }
+      if (HasPitchRange) {
+        output.WriteRawTag(37);
+        output.WriteFloat(PitchRange);
+      }
+      if (HasRollRange) {
+        output.WriteRawTag(45);
+        output.WriteFloat(RollRange);
+      }
+      if (HasZoomMin) {
+        output.WriteRawTag(53);
+        output.WriteFloat(ZoomMin);
+      }
+      if (HasZoomMax) {
+        output.WriteRawTag(61);
+        output.WriteFloat(ZoomMax);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (CameraEntity != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(CameraEntity);
+      }
+      if (HasAllowManualRotation) {
+        size += 1 + 1;
+      }
+      if (HasYawRange) {
+        size += 1 + 4;
+      }
+      if (HasPitchRange) {
+        size += 1 + 4;
+      }
+      if (HasRollRange) {
+        size += 1 + 4;
+      }
+      if (HasZoomMin) {
+        size += 1 + 4;
+      }
+      if (HasZoomMax) {
+        size += 1 + 4;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(CinematicSettings other) {
+      if (other == null) {
+        return;
+      }
+      if (other.CameraEntity != 0) {
+        CameraEntity = other.CameraEntity;
+      }
+      if (other.HasAllowManualRotation) {
+        AllowManualRotation = other.AllowManualRotation;
+      }
+      if (other.HasYawRange) {
+        YawRange = other.YawRange;
+      }
+      if (other.HasPitchRange) {
+        PitchRange = other.PitchRange;
+      }
+      if (other.HasRollRange) {
+        RollRange = other.RollRange;
+      }
+      if (other.HasZoomMin) {
+        ZoomMin = other.ZoomMin;
+      }
+      if (other.HasZoomMax) {
+        ZoomMax = other.ZoomMax;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            CameraEntity = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            AllowManualRotation = input.ReadBool();
+            break;
+          }
+          case 29: {
+            YawRange = input.ReadFloat();
+            break;
+          }
+          case 37: {
+            PitchRange = input.ReadFloat();
+            break;
+          }
+          case 45: {
+            RollRange = input.ReadFloat();
+            break;
+          }
+          case 53: {
+            ZoomMin = input.ReadFloat();
+            break;
+          }
+          case 61: {
+            ZoomMax = input.ReadFloat();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            CameraEntity = input.ReadUInt32();
+            break;
+          }
+          case 16: {
+            AllowManualRotation = input.ReadBool();
+            break;
+          }
+          case 29: {
+            YawRange = input.ReadFloat();
+            break;
+          }
+          case 37: {
+            PitchRange = input.ReadFloat();
+            break;
+          }
+          case 45: {
+            RollRange = input.ReadFloat();
+            break;
+          }
+          case 53: {
+            ZoomMin = input.ReadFloat();
+            break;
+          }
+          case 61: {
+            ZoomMax = input.ReadFloat();
             break;
           }
         }

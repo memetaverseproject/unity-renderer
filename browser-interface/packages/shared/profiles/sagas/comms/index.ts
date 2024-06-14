@@ -1,4 +1,4 @@
-import type { Avatar } from '@beland/schemas'
+import type { Avatar } from '@mtvproject/schemas'
 import { COMMS_PROFILE_TIMEOUT } from 'config'
 import { storeCondition } from 'lib/redux'
 import { requestProfileFromPeers } from 'shared/comms/handlers'

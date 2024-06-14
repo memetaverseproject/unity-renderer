@@ -1,4 +1,4 @@
-import { Scene } from '@beland/schemas'
+import { Scene } from '@mtvproject/schemas'
 import { SceneFeatureToggle } from './types'
 
 export function isSceneFeatureToggleEnabled(toggle: SceneFeatureToggle, sceneJsonData?: Scene): boolean {

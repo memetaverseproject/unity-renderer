@@ -1,6 +1,6 @@
 import * as codegen from '@dcl/rpc/dist/codegen'
 import type { RpcServerPort } from '@dcl/rpc/dist/types'
-import type { Scene } from '@beland/schemas'
+import type { Scene } from '@mtvproject/schemas'
 import {
   PermissionsServiceDefinition,
   permissionItemFromJSON,

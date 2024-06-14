@@ -37,7 +37,7 @@ import type {
 } from 'shared/types'
 import type { FeatureFlag } from 'shared/meta/types'
 import type { IFuture } from 'fp-future'
-import type { Avatar, ContentMapping } from '@beland/schemas'
+import type { Avatar, ContentMapping } from '@mtvproject/schemas'
 import type { ILogger } from 'lib/logger'
 import type {
   AddUserProfilesToCatalogPayload,

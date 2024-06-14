@@ -1,6 +1,6 @@
 import { Vector3 } from '@dcl/ecs-math'
 import { QuestForRenderer } from '@dcl/ecs-quests/@dcl/types'
-import { Avatar, ContentMapping } from '@beland/schemas'
+import { Avatar, ContentMapping } from '@mtvproject/schemas'
 import type { UnityGame } from 'unity-interface/loader'
 import { RENDERER_WS, RESET_TUTORIAL, WORLD_EXPLORER, WSS_ENABLED } from 'config'
 import future, { IFuture } from 'fp-future'

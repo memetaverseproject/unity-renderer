@@ -1,6 +1,6 @@
 import type { ProfileStatus, ProfileUserInfo, RootProfileState } from './types'
 import type { RootSessionState } from 'shared/session/types'
-import type { Avatar } from '@beland/schemas'
+import type { Avatar } from '@mtvproject/schemas'
 import { calculateDisplayName } from 'lib/decentraland/profiles/transformations/processServerProfile'
 import { getCurrentUserId as selectCurrentUserId } from 'shared/session/selectors'
 

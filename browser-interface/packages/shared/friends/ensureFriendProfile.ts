@@ -1,4 +1,4 @@
-import type { Avatar } from '@beland/schemas'
+import type { Avatar } from '@mtvproject/schemas'
 import { profileSuccess } from 'shared/profiles/actions'
 import { retrieveProfileFromCatalyst } from 'shared/profiles/retrieveProfile'
 import { store } from 'shared/store/isolatedStore'

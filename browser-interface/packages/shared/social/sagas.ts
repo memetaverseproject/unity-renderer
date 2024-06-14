@@ -14,7 +14,7 @@ import {
 } from './actions'
 import { getUnityInstance } from 'unity-interface/IUnityInterface'
 import { waitForRendererInstance } from 'shared/renderer/sagas-helper'
-import { Avatar } from '@beland/schemas'
+import { Avatar } from '@mtvproject/schemas'
 import { validateAvatar } from 'shared/profiles/schemaValidation'
 
 type ProfileSetKey = 'muted' | 'blocked'

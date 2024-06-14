@@ -14,8 +14,7 @@ public static class WearableLiterals
     {
         public static readonly IReadOnlyCollection<string> REQUIRED_CATEGORIES = new HashSet<string>
         {
-            EYES,
-            MOUTH
+            EYES
         };
 
         public const string BODY_SHAPE = "body_shape";
@@ -46,7 +45,7 @@ public static class WearableLiterals
         public const string FEMALE = "urn:memetaverse:off-chain:base-avatars:BaseFemale";
         public const string MALE = "urn:memetaverse:off-chain:base-avatars:BaseMale";
         public const string MONKEY = "urn:memetaverse:off-chain:base-avatars:BaseMonkey";
-        //public const string KID_MONKEY = "urn:memetaverse:off-chain:base-avatars:BaseKidMonkey";
+        public const string KID_MONKEY = "urn:memetaverse:off-chain:base-avatars:BaseKidMonkey";
     }
 
     public static class ItemRarity
@@ -77,6 +76,8 @@ public static class WearableLiterals
             { (BodyShapes.FEMALE, Categories.LOWER_BODY), "urn:memetaverse:off-chain:base-avatars:f_lbody_02" },
             { (BodyShapes.FEMALE, Categories.FEET), "urn:memetaverse:off-chain:base-avatars:f_feet_05" },
             { (BodyShapes.FEMALE, Categories.MOUTH), "urn:memetaverse:off-chain:base-avatars:f_mouth_00" },
+
+            { (BodyShapes.MONKEY, Categories.EYES), "urn:memetaverse:off-chain:base-avatars:mk_eyes_00" },
         };
 
         public static string[] GetDefaultWearables() => defaultWearables.Values.Distinct().ToArray();

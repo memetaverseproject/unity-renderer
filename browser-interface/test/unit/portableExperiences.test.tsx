@@ -1,4 +1,4 @@
-import { EntityType } from '@beland/schemas'
+import { EntityType } from '@mtvproject/schemas'
 import { expect } from 'chai'
 import { PORTABLE_EXPERIENCES_DEBOUNCE_DELAY } from 'config'
 import { expectSaga } from 'redux-saga-test-plan'

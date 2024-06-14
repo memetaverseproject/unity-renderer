@@ -64,20 +64,28 @@ namespace DCL.ECSComponents
             // Reset value in SBC internal component
             sbcInternalComponent.SetPosition(scene, entity, Vector3.zero, false);
         }
-
+        
         public void OnComponentModelUpdated(IParcelScene scene, IDCLEntity entity, ECSTransform model)
         {
+            bool positionChange = false;
             Transform transform = entity.gameObject.transform;
-            bool positionChange = transform.localPosition != model.position;
-            bool scaleChange = transform.localScale != model.scale;
-            bool rotationChange = transform.localRotation != model.rotation;
 
             transform.localPosition = model.position;
             transform.localRotation = model.rotation;
             transform.localScale = model.scale;
 
             if (entity.parentId != model.parentId)
+            {
+                // reparenting may end up changing the entity's position...
+                Vector3 previousGlobalPosition = transform.position;
                 ProcessNewParent(scene, entity, model.parentId);
+                positionChange = transform.position != previousGlobalPosition;
+            }
+
+            if (!positionChange)
+                positionChange = transform.localPosition != model.position;
+            bool scaleChange = transform.localScale != model.scale;
+            bool rotationChange = transform.localRotation != model.rotation;
 
             if (positionChange)
                 sbcInternalComponent.SetPosition(scene, entity, transform.position);

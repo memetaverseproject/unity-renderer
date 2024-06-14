@@ -1,4 +1,4 @@
-import type { Avatar, AvatarInfo, Profile } from '@beland/schemas'
+import type { Avatar, AvatarInfo, Profile } from '@mtvproject/schemas'
 import { generateRandomUserProfile } from 'lib/decentraland/profiles/generateRandomUserProfile'
 import type { AvatarForUserData } from 'lib/decentraland/profiles/sceneRuntime'
 import defaultLogger from 'lib/logger'

@@ -1,6 +1,6 @@
 import type * as rfc4 from 'shared/protocol/decentraland/kernel/comms/rfc4/comms.gen'
-import type { Avatar } from '@beland/schemas'
-import { EthAddress } from '@beland/schemas'
+import type { Avatar } from '@mtvproject/schemas'
+import { EthAddress } from '@mtvproject/schemas'
 import { commConfigurations } from 'config'
 import { Observable } from 'mz-observable'
 import { getProfileFromStore } from 'shared/profiles/selectors'

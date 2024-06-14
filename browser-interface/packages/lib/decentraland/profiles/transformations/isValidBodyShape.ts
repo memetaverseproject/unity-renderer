@@ -1,8 +1,8 @@
 const BODY_SHAPES = [
-  'dcl://base-avatars/BaseFemale',
-  'dcl://base-avatars/BaseMale',
   'urn:memetaverse:off-chain:base-avatars:BaseFemale',
-  'urn:memetaverse:off-chain:base-avatars:BaseMale'
+  'urn:memetaverse:off-chain:base-avatars:BaseMale',
+  'urn:memetaverse:off-chain:base-avatars:BaseKidMonkey',
+  'urn:memetaverse:off-chain:base-avatars:BaseMonkey'
 ]
 
 export function isValidBodyShape(shape: string) {

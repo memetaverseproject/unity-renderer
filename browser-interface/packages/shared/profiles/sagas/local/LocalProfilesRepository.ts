@@ -1,4 +1,4 @@
-import { Avatar } from '@beland/schemas'
+import { Avatar } from '@mtvproject/schemas'
 import {
   getFromPersistentStorage,
   removeFromPersistentStorage,

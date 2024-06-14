@@ -1,4 +1,4 @@
-import { Avatar } from '@beland/schemas'
+import { Avatar } from '@mtvproject/schemas'
 
 export const REMOTE_AVATAR_IS_INVALID = `Remote avatar for profile is invalid`
 

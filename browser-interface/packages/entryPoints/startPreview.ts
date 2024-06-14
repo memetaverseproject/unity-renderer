@@ -1,4 +1,4 @@
-import { sdk } from '@beland/schemas'
+import { sdk } from '@mtvproject/schemas'
 import { clientDebug } from 'unity-interface/ClientDebug'
 import type { IUnityInterface } from 'unity-interface/IUnityInterface'
 import { DEBUG_WS_MESSAGES } from 'config/index'

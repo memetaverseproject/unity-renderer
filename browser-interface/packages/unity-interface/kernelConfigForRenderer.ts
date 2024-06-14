@@ -11,7 +11,7 @@ import {
   ETHEREUM_NETWORK
 } from 'config'
 import { nameValidCharacterRegex, nameValidRegex } from 'lib/decentraland/profiles/names'
-import { getWorld } from '@beland/schemas'
+import { getWorld } from '@mtvproject/schemas'
 import { store } from 'shared/store/isolatedStore'
 import { getSelectedNetwork } from 'shared/dao/selectors'
 import { isGifWebSupported } from 'shared/meta/selectors'

@@ -26,17 +26,33 @@ namespace DCL.ECSComponents {
           string.Concat(
             "CjZkZWNlbnRyYWxhbmQvc2RrL2NvbXBvbmVudHMvYXZhdGFyX21vZGlmaWVy",
             "X2FyZWEucHJvdG8SG2RlY2VudHJhbGFuZC5zZGsuY29tcG9uZW50cxohZGVj",
-            "ZW50cmFsYW5kL2NvbW1vbi92ZWN0b3JzLnByb3RvIpsBChRQQkF2YXRhck1v",
+            "ZW50cmFsYW5kL2NvbW1vbi92ZWN0b3JzLnByb3RvIr4CChRQQkF2YXRhck1v",
             "ZGlmaWVyQXJlYRIqCgRhcmVhGAEgASgLMhwuZGVjZW50cmFsYW5kLmNvbW1v",
             "bi5WZWN0b3IzEhMKC2V4Y2x1ZGVfaWRzGAIgAygJEkIKCW1vZGlmaWVycxgD",
             "IAMoDjIvLmRlY2VudHJhbGFuZC5zZGsuY29tcG9uZW50cy5BdmF0YXJNb2Rp",
-            "ZmllclR5cGUqRQoSQXZhdGFyTW9kaWZpZXJUeXBlEhQKEEFNVF9ISURFX0FW",
-            "QVRBUlMQABIZChVBTVRfRElTQUJMRV9QQVNTUE9SVFMQAUIUqgIRRENMLkVD",
-            "U0NvbXBvbmVudHNiBnByb3RvMw=="));
+            "ZmllclR5cGUSUwoRbW92ZW1lbnRfc2V0dGluZ3MYBCABKAsyMy5kZWNlbnRy",
+            "YWxhbmQuc2RrLmNvbXBvbmVudHMuQXZhdGFyTW92ZW1lbnRTZXR0aW5nc0gA",
+            "iAEBEh8KEnVzZV9jb2xsaWRlcl9yYW5nZRgFIAEoCEgBiAEBQhQKEl9tb3Zl",
+            "bWVudF9zZXR0aW5nc0IVChNfdXNlX2NvbGxpZGVyX3JhbmdlIswDChZBdmF0",
+            "YXJNb3ZlbWVudFNldHRpbmdzEkkKDGNvbnRyb2xfbW9kZRgBIAEoDjIuLmRl",
+            "Y2VudHJhbGFuZC5zZGsuY29tcG9uZW50cy5BdmF0YXJDb250cm9sVHlwZUgA",
+            "iAEBEhYKCXJ1bl9zcGVlZBgCIAEoAkgBiAEBEhUKCGZyaWN0aW9uGAMgASgC",
+            "SAKIAQESFAoHZ3Jhdml0eRgEIAEoAkgDiAEBEhgKC2p1bXBfaGVpZ2h0GAUg",
+            "ASgCSASIAQESGwoObWF4X2ZhbGxfc3BlZWQYBiABKAJIBYgBARIXCgp0dXJu",
+            "X3NwZWVkGAcgASgCSAaIAQESFwoKd2Fsa19zcGVlZBgIIAEoAkgHiAEBEiQK",
+            "F2FsbG93X3dlaWdodGVkX21vdmVtZW50GAkgASgISAiIAQFCDwoNX2NvbnRy",
+            "b2xfbW9kZUIMCgpfcnVuX3NwZWVkQgsKCV9mcmljdGlvbkIKCghfZ3Jhdml0",
+            "eUIOCgxfanVtcF9oZWlnaHRCEQoPX21heF9mYWxsX3NwZWVkQg0KC190dXJu",
+            "X3NwZWVkQg0KC193YWxrX3NwZWVkQhoKGF9hbGxvd193ZWlnaHRlZF9tb3Zl",
+            "bWVudCpFChJBdmF0YXJNb2RpZmllclR5cGUSFAoQQU1UX0hJREVfQVZBVEFS",
+            "UxAAEhkKFUFNVF9ESVNBQkxFX1BBU1NQT1JUUxABKkEKEUF2YXRhckNvbnRy",
+            "b2xUeXBlEgwKCENDVF9OT05FEAASEAoMQ0NUX1JFTEFUSVZFEAESDAoIQ0NU",
+            "X1RBTksQAkIUqgIRRENMLkVDU0NvbXBvbmVudHNiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Decentraland.Common.VectorsReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::DCL.ECSComponents.AvatarModifierType), }, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::DCL.ECSComponents.PBAvatarModifierArea), global::DCL.ECSComponents.PBAvatarModifierArea.Parser, new[]{ "Area", "ExcludeIds", "Modifiers" }, null, null, null, null)
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::DCL.ECSComponents.AvatarModifierType), typeof(global::DCL.ECSComponents.AvatarControlType), }, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::DCL.ECSComponents.PBAvatarModifierArea), global::DCL.ECSComponents.PBAvatarModifierArea.Parser, new[]{ "Area", "ExcludeIds", "Modifiers", "MovementSettings", "UseColliderRange" }, new[]{ "MovementSettings", "UseColliderRange" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::DCL.ECSComponents.AvatarMovementSettings), global::DCL.ECSComponents.AvatarMovementSettings.Parser, new[]{ "ControlMode", "RunSpeed", "Friction", "Gravity", "JumpHeight", "MaxFallSpeed", "TurnSpeed", "WalkSpeed", "AllowWeightedMovement" }, new[]{ "ControlMode", "RunSpeed", "Friction", "Gravity", "JumpHeight", "MaxFallSpeed", "TurnSpeed", "WalkSpeed", "AllowWeightedMovement" }, null, null, null)
           }));
     }
     #endregion
@@ -55,6 +71,21 @@ namespace DCL.ECSComponents {
     /// selecting (e.g. clicking) an avatar will not bring up their profile.
     /// </summary>
     [pbr::OriginalName("AMT_DISABLE_PASSPORTS")] AmtDisablePassports = 1,
+  }
+
+  public enum AvatarControlType {
+    /// <summary>
+    /// avatar cannot move
+    /// </summary>
+    [pbr::OriginalName("CCT_NONE")] CctNone = 0,
+    /// <summary>
+    /// avatar moves relative to the camera origin
+    /// </summary>
+    [pbr::OriginalName("CCT_RELATIVE")] CctRelative = 1,
+    /// <summary>
+    /// avatar moves like a tank: left/right rotate the player, forward/backward advance/retreat the player
+    /// </summary>
+    [pbr::OriginalName("CCT_TANK")] CctTank = 2,
   }
 
   #endregion
@@ -81,6 +112,7 @@ namespace DCL.ECSComponents {
   {
     private static readonly pb::MessageParser<PBAvatarModifierArea> _parser = new pb::MessageParser<PBAvatarModifierArea>(() => new PBAvatarModifierArea());
     private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pb::MessageParser<PBAvatarModifierArea> Parser { get { return _parser; } }
@@ -108,9 +140,12 @@ namespace DCL.ECSComponents {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public PBAvatarModifierArea(PBAvatarModifierArea other) : this() {
+      _hasBits0 = other._hasBits0;
       area_ = other.area_ != null ? other.area_.Clone() : null;
       excludeIds_ = other.excludeIds_.Clone();
       modifiers_ = other.modifiers_.Clone();
+      movementSettings_ = other.movementSettings_ != null ? other.movementSettings_.Clone() : null;
+      useColliderRange_ = other.useColliderRange_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -163,6 +198,46 @@ namespace DCL.ECSComponents {
       get { return modifiers_; }
     }
 
+    /// <summary>Field number for the "movement_settings" field.</summary>
+    public const int MovementSettingsFieldNumber = 4;
+    private global::DCL.ECSComponents.AvatarMovementSettings movementSettings_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::DCL.ECSComponents.AvatarMovementSettings MovementSettings {
+      get { return movementSettings_; }
+      set {
+        movementSettings_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "use_collider_range" field.</summary>
+    public const int UseColliderRangeFieldNumber = 5;
+    private bool useColliderRange_;
+    /// <summary>
+    /// if true, the player will be considered inside the area when they are within 0.3m of the area. default true
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool UseColliderRange {
+      get { if ((_hasBits0 & 1) != 0) { return useColliderRange_; } else { return false; } }
+      set {
+        _hasBits0 |= 1;
+        useColliderRange_ = value;
+      }
+    }
+    /// <summary>Gets whether the "use_collider_range" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasUseColliderRange {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "use_collider_range" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearUseColliderRange() {
+      _hasBits0 &= ~1;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -181,6 +256,8 @@ namespace DCL.ECSComponents {
       if (!object.Equals(Area, other.Area)) return false;
       if(!excludeIds_.Equals(other.excludeIds_)) return false;
       if(!modifiers_.Equals(other.modifiers_)) return false;
+      if (!object.Equals(MovementSettings, other.MovementSettings)) return false;
+      if (UseColliderRange != other.UseColliderRange) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -191,6 +268,8 @@ namespace DCL.ECSComponents {
       if (area_ != null) hash ^= Area.GetHashCode();
       hash ^= excludeIds_.GetHashCode();
       hash ^= modifiers_.GetHashCode();
+      if (movementSettings_ != null) hash ^= MovementSettings.GetHashCode();
+      if (HasUseColliderRange) hash ^= UseColliderRange.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -215,6 +294,14 @@ namespace DCL.ECSComponents {
       }
       excludeIds_.WriteTo(output, _repeated_excludeIds_codec);
       modifiers_.WriteTo(output, _repeated_modifiers_codec);
+      if (movementSettings_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(MovementSettings);
+      }
+      if (HasUseColliderRange) {
+        output.WriteRawTag(40);
+        output.WriteBool(UseColliderRange);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -231,6 +318,14 @@ namespace DCL.ECSComponents {
       }
       excludeIds_.WriteTo(ref output, _repeated_excludeIds_codec);
       modifiers_.WriteTo(ref output, _repeated_modifiers_codec);
+      if (movementSettings_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(MovementSettings);
+      }
+      if (HasUseColliderRange) {
+        output.WriteRawTag(40);
+        output.WriteBool(UseColliderRange);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -246,6 +341,12 @@ namespace DCL.ECSComponents {
       }
       size += excludeIds_.CalculateSize(_repeated_excludeIds_codec);
       size += modifiers_.CalculateSize(_repeated_modifiers_codec);
+      if (movementSettings_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(MovementSettings);
+      }
+      if (HasUseColliderRange) {
+        size += 1 + 1;
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -266,6 +367,15 @@ namespace DCL.ECSComponents {
       }
       excludeIds_.Add(other.excludeIds_);
       modifiers_.Add(other.modifiers_);
+      if (other.movementSettings_ != null) {
+        if (movementSettings_ == null) {
+          MovementSettings = new global::DCL.ECSComponents.AvatarMovementSettings();
+        }
+        MovementSettings.MergeFrom(other.MovementSettings);
+      }
+      if (other.HasUseColliderRange) {
+        UseColliderRange = other.UseColliderRange;
+      }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
 
@@ -297,6 +407,17 @@ namespace DCL.ECSComponents {
             modifiers_.AddEntriesFrom(input, _repeated_modifiers_codec);
             break;
           }
+          case 34: {
+            if (movementSettings_ == null) {
+              MovementSettings = new global::DCL.ECSComponents.AvatarMovementSettings();
+            }
+            input.ReadMessage(MovementSettings);
+            break;
+          }
+          case 40: {
+            UseColliderRange = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -326,6 +447,645 @@ namespace DCL.ECSComponents {
           case 26:
           case 24: {
             modifiers_.AddEntriesFrom(ref input, _repeated_modifiers_codec);
+            break;
+          }
+          case 34: {
+            if (movementSettings_ == null) {
+              MovementSettings = new global::DCL.ECSComponents.AvatarMovementSettings();
+            }
+            input.ReadMessage(MovementSettings);
+            break;
+          }
+          case 40: {
+            UseColliderRange = input.ReadBool();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class AvatarMovementSettings : pb::IMessage<AvatarMovementSettings>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<AvatarMovementSettings> _parser = new pb::MessageParser<AvatarMovementSettings>(() => new AvatarMovementSettings());
+    private pb::UnknownFieldSet _unknownFields;
+    private int _hasBits0;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<AvatarMovementSettings> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::DCL.ECSComponents.AvatarModifierAreaReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AvatarMovementSettings() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AvatarMovementSettings(AvatarMovementSettings other) : this() {
+      _hasBits0 = other._hasBits0;
+      controlMode_ = other.controlMode_;
+      runSpeed_ = other.runSpeed_;
+      friction_ = other.friction_;
+      gravity_ = other.gravity_;
+      jumpHeight_ = other.jumpHeight_;
+      maxFallSpeed_ = other.maxFallSpeed_;
+      turnSpeed_ = other.turnSpeed_;
+      walkSpeed_ = other.walkSpeed_;
+      allowWeightedMovement_ = other.allowWeightedMovement_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public AvatarMovementSettings Clone() {
+      return new AvatarMovementSettings(this);
+    }
+
+    /// <summary>Field number for the "control_mode" field.</summary>
+    public const int ControlModeFieldNumber = 1;
+    private global::DCL.ECSComponents.AvatarControlType controlMode_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::DCL.ECSComponents.AvatarControlType ControlMode {
+      get { if ((_hasBits0 & 1) != 0) { return controlMode_; } else { return global::DCL.ECSComponents.AvatarControlType.CctNone; } }
+      set {
+        _hasBits0 |= 1;
+        controlMode_ = value;
+      }
+    }
+    /// <summary>Gets whether the "control_mode" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasControlMode {
+      get { return (_hasBits0 & 1) != 0; }
+    }
+    /// <summary>Clears the value of the "control_mode" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearControlMode() {
+      _hasBits0 &= ~1;
+    }
+
+    /// <summary>Field number for the "run_speed" field.</summary>
+    public const int RunSpeedFieldNumber = 2;
+    private float runSpeed_;
+    /// <summary>
+    /// if not explicitly set, the following properties default to user's preference settings
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float RunSpeed {
+      get { if ((_hasBits0 & 2) != 0) { return runSpeed_; } else { return 0F; } }
+      set {
+        _hasBits0 |= 2;
+        runSpeed_ = value;
+      }
+    }
+    /// <summary>Gets whether the "run_speed" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasRunSpeed {
+      get { return (_hasBits0 & 2) != 0; }
+    }
+    /// <summary>Clears the value of the "run_speed" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearRunSpeed() {
+      _hasBits0 &= ~2;
+    }
+
+    /// <summary>Field number for the "friction" field.</summary>
+    public const int FrictionFieldNumber = 3;
+    private float friction_;
+    /// <summary>
+    /// how fast the player gets up to speed or comes to rest. higher = more responsive
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float Friction {
+      get { if ((_hasBits0 & 4) != 0) { return friction_; } else { return 0F; } }
+      set {
+        _hasBits0 |= 4;
+        friction_ = value;
+      }
+    }
+    /// <summary>Gets whether the "friction" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasFriction {
+      get { return (_hasBits0 & 4) != 0; }
+    }
+    /// <summary>Clears the value of the "friction" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearFriction() {
+      _hasBits0 &= ~4;
+    }
+
+    /// <summary>Field number for the "gravity" field.</summary>
+    public const int GravityFieldNumber = 4;
+    private float gravity_;
+    /// <summary>
+    /// how fast the player accelerates vertically when not on a solid surface, in m/s. should normally be negative
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float Gravity {
+      get { if ((_hasBits0 & 8) != 0) { return gravity_; } else { return 0F; } }
+      set {
+        _hasBits0 |= 8;
+        gravity_ = value;
+      }
+    }
+    /// <summary>Gets whether the "gravity" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasGravity {
+      get { return (_hasBits0 & 8) != 0; }
+    }
+    /// <summary>Clears the value of the "gravity" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearGravity() {
+      _hasBits0 &= ~8;
+    }
+
+    /// <summary>Field number for the "jump_height" field.</summary>
+    public const int JumpHeightFieldNumber = 5;
+    private float jumpHeight_;
+    /// <summary>
+    /// how high the player can jump, in meters. should normally be positive. gravity must have the same sign for jumping to be possible
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float JumpHeight {
+      get { if ((_hasBits0 & 16) != 0) { return jumpHeight_; } else { return 0F; } }
+      set {
+        _hasBits0 |= 16;
+        jumpHeight_ = value;
+      }
+    }
+    /// <summary>Gets whether the "jump_height" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasJumpHeight {
+      get { return (_hasBits0 & 16) != 0; }
+    }
+    /// <summary>Clears the value of the "jump_height" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearJumpHeight() {
+      _hasBits0 &= ~16;
+    }
+
+    /// <summary>Field number for the "max_fall_speed" field.</summary>
+    public const int MaxFallSpeedFieldNumber = 6;
+    private float maxFallSpeed_;
+    /// <summary>
+    /// max fall speed in m/s. should normally be negative
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float MaxFallSpeed {
+      get { if ((_hasBits0 & 32) != 0) { return maxFallSpeed_; } else { return 0F; } }
+      set {
+        _hasBits0 |= 32;
+        maxFallSpeed_ = value;
+      }
+    }
+    /// <summary>Gets whether the "max_fall_speed" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasMaxFallSpeed {
+      get { return (_hasBits0 & 32) != 0; }
+    }
+    /// <summary>Clears the value of the "max_fall_speed" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearMaxFallSpeed() {
+      _hasBits0 &= ~32;
+    }
+
+    /// <summary>Field number for the "turn_speed" field.</summary>
+    public const int TurnSpeedFieldNumber = 7;
+    private float turnSpeed_;
+    /// <summary>
+    /// speed the player turns in tank mode, in radians/s
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float TurnSpeed {
+      get { if ((_hasBits0 & 64) != 0) { return turnSpeed_; } else { return 0F; } }
+      set {
+        _hasBits0 |= 64;
+        turnSpeed_ = value;
+      }
+    }
+    /// <summary>Gets whether the "turn_speed" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasTurnSpeed {
+      get { return (_hasBits0 & 64) != 0; }
+    }
+    /// <summary>Clears the value of the "turn_speed" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearTurnSpeed() {
+      _hasBits0 &= ~64;
+    }
+
+    /// <summary>Field number for the "walk_speed" field.</summary>
+    public const int WalkSpeedFieldNumber = 8;
+    private float walkSpeed_;
+    /// <summary>
+    /// speed the player walks at, in m/s
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float WalkSpeed {
+      get { if ((_hasBits0 & 128) != 0) { return walkSpeed_; } else { return 0F; } }
+      set {
+        _hasBits0 |= 128;
+        walkSpeed_ = value;
+      }
+    }
+    /// <summary>Gets whether the "walk_speed" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasWalkSpeed {
+      get { return (_hasBits0 & 128) != 0; }
+    }
+    /// <summary>Clears the value of the "walk_speed" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearWalkSpeed() {
+      _hasBits0 &= ~128;
+    }
+
+    /// <summary>Field number for the "allow_weighted_movement" field.</summary>
+    public const int AllowWeightedMovementFieldNumber = 9;
+    private bool allowWeightedMovement_;
+    /// <summary>
+    /// whether to allow player to move at a slower speed (e.g. with a walk-key or when using a gamepad/joystick). defaults to true  
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool AllowWeightedMovement {
+      get { if ((_hasBits0 & 256) != 0) { return allowWeightedMovement_; } else { return false; } }
+      set {
+        _hasBits0 |= 256;
+        allowWeightedMovement_ = value;
+      }
+    }
+    /// <summary>Gets whether the "allow_weighted_movement" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasAllowWeightedMovement {
+      get { return (_hasBits0 & 256) != 0; }
+    }
+    /// <summary>Clears the value of the "allow_weighted_movement" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearAllowWeightedMovement() {
+      _hasBits0 &= ~256;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as AvatarMovementSettings);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(AvatarMovementSettings other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ControlMode != other.ControlMode) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(RunSpeed, other.RunSpeed)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Friction, other.Friction)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Gravity, other.Gravity)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(JumpHeight, other.JumpHeight)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(MaxFallSpeed, other.MaxFallSpeed)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(TurnSpeed, other.TurnSpeed)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(WalkSpeed, other.WalkSpeed)) return false;
+      if (AllowWeightedMovement != other.AllowWeightedMovement) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (HasControlMode) hash ^= ControlMode.GetHashCode();
+      if (HasRunSpeed) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(RunSpeed);
+      if (HasFriction) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Friction);
+      if (HasGravity) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Gravity);
+      if (HasJumpHeight) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(JumpHeight);
+      if (HasMaxFallSpeed) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(MaxFallSpeed);
+      if (HasTurnSpeed) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(TurnSpeed);
+      if (HasWalkSpeed) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(WalkSpeed);
+      if (HasAllowWeightedMovement) hash ^= AllowWeightedMovement.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (HasControlMode) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) ControlMode);
+      }
+      if (HasRunSpeed) {
+        output.WriteRawTag(21);
+        output.WriteFloat(RunSpeed);
+      }
+      if (HasFriction) {
+        output.WriteRawTag(29);
+        output.WriteFloat(Friction);
+      }
+      if (HasGravity) {
+        output.WriteRawTag(37);
+        output.WriteFloat(Gravity);
+      }
+      if (HasJumpHeight) {
+        output.WriteRawTag(45);
+        output.WriteFloat(JumpHeight);
+      }
+      if (HasMaxFallSpeed) {
+        output.WriteRawTag(53);
+        output.WriteFloat(MaxFallSpeed);
+      }
+      if (HasTurnSpeed) {
+        output.WriteRawTag(61);
+        output.WriteFloat(TurnSpeed);
+      }
+      if (HasWalkSpeed) {
+        output.WriteRawTag(69);
+        output.WriteFloat(WalkSpeed);
+      }
+      if (HasAllowWeightedMovement) {
+        output.WriteRawTag(72);
+        output.WriteBool(AllowWeightedMovement);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (HasControlMode) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) ControlMode);
+      }
+      if (HasRunSpeed) {
+        output.WriteRawTag(21);
+        output.WriteFloat(RunSpeed);
+      }
+      if (HasFriction) {
+        output.WriteRawTag(29);
+        output.WriteFloat(Friction);
+      }
+      if (HasGravity) {
+        output.WriteRawTag(37);
+        output.WriteFloat(Gravity);
+      }
+      if (HasJumpHeight) {
+        output.WriteRawTag(45);
+        output.WriteFloat(JumpHeight);
+      }
+      if (HasMaxFallSpeed) {
+        output.WriteRawTag(53);
+        output.WriteFloat(MaxFallSpeed);
+      }
+      if (HasTurnSpeed) {
+        output.WriteRawTag(61);
+        output.WriteFloat(TurnSpeed);
+      }
+      if (HasWalkSpeed) {
+        output.WriteRawTag(69);
+        output.WriteFloat(WalkSpeed);
+      }
+      if (HasAllowWeightedMovement) {
+        output.WriteRawTag(72);
+        output.WriteBool(AllowWeightedMovement);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (HasControlMode) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) ControlMode);
+      }
+      if (HasRunSpeed) {
+        size += 1 + 4;
+      }
+      if (HasFriction) {
+        size += 1 + 4;
+      }
+      if (HasGravity) {
+        size += 1 + 4;
+      }
+      if (HasJumpHeight) {
+        size += 1 + 4;
+      }
+      if (HasMaxFallSpeed) {
+        size += 1 + 4;
+      }
+      if (HasTurnSpeed) {
+        size += 1 + 4;
+      }
+      if (HasWalkSpeed) {
+        size += 1 + 4;
+      }
+      if (HasAllowWeightedMovement) {
+        size += 1 + 1;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(AvatarMovementSettings other) {
+      if (other == null) {
+        return;
+      }
+      if (other.HasControlMode) {
+        ControlMode = other.ControlMode;
+      }
+      if (other.HasRunSpeed) {
+        RunSpeed = other.RunSpeed;
+      }
+      if (other.HasFriction) {
+        Friction = other.Friction;
+      }
+      if (other.HasGravity) {
+        Gravity = other.Gravity;
+      }
+      if (other.HasJumpHeight) {
+        JumpHeight = other.JumpHeight;
+      }
+      if (other.HasMaxFallSpeed) {
+        MaxFallSpeed = other.MaxFallSpeed;
+      }
+      if (other.HasTurnSpeed) {
+        TurnSpeed = other.TurnSpeed;
+      }
+      if (other.HasWalkSpeed) {
+        WalkSpeed = other.WalkSpeed;
+      }
+      if (other.HasAllowWeightedMovement) {
+        AllowWeightedMovement = other.AllowWeightedMovement;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ControlMode = (global::DCL.ECSComponents.AvatarControlType) input.ReadEnum();
+            break;
+          }
+          case 21: {
+            RunSpeed = input.ReadFloat();
+            break;
+          }
+          case 29: {
+            Friction = input.ReadFloat();
+            break;
+          }
+          case 37: {
+            Gravity = input.ReadFloat();
+            break;
+          }
+          case 45: {
+            JumpHeight = input.ReadFloat();
+            break;
+          }
+          case 53: {
+            MaxFallSpeed = input.ReadFloat();
+            break;
+          }
+          case 61: {
+            TurnSpeed = input.ReadFloat();
+            break;
+          }
+          case 69: {
+            WalkSpeed = input.ReadFloat();
+            break;
+          }
+          case 72: {
+            AllowWeightedMovement = input.ReadBool();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ControlMode = (global::DCL.ECSComponents.AvatarControlType) input.ReadEnum();
+            break;
+          }
+          case 21: {
+            RunSpeed = input.ReadFloat();
+            break;
+          }
+          case 29: {
+            Friction = input.ReadFloat();
+            break;
+          }
+          case 37: {
+            Gravity = input.ReadFloat();
+            break;
+          }
+          case 45: {
+            JumpHeight = input.ReadFloat();
+            break;
+          }
+          case 53: {
+            MaxFallSpeed = input.ReadFloat();
+            break;
+          }
+          case 61: {
+            TurnSpeed = input.ReadFloat();
+            break;
+          }
+          case 69: {
+            WalkSpeed = input.ReadFloat();
+            break;
+          }
+          case 72: {
+            AllowWeightedMovement = input.ReadBool();
             break;
           }
         }

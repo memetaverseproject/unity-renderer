@@ -1,4 +1,4 @@
-import type { Avatar } from '@beland/schemas'
+import type { Avatar } from '@mtvproject/schemas'
 import type { EventChannel } from 'redux-saga'
 import { call, put, select, spawn, take } from 'redux-saga/effects'
 import { createReceiveProfileOverCommsChannel, createVersionUpdateOverCommsChannel } from 'shared/comms/handlers'

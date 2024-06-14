@@ -27,18 +27,22 @@ namespace DCL.ECSComponents {
             "CilkZWNlbnRyYWxhbmQvc2RrL2NvbXBvbmVudHMvdWlfdGV4dC5wcm90bxIb",
             "ZGVjZW50cmFsYW5kLnNkay5jb21wb25lbnRzGiBkZWNlbnRyYWxhbmQvY29t",
             "bW9uL2NvbG9ycy5wcm90bxouZGVjZW50cmFsYW5kL3Nkay9jb21wb25lbnRz",
-            "L2NvbW1vbi90ZXh0cy5wcm90byKbAgoIUEJVaVRleHQSDQoFdmFsdWUYASAB",
+            "L2NvbW1vbi90ZXh0cy5wcm90byLCAwoIUEJVaVRleHQSDQoFdmFsdWUYASAB",
             "KAkSLwoFY29sb3IYAiABKAsyGy5kZWNlbnRyYWxhbmQuY29tbW9uLkNvbG9y",
             "NEgAiAEBEkoKCnRleHRfYWxpZ24YAyABKA4yMS5kZWNlbnRyYWxhbmQuc2Rr",
             "LmNvbXBvbmVudHMuY29tbW9uLlRleHRBbGlnbk1vZGVIAYgBARI7CgRmb250",
             "GAQgASgOMiguZGVjZW50cmFsYW5kLnNkay5jb21wb25lbnRzLmNvbW1vbi5G",
-            "b250SAKIAQESFgoJZm9udF9zaXplGAUgASgFSAOIAQFCCAoGX2NvbG9yQg0K",
-            "C190ZXh0X2FsaWduQgcKBV9mb250QgwKCl9mb250X3NpemVCFKoCEURDTC5F",
-            "Q1NDb21wb25lbnRzYgZwcm90bzM="));
+            "b250SAKIAQESFgoJZm9udF9zaXplGAUgASgFSAOIAQESGgoNb3V0bGluZV93",
+            "aWR0aBgGIAEoAkgEiAEBEjcKDW91dGxpbmVfY29sb3IYByABKAsyGy5kZWNl",
+            "bnRyYWxhbmQuY29tbW9uLkNvbG9yNEgFiAEBEhoKDXRleHRfd3JhcHBpbmcY",
+            "CCABKAhIBogBAUIICgZfY29sb3JCDQoLX3RleHRfYWxpZ25CBwoFX2ZvbnRC",
+            "DAoKX2ZvbnRfc2l6ZUIQCg5fb3V0bGluZV93aWR0aEIQCg5fb3V0bGluZV9j",
+            "b2xvckIQCg5fdGV4dF93cmFwcGluZ0IUqgIRRENMLkVDU0NvbXBvbmVudHNi",
+            "BnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Decentraland.Common.ColorsReflection.Descriptor, global::DCL.ECSComponents.TextsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::DCL.ECSComponents.PBUiText), global::DCL.ECSComponents.PBUiText.Parser, new[]{ "Value", "Color", "TextAlign", "Font", "FontSize" }, new[]{ "Color", "TextAlign", "Font", "FontSize" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::DCL.ECSComponents.PBUiText), global::DCL.ECSComponents.PBUiText.Parser, new[]{ "Value", "Color", "TextAlign", "Font", "FontSize", "OutlineWidth", "OutlineColor", "TextWrapping" }, new[]{ "Color", "TextAlign", "Font", "FontSize", "OutlineWidth", "OutlineColor", "TextWrapping" }, null, null, null)
           }));
     }
     #endregion
@@ -86,6 +90,9 @@ namespace DCL.ECSComponents {
       textAlign_ = other.textAlign_;
       font_ = other.font_;
       fontSize_ = other.fontSize_;
+      outlineWidth_ = other.outlineWidth_;
+      outlineColor_ = other.outlineColor_ != null ? other.outlineColor_.Clone() : null;
+      textWrapping_ = other.textWrapping_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -209,6 +216,77 @@ namespace DCL.ECSComponents {
       _hasBits0 &= ~4;
     }
 
+    /// <summary>Field number for the "outline_width" field.</summary>
+    public const int OutlineWidthFieldNumber = 6;
+    private float outlineWidth_;
+    /// <summary>
+    /// width of the outline (default: 0)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public float OutlineWidth {
+      get { if ((_hasBits0 & 8) != 0) { return outlineWidth_; } else { return 0F; } }
+      set {
+        _hasBits0 |= 8;
+        outlineWidth_ = value;
+      }
+    }
+    /// <summary>Gets whether the "outline_width" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasOutlineWidth {
+      get { return (_hasBits0 & 8) != 0; }
+    }
+    /// <summary>Clears the value of the "outline_width" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearOutlineWidth() {
+      _hasBits0 &= ~8;
+    }
+
+    /// <summary>Field number for the "outline_color" field.</summary>
+    public const int OutlineColorFieldNumber = 7;
+    private global::Decentraland.Common.Color4 outlineColor_;
+    /// <summary>
+    /// RGBA color of the outline (default: opaque black)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Decentraland.Common.Color4 OutlineColor {
+      get { return outlineColor_; }
+      set {
+        outlineColor_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "text_wrapping" field.</summary>
+    public const int TextWrappingFieldNumber = 8;
+    private bool textWrapping_;
+    /// <summary>
+    /// wrap text when the border is reached (default false)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool TextWrapping {
+      get { if ((_hasBits0 & 16) != 0) { return textWrapping_; } else { return false; } }
+      set {
+        _hasBits0 |= 16;
+        textWrapping_ = value;
+      }
+    }
+    /// <summary>Gets whether the "text_wrapping" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasTextWrapping {
+      get { return (_hasBits0 & 16) != 0; }
+    }
+    /// <summary>Clears the value of the "text_wrapping" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearTextWrapping() {
+      _hasBits0 &= ~16;
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -229,6 +307,9 @@ namespace DCL.ECSComponents {
       if (TextAlign != other.TextAlign) return false;
       if (Font != other.Font) return false;
       if (FontSize != other.FontSize) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(OutlineWidth, other.OutlineWidth)) return false;
+      if (!object.Equals(OutlineColor, other.OutlineColor)) return false;
+      if (TextWrapping != other.TextWrapping) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -241,6 +322,9 @@ namespace DCL.ECSComponents {
       if (HasTextAlign) hash ^= TextAlign.GetHashCode();
       if (HasFont) hash ^= Font.GetHashCode();
       if (HasFontSize) hash ^= FontSize.GetHashCode();
+      if (HasOutlineWidth) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(OutlineWidth);
+      if (outlineColor_ != null) hash ^= OutlineColor.GetHashCode();
+      if (HasTextWrapping) hash ^= TextWrapping.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -279,6 +363,18 @@ namespace DCL.ECSComponents {
         output.WriteRawTag(40);
         output.WriteInt32(FontSize);
       }
+      if (HasOutlineWidth) {
+        output.WriteRawTag(53);
+        output.WriteFloat(OutlineWidth);
+      }
+      if (outlineColor_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(OutlineColor);
+      }
+      if (HasTextWrapping) {
+        output.WriteRawTag(64);
+        output.WriteBool(TextWrapping);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -309,6 +405,18 @@ namespace DCL.ECSComponents {
         output.WriteRawTag(40);
         output.WriteInt32(FontSize);
       }
+      if (HasOutlineWidth) {
+        output.WriteRawTag(53);
+        output.WriteFloat(OutlineWidth);
+      }
+      if (outlineColor_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(OutlineColor);
+      }
+      if (HasTextWrapping) {
+        output.WriteRawTag(64);
+        output.WriteBool(TextWrapping);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -333,6 +441,15 @@ namespace DCL.ECSComponents {
       }
       if (HasFontSize) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(FontSize);
+      }
+      if (HasOutlineWidth) {
+        size += 1 + 4;
+      }
+      if (outlineColor_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(OutlineColor);
+      }
+      if (HasTextWrapping) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -363,6 +480,18 @@ namespace DCL.ECSComponents {
       }
       if (other.HasFontSize) {
         FontSize = other.FontSize;
+      }
+      if (other.HasOutlineWidth) {
+        OutlineWidth = other.OutlineWidth;
+      }
+      if (other.outlineColor_ != null) {
+        if (outlineColor_ == null) {
+          OutlineColor = new global::Decentraland.Common.Color4();
+        }
+        OutlineColor.MergeFrom(other.OutlineColor);
+      }
+      if (other.HasTextWrapping) {
+        TextWrapping = other.TextWrapping;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -402,6 +531,21 @@ namespace DCL.ECSComponents {
             FontSize = input.ReadInt32();
             break;
           }
+          case 53: {
+            OutlineWidth = input.ReadFloat();
+            break;
+          }
+          case 58: {
+            if (outlineColor_ == null) {
+              OutlineColor = new global::Decentraland.Common.Color4();
+            }
+            input.ReadMessage(OutlineColor);
+            break;
+          }
+          case 64: {
+            TextWrapping = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -438,6 +582,21 @@ namespace DCL.ECSComponents {
           }
           case 40: {
             FontSize = input.ReadInt32();
+            break;
+          }
+          case 53: {
+            OutlineWidth = input.ReadFloat();
+            break;
+          }
+          case 58: {
+            if (outlineColor_ == null) {
+              OutlineColor = new global::Decentraland.Common.Color4();
+            }
+            input.ReadMessage(OutlineColor);
+            break;
+          }
+          case 64: {
+            TextWrapping = input.ReadBool();
             break;
           }
         }

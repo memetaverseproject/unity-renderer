@@ -21,7 +21,7 @@ import {
 } from 'shared/protocol/decentraland/renderer/kernel_services/friend_request_kernel.gen'
 import { GetMutualFriendsRequest } from 'shared/protocol/decentraland/renderer/kernel_services/mutual_friends_kernel.gen'
 import { ReceiveFriendRequestPayload } from 'shared/protocol/decentraland/renderer/renderer_services/friend_request_renderer.gen'
-import { Avatar, EthAddress } from '@beland/schemas'
+import { Avatar, EthAddress } from '@mtvproject/schemas'
 import { CHANNEL_TO_JOIN_CONFIG_URL, DEBUG_KERNEL_LOG, ethereumConfigurations } from 'config'
 import {
   ChannelErrorKind,

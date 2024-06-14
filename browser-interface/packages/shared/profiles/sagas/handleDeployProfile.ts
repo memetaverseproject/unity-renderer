@@ -1,6 +1,6 @@
 import { Authenticator } from '@beland/crypto'
 import { hashV1 } from '@dcl/hashing'
-import { Avatar, EntityType, Profile, Snapshots } from '@beland/schemas'
+import { Avatar, EntityType, Profile, Snapshots } from '@mtvproject/schemas'
 import {
   BuildEntityOptions,
   BuildEntityWithoutFilesOptions,

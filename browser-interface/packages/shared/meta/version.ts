@@ -20,7 +20,7 @@ export function injectVersions<T extends Record<string, any>>(versions: T): T & 
  */
 export function getUsedComponentVersions() {
   const versions = injectVersions({})
-  const explorerVersion = versions['@beland/explorer'] || 'unknown'
+  const explorerVersion = versions['@mtvproject/explorer'] || 'unknown'
   return { explorerVersion }
 }
 
@@ -28,5 +28,5 @@ export function getUsedComponentVersions() {
  * Returns the build version
  */
 export function getExplorerVersion() {
-  return ((globalThis as any).ROLLOUTS || {})['@beland/explorer']?.version || 'unknown'
+  return ((globalThis as any).ROLLOUTS || {})['@mtvproject/explorer']?.version || 'unknown'
 }

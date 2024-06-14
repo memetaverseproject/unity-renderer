@@ -21,7 +21,7 @@ import {
 } from '../loading/types'
 import { PARCEL_LOADING_STARTED } from 'shared/renderer/types'
 import { INIT_SESSION } from 'shared/session/actions'
-import { Avatar } from '@beland/schemas'
+import { Avatar } from '@mtvproject/schemas'
 import { getCurrentUserProfile } from 'shared/profiles/selectors'
 import { SAVE_DELTA_PROFILE_REQUEST } from 'shared/profiles/actions'
 

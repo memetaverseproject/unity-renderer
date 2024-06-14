@@ -12,8 +12,8 @@ namespace DCL.Social.Passports
     {
         private const string URL_COLLECTIBLE_NAME = "https://market.memetaverse.club/accounts/{userId}?section=ens";
         private const string URL_COLLECTIBLE_LAND = "https://market.memetaverse.club/accounts/{userId}?section=land";
-        private const string URL_BUY_SPECIFIC_COLLECTIBLE = "https://market.memetaverse.club/contracts/{collectionId}/items/{blockchainId}?utm_source=dcl_explorer";
-        private const string URL_COLLECTIBLE_GENERIC = "https://market.memetaverse.club?utm_source=dcl_explorer";
+        private const string URL_BUY_SPECIFIC_COLLECTIBLE = "https://market.memetaverse.club/contracts/{collectionId}/items/{blockchainId}?utm_source=mtv_explorer";
+        private const string URL_COLLECTIBLE_GENERIC = "https://market.memetaverse.club?utm_source=mtv_explorer";
         private const string NAME_TYPE = "name";
         private const string PARCEL_TYPE = "parcel";
         private const string ESTATE_TYPE = "estate";

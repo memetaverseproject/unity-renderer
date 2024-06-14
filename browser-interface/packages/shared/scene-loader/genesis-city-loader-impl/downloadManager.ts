@@ -1,4 +1,4 @@
-import { Entity } from '@beland/schemas'
+import { Entity } from '@mtvproject/schemas'
 import future, { IFuture } from 'fp-future'
 import { LoadableScene } from 'shared/types'
 import { EmptyParcelController } from './emptyParcelController'

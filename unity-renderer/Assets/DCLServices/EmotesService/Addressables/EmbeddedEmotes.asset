@@ -35,6 +35,8 @@ MonoBehaviour:
     issuedId: 0
     femaleAnimation: {fileID: 7400000, guid: c6136e44f4ea38b38b228f0d89f4800a, type: 2}
     maleAnimation: {fileID: 7400000, guid: dd8136105fafa866c9be5137476440cd, type: 2}
+    monkeyAnimation: {fileID: 7400000, guid: 615d19559a87be76bbf418ad8ad615d4, type: 2}
+    kidMonkeyAnimation: {fileID: 0}
     dontShowInBackpack: 0
   - data:
       representations: []
@@ -58,6 +60,8 @@ MonoBehaviour:
     issuedId: 0
     femaleAnimation: {fileID: 7400000, guid: 8bcae1198a52d19a58dde1752eea2475, type: 2}
     maleAnimation: {fileID: 7400000, guid: 85f62b4aa090723428fc058aad1b8185, type: 2}
+    monkeyAnimation: {fileID: 7400000, guid: 60c4d4194d7f581af8f64dbef7a6dee0, type: 2}
+    kidMonkeyAnimation: {fileID: 0}
     dontShowInBackpack: 0
   - data:
       representations: []
@@ -81,6 +85,8 @@ MonoBehaviour:
     issuedId: 0
     femaleAnimation: {fileID: 7400000, guid: 9b01414892c8b5ad0a6e5df8dc7e9a56, type: 2}
     maleAnimation: {fileID: 7400000, guid: 621703f8abe23600bb9bdc0e36f1d6a8, type: 2}
+    monkeyAnimation: {fileID: 7400000, guid: 39994f5c9e39fcf63ab040a5115e270b, type: 2}
+    kidMonkeyAnimation: {fileID: 0}
     dontShowInBackpack: 0
   - data:
       representations: []
@@ -104,6 +110,8 @@ MonoBehaviour:
     issuedId: 0
     femaleAnimation: {fileID: 7400000, guid: 5212ff7b08bac5504a3dd5370a8c738e, type: 2}
     maleAnimation: {fileID: 7400000, guid: d7c4963dbcaa9db5e8497d02cfd780d3, type: 2}
+    monkeyAnimation: {fileID: 7400000, guid: 25329be9811c6e8a4918f02de801c150, type: 2}
+    kidMonkeyAnimation: {fileID: 0}
     dontShowInBackpack: 0
   - data:
       representations: []
@@ -127,6 +135,8 @@ MonoBehaviour:
     issuedId: 0
     femaleAnimation: {fileID: 7400000, guid: 51ce1ba61c6c15bfc89cb2689247d847, type: 2}
     maleAnimation: {fileID: 7400000, guid: cffe73f3c0fe8012d852044d78a3a732, type: 2}
+    monkeyAnimation: {fileID: 7400000, guid: 81f8c3e331a96c2e78069f7e9baad8c2, type: 2}
+    kidMonkeyAnimation: {fileID: 0}
     dontShowInBackpack: 0
   - data:
       representations: []
@@ -150,5 +160,57 @@ MonoBehaviour:
     issuedId: 0
     femaleAnimation: {fileID: 7400000, guid: 9a87cfa10a54feb5b9f81a163846ec6c, type: 2}
     maleAnimation: {fileID: 7400000, guid: 4cd73b8019e06674badd553167039a0c, type: 2}
+    monkeyAnimation: {fileID: 0}
+    kidMonkeyAnimation: {fileID: 0}
+    dontShowInBackpack: 0
+  - data:
+      representations: []
+      category: 
+      tags: []
+      replaces: []
+      hides: []
+      removesDefaultHiding: []
+      loop: 0
+    emoteDataV0:
+      loop: 0
+    id: dance
+    entityId: 
+    baseUrl: 
+    baseUrlBundles: 
+    i18n: []
+    thumbnail: 
+    thumbnailSprite: {fileID: 21300000, guid: fb2a51422f4f0f84ca589e9716428e06, type: 3}
+    rarity: 
+    description: 
+    issuedId: 0
+    femaleAnimation: {fileID: 0}
+    maleAnimation: {fileID: 0}
+    monkeyAnimation: {fileID: 7400000, guid: d8e0abe0e8e8c29809d5e98c4c69d1e7, type: 2}
+    kidMonkeyAnimation: {fileID: 0}
+    dontShowInBackpack: 0
+  - data:
+      representations: []
+      category: 
+      tags: []
+      replaces: []
+      hides: []
+      removesDefaultHiding: []
+      loop: 0
+    emoteDataV0:
+      loop: 0
+    id: silly_dance
+    entityId: 
+    baseUrl: 
+    baseUrlBundles: 
+    i18n: []
+    thumbnail: 
+    thumbnailSprite: {fileID: 21300000, guid: fb2a51422f4f0f84ca589e9716428e06, type: 3}
+    rarity: 
+    description: 
+    issuedId: 0
+    femaleAnimation: {fileID: 0}
+    maleAnimation: {fileID: 0}
+    monkeyAnimation: {fileID: 7400000, guid: d6ebebb479ac4bcd4a2a8452c88f6304, type: 2}
+    kidMonkeyAnimation: {fileID: 0}
     dontShowInBackpack: 0
   extendedEmotes: []

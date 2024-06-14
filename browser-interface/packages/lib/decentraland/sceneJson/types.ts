@@ -1,4 +1,4 @@
-import { Scene } from '@beland/schemas'
+import { Scene } from '@mtvproject/schemas'
 
 type FeatureToggles = NonNullable<Scene['featureToggles']>
 

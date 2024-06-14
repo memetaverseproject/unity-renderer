@@ -1,7 +1,7 @@
 import { EcsMathReadOnlyQuaternion, EcsMathReadOnlyVector3 } from '@dcl/ecs-math'
 
 import { Authenticator } from '@beland/crypto'
-import { Avatar, generateLazyValidator, JSONSchema, Outfits, WearableCategory } from '@beland/schemas'
+import { Avatar, generateLazyValidator, JSONSchema, Outfits, WearableCategory } from '@mtvproject/schemas'
 import {
   DEBUG,
   ethereumConfigurations,
