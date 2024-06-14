@@ -175,7 +175,7 @@ namespace DCL.Social.Passports
         {
             aboutPanel.SetActive(isActive);
             aboutText.color = Color.white;
-            collectiblesText.color = Color.black;
+            collectiblesText.color = Color.white;
             aboutToggleOn.SetActive(true);
             aboutToggleOff.SetActive(false);
             collectiblesToggleOn.SetActive(false);
@@ -187,7 +187,7 @@ namespace DCL.Social.Passports
         {
             OnClickCollectibles?.Invoke();
             wearablesPanel.SetActive(isActive);
-            aboutText.color = Color.black;
+            aboutText.color = Color.white;
             collectiblesText.color = Color.white;
             aboutToggleOn.SetActive(false);
             aboutToggleOff.SetActive(true);
