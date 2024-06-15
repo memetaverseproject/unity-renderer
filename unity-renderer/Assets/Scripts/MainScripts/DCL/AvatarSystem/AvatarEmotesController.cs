@@ -21,8 +21,8 @@ namespace AvatarSystem
         private string bodyShapeId = "";
         private readonly IAnimator animator;
         private readonly IEmotesService emotesService;
-        private readonly Dictionary<EmoteBodyId, IEmoteReference> equippedEmotes = new ();
-        private readonly CancellationTokenSource cts = new ();
+        private readonly Dictionary<EmoteBodyId, IEmoteReference> equippedEmotes = new();
+        private readonly CancellationTokenSource cts = new();
 
         public AvatarEmotesController(IAnimator animator, IEmotesService emotesService)
         {

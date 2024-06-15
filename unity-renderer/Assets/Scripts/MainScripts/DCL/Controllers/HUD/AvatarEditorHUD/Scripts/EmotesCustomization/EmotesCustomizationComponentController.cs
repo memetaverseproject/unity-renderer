@@ -81,6 +81,7 @@ namespace DCL.EmotesCustomization
 
         public void SetEmotes(WearableItem[] ownedEmotes)
         {
+            
             //Find loaded emotes that are not contained in emotesToSet
             List<string> idsToRemove = emotesCustomizationDataStore.currentLoadedEmotes.Get().Where(x => ownedEmotes.All(y => x != y.id)).ToList();
 
@@ -95,10 +96,15 @@ namespace DCL.EmotesCustomization
                 //if we want to show the amount of ocurrences we can modify this
                 this.ownedEmotes[emote.id] = emote;
             }
-            foreach (WearableItem emote in this.ownedEmotes.Values)
-                AddEmote(emote);
+            
+            foreach (WearableItem emote in this.ownedEmotes.Values) {
+                if (emote.SupportsBodyShape(this.bodyShapeId)) {
+                    AddEmote(emote);
+                }
+            }
 
             UpdateEmoteSlots();
+            view.RefreshEmotesGrid();
         }
 
         public void SetEquippedBodyShape(string bodyShapeId)
@@ -109,7 +115,12 @@ namespace DCL.EmotesCustomization
             this.bodyShapeId = bodyShapeId;
             foreach (string emoteId in this.ownedEmotes.Keys)
             {
-                RefreshEmoteLoadingState(emoteId);
+                 WearableItem emote = this.ownedEmotes[emoteId];
+                if (emote.SupportsBodyShape(this.bodyShapeId)) {
+                    AddEmote(emote);
+                } else {
+                    RemoveEmote(emoteId);
+                }
             }
         }
 

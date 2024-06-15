@@ -361,11 +361,14 @@ namespace DCL.Backpack
         private void UpdateAvatarPreview()
         {
             AvatarModel modelToUpdate = model.ToAvatarModel();
-
+            
             // We always keep the loaded emotes into the Avatar Preview
             foreach (string emoteId in dataStore.emotesCustomization.currentLoadedEmotes.Get())
+            {
                 modelToUpdate.emotes.Add(new AvatarModel.AvatarEmoteEntry
                     { urn = emoteId });
+                Debug.Log("UpdateAvatarPreview: " + emoteId);
+            }
 
             UpdateAvatarModel(modelToUpdate);
         }
@@ -396,7 +399,6 @@ namespace DCL.Backpack
             backpackEmotesSectionController.SetEquippedBodyShape(bodyShape.id);
             wearableGridController.Equip(bodyShape.id);
             wearableGridController.UpdateBodyShapeCompatibility(bodyShape.id);
-
             if (setAsDirty)
                 avatarIsDirty = true;
         }
@@ -554,7 +556,11 @@ namespace DCL.Backpack
 
             if (updateAvatarPreview)
             {
-                UpdateAvatarModel(model.ToAvatarModel());
+                if (wearable.data.category == WearableLiterals.Categories.BODY_SHAPE) {
+                    UpdateAvatarPreview();
+                } else {
+                    UpdateAvatarModel(model.ToAvatarModel());
+                }
                 categoryPendingToPlayEmote = wearable.data.category;
             }
         }

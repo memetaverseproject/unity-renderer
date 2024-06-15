@@ -14,7 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   emotes:
   - data:
-      representations: []
+      representations:
+      - bodyShapes:
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMonkey
+        mainFile: 
+        contents: []
+        overrideHides: []
+        overrideReplaces: []
       category: 
       tags: []
       replaces: []
@@ -39,7 +47,15 @@ MonoBehaviour:
     kidMonkeyAnimation: {fileID: 0}
     dontShowInBackpack: 0
   - data:
-      representations: []
+      representations:
+      - bodyShapes:
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMonkey
+        mainFile: 
+        contents: []
+        overrideHides: []
+        overrideReplaces: []
       category: 
       tags: []
       replaces: []
@@ -64,7 +80,15 @@ MonoBehaviour:
     kidMonkeyAnimation: {fileID: 0}
     dontShowInBackpack: 0
   - data:
-      representations: []
+      representations:
+      - bodyShapes:
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMonkey
+        mainFile: 
+        contents: []
+        overrideHides: []
+        overrideReplaces: []
       category: 
       tags: []
       replaces: []
@@ -89,7 +113,15 @@ MonoBehaviour:
     kidMonkeyAnimation: {fileID: 0}
     dontShowInBackpack: 0
   - data:
-      representations: []
+      representations:
+      - bodyShapes:
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMonkey
+        mainFile: 
+        contents: []
+        overrideHides: []
+        overrideReplaces: []
       category: 
       tags: []
       replaces: []
@@ -114,7 +146,15 @@ MonoBehaviour:
     kidMonkeyAnimation: {fileID: 0}
     dontShowInBackpack: 0
   - data:
-      representations: []
+      representations:
+      - bodyShapes:
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
+        - urn:memetaverse:off-chain:base-avatars:BaseMonkey
+        mainFile: 
+        contents: []
+        overrideHides: []
+        overrideReplaces: []
       category: 
       tags: []
       replaces: []
@@ -139,7 +179,14 @@ MonoBehaviour:
     kidMonkeyAnimation: {fileID: 0}
     dontShowInBackpack: 0
   - data:
-      representations: []
+      representations:
+      - bodyShapes:
+        - urn:memetaverse:off-chain:base-avatars:BaseFemale
+        - urn:memetaverse:off-chain:base-avatars:BaseMale
+        mainFile: 
+        contents: []
+        overrideHides: []
+        overrideReplaces: []
       category: 
       tags: []
       replaces: []
@@ -164,7 +211,13 @@ MonoBehaviour:
     kidMonkeyAnimation: {fileID: 0}
     dontShowInBackpack: 0
   - data:
-      representations: []
+      representations:
+      - bodyShapes:
+        - urn:memetaverse:off-chain:base-avatars:BaseMonkey
+        mainFile: 
+        contents: []
+        overrideHides: []
+        overrideReplaces: []
       category: 
       tags: []
       replaces: []
@@ -189,7 +242,13 @@ MonoBehaviour:
     kidMonkeyAnimation: {fileID: 0}
     dontShowInBackpack: 0
   - data:
-      representations: []
+      representations:
+      - bodyShapes:
+        - urn:memetaverse:off-chain:base-avatars:BaseMonkey
+        mainFile: 
+        contents: []
+        overrideHides: []
+        overrideReplaces: []
       category: 
       tags: []
       replaces: []

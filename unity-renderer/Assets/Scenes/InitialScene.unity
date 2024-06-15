@@ -241,8 +241,8 @@ MonoBehaviour:
   OpenBrowserOnStart: 1
   webSocketSSL: 0
   kernelVersion: 
-  useCustomContentServer: 0
-  customContentServerUrl: http://13.250.41.37:50001/?
+  useCustomContentServer: 1
+  customContentServerUrl: https://worlds-content-server.memetaverse.club
   baseUrlMode: 3
   customURL: https://testnet-play.memetaverse.club/?
   network: 0

@@ -127,7 +127,6 @@ namespace MainScripts.DCL.Controllers.HUD.CharacterPreview
             {
                 ct.ThrowIfCancellationRequested();
                 List<string> wearables = new List<string>(newModel.wearables) { newModel.bodyShape };
-
                 await avatar.Load(wearables, newModel.emotes.Select(x => x.urn).ToList(), new AvatarSettings
                 {
                     bodyshapeId = newModel.bodyShape,

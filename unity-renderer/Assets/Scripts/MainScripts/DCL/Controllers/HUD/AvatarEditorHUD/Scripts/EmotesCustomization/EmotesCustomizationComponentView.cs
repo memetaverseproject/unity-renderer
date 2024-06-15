@@ -170,6 +170,14 @@ namespace DCL.EmotesCustomization
 
         public EmoteSlotCardComponentView GetSlot(int slotNumber) { return currentSlots.FirstOrDefault(x => x.model.slotNumber == slotNumber); }
 
+        public void Refresh()
+        {
+            RefreshControl();
+        }
+
+        public void RefreshEmotesGrid() =>
+            emotesGrid.RefreshControl();
+
         internal void ClickOnEmote(string emoteId, string emoteName, int slotNumber, bool isAssignedInSelectedSlot)
         {
             if (!isAssignedInSelectedSlot)
