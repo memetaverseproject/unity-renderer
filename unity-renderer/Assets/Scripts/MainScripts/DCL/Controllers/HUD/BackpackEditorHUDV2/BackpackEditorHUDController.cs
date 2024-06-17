@@ -367,7 +367,6 @@ namespace DCL.Backpack
             {
                 modelToUpdate.emotes.Add(new AvatarModel.AvatarEmoteEntry
                     { urn = emoteId });
-                Debug.Log("UpdateAvatarPreview: " + emoteId);
             }
 
             UpdateAvatarModel(modelToUpdate);

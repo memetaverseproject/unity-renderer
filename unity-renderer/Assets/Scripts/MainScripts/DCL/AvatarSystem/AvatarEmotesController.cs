@@ -37,25 +37,27 @@ namespace AvatarSystem
         public void LoadEmotes(string bodyShapeId, IEnumerable<WearableItem> newEmotes, GameObject container)
         {
             this.bodyShapeId = bodyShapeId;
-
             animator.Prepare(bodyShapeId, container);
-
-            foreach (WearableItem emote in newEmotes)
-                LoadEmote(bodyShapeId, emote);
+            foreach (WearableItem emote in newEmotes){
+                 UnEquipEmote(emote.id);
+                 LoadEmote(bodyShapeId, emote);
+            }
+                
         }
 
         private void LoadEmote(string bodyShapeId, WearableItem emote)
-        {
-            var emoteKey = new EmoteBodyId(bodyShapeId, emote.id);
-            if (equippedEmotes.ContainsKey(emoteKey)) return;
-            equippedEmotes.Add(emoteKey, null);
-            AsyncEmoteLoad(bodyShapeId, emote.id).Forget();
+        {   
+            if (emote.SupportsBodyShape(bodyShapeId)) {
+                var emoteKey = new EmoteBodyId(bodyShapeId, emote.id);
+                if (equippedEmotes.ContainsKey(emoteKey)) return;
+                equippedEmotes.Add(emoteKey, null);
+                AsyncEmoteLoad(bodyShapeId, emote.id).Forget();
+            }
         }
 
         private async UniTask AsyncEmoteLoad(string bodyShapeId, string emoteId)
         {
             var emoteKey = new EmoteBodyId(bodyShapeId, emoteId);
-
             try
             {
                 IEmoteReference emoteReference = await emotesService.RequestEmote(emoteKey, cts.Token);
