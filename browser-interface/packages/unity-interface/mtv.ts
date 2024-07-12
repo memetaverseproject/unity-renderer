@@ -76,7 +76,7 @@ export async function initializeEngine(_gameInstance: UnityGame): Promise<void> 
     getUnityInstance().SetEngineDebugPanel()
   }
 
-  await startGlobalScene('dcl-gs-avatars', 'Avatars', hudWorkerUrl)
+  await startGlobalScene('mtv-gs-avatars', 'Avatars', hudWorkerUrl)
 
   store.dispatch(avatarSceneInitialized())
 }
@@ -191,7 +191,7 @@ export async function reloadPlaygroundScene() {
     return
   }
 
-  const sceneId = 'dcl-sdk-playground'
+  const sceneId = 'mtv-sdk-playground'
 
   await unloadParcelSceneById(sceneId)
   await sleep(300)

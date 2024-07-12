@@ -353,7 +353,7 @@ export class BrowserInterface {
       ;(this as any)[type](message)
     } else {
       if (DEBUG) {
-        defaultLogger.info(`Unknown message (did you forget to add ${type} to unity-interface/dcl.ts?)`, message)
+        defaultLogger.info(`Unknown message (did you forget to add ${type} to unity-interface/mtv.ts?)`, message)
       }
     }
   }
@@ -809,12 +809,12 @@ export class BrowserInterface {
   public ReportScene(data: { sceneId: string; sceneNumber: number }) {
     const sceneId = data.sceneId ?? getSceneWorkerBySceneNumber(data.sceneNumber)?.rpcContext.sceneData.id
 
-    this.OpenWebURL({ url: `https://dcl.gg/report-user-or-scene?scene_or_name=${sceneId}` })
+    this.OpenWebURL({ url: `https://mtv.gg/report-user-or-scene?scene_or_name=${sceneId}` })
   }
 
   public ReportPlayer(data: { userId: string }) {
     this.OpenWebURL({
-      url: `https://dcl.gg/report-user-or-scene?scene_or_name=${data.userId}`
+      url: `https://mtv.gg/report-user-or-scene?scene_or_name=${data.userId}`
     })
   }
 

@@ -2,7 +2,7 @@ import { sdk } from '@mtvproject/schemas'
 import { clientDebug } from 'unity-interface/ClientDebug'
 import type { IUnityInterface } from 'unity-interface/IUnityInterface'
 import { DEBUG_WS_MESSAGES } from 'config/index'
-import { getPreviewSceneId, loadPreviewScene, reloadPlaygroundScene } from 'unity-interface/dcl'
+import { getPreviewSceneId, loadPreviewScene, reloadPlaygroundScene } from 'unity-interface/mtv'
 import { logger } from './logger'
 
 export async function startPreview(unityInterface: IUnityInterface) {

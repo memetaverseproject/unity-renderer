@@ -14,7 +14,7 @@ export async function initializeUnityEditor(
   const transport = webSocketTransportAdapter(wsUrl, options)
 
   transport.on('connect', () => {
-    container.classList.remove('dcl-loading')
+    container.classList.remove('mtv-loading')
     container.innerHTML = `<h3 style='color:green'>Connected</h3>`
   })
 
