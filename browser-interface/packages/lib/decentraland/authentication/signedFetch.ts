@@ -1,4 +1,4 @@
-import { AuthChain, Authenticator, AuthIdentity } from '@beland/crypto'
+import { AuthChain, Authenticator, AuthIdentity } from '@mtvproject/crypto'
 import { flatFetch, FlatFetchInit } from 'lib/javascript/flatFetch'
 
 const AUTH_CHAIN_HEADER_PREFIX = 'x-identity-auth-chain-'

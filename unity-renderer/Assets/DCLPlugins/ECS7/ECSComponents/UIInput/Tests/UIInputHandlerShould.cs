@@ -2,7 +2,7 @@
 using DCL.ECS7.ComponentWrapper.Generic;
 using DCL.ECS7.InternalComponents;
 using DCL.ECSComponents.UIAbstractElements.Tests;
-using Decentraland.Common;
+using Memetaverse.Common;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.UIElements;

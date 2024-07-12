@@ -1,4 +1,4 @@
-import { createRpcClient, RpcClient, RpcClientPort, Transport } from '@dcl/rpc'
+import { createRpcClient, RpcClient, RpcClientPort, Transport } from '@mtvproject/rpc'
 
 export async function createRendererRpcClient(
   transport: Transport

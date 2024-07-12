@@ -1,9 +1,9 @@
 import { Quaternion, Vector3 } from '@dcl/ecs-math'
-import { EventDataType } from 'shared/protocol/decentraland/kernel/apis/engine_api.gen'
-import { PermissionItem, permissionItemFromJSON } from 'shared/protocol/decentraland/kernel/apis/permissions.gen'
-import { RpcSceneControllerServiceDefinition } from 'shared/protocol/decentraland/renderer/renderer_services/scene_controller.gen'
-import { createRpcServer, RpcClient, RpcClientPort, RpcServer, Transport } from '@dcl/rpc'
-import * as codegen from '@dcl/rpc/dist/codegen'
+import { EventDataType } from 'shared/protocol/memetaverse/kernel/apis/engine_api.gen'
+import { PermissionItem, permissionItemFromJSON } from 'shared/protocol/memetaverse/kernel/apis/permissions.gen'
+import { RpcSceneControllerServiceDefinition } from 'shared/protocol/memetaverse/renderer/renderer_services/scene_controller.gen'
+import { createRpcServer, RpcClient, RpcClientPort, RpcServer, Transport } from '@mtvproject/rpc'
+import * as codegen from '@mtvproject/rpc/dist/codegen'
 import { Scene } from '@mtvproject/schemas'
 import {
   DEBUG_SCENE_LOG,
@@ -37,7 +37,7 @@ import {
 import { incrementAvatarSceneMessages } from 'shared/session/getPerformanceInfo'
 import { LoadableScene } from 'shared/types'
 import { PositionReport } from './positionThings'
-import { EntityAction } from 'shared/protocol/decentraland/sdk/ecs6/engine_interface_ecs6.gen'
+import { EntityAction } from 'shared/protocol/memetaverse/sdk/ecs6/engine_interface_ecs6.gen'
 import { joinBuffers } from 'lib/javascript/uint8arrays'
 import { nativeMsgBridge } from 'unity-interface/nativeMessagesBridge'
 import { _INTERNAL_WEB_TRANSPORT_ALLOC_SIZE } from 'renderer-protocol/transports/webTransport'
@@ -58,9 +58,9 @@ export enum SceneWorkerReadyState {
 const sdk6RuntimeRaw =
   process.env.NODE_ENV === 'production'
     ? // eslint-disable-next-line @typescript-eslint/no-var-requires
-      require('@dcl/scene-runtime/dist/sdk6-webworker.js').default
+      require('@mtvproject/scene-runtime/dist/sdk6-webworker.js').default
     : // eslint-disable-next-line @typescript-eslint/no-var-requires
-      require('@dcl/scene-runtime/dist/sdk6-webworker.dev.js').default
+      require('@mtvproject/scene-runtime/dist/sdk6-webworker.dev.js').default
 
 const sdk6RuntimeBLOB = new Blob([sdk6RuntimeRaw])
 const sdk6RuntimeUrl = URL.createObjectURL(sdk6RuntimeBLOB)
@@ -68,9 +68,9 @@ const sdk6RuntimeUrl = URL.createObjectURL(sdk6RuntimeBLOB)
 const sdk7RuntimeRaw =
   process.env.NODE_ENV === 'production'
     ? // eslint-disable-next-line @typescript-eslint/no-var-requires
-      require('@dcl/scene-runtime/dist/sdk7-webworker.js').default
+      require('@mtvproject/scene-runtime/dist/sdk7-webworker.js').default
     : // eslint-disable-next-line @typescript-eslint/no-var-requires
-      require('@dcl/scene-runtime/dist/sdk7-webworker.dev.js').default
+      require('@mtvproject/scene-runtime/dist/sdk7-webworker.dev.js').default
 
 const sdk7RuntimeBLOB = new Blob([sdk7RuntimeRaw])
 const sdk7RuntimeUrl = URL.createObjectURL(sdk7RuntimeBLOB)
@@ -115,7 +115,7 @@ export class SceneWorker {
   private sceneStarted: boolean = false
 
   private position: Vector3 = new Vector3()
-  private readonly lastSentPosition = new Vector3(0, 0, 0)
+  private readonly lastSentPosition = new Vector3(0,0,0)
   private readonly lastSentRotation = new Quaternion(0, 0, 0, 1)
   private readonly startLoadingTime = performance.now()
   // this is the transport for the worker

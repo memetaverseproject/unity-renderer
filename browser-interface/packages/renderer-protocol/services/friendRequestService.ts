@@ -1,6 +1,6 @@
-import { RpcClientPort } from '@dcl/rpc'
-import * as codegen from '@dcl/rpc/dist/codegen'
-import { FriendRequestRendererServiceDefinition } from 'shared/protocol/decentraland/renderer/renderer_services/friend_request_renderer.gen'
+import { RpcClientPort } from '@mtvproject/rpc'
+import * as codegen from '@mtvproject/rpc/dist/codegen'
+import { FriendRequestRendererServiceDefinition } from 'shared/protocol/memetaverse/renderer/renderer_services/friend_request_renderer.gen'
 import defaultLogger from 'lib/logger'
 
 // eslint-disable-next-line @typescript-eslint/ban-types

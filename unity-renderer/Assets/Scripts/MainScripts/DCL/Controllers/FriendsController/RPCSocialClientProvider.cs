@@ -1,5 +1,5 @@
 using Cysharp.Threading.Tasks;
-using Decentraland.Social.Friendships;
+using Memetaverse.Social.Friendships;
 using rpc_csharp;
 using rpc_csharp.transport;
 using RPC.Transports;

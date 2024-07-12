@@ -2,7 +2,7 @@
 using DCLPlugins.RealmsPlugin;
 using NUnit.Framework;
 using System;
-using static Decentraland.Bff.AboutResponse.Types;
+using static Memetaverse.Bff.AboutResponse.Types;
 
 namespace DCLPlugins.RealmPlugin
 {

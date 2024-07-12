@@ -1,4 +1,4 @@
-using Decentraland.Bff;
+using Memetaverse.Bff;
 using System.Linq;
 
 namespace DCLPlugins.RealmPlugin

@@ -4,7 +4,7 @@ using Cysharp.Threading.Tasks;
 using DCL;
 using DCL.Controllers;
 using DCL.Emotes;
-using Decentraland.Renderer.RendererServices;
+using Memetaverse.Renderer.RendererServices;
 using NSubstitute;
 using NUnit.Framework;
 using RPC;

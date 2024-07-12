@@ -4,9 +4,9 @@ import { sceneRuntimeCompatibleAvatar } from 'lib/decentraland/profiles/sceneRun
 import { retrieveProfile } from 'shared/profiles/retrieveProfile'
 import { onLoginCompleted } from 'shared/session/onLoginCompleted'
 
-import { UserIdentityServiceDefinition } from 'shared/protocol/decentraland/kernel/apis/user_identity.gen'
-import type { RpcServerPort } from '@dcl/rpc'
-import * as codegen from '@dcl/rpc/dist/codegen'
+import { UserIdentityServiceDefinition } from 'shared/protocol/memetaverse/kernel/apis/user_identity.gen'
+import type { RpcServerPort } from '@mtvproject/rpc'
+import * as codegen from '@mtvproject/rpc/dist/codegen'
 import type { PortContext } from './context'
 
 export function registerUserIdentityServiceServerImplementation(port: RpcServerPort<PortContext>) {

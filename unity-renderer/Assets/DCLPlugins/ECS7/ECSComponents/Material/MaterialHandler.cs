@@ -5,7 +5,7 @@ using DCL.ECS7.InternalComponents;
 using DCL.ECSRuntime;
 using DCL.Models;
 using DCL.Shaders;
-using Decentraland.Common;
+using Memetaverse.Common;
 using UnityEngine;
 
 namespace DCL.ECSComponents

@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.UI;
 using Object = UnityEngine.Object;
-using Decentraland.Sdk.Ecs6;
+using Memetaverse.Sdk.Ecs6;
 using MainScripts.DCL.Components;
 
 namespace DCL.Components

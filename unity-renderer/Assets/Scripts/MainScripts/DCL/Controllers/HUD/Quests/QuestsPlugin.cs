@@ -4,7 +4,7 @@ using DCL.Helpers;
 using DCL.Providers;
 using DCL.Quests;
 using DCLServices.QuestsService;
-using Decentraland.Quests;
+using Memetaverse.Quests;
 using rpc_csharp;
 using RPC.Transports;
 using System.Threading;

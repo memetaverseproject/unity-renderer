@@ -4,7 +4,7 @@ using DCL.ECS7.ComponentWrapper.Generic;
 using DCL.ECSComponents;
 using DCL.ECSRuntime;
 using DCL.Models;
-using Decentraland.Common;
+using Memetaverse.Common;
 using System;
 using System.Collections.Generic;
 using Screen = UnityEngine.Device.Screen;

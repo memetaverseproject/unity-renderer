@@ -1,11 +1,11 @@
 import { store } from 'shared/store/isolatedStore'
 import { getRealmAdapter } from 'shared/realm/selectors'
-import * as codegen from '@dcl/rpc/dist/codegen'
-import type { RpcServerPort } from '@dcl/rpc/dist/types'
-import type { GetRealmResponse, GetWorldTimeResponse } from 'shared/protocol/decentraland/kernel/apis/runtime.gen'
-import { RuntimeServiceDefinition } from 'shared/protocol/decentraland/kernel/apis/runtime.gen'
+import * as codegen from '@mtvproject/rpc/dist/codegen'
+import type { RpcServerPort } from '@mtvproject/rpc/dist/types'
+import type { GetRealmResponse, GetWorldTimeResponse } from 'shared/protocol/memetaverse/kernel/apis/runtime.gen'
+import { RuntimeServiceDefinition } from 'shared/protocol/memetaverse/kernel/apis/runtime.gen'
 import type { PortContextService } from './context'
-import { getDecentralandTime } from './EnvironmentAPI'
+import { getMemetaverseTime } from './EnvironmentAPI'
 import { urlWithProtocol } from 'shared/realm/resolver'
 import { PREVIEW, RENDERER_WS, getServerConfigurations } from 'config'
 import { getSelectedNetwork } from 'shared/dao/selectors'
@@ -25,7 +25,7 @@ export function registerRuntimeServiceServerImplementation(port: RpcServerPort<P
     },
     
     async getWorldTime(): Promise<GetWorldTimeResponse> {
-      const time = getDecentralandTime()
+      const time = getMemetaverseTime()
 
       return { seconds: time }
     },

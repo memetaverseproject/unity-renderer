@@ -6,11 +6,11 @@ namespace DCL.Configuration
     public static class AssetCatalogUrlSettings // EX: BIWSettings
     {
         //Note: Don't use these URL directly, you need to get them in the SceneEndpoints (before known as BuilderInWorldUtils) to take into account the ENV
-        public const string BASE_URL_SCENE_OBJECT_CONTENT = "https://builder-api.decentraland.{ENV}/v1/storage/contents/";
-        public const string BASE_URL_CATALOG = "https://builder-api.decentraland.{ENV}/v1/assetPacks?owner=";
-        public const string BASE_URL_ASSETS_PACK_CONTENT = "https://builder-api.decentraland.{ENV}/v1/storage/assetPacks/";
+        public const string BASE_URL_SCENE_OBJECT_CONTENT = "https://builder-api.memetaverse.club/v1/storage/contents/";
+        public const string BASE_URL_CATALOG = "https://builder-api.memetaverse.club/v1/assetPacks?owner=";
+        public const string BASE_URL_ASSETS_PACK_CONTENT = "https://builder-api.memetaverse.club/v1/storage/assetPacks/";
 
-        public const string BASE_URL_BUILDER_PROJECT_THUMBNAIL = "https://builder-api.decentraland.{ENV}/v1/projects/{id}/media/";
+        public const string BASE_URL_BUILDER_PROJECT_THUMBNAIL = "https://builder-api.memetaverse.club/v1/projects/{id}/media/";
 
         //Useful links
         public const string MARKETPLACE_URL = "https://market.memetaverse.club/lands";

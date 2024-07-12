@@ -1,4 +1,4 @@
-import { Transport, TransportEvents } from '@dcl/rpc'
+import { Transport, TransportEvents } from '@mtvproject/rpc'
 import mitt from 'mitt'
 import { CommonRendererOptions } from 'unity-interface/loader'
 

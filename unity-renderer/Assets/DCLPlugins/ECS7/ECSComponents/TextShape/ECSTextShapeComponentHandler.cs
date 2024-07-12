@@ -4,7 +4,7 @@ using DCL.ECS7.InternalComponents;
 using DCL.ECSComponents;
 using DCL.ECSRuntime;
 using DCL.Models;
-using Decentraland.Common;
+using Memetaverse.Common;
 using TMPro;
 using UnityEngine;
 using Vector2 = UnityEngine.Vector2;

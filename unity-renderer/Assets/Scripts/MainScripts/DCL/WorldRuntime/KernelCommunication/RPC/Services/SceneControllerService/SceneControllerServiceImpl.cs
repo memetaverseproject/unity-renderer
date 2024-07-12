@@ -4,7 +4,7 @@ using DCL.Controllers;
 using DCL.CRDT;
 using DCL.Helpers;
 using DCL.Models;
-using Decentraland.Renderer.RendererServices;
+using Memetaverse.Renderer.RendererServices;
 using Google.Protobuf;
 using MainScripts.DCL.Components;
 using rpc_csharp;
@@ -20,7 +20,7 @@ namespace RPC.Services
 {
     public class SceneControllerServiceImpl : IRpcSceneControllerService<RPCContext>
     {
-        // HACK: Until we fix the code generator, we must replace all 'Decentraland.Common.Entity' for 'DCL.ECSComponents.Entity' in RpcSceneController.gen.cs
+        // HACK: Until we fix the code generator, we must replace all 'Memetaverse.Common.Entity' for 'DCL.ECSComponents.Entity' in RpcSceneController.gen.cs
         // to be able to access request.Entity properties.
         private static readonly UnloadSceneResult defaultUnloadSceneResult = new UnloadSceneResult();
 

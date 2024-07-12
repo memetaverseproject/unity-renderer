@@ -1,4 +1,4 @@
-import { Authenticator } from '@beland/crypto'
+import { Authenticator } from '@mtvproject/crypto'
 import { EntityType, Outfits } from '@mtvproject/schemas'
 import { BuildEntityOptions, ContentClient, DeploymentData } from 'dcl-catalyst-client'
 import defaultLogger from 'lib/logger'

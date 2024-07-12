@@ -9,11 +9,11 @@ import type {
   SendAsyncResponse,
   SignMessageRequest,
   SignMessageResponse
-} from 'shared/protocol/decentraland/kernel/apis/ethereum_controller.gen'
-import { EthereumControllerServiceDefinition } from 'shared/protocol/decentraland/kernel/apis/ethereum_controller.gen'
-import { PermissionItem } from 'shared/protocol/decentraland/kernel/apis/permissions.gen'
-import * as codegen from '@dcl/rpc/dist/codegen'
-import type { RpcServerPort } from '@dcl/rpc/dist/types'
+} from 'shared/protocol/memetaverse/kernel/apis/ethereum_controller.gen'
+import { EthereumControllerServiceDefinition } from 'shared/protocol/memetaverse/kernel/apis/ethereum_controller.gen'
+import { PermissionItem } from 'shared/protocol/memetaverse/kernel/apis/permissions.gen'
+import * as codegen from '@mtvproject/rpc/dist/codegen'
+import type { RpcServerPort } from '@mtvproject/rpc/dist/types'
 import * as EthService from 'lib/web3/EthereumService'
 import * as EthProvider from 'lib/web3/provider'
 import type { RPCSendableMessage } from 'shared/types'

@@ -2,7 +2,7 @@ using DCL;
 using DCLPlugins.RealmsPlugin;
 using System.Collections.Generic;
 using Variables.RealmsInfo;
-using static Decentraland.Bff.AboutResponse.Types;
+using static Memetaverse.Bff.AboutResponse.Types;
 
 namespace DCLPlugins.RealmPlugin
 {

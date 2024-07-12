@@ -1,6 +1,6 @@
 import { apply, call, delay, fork, put, race, select, take, takeEvery, takeLatest } from 'redux-saga/effects'
 
-import * as rfc4 from 'shared/protocol/decentraland/kernel/comms/rfc4/comms.gen'
+import * as rfc4 from 'shared/protocol/memetaverse/kernel/comms/rfc4/comms.gen'
 import { IPFSv2 } from '@mtvproject/schemas'
 import type { Avatar, Snapshots } from '@mtvproject/schemas'
 import { genericAvatarSnapshots } from 'lib/decentraland/profiles/transformations/profileToRendererFormat'

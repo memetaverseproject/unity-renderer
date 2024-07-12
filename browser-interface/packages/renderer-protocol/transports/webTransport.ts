@@ -1,4 +1,4 @@
-import { Transport, TransportEvents } from '@dcl/rpc'
+import { Transport, TransportEvents } from '@mtvproject/rpc'
 import mitt from 'mitt'
 
 export const _INTERNAL_WEB_TRANSPORT_ALLOC_SIZE: number = 8388608

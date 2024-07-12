@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using DCL;
 using DCL.Helpers;
-using Decentraland.Bff;
+using Memetaverse.Bff;
 using UnityEngine;
 using Variables.RealmsInfo;
 

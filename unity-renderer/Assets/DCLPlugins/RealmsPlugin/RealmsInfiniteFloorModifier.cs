@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DCL;
 using DCLPlugins.RealmPlugin;
-using Decentraland.Bff;
+using Memetaverse.Bff;
 using UnityEngine;
 
 namespace DCLPlugins.RealmsPlugin

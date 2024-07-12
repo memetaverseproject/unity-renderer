@@ -1,6 +1,6 @@
-import { RpcServerPort } from '@dcl/rpc'
+import { RpcServerPort } from '@mtvproject/rpc'
 import { RendererProtocolContext } from '../context'
-import * as codegen from '@dcl/rpc/dist/codegen'
+import * as codegen from '@mtvproject/rpc/dist/codegen'
 
 import {
   acceptFriendRequest,
@@ -10,8 +10,8 @@ import {
   requestFriendship
 } from 'shared/friends/sagas'
 import defaultLogger from 'lib/logger'
-import { FriendshipErrorCode } from 'shared/protocol/decentraland/renderer/common/friend_request_common.gen'
-import { FriendRequestKernelServiceDefinition } from 'shared/protocol/decentraland/renderer/kernel_services/friend_request_kernel.gen'
+import { FriendshipErrorCode } from 'shared/protocol/memetaverse/renderer/common/friend_request_common.gen'
+import { FriendRequestKernelServiceDefinition } from 'shared/protocol/memetaverse/renderer/kernel_services/friend_request_kernel.gen'
 
 export function registerFriendRequestKernelService(port: RpcServerPort<RendererProtocolContext>) {
   codegen.registerService(port, FriendRequestKernelServiceDefinition, async () => ({

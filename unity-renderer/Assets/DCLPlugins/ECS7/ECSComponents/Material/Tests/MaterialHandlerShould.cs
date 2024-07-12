@@ -4,14 +4,14 @@ using DCL.ECSComponents;
 using DCL.Helpers;
 using DCL.Models;
 using DCLServices.MapRendererV2;
-using Decentraland.Common;
+using Memetaverse.Common;
 using NSubstitute;
 using NUnit.Framework;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.TestTools;
-using Texture = Decentraland.Common.Texture;
-using TextureWrapMode = Decentraland.Common.TextureWrapMode;
+using Texture = Memetaverse.Common.Texture;
+using TextureWrapMode = Memetaverse.Common.TextureWrapMode;
 
 namespace Tests
 {

@@ -1,7 +1,7 @@
 ﻿using Cysharp.Threading.Tasks;
 using DCL.Helpers;
 using DCL.Tasks;
-using Decentraland.Quests;
+using Memetaverse.Quests;
 using Google.Protobuf.WellKnownTypes;
 using System.Collections.Generic;
 using System.Threading;

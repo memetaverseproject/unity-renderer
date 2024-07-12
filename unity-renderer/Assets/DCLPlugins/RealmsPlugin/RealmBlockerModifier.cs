@@ -1,5 +1,5 @@
 using DCL;
-using static Decentraland.Bff.AboutResponse.Types;
+using static Memetaverse.Bff.AboutResponse.Types;
 
 namespace DCLPlugins.RealmPlugin
 {

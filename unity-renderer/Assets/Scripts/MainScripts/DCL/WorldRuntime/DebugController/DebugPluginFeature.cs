@@ -1,7 +1,7 @@
 using DCL.Bots;
 using DCL.Helpers;
 using DCLServices.WearablesCatalogService;
-using Decentraland.Bff;
+using Memetaverse.Bff;
 using UnityEngine;
 using Variables.RealmsInfo;
 

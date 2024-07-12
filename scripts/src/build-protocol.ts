@@ -88,7 +88,7 @@ function fixEngineInterface() {
   const engineInterfaceProtoPath = normalizePath(
     path.resolve(
       protocolInputPath,
-      'decentraland/renderer/engine_interface.proto',
+      'memetaverse/renderer/engine_interface.proto',
     ),
   )
   const content = fs.readFileSync(engineInterfaceProtoPath).toString()
@@ -104,7 +104,7 @@ function fixEngineInterface() {
 async function preProcessComponents() {
   const protoFiles = glob.sync(
     normalizePath(
-      path.resolve(protocolInputPath, 'decentraland/sdk/components/**/*.proto'),
+      path.resolve(protocolInputPath, 'memetaverse/sdk/components/**/*.proto'),
     ),
   )
   const components: ComponentData[] = []
@@ -155,11 +155,11 @@ async function buildProtocol() {
   await preProcessComponents()
 
   const protoFiles = [
-    ...getProtofiles('decentraland/common/**/*.proto'),
-    ...getProtofiles('decentraland/sdk/components/**/*.proto').filter((value) => !value.endsWith('id.proto')),
-    ...getProtofiles('decentraland/sdk/ecs6/**/*.proto'),
-    ...getProtofiles('decentraland/renderer/**/*.proto'),
-    ...getProtofiles('decentraland/social/**/*.proto')
+    ...getProtofiles('memetaverse/common/**/*.proto'),
+    ...getProtofiles('memetaverse/sdk/components/**/*.proto').filter((value) => !value.endsWith('id.proto')),
+    ...getProtofiles('memetaverse/sdk/ecs6/**/*.proto'),
+    ...getProtofiles('memetaverse/renderer/**/*.proto'),
+    ...getProtofiles('memetaverse/social/**/*.proto')
   ].join(' ')
 
   const ext = isWin ? 'cmd' : 'js'

@@ -1,6 +1,6 @@
 import { EcsMathReadOnlyQuaternion, EcsMathReadOnlyVector3 } from '@dcl/ecs-math'
 
-import { Authenticator } from '@beland/crypto'
+import { Authenticator } from '@mtvproject/crypto'
 import { Avatar, generateLazyValidator, JSONSchema, Outfits, WearableCategory } from '@mtvproject/schemas'
 import {
   DEBUG,
@@ -18,7 +18,7 @@ import { now } from 'lib/javascript/now'
 import { defaultLogger } from 'lib/logger'
 import { fetchENSOwner } from 'lib/web3/fetchENSOwner'
 import { trackEvent } from 'shared/analytics/trackEvent'
-import { setDecentralandTime } from 'shared/apis/host/EnvironmentAPI'
+import { setMemetaverseTime } from 'shared/apis/host/EnvironmentAPI'
 import { reportScenesAroundParcel, reportScenesWorldContext, setHomeScene } from 'shared/atlas/actions'
 import { emotesRequest, wearablesRequest } from 'shared/catalogs/actions'
 import { EmotesRequestFilters, WearablesRequestFilters } from 'shared/catalogs/types'
@@ -1267,7 +1267,7 @@ export class BrowserInterface {
   }
 
   public ReportDecentralandTime(data: any) {
-    setDecentralandTime(data)
+    setMemetaverseTime(data)
   }
 
   public ReportLog(data: { type: string; message: string }) {

@@ -9,7 +9,7 @@ import {
   RendererModules,
   AVATAR_SCENE_INITIALIZED
 } from './types'
-import { RpcClient, RpcClientPort, Transport } from '@dcl/rpc'
+import { RpcClient, RpcClientPort, Transport } from '@mtvproject/rpc'
 
 export const initializeRenderer = (
   delegate: (container: HTMLElement) => Promise<{ renderer: UnityGame; transport: Transport }>,

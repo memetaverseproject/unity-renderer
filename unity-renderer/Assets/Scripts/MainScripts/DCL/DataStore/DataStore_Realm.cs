@@ -1,4 +1,4 @@
-using Decentraland.Bff;
+using Memetaverse.Bff;
 using Variables.RealmsInfo;
 
 namespace DCL

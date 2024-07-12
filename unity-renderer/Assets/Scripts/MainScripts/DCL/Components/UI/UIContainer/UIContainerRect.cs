@@ -3,7 +3,7 @@ using DCL.Models;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using Decentraland.Sdk.Ecs6;
+using Memetaverse.Sdk.Ecs6;
 using MainScripts.DCL.Components;
 
 namespace DCL.Components

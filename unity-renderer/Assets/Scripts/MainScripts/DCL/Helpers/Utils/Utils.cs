@@ -22,7 +22,7 @@ using UnityEngine.Networking;
 using UnityEngine.UI;
 using Object = UnityEngine.Object;
 using UnityEngine.Rendering.Universal;
-using static Decentraland.Sdk.Ecs6.ComponentBodyPayload;
+using static Memetaverse.Sdk.Ecs6.ComponentBodyPayload;
 
 namespace DCL.Helpers
 {

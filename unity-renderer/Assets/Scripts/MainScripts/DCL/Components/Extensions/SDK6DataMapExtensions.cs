@@ -1,8 +1,8 @@
 ﻿using DCL;
 using DCL.Components;
 using DCL.Models;
-using Decentraland.Common;
-using Decentraland.Sdk.Ecs6;
+using Memetaverse.Common;
+using Memetaverse.Sdk.Ecs6;
 using System;
 using System.Runtime.CompilerServices;
 using UnityEngine;
@@ -20,10 +20,10 @@ namespace MainScripts.DCL.Components
         public static Color AsUnityColor(this Color3 color3) =>
             new (color3.R, color3.G, color3.B);
 
-        public static Vector3 AsUnityVector3(this Decentraland.Common.Vector3 vector3) =>
+        public static Vector3 AsUnityVector3(this Memetaverse.Common.Vector3 vector3) =>
             new (vector3.X, vector3.Y, vector3.Z);
 
-        public static Quaternion AsUnityQuaternion(this Decentraland.Common.Quaternion quaternion) =>
+        public static Quaternion AsUnityQuaternion(this Memetaverse.Common.Quaternion quaternion) =>
             new (quaternion.X, quaternion.Y, quaternion.Z, quaternion.W);
 
         public static UIValue FromProtobuf(UIValue defaultValue, UiValue uiValue) =>

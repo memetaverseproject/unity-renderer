@@ -3,7 +3,7 @@ using DCL.CRDT;
 using DCL.ECS7.InternalComponents;
 using DCL.ECSRuntime;
 using DCL.Models;
-using Decentraland.Common;
+using Memetaverse.Common;
 using NSubstitute;
 using NSubstitute.Extensions;
 using NSubstitute.ReceivedExtensions;

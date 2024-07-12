@@ -1,4 +1,4 @@
-import { AuthIdentity } from '@beland/crypto'
+import { AuthIdentity } from '@mtvproject/crypto'
 
 import { ETHEREUM_NETWORK } from 'config'
 import { IEthereumProvider, LoginState } from '@dcl/kernel-interface'

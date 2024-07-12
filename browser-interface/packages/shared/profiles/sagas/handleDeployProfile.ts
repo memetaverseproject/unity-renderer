@@ -1,4 +1,4 @@
-import { Authenticator } from '@beland/crypto'
+import { Authenticator } from '@mtvproject/crypto'
 import { hashV1 } from '@dcl/hashing'
 import { Avatar, EntityType, Profile, Snapshots } from '@mtvproject/schemas'
 import {

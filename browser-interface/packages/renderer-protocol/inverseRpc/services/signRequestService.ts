@@ -1,12 +1,12 @@
-import { RpcServerPort } from '@dcl/rpc'
-import * as codegen from '@dcl/rpc/dist/codegen'
+import { RpcServerPort } from '@mtvproject/rpc'
+import * as codegen from '@mtvproject/rpc/dist/codegen'
 import {
   SignRequestKernelServiceDefinition,
   SignBodyResponse,
   requestMethodToJSON,
   GetSignedHeadersResponse
-} from 'shared/protocol/decentraland/renderer/kernel_services/sign_request.gen'
-import { Authenticator } from '@beland/crypto/dist/Authenticator'
+} from 'shared/protocol/memetaverse/renderer/kernel_services/sign_request.gen'
+import { Authenticator } from '@mtvproject/crypto/dist/Authenticator'
 import { store } from 'shared/store/isolatedStore'
 import { getCurrentIdentity } from 'shared/session/selectors'
 import {getAuthChainSignature, getSignedHeaders} from 'lib/decentraland/authentication/signedFetch'

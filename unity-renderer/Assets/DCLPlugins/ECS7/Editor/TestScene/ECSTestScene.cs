@@ -10,7 +10,7 @@ using DCL.ECSRuntime;
 using DCL.Helpers;
 using DCL.Interface;
 using DCL.Models;
-using Decentraland.Common;
+using Memetaverse.Common;
 using UnityEngine;
 using Environment = DCL.Environment;
 using Font = DCL.ECSComponents.Font;
@@ -47,9 +47,9 @@ public class ECSTestScene : MonoBehaviour
         {
             Pbr = new PBMaterial.Types.PbrMaterial()
             {
-                Texture = new Decentraland.Common.TextureUnion()
+                Texture = new Memetaverse.Common.TextureUnion()
                 {
-                    Texture = new Decentraland.Common.Texture()
+                    Texture = new Memetaverse.Common.Texture()
                     {
                         Src = TestAssetsUtils.GetPath() + "/Images/avatar.png"
                     }

@@ -18,7 +18,7 @@ import defaultLogger from 'lib/logger'
 import { trackEvent } from 'shared/analytics/trackEvent'
 import { browserInterface } from './BrowserInterface'
 import { webTransport } from 'renderer-protocol/transports/webTransport'
-import { Transport } from '@dcl/rpc'
+import { Transport } from '@mtvproject/rpc'
 import { isRendererInitialized } from 'shared/renderer/selectors'
 import { ALLOW_SWIFT_SHADER } from 'config'
 

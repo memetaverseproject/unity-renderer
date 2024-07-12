@@ -1,6 +1,6 @@
 import { LoadableScene } from 'shared/types'
 import { forceStopScene, getSceneWorkerBySceneID, loadParcelSceneWorker } from 'shared/world/parcelSceneManager'
-import { parseUrn, resolveContentUrl } from '@beland/urn-resolver'
+import { parseUrn, resolveContentUrl } from '@mtvproject/urn-resolver'
 import { Entity } from '@mtvproject/schemas'
 import { store } from 'shared/store/isolatedStore'
 import { addScenePortableExperience, removeScenePortableExperience } from 'shared/portableExperiences/actions'

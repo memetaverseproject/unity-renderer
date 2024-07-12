@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DCL.Controllers;
 using UnityEngine;
-using Decentraland.Sdk.Ecs6;
+using Memetaverse.Sdk.Ecs6;
 
 namespace DCL.Components
 {

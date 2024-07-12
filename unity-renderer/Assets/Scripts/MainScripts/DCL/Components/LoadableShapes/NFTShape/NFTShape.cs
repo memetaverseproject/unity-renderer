@@ -1,7 +1,7 @@
 using DCL.Helpers;
 using DCL.Models;
 using UnityEngine;
-using Decentraland.Sdk.Ecs6;
+using Memetaverse.Sdk.Ecs6;
 using MainScripts.DCL.Components;
 
 namespace DCL.Components

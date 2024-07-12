@@ -1,4 +1,4 @@
-import { AsyncQueue } from '@dcl/rpc/dist/push-channel'
+import { AsyncQueue } from '@mtvproject/rpc/dist/push-channel'
 
 export function wsAsAsyncChannel<T>(socket: WebSocket, decode: (data: Uint8Array) => T) {
   // Wire the socket to a pushable channel

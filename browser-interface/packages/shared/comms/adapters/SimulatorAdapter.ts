@@ -1,4 +1,4 @@
-import { createUnsafeIdentity } from '@beland/crypto/dist/crypto'
+import { createUnsafeIdentity } from '@mtvproject/crypto/dist/crypto'
 import { Vector3 } from '@dcl/ecs-math'
 import { Avatar } from '@mtvproject/schemas'
 import { parseParcelPosition } from 'lib/decentraland/parcels/parseParcelPosition'
@@ -14,7 +14,7 @@ import {
   ProfileResponse,
   Scene,
   Voice
-} from 'shared/protocol/decentraland/kernel/comms/rfc4/comms.gen'
+} from 'shared/protocol/memetaverse/kernel/comms/rfc4/comms.gen'
 import { lastPlayerPosition } from 'shared/world/positionThings'
 import { CommsEvents, RoomConnection } from '../interface'
 import { Rfc4RoomConnection } from '../logic/rfc-4-room-connection'
@@ -84,7 +84,8 @@ export class SimulationRoom implements RoomConnection {
             rotationZ: 0,
             index: 123213
           }
-        }
+        },
+        protocolVersion: 0
       }).finish(),
       profileMessage: Packet.encode({
         message: {
@@ -92,7 +93,8 @@ export class SimulationRoom implements RoomConnection {
           profileVersion: {
             profileVersion: 1
           }
-        }
+        },
+        protocolVersion: 0
       }).finish()
     })
 

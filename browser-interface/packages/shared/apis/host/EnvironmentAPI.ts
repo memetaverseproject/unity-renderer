@@ -4,18 +4,18 @@ import { store } from 'shared/store/isolatedStore'
 import { getCommsIsland } from 'shared/comms/selectors'
 import { getRealmAdapter } from 'shared/realm/selectors'
 import { getFeatureFlagEnabled } from 'shared/meta/selectors'
-import * as codegen from '@dcl/rpc/dist/codegen'
-import type { RpcServerPort } from '@dcl/rpc/dist/types'
-import { EnvironmentApiServiceDefinition } from 'shared/protocol/decentraland/kernel/apis/environment_api.gen'
+import * as codegen from '@mtvproject/rpc/dist/codegen'
+import type { RpcServerPort } from '@mtvproject/rpc/dist/types'
+import { EnvironmentApiServiceDefinition } from 'shared/protocol/memetaverse/kernel/apis/environment_api.gen'
 import type {
   AreUnsafeRequestAllowedResponse,
   BootstrapDataResponse,
   GetCurrentRealmResponse,
-  GetDecentralandTimeResponse,
+  GetMemetaverseTimeResponse,
   GetExplorerConfigurationResponse,
   GetPlatformResponse,
   PreviewModeResponse
-} from 'shared/protocol/decentraland/kernel/apis/environment_api.gen'
+} from 'shared/protocol/memetaverse/kernel/apis/environment_api.gen'
 import type { EnvironmentRealm } from '../IEnvironmentAPI'
 import { Platform } from '../IEnvironmentAPI'
 import type { PortContextService } from './context'
@@ -70,25 +70,25 @@ export function registerEnvironmentApiServiceServerImplementation(
       }
     },
     // @deprecated use GetTime from Runtime instead
-    async getDecentralandTime(): Promise<GetDecentralandTimeResponse> {
-      const time = getDecentralandTime()
+    async getMemetaverseTime(): Promise<GetMemetaverseTimeResponse> {
+      const time = getMemetaverseTime()
       return { seconds: time }
     }
   }))
 }
 
-export function getDecentralandTime() {
-  let time = decentralandTimeData.time
+export function getMemetaverseTime() {
+  let time = memetaverseTimeData.time
 
   // if time is not paused we calculate the current time to avoid
   // constantly receiving messages from the renderer
-  if (!decentralandTimeData.isPaused) {
-    const offsetMsecs = Date.now() - decentralandTimeData.receivedAt
+  if (!memetaverseTimeData.isPaused) {
+    const offsetMsecs = Date.now() - memetaverseTimeData.receivedAt
     const offsetSecs = offsetMsecs / 1000
-    const offsetInDecentralandUnits = offsetSecs / decentralandTimeData.timeNormalizationFactor
-    time += offsetInDecentralandUnits
+    const offsetInMemetaverseUnits = offsetSecs / memetaverseTimeData.timeNormalizationFactor
+    time += offsetInMemetaverseUnits
 
-    if (time >= decentralandTimeData.cycleTime) {
+    if (time >= memetaverseTimeData.cycleTime) {
       time = 0.01
     }
   }
@@ -113,7 +113,7 @@ export function toEnvironmentRealmType(realm: IRealmAdapter, island: string | un
   }
 }
 
-type DecentralandTimeData = {
+type MemetaverseTimeData = {
   timeNormalizationFactor: number
   cycleTime: number
   isPaused: number
@@ -121,9 +121,9 @@ type DecentralandTimeData = {
   receivedAt: number
 }
 
-let decentralandTimeData: DecentralandTimeData
+let memetaverseTimeData: MemetaverseTimeData
 
-export function setDecentralandTime(data: DecentralandTimeData) {
-  decentralandTimeData = data
-  decentralandTimeData.receivedAt = Date.now()
+export function setMemetaverseTime(data: MemetaverseTimeData) {
+  memetaverseTimeData = data
+  memetaverseTimeData.receivedAt = Date.now()
 }

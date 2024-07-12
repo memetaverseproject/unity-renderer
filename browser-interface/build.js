@@ -108,9 +108,9 @@ async function buildRendererProtocol() {
     fse.removeSync('packages/shared/protocol/')
     fse.mkdirSync('packages/shared/protocol/')
 
-    // Merge renderer-protocol to @dcl/protocol into a single folder
-    // `dereference: true` to avoid error when `@dcl/protocol` is linked
-    fse.copySync('./node_modules/@dcl/protocol', './protocol-temp/', { overwrite: false, dereference: true })
+    // Merge renderer-protocol to @mtvproject/protocol into a single folder
+    // `dereference: true` to avoid error when `@mtvproject/protocol` is linked
+    fse.copySync('./node_modules/@mtvproject/protocol', './protocol-temp/', { overwrite: false, dereference: true })
     fse.copySync('../renderer-protocol/', './protocol-temp/', { overwrite: false })
 
     // Generate the protocol files

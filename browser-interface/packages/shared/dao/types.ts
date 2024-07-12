@@ -1,5 +1,5 @@
 import type { ETHEREUM_NETWORK } from 'config'
-import { AboutResponse } from 'shared/protocol/decentraland/renderer/about.gen'
+import { AboutResponse } from 'shared/protocol/memetaverse/renderer/about.gen'
 
 export enum ServerConnectionStatus {
   OK,

@@ -1,4 +1,4 @@
-﻿using Decentraland.Common;
+﻿using Memetaverse.Common;
 using UnityEngine;
 
 namespace DCL.ECSComponents

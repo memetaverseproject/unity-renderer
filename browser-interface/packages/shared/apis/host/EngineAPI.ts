@@ -1,8 +1,8 @@
-import type { RpcServerModule } from '@dcl/rpc/dist/codegen'
-import * as codegen from '@dcl/rpc/dist/codegen'
-import type { RpcServerPort } from '@dcl/rpc/dist/types'
-import type { EventData, ManyEntityAction } from 'shared/protocol/decentraland/kernel/apis/engine_api.gen'
-import { EngineApiServiceDefinition } from 'shared/protocol/decentraland/kernel/apis/engine_api.gen'
+import type { RpcServerModule } from '@mtvproject/rpc/dist/codegen'
+import * as codegen from '@mtvproject/rpc/dist/codegen'
+import type { RpcServerPort } from '@mtvproject/rpc/dist/types'
+import type { EventData, ManyEntityAction } from 'shared/protocol/memetaverse/kernel/apis/engine_api.gen'
+import { EngineApiServiceDefinition } from 'shared/protocol/memetaverse/kernel/apis/engine_api.gen'
 import type { PortContext } from './context'
 
 export function registerEngineApiServiceServerImplementation(port: RpcServerPort<PortContext>) {

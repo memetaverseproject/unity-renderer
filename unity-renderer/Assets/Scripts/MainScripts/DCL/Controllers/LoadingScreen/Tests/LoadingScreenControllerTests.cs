@@ -5,7 +5,7 @@ using UnityEngine;
 using DCL.Helpers;
 using DCL.Providers;
 using DCLPlugins.LoadingScreenPlugin;
-using Decentraland.Bff;
+using Memetaverse.Bff;
 using MainScripts.DCL.Controllers.ShaderPrewarm;
 using System;
 using System.Collections;

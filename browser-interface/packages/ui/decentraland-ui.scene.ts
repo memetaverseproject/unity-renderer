@@ -1,18 +1,18 @@
-import { executeTask } from '@dcl/legacy-ecs'
+import { executeTask } from '@mtvproject/ecs'
 import { avatarMessageObservable } from './avatar/avatarSystem'
 
-declare const dcl: DecentralandInterface
+declare const mtv: MemetaverseInterface
 
 // Initialize avatar profile scene
 
 void executeTask(async () => {
   const [_, socialController] = await Promise.all([
-    dcl.loadModule('@decentraland/Identity', {}),
-    dcl.loadModule('@decentraland/SocialController', {})
+    mtv.loadModule('@memetaverse/Identity', {}),
+    mtv.loadModule('@memetaverse/SocialController', {})
   ])
 
-  dcl.onUpdate(async (_dt) => {
-    const ret: { events: { event: string; payload: string }[] } = await dcl.callRpc(
+  mtv.onUpdate(async (_dt) => {
+    const ret: { events: { event: string; payload: string }[] } = await mtv.callRpc(
       socialController.rpcHandle,
       'pullAvatarEvents',
       []

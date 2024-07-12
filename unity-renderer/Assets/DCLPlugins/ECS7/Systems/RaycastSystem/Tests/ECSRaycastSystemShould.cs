@@ -104,7 +104,7 @@ namespace Tests.Systems.Raycast
 
             PBRaycast raycast = new PBRaycast()
             {
-                GlobalDirection = new Decentraland.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
+                GlobalDirection = new Memetaverse.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
                 MaxDistance = 16f,
                 QueryType = RaycastQueryType.RqtHitFirst
             };
@@ -129,7 +129,7 @@ namespace Tests.Systems.Raycast
 
             PBRaycast raycast = new PBRaycast()
             {
-                GlobalDirection = new Decentraland.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
+                GlobalDirection = new Memetaverse.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
                 MaxDistance = 16.0f,
                 QueryType = RaycastQueryType.RqtHitFirst,
                 CollisionMask = (int)ColliderLayer.ClPhysics
@@ -159,7 +159,7 @@ namespace Tests.Systems.Raycast
             // By default (no layermask specified) the raycast hits only 'ColliderLayer.ClPhysics'
             PBRaycast raycast = new PBRaycast()
             {
-                GlobalDirection = new Decentraland.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
+                GlobalDirection = new Memetaverse.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
                 MaxDistance = 16.0f,
                 QueryType = RaycastQueryType.RqtQueryAll,
                 CollisionMask = (int)ColliderLayer.ClPhysics
@@ -187,7 +187,7 @@ namespace Tests.Systems.Raycast
 
             PBRaycast raycast = new PBRaycast()
             {
-                GlobalDirection = new Decentraland.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
+                GlobalDirection = new Memetaverse.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
                 MaxDistance = 16.0f,
                 QueryType = RaycastQueryType.RqtQueryAll,
                 CollisionMask = (int)ColliderLayer.ClPhysics
@@ -215,7 +215,7 @@ namespace Tests.Systems.Raycast
 
             PBRaycast raycast = new PBRaycast()
             {
-                GlobalDirection = new Decentraland.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
+                GlobalDirection = new Memetaverse.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
                 MaxDistance = 16.0f,
                 QueryType = RaycastQueryType.RqtQueryAll,
                 CollisionMask = (int)ColliderLayer.ClPointer
@@ -241,7 +241,7 @@ namespace Tests.Systems.Raycast
 
             PBRaycast raycast = new PBRaycast()
             {
-                GlobalDirection = new Decentraland.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
+                GlobalDirection = new Memetaverse.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
                 MaxDistance = 16.0f,
                 QueryType = RaycastQueryType.RqtQueryAll,
                 CollisionMask = (int)ColliderLayer.ClCustom7
@@ -268,7 +268,7 @@ namespace Tests.Systems.Raycast
 
             PBRaycast raycast = new PBRaycast()
             {
-                GlobalDirection = new Decentraland.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
+                GlobalDirection = new Memetaverse.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
                 MaxDistance = 16.0f,
                 QueryType = RaycastQueryType.RqtQueryAll,
                 CollisionMask = (int)ColliderLayer.ClCustom2
@@ -294,7 +294,7 @@ namespace Tests.Systems.Raycast
 
             PBRaycast raycast = new PBRaycast()
             {
-                GlobalDirection = new Decentraland.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
+                GlobalDirection = new Memetaverse.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
                 MaxDistance = 16.0f,
                 QueryType = RaycastQueryType.RqtQueryAll,
                 CollisionMask = (int)ColliderLayer.ClCustom3 | (int)ColliderLayer.ClCustom8
@@ -322,7 +322,7 @@ namespace Tests.Systems.Raycast
 
             PBRaycast raycast = new PBRaycast()
             {
-                GlobalDirection = new Decentraland.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
+                GlobalDirection = new Memetaverse.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
                 MaxDistance = 16.0f,
                 QueryType = RaycastQueryType.RqtQueryAll,
                 CollisionMask = (int)ColliderLayer.ClPointer
@@ -351,7 +351,7 @@ namespace Tests.Systems.Raycast
             PBRaycast raycast = new PBRaycast()
             {
                 Timestamp = raycastTimestamp,
-                GlobalDirection = new Decentraland.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
+                GlobalDirection = new Memetaverse.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
                 MaxDistance = 16.0f,
                 QueryType = RaycastQueryType.RqtHitFirst
             };
@@ -789,7 +789,7 @@ namespace Tests.Systems.Raycast
             PBRaycast raycast = new PBRaycast()
             {
                 Timestamp = raycastTimestamp,
-                GlobalDirection = new Decentraland.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
+                GlobalDirection = new Memetaverse.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
                 MaxDistance = 16.0f,
                 QueryType = RaycastQueryType.RqtHitFirst,
                 CollisionMask = (int)ColliderLayer.ClPhysics,
@@ -862,7 +862,7 @@ namespace Tests.Systems.Raycast
 
             PBRaycast raycast = new PBRaycast()
             {
-                GlobalDirection = new Decentraland.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
+                GlobalDirection = new Memetaverse.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
                 MaxDistance = 16f,
                 QueryType = RaycastQueryType.RqtHitFirst
             };

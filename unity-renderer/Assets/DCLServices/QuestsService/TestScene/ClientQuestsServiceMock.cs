@@ -1,5 +1,5 @@
 using Cysharp.Threading.Tasks;
-using Decentraland.Quests;
+using Memetaverse.Quests;
 using Google.Protobuf.WellKnownTypes;
 using Newtonsoft.Json.Linq;
 using System;
@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEngine;
-using Event = Decentraland.Quests.Event;
+using Event = Memetaverse.Quests.Event;
 
 namespace DCLServices.QuestsService.TestScene
 {

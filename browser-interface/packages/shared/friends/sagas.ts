@@ -1,13 +1,13 @@
-import type { AuthChain } from '@beland/crypto'
-import { Authenticator } from '@beland/crypto'
+import type { AuthChain } from '@mtvproject/crypto'
+import { Authenticator } from '@mtvproject/crypto'
 import {
   FriendRequestInfo,
   FriendshipErrorCode
-} from 'shared/protocol/decentraland/renderer/common/friend_request_common.gen'
+} from 'shared/protocol/memetaverse/renderer/common/friend_request_common.gen'
 import {
   FriendshipStatus,
   GetFriendshipStatusRequest
-} from 'shared/protocol/decentraland/renderer/kernel_services/friends_kernel.gen'
+} from 'shared/protocol/memetaverse/renderer/kernel_services/friends_kernel.gen'
 import {
   AcceptFriendRequestPayload,
   AcceptFriendRequestReplyOk,
@@ -18,9 +18,9 @@ import {
   RejectFriendRequestReplyOk,
   SendFriendRequestPayload,
   SendFriendRequestReplyOk
-} from 'shared/protocol/decentraland/renderer/kernel_services/friend_request_kernel.gen'
-import { GetMutualFriendsRequest } from 'shared/protocol/decentraland/renderer/kernel_services/mutual_friends_kernel.gen'
-import { ReceiveFriendRequestPayload } from 'shared/protocol/decentraland/renderer/renderer_services/friend_request_renderer.gen'
+} from 'shared/protocol/memetaverse/renderer/kernel_services/friend_request_kernel.gen'
+import { GetMutualFriendsRequest } from 'shared/protocol/memetaverse/renderer/kernel_services/mutual_friends_kernel.gen'
+import { ReceiveFriendRequestPayload } from 'shared/protocol/memetaverse/renderer/renderer_services/friend_request_renderer.gen'
 import { Avatar, EthAddress } from '@mtvproject/schemas'
 import { CHANNEL_TO_JOIN_CONFIG_URL, DEBUG_KERNEL_LOG, ethereumConfigurations } from 'config'
 import {

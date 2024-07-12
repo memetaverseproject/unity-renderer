@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+package memetaverse.renderer.renderer_services;
+
+import "memetaverse/renderer/common/friend_request_common.proto";
+
+message ApproveFriendRequestPayload {
+    string user_id = 1;
+}
+
+message ApproveFriendRequestReply {}
+
+message RejectFriendRequestPayload {
+    string user_id = 1;
+}
+
+message RejectFriendRequestReply {}
+
+message CancelFriendRequestPayload {
+    string user_id = 1;
+}
+
+message CancelFriendRequestReply {}
+
+message ReceiveFriendRequestPayload {
+    memetaverse.renderer.common.FriendRequestInfo friend_request = 1;
+}
+
+message ReceiveFriendRequestReply {}
+
+service FriendRequestRendererService {
+    rpc ApproveFriendRequest(ApproveFriendRequestPayload) returns (ApproveFriendRequestReply) {}
+    rpc RejectFriendRequest(RejectFriendRequestPayload) returns (RejectFriendRequestReply) {}
+    rpc CancelFriendRequest(CancelFriendRequestPayload) returns (CancelFriendRequestReply) {}
+    rpc ReceiveFriendRequest(ReceiveFriendRequestPayload) returns (ReceiveFriendRequestReply) {}
+}

@@ -494,14 +494,14 @@ namespace Tests
             Assert.IsTrue(evt.type == PointerEventType.PetDown);
 
             // 5. Check enqueued event has correct position and origin
-            Assert.AreEqual(new Decentraland.Common.Vector3()
+            Assert.AreEqual(new Memetaverse.Common.Vector3()
             {
                 X = entityLocalPosition.x,
                 Y = entityLocalPosition.y,
                 Z = entityLocalPosition.z
             }, evt.hit.Position);
 
-            Assert.AreEqual(new Decentraland.Common.Vector3()
+            Assert.AreEqual(new Memetaverse.Common.Vector3()
             {
                 X = entityLocalPosition.x,
                 Y = entityLocalPosition.y,

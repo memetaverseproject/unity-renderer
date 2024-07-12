@@ -1,5 +1,5 @@
-import * as codegen from '@dcl/rpc/dist/codegen'
-import type { RpcServerPort } from '@dcl/rpc/dist/types'
+import * as codegen from '@mtvproject/rpc/dist/codegen'
+import type { RpcServerPort } from '@mtvproject/rpc/dist/types'
 import { ETHEREUM_NETWORK, getAssetBundlesBaseUrl } from 'config'
 import type {
   GetParcelRequest,
@@ -8,8 +8,8 @@ import type {
   GetIsEmptyResponse,
   GetIsEmptyRequest,
   GetSceneIdResponse
-} from 'shared/protocol/decentraland/kernel/apis/parcel_identity.gen'
-import { ParcelIdentityServiceDefinition } from 'shared/protocol/decentraland/kernel/apis/parcel_identity.gen'
+} from 'shared/protocol/memetaverse/kernel/apis/parcel_identity.gen'
+import { ParcelIdentityServiceDefinition } from 'shared/protocol/memetaverse/kernel/apis/parcel_identity.gen'
 import type { PortContext } from './context'
 
 async function getParcel(_req: GetParcelRequest, ctx: PortContext): Promise<GetParcelResponse> {

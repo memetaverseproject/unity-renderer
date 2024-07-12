@@ -1,6 +1,6 @@
 ﻿using Cysharp.Threading.Tasks;
 using DCL.Helpers;
-using Decentraland.Quests;
+using Memetaverse.Quests;
 using System;
 using System.Collections.Generic;
 using System.Threading;

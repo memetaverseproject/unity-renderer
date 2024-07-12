@@ -1,4 +1,4 @@
-import { RpcClient, RpcClientPort, Transport } from '@dcl/rpc'
+import { RpcClient, RpcClientPort, Transport } from '@mtvproject/rpc'
 import type { UnityGame } from 'unity-interface/loader'
 import { profileToRendererFormat } from 'lib/decentraland/profiles/transformations/profileToRendererFormat'
 import { NewProfileForRenderer } from 'lib/decentraland/profiles/transformations/types'

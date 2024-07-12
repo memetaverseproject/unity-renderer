@@ -1,6 +1,6 @@
 using Cysharp.Threading.Tasks;
 using DCL.Helpers.NFT;
-using Decentraland.Renderer.RendererServices;
+using Memetaverse.Renderer.RendererServices;
 using NUnit.Framework;
 using RPC;
 using rpc_csharp;

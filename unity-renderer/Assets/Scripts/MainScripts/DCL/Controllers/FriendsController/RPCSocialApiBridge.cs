@@ -1,6 +1,6 @@
 using Cysharp.Threading.Tasks;
 using DCL.Tasks;
-using Decentraland.Social.Friendships;
+using Memetaverse.Social.Friendships;
 using MainScripts.DCL.Controllers.FriendsController;
 using NUnit.Framework;
 using System;

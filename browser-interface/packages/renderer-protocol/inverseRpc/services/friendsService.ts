@@ -1,10 +1,10 @@
-import { RpcServerPort } from '@dcl/rpc'
+import { RpcServerPort } from '@mtvproject/rpc'
 import { RendererProtocolContext } from '../context'
-import * as codegen from '@dcl/rpc/dist/codegen'
+import * as codegen from '@mtvproject/rpc/dist/codegen'
 import {
   FriendsKernelServiceDefinition,
   GetFriendshipStatusResponse
-} from 'shared/protocol/decentraland/renderer/kernel_services/friends_kernel.gen'
+} from 'shared/protocol/memetaverse/renderer/kernel_services/friends_kernel.gen'
 import { getFriendshipStatus } from 'shared/friends/sagas'
 
 export function registerFriendsKernelService(port: RpcServerPort<RendererProtocolContext>) {

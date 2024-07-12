@@ -1,4 +1,4 @@
-import * as contractInfo from '@beland/urn-resolver/dist/contracts'
+import * as contractInfo from '@mtvproject/urn-resolver/dist/contracts'
 import { getFeatureFlagEnabled } from 'shared/meta/selectors'
 import { now } from 'lib/javascript/now'
 import { isURL } from 'lib/javascript/isURL'

@@ -1,7 +1,7 @@
 import type { UnityGame } from 'unity-interface/loader'
 import { CommonRendererOptions } from './loader'
 import { webSocketTransportAdapter } from 'renderer-protocol/transports/webSocketTransportAdapter'
-import { Transport } from '@dcl/rpc'
+import { Transport } from '@mtvproject/rpc'
 
 /** This connects the local game to a native client via WebSocket */
 export async function initializeUnityEditor(

@@ -1,5 +1,5 @@
 import { Vector3 } from '@dcl/ecs-math'
-import { PermissionItem, permissionItemToJSON } from 'shared/protocol/decentraland/kernel/apis/permissions.gen'
+import { PermissionItem, permissionItemToJSON } from 'shared/protocol/memetaverse/kernel/apis/permissions.gen'
 import { EntityType, RequiredPermission, Scene } from '@mtvproject/schemas'
 import { expect } from 'chai'
 import { PortContext } from 'shared/apis/host/context'

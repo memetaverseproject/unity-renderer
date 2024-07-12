@@ -4,7 +4,7 @@ using DCL.Controllers;
 using DCL.Helpers;
 using DCL.Models;
 using Newtonsoft.Json;
-using Decentraland.Sdk.Ecs6;
+using Memetaverse.Sdk.Ecs6;
 
 namespace DCL.Components
 {

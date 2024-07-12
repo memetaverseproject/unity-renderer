@@ -1,12 +1,12 @@
 using Cysharp.Threading.Tasks;
 using DCL;
 using System.Threading;
-using Decentraland.Renderer.KernelServices;
+using Memetaverse.Renderer.KernelServices;
 using Google.Protobuf.Collections;
 using System;
 using System.Collections.Generic;
-using SignBodyRequest = Decentraland.Renderer.KernelServices.SignBodyRequest;
-using SignBodyResponse = Decentraland.Renderer.KernelServices.SignBodyResponse;
+using SignBodyRequest = Memetaverse.Renderer.KernelServices.SignBodyRequest;
+using SignBodyResponse = Memetaverse.Renderer.KernelServices.SignBodyResponse;
 
 public class RPCSignRequest : IRPCSignRequest
 {

@@ -7,7 +7,7 @@
         "ECS7.UIElements",
         "DCL.ECSComponents.ProtobufData",
         "ECSComponents.Utils",
-        "Decentraland.Protocol.GeneratedCode"
+        "Memetaverse.Protocol.GeneratedCode"
     ],
     "includePlatforms": [
         "Editor"

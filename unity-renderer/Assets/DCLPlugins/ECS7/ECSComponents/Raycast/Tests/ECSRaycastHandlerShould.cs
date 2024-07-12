@@ -65,7 +65,7 @@ namespace Tests
             entityRaycaster.gameObject.transform.position = new Vector3(8f, 1f, 0.1f);
             PBRaycast raycast = new PBRaycast()
             {
-                GlobalDirection = new Decentraland.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
+                GlobalDirection = new Memetaverse.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
                 MaxDistance = 16.0f,
                 QueryType = RaycastQueryType.RqtHitFirst
             };
@@ -86,7 +86,7 @@ namespace Tests
             entityRaycaster.gameObject.transform.position = new Vector3(8f, 1f, 0.1f);
             PBRaycast raycast = new PBRaycast()
             {
-                GlobalDirection = new Decentraland.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
+                GlobalDirection = new Memetaverse.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
                 MaxDistance = 16.0f,
                 QueryType = RaycastQueryType.RqtHitFirst,
                 Timestamp = 5
@@ -115,7 +115,7 @@ namespace Tests
             entityRaycaster.gameObject.transform.position = new Vector3(8f, 1f, 0.1f);
             PBRaycast raycast = new PBRaycast()
             {
-                GlobalDirection = new Decentraland.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
+                GlobalDirection = new Memetaverse.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
                 MaxDistance = 16.0f,
                 QueryType = RaycastQueryType.RqtHitFirst,
                 Continuous = false
@@ -144,7 +144,7 @@ namespace Tests
             entityRaycaster.gameObject.transform.position = new Vector3(8f, 1f, 0.1f);
             PBRaycast raycast = new PBRaycast()
             {
-                GlobalDirection = new Decentraland.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
+                GlobalDirection = new Memetaverse.Common.Vector3() { X = 0f, Y = 0f, Z = 1.0f },
                 MaxDistance = 16.0f,
                 QueryType = RaycastQueryType.RqtHitFirst
             };

@@ -7,7 +7,7 @@ using DCL.Helpers;
 using DCL.Models;
 using DCL.Rendering;
 using UnityEngine;
-using Decentraland.Sdk.Ecs6;
+using Memetaverse.Sdk.Ecs6;
 
 namespace DCL
 {
@@ -479,7 +479,7 @@ namespace DCL
             var targetComponent = GetComponent(entity, classId);
             if (data is string json)
                 targetComponent.UpdateFromJSON(json);
-            else if (data is Decentraland.Sdk.Ecs6.ComponentBodyPayload payload)
+            else if (data is Memetaverse.Sdk.Ecs6.ComponentBodyPayload payload)
                 targetComponent.UpdateFromPb(payload);
             else
                 targetComponent.UpdateFromModel(data as BaseModel);

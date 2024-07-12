@@ -1,4 +1,4 @@
-import type * as rfc4 from 'shared/protocol/decentraland/kernel/comms/rfc4/comms.gen'
+import type * as rfc4 from 'shared/protocol/memetaverse/kernel/comms/rfc4/comms.gen'
 import type { Avatar } from '@mtvproject/schemas'
 import { EthAddress } from '@mtvproject/schemas'
 import { commConfigurations } from 'config'

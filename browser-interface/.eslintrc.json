@@ -1,5 +1,5 @@
 {
-  "extends": "@dcl/eslint-config/sdk",
+  "extends": "@mtvproject/eslint-config/sdk",
   "parserOptions": {
     "project": [
       "tsconfig.eslint.json"

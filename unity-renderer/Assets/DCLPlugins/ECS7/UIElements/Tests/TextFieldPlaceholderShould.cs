@@ -1,5 +1,5 @@
 ﻿using DCL.ECSComponents;
-using Decentraland.Common;
+using Memetaverse.Common;
 using NSubstitute;
 using NUnit.Framework;
 using UnityEngine;
