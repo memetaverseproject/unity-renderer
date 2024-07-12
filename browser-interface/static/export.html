@@ -588,11 +588,11 @@
       async function initKernel() {
         const container = document.getElementById('gameContainer')
 
-        const DecentralandKernel = globalThis.DecentralandKernel
+        const MemetaverseKernel = globalThis.MemetaverseKernel
 
-        if (!DecentralandKernel) throw new Error('DecentralandKernel could not be loaded')
+        if (!MemetaverseKernel) throw new Error('MemetaverseKernel could not be loaded')
 
-        const kernel = await DecentralandKernel.initKernel({
+        const kernel = await MemetaverseKernel.initKernel({
           kernelOptions: {
             baseUrl: rootURL(),
             previewMode: true

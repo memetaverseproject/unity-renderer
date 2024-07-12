@@ -1,5 +1,5 @@
 import { AvatarInfo } from '@mtvproject/schemas'
-import { rgbToHex } from 'lib/decentraland/profiles/transformations/convertToRGBObject'
+import { rgbToHex } from 'lib/memetaverse/profiles/transformations/convertToRGBObject'
 import { AvatarForUserData } from './AvatarForUserData'
 
 export function sceneRuntimeCompatibleAvatar(avatar: AvatarInfo): AvatarForUserData {

@@ -39,12 +39,12 @@ import {
 } from 'dcl-social-client'
 import { isAddress } from 'eth-connect/eth-connect'
 import future from 'fp-future'
-import { calculateDisplayName } from 'lib/decentraland/profiles/transformations/processServerProfile'
+import { calculateDisplayName } from 'lib/memetaverse/profiles/transformations/processServerProfile'
 import {
   defaultProfile,
   profileToRendererFormat
-} from 'lib/decentraland/profiles/transformations/profileToRendererFormat'
-import { NewProfileForRenderer } from 'lib/decentraland/profiles/transformations/types'
+} from 'lib/memetaverse/profiles/transformations/profileToRendererFormat'
+import { NewProfileForRenderer } from 'lib/memetaverse/profiles/transformations/types'
 import { deepEqual } from 'lib/javascript/deepEqual'
 import { now } from 'lib/javascript/now'
 import { uuid } from 'lib/javascript/uuid'

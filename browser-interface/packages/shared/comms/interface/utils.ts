@@ -1,6 +1,6 @@
 import { Vector2 } from '@dcl/ecs-math'
 import { PositionReport } from 'shared/world/positionThings'
-import { parcelSize, maxParcelX, maxParcelZ } from 'lib/decentraland/parcels/limits'
+import { parcelSize, maxParcelX, maxParcelZ } from 'lib/memetaverse/parcels/limits'
 import * as rfc4 from 'shared/protocol/memetaverse/kernel/comms/rfc4/comms.gen'
 
 export type ParcelArray = [number, number]

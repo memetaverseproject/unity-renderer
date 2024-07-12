@@ -1,7 +1,7 @@
 import { AuthIdentity } from '@mtvproject/crypto'
 
 import { ETHEREUM_NETWORK } from 'config'
-import { IEthereumProvider, LoginState } from '@dcl/kernel-interface'
+import { IEthereumProvider, LoginState } from '@mtvproject/kernel-interface'
 
 export type RootSessionState = {
   session: SessionState

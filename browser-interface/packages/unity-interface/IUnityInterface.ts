@@ -42,7 +42,7 @@ import type { ILogger } from 'lib/logger'
 import type {
   AddUserProfilesToCatalogPayload,
   NewProfileForRenderer
-} from 'lib/decentraland/profiles/transformations/types'
+} from 'lib/memetaverse/profiles/transformations/types'
 import type { Emote } from 'shared/catalogs/types'
 import { AboutResponse } from 'shared/protocol/memetaverse/renderer/about.gen'
 

@@ -159,7 +159,7 @@ async function resolveOfflineRealmAboutFromConnectionString(
   realmString: string
 ): Promise<{ about: AboutResponse; baseUrl: string } | undefined> {
   if (realmString === OFFLINE_REALM || realmString.startsWith(OFFLINE_REALM + '?')) {
-    const params = new URL('decentraland:' + realmString).searchParams
+    const params = new URL('memetaverse:' + realmString).searchParams
     let baseUrl = urlWithProtocol(params.get('baseUrl') || 'https://testnet-peer.memetaverse.club')
 
     if (!baseUrl.endsWith('/')) baseUrl = baseUrl + '/'

@@ -1,4 +1,4 @@
-import { BAD_WORDS } from 'lib/decentraland/badwords'
+import { BAD_WORDS } from 'lib/memetaverse/badwords'
 
 export const nameValidCharacterRegex = /[a-zA-Z0-9]/g
 

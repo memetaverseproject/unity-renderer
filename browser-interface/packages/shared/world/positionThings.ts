@@ -1,12 +1,12 @@
 import { Vector3, EcsMathReadOnlyVector3, EcsMathReadOnlyQuaternion, Quaternion } from '@dcl/ecs-math'
 import { Observable } from 'mz-observable'
 import { InstancedSpawnPoint } from '../types'
-import { parseParcelPosition } from 'lib/decentraland/parcels/parseParcelPosition'
-import { isWorldPositionInsideParcels } from 'lib/decentraland/parcels/isWorldPositionInsideParcels'
-import { gridToWorld } from 'lib/decentraland/parcels/gridToWorld'
+import { parseParcelPosition } from 'lib/memetaverse/parcels/parseParcelPosition'
+import { isWorldPositionInsideParcels } from 'lib/memetaverse/parcels/isWorldPositionInsideParcels'
+import { gridToWorld } from 'lib/memetaverse/parcels/gridToWorld'
 import { DEBUG, playerHeight } from 'config'
 import { isInsideWorldLimits, Scene, SpawnPoint } from '@mtvproject/schemas'
-import { halfParcelSize } from 'lib/decentraland/parcels/limits'
+import { halfParcelSize } from 'lib/memetaverse/parcels/limits'
 
 export type PositionReport = {
   /** Camera position, world space */

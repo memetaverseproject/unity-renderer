@@ -239,7 +239,7 @@ async function compileJs() {
       'packages/voice-chat-codec/audioWorkletProcessors.ts',
       'static/voice-chat-codec/audioWorkletProcessors.js.txt'
     )
-    createWorker('packages/ui/decentraland-ui.scene.ts', 'static/systems/decentraland-ui.scene.js.txt')
+    createWorker('packages/ui/memetaverse-ui.scene.ts', 'static/systems/memetaverse-ui.scene.js.txt')
   }
 
   if (!process.env.ESSENTIALS_ONLY) {

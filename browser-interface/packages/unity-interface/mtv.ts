@@ -24,7 +24,7 @@ import { browserInterface } from './BrowserInterface'
 import { LoadableScene } from 'shared/types'
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const hudWorkerRaw = require('../../static/systems/decentraland-ui.scene.js.txt')
+const hudWorkerRaw = require('../../static/systems/memetaverse-ui.scene.js.txt')
 const hudWorkerBLOB = new Blob([hudWorkerRaw])
 export const hudWorkerUrl = URL.createObjectURL(hudWorkerBLOB)
 

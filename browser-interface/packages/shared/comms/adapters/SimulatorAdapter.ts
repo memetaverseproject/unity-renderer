@@ -1,8 +1,8 @@
 import { createUnsafeIdentity } from '@mtvproject/crypto/dist/crypto'
 import { Vector3 } from '@dcl/ecs-math'
 import { Avatar } from '@mtvproject/schemas'
-import { parseParcelPosition } from 'lib/decentraland/parcels/parseParcelPosition'
-import { gridToWorld } from 'lib/decentraland/parcels/gridToWorld'
+import { parseParcelPosition } from 'lib/memetaverse/parcels/parseParcelPosition'
+import { gridToWorld } from 'lib/memetaverse/parcels/gridToWorld'
 import mitt from 'mitt'
 import { generateRandomUserProfile } from 'shared/profiles/sagas'
 import {

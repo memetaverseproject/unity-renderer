@@ -1,5 +1,5 @@
 import { Vector2 } from '@dcl/ecs-math'
-import { encodeParcelPosition } from 'lib/decentraland/parcels/encodeParcelPosition'
+import { encodeParcelPosition } from 'lib/memetaverse/parcels/encodeParcelPosition'
 import { ISceneLoader, SetDesiredScenesCommand } from '../types'
 import { SceneDataDownloadManager } from './downloadManager'
 import { EmptyParcelController } from './emptyParcelController'

@@ -10,7 +10,7 @@ import {
   RESET_TUTORIAL
 } from 'config'
 import { RequestManager } from 'eth-connect'
-import { DecentralandIdentity, LoginState } from '@dcl/kernel-interface'
+import { MemetaverseIdentity, LoginState } from '@mtvproject/kernel-interface'
 import { getFromPersistentStorage, saveToPersistentStorage } from 'lib/browser/persistentStorage'
 import { createDummyLogger, createLogger } from 'lib/logger'
 import { getEthereumNetworkFromProvider } from 'lib/web3/getEthereumNetworkFromProvider'
@@ -375,8 +375,8 @@ export function initializeSessionObserver() {
     globalObservable.emit('accountState', {
       hasProvider: !!session.provider,
       loginStatus: session.loginState as LoginState,
-      // TODO: the authChain may have an undefined field. DecentralandIdentity got outdated
-      identity: session.identity as any as DecentralandIdentity | undefined,
+      // TODO: the authChain may have an undefined field. MemetaverseIdentity got outdated
+      identity: session.identity as any as MemetaverseIdentity | undefined,
       network: session.network,
       isGuest: !!session.isGuestLogin
     })

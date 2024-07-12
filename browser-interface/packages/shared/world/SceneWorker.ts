@@ -14,9 +14,9 @@ import {
   playerHeight,
   WSS_ENABLED
 } from 'config'
-import { gridToWorld } from 'lib/decentraland/parcels/gridToWorld'
-import { parseParcelPosition } from 'lib/decentraland/parcels/parseParcelPosition'
-import { getSceneNameFromJsonData } from 'lib/decentraland/sceneJson/getSceneNameFromJsonData'
+import { gridToWorld } from 'lib/memetaverse/parcels/gridToWorld'
+import { parseParcelPosition } from 'lib/memetaverse/parcels/parseParcelPosition'
+import { getSceneNameFromJsonData } from 'lib/memetaverse/sceneJson/getSceneNameFromJsonData'
 import defaultLogger, { createDummyLogger, createForwardedLogger, createLogger, ILogger } from 'lib/logger'
 import mitt from 'mitt'
 import { trackEvent } from 'shared/analytics/trackEvent'

@@ -9,7 +9,7 @@ import {
 import { Authenticator } from '@mtvproject/crypto/dist/Authenticator'
 import { store } from 'shared/store/isolatedStore'
 import { getCurrentIdentity } from 'shared/session/selectors'
-import {getAuthChainSignature, getSignedHeaders} from 'lib/decentraland/authentication/signedFetch'
+import {getAuthChainSignature, getSignedHeaders} from 'lib/memetaverse/authentication/signedFetch'
 import { RendererProtocolContext } from '../context'
 
 // eslint-disable-next-line @typescript-eslint/ban-types

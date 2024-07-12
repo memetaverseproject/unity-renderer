@@ -1,6 +1,6 @@
 import type { Avatar, AvatarInfo, Profile } from '@mtvproject/schemas'
-import { generateRandomUserProfile } from 'lib/decentraland/profiles/generateRandomUserProfile'
-import type { AvatarForUserData } from 'lib/decentraland/profiles/sceneRuntime'
+import { generateRandomUserProfile } from 'lib/memetaverse/profiles/generateRandomUserProfile'
+import type { AvatarForUserData } from 'lib/memetaverse/profiles/sceneRuntime'
 import defaultLogger from 'lib/logger'
 import { trackEvent } from 'shared/analytics/trackEvent'
 import { validateAvatar } from 'shared/profiles/schemaValidation'
@@ -84,14 +84,14 @@ export function ensureAvatarCompatibilityFormat(profile: Readonly<Avatar | OldAv
 
 function mapLegacyIdToUrn(wearableId: string): string | null {
   if (typeof wearableId !== 'string') return null
-  if (!wearableId.startsWith('dcl://')) {
+  if (!wearableId.startsWith('mtv://')) {
     return wearableId
   }
-  if (wearableId.startsWith('dcl://base-avatars')) {
+  if (wearableId.startsWith('mtv://base-avatars')) {
     const name = wearableId.substring(wearableId.lastIndexOf('/') + 1)
     return `urn:memetaverse:off-chain:base-avatars:${name}`
   } else {
-    const [collectionName, wearableName] = wearableId.replace('dcl://', '').split('/')
+    const [collectionName, wearableName] = wearableId.replace('mtv://', '').split('/')
     return `urn:memetaverse:ethereum:collections-v1:${collectionName}:${wearableName}`
   }
 }

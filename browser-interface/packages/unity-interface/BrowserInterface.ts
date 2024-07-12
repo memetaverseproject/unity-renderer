@@ -12,7 +12,7 @@ import {
 } from 'config'
 import { isAddress } from 'eth-connect'
 import future, { IFuture } from 'fp-future'
-import { getSignedHeaders } from 'lib/decentraland/authentication/signedFetch'
+import { getSignedHeaders } from 'lib/memetaverse/authentication/signedFetch'
 import { arrayCleanup } from 'lib/javascript/arrayCleanup'
 import { now } from 'lib/javascript/now'
 import { defaultLogger } from 'lib/logger'
@@ -1266,7 +1266,7 @@ export class BrowserInterface {
     setRendererAvatarState(data)
   }
 
-  public ReportDecentralandTime(data: any) {
+  public ReportMemetaverseTime(data: any) {
     setMemetaverseTime(data)
   }
 

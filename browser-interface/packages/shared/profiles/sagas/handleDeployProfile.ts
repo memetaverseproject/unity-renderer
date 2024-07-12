@@ -1,5 +1,5 @@
 import { Authenticator } from '@mtvproject/crypto'
-import { hashV1 } from '@dcl/hashing'
+import { hashV1 } from '@mtvproject/hashing'
 import { Avatar, EntityType, Profile, Snapshots } from '@mtvproject/schemas'
 import {
   BuildEntityOptions,
@@ -18,7 +18,7 @@ import { getCurrentIdentity, getCurrentUserId } from 'shared/session/selectors'
 import type { ExplorerIdentity } from 'shared/session/types'
 import type { DeployProfile } from '../actions'
 import { deployProfileFailure, deployProfileSuccess } from '../actions'
-import { buildServerMetadata } from 'lib/decentraland/profiles/transformations/profileToServerFormat'
+import { buildServerMetadata } from 'lib/memetaverse/profiles/transformations/profileToServerFormat'
 import type { ContentFile } from '../types'
 
 export function* handleDeployProfile(deployProfileAction: DeployProfile) {

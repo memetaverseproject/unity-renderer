@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import { ensureAvatarCompatibilityFormat } from 'lib/decentraland/profiles/transformations/profileToServerFormat'
+import { ensureAvatarCompatibilityFormat } from 'lib/memetaverse/profiles/transformations/profileToServerFormat'
 import { expectSaga } from 'redux-saga-test-plan'
 import { call, select } from 'redux-saga/effects'
 import {

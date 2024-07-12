@@ -34,7 +34,7 @@ function encodeMessage(data: Uint8Array, type: MsgType) {
 }
 
 /**
- * The CommunicationsControllerService connects messages from the comms controller with the scenes of Decentraland,
+ * The CommunicationsControllerService connects messages from the comms controller with the scenes of Memetaverse,
  * particularly the `AvatarScene` that hosts the avatars of other players.
  *
  * @param port connection to scene

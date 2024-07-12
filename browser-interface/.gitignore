@@ -55,8 +55,8 @@ static/voice-chat-codec/worker.js
 static/unity-renderer
 static/node_modules
 packages/config/contracts.ts
-.decentraland
-**/.decentraland
+.memetaverse
+**/.memetaverse
 
 test/tmp
 test/diff

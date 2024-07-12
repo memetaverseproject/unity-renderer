@@ -20,8 +20,8 @@ import {
   SocialAPI,
   TextMessage
 } from 'dcl-social-client'
-import { profileToRendererFormat } from 'lib/decentraland/profiles/transformations/profileToRendererFormat'
-import { AddUserProfilesToCatalogPayload } from 'lib/decentraland/profiles/transformations/types'
+import { profileToRendererFormat } from 'lib/memetaverse/profiles/transformations/profileToRendererFormat'
+import { AddUserProfilesToCatalogPayload } from 'lib/memetaverse/profiles/transformations/types'
 import { StoreEnhancer } from 'redux'
 import { expectSaga } from 'redux-saga-test-plan'
 import { select } from 'redux-saga/effects'

@@ -6,7 +6,7 @@ import {
 } from 'lib/browser/persistentStorage'
 import { ETHEREUM_NETWORK } from 'config'
 
-const LOCAL_PROFILES_KEY = 'dcl-local-profile'
+const LOCAL_PROFILES_KEY = 'mtv-local-profile'
 
 export class LocalProfilesRepository {
   async persist(address: string, network: ETHEREUM_NETWORK, profile: Avatar) {

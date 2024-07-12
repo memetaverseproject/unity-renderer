@@ -1,5 +1,5 @@
 import { Authenticator } from '@mtvproject/crypto'
-import { getSignedHeaders, signedFetch } from 'lib/decentraland/authentication/signedFetch'
+import { getSignedHeaders, signedFetch } from 'lib/memetaverse/authentication/signedFetch'
 import { ETHEREUM_NETWORK } from 'config'
 import { getSelectedNetwork } from 'shared/dao/selectors'
 import { store } from 'shared/store/isolatedStore'
@@ -41,7 +41,7 @@ function getMetadata(ctx: Pick<PortContext, 'sceneData'>) {
     network,
     isGuest,
     realm: realm?.protocol === 'v2' || realm?.protocol === 'v1' ? compatibilityRealm : realm,
-    signer: 'decentraland-kernel-scene'
+    signer: 'memetaverse-kernel-scene'
   }
 
   return additionalMetadata

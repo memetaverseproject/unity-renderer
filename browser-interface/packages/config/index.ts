@@ -187,7 +187,7 @@ export function getServerConfigurations(network: ETHEREUM_NETWORK) {
   const metaConfigBaseUrl = META_CONFIG_URL || `https://${tld}config.memetaverse.club/explorer.json`
 
   const questsUrl =
-    ensureSingleString(qs.get('QUESTS_SERVER_URL')) ?? `https://${tld}quests-api.decentraland.memetaverse.club`
+    ensureSingleString(qs.get('QUESTS_SERVER_URL')) ?? `https://${tld}quests-api.memetaverse.club`
 
   return {
     explorerConfiguration: `${metaConfigBaseUrl}?t=${now()}`,

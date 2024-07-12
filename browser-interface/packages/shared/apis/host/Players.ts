@@ -1,7 +1,7 @@
 import { store } from 'shared/store/isolatedStore'
 
 import { getProfileFromStore } from 'shared/profiles/selectors'
-import { calculateDisplayName } from 'lib/decentraland/profiles/transformations/processServerProfile'
+import { calculateDisplayName } from 'lib/memetaverse/profiles/transformations/processServerProfile'
 
 import { getCurrentUserId } from 'shared/session/selectors'
 import { getInSceneAvatarsUserId } from 'shared/social/avatarTracker'
@@ -12,9 +12,9 @@ import * as codegen from '@mtvproject/rpc/dist/codegen'
 import type { PortContext } from './context'
 
 import { PlayersServiceDefinition } from 'shared/protocol/memetaverse/kernel/apis/players.gen'
-import { isWorldPositionInsideParcels } from 'lib/decentraland/parcels/isWorldPositionInsideParcels'
+import { isWorldPositionInsideParcels } from 'lib/memetaverse/parcels/isWorldPositionInsideParcels'
 import { getVisiblePeerEthereumAddresses } from 'shared/comms/peers'
-import { sceneRuntimeCompatibleAvatar } from 'lib/decentraland/profiles'
+import { sceneRuntimeCompatibleAvatar } from 'lib/memetaverse/profiles'
 
 export function registerPlayersServiceServerImplementation(port: RpcServerPort<PortContext>) {
   codegen.registerService(port, PlayersServiceDefinition, async () => ({

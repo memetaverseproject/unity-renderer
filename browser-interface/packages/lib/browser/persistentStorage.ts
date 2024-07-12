@@ -1,4 +1,4 @@
-import { PersistentAsyncStorage } from '@dcl/kernel-interface'
+import { PersistentAsyncStorage } from '@mtvproject/kernel-interface'
 import { globalObservable } from 'shared/observables'
 
 declare let window: WindowLocalStorage

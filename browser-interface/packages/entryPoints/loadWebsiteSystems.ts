@@ -1,4 +1,4 @@
-import type { KernelOptions } from '@dcl/kernel-interface'
+import type { KernelOptions } from '@mtvproject/kernel-interface'
 import { realmInitialized } from 'shared/dao'
 import { BringDownClientAndReportFatalError } from 'shared/loading/ReportFatalError'
 import { ensureMetaConfigurationInitialized } from 'shared/meta'
@@ -20,7 +20,7 @@ export async function loadWebsiteSystems(options: KernelOptions['kernelOptions']
     /**
      * MetaConfiguration is the combination of three main aspects of the environment in which we are running:
      * - which Ethereum network are we connected to
-     * - what is the current global explorer configuration from https://config.decentraland.${tld}/explorer.json
+     * - what is the current global explorer configuration from https://config.memetaverse.${tld}/explorer.json
      * - what feature flags are currently enabled
      */
     ensureMetaConfigurationInitialized()

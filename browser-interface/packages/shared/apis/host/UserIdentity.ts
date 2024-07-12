@@ -1,6 +1,6 @@
-import { calculateDisplayName } from 'lib/decentraland/profiles/transformations/processServerProfile'
+import { calculateDisplayName } from 'lib/memetaverse/profiles/transformations/processServerProfile'
 
-import { sceneRuntimeCompatibleAvatar } from 'lib/decentraland/profiles/sceneRuntime'
+import { sceneRuntimeCompatibleAvatar } from 'lib/memetaverse/profiles/sceneRuntime'
 import { retrieveProfile } from 'shared/profiles/retrieveProfile'
 import { onLoginCompleted } from 'shared/session/onLoginCompleted'
 

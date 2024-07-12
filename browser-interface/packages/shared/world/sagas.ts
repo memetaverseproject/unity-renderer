@@ -1,4 +1,4 @@
-import { encodeParcelPosition } from 'lib/decentraland/parcels/encodeParcelPosition'
+import { encodeParcelPosition } from 'lib/memetaverse/parcels/encodeParcelPosition'
 import { apply, call, fork, put, race, select, take, takeLatest } from 'redux-saga/effects'
 import { SceneStart, SCENE_CHANGED, SCENE_START } from 'shared/loading/actions'
 import { SetParcelPosition, SET_PARCEL_POSITION } from 'shared/scene-loader/actions'

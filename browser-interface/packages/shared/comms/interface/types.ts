@@ -1,4 +1,4 @@
-import type { NewProfileForRenderer } from 'lib/decentraland/profiles/transformations/types'
+import type { NewProfileForRenderer } from 'lib/memetaverse/profiles/transformations/types'
 import * as rfc4 from 'shared/protocol/memetaverse/kernel/comms/rfc4/comms.gen'
 
 export const enum AvatarMessageType {

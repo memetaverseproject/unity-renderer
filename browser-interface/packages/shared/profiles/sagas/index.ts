@@ -2,7 +2,7 @@ import { debounce, fork, put, takeEvery } from 'redux-saga/effects'
 import type { Avatar } from '@mtvproject/schemas'
 import { unsignedCRC32 } from 'lib/encoding/crc32'
 import defaultLogger from 'lib/logger'
-import { generateRandomUserProfile as buildRandomProfile } from 'lib/decentraland/profiles/generateRandomUserProfile'
+import { generateRandomUserProfile as buildRandomProfile } from 'lib/memetaverse/profiles/generateRandomUserProfile'
 import { USER_AUTHENTICATED } from 'shared/session/actions'
 import type { ProfileSuccessAction } from '../actions'
 import {
@@ -13,9 +13,9 @@ import {
   SAVE_DELTA_PROFILE_REQUEST,
   sendProfileToRenderer
 } from '../actions'
-import { ensureAvatarCompatibilityFormat } from 'lib/decentraland/profiles/transformations/profileToServerFormat'
+import { ensureAvatarCompatibilityFormat } from 'lib/memetaverse/profiles/transformations/profileToServerFormat'
 import type { RemoteProfile } from '../types'
-import { createFakeName } from 'lib/decentraland/profiles/names/fakeName'
+import { createFakeName } from 'lib/memetaverse/profiles/names/fakeName'
 import { takeLatestById } from './takeLatestById'
 import { fetchProfile } from './fetchProfile'
 import { handleCommsProfile, handleCommsVersionUpdates } from './handleCommsProfile'
