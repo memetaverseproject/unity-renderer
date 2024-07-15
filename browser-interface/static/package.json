@@ -2,7 +2,7 @@
   "name": "@mtvproject/explorer",
   "main": "index.js",
   "typings": "index.d.ts",
-  "version": "1.0.0-development-20200220202020.commit-",
+  "version": "1.1.0-development-20200220202020.commit-",
   "author": "Memetaverse Contributors",
   "license": "Apache-2.0",
   "publishConfig": {

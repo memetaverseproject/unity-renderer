@@ -1837,7 +1837,7 @@ namespace DCL.Interface
             timeReportPayload.isPaused = isPaused;
             timeReportPayload.timeNormalizationFactor = timeNormalizationFactor;
             timeReportPayload.cycleTime = cycleTime;
-            SendMessage("ReportDecentralandTime", timeReportPayload);
+            SendMessage("ReportMemetaverseTime", timeReportPayload);
         }
 
         public static void GetFriendsWithDirectMessages(string userNameOrId, int limit, int skip)

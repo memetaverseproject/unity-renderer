@@ -157,7 +157,7 @@ async function createPackageJson() {
         name: '@mtvproject/explorer',
         main: 'index.js',
         typings: 'index.d.ts',
-        version: `1.0.${process.env.CIRCLE_BUILD_NUM || '0-development'}-${time}.commit-${shortCommitHash}`,
+        version: `1.1.${process.env.CIRCLE_BUILD_NUM || '0-development'}-${time}.commit-${shortCommitHash}`,
         tag: process.env.CIRCLE_TAG,
         commit: process.env.CIRCLE_SHA1,
         branch: process.env.CIRCLE_BRANCH,
