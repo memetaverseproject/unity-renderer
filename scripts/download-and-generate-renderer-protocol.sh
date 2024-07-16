@@ -24,10 +24,10 @@ install_proto()
 
 mkdir -p temp && cd temp
 PROTOC=$(install_proto)
-npm install @dcl/protocol@next
-npm install protoc-gen-dclunity@next
+npm install @mtvproject/protocol@latest
+npm install protoc-gen-dclunity@latest
 
-RENDERER_PROTOCOL_PATH=node_modules/@dcl/protocol/renderer-protocol/
+RENDERER_PROTOCOL_PATH=node_modules/@mtvproject/protocol/renderer-protocol/
 CODEGEN_PLUGIN_PATH=node_modules/protoc-gen-dclunity/dist/index.js
 OUTPUT_PATH=unity-renderer/Assets/Scripts/MainScripts/DCL/WorldRuntime/KernelCommunication/RPC/GeneratedCode/
 mkdir -p ${OUTPUT_PATH}

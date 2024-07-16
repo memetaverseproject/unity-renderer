@@ -3,7 +3,7 @@ import { getWorld, isInsideWorldLimits } from '@mtvproject/schemas'
 import { countParcelsCloseTo, ParcelArray } from 'shared/comms/interface/utils'
 import defaultLogger from 'lib/logger'
 
-import { gridToWorld } from 'lib/decentraland/parcels/gridToWorld'
+import { gridToWorld } from 'lib/memetaverse/parcels/gridToWorld'
 
 import { store } from 'shared/store/isolatedStore'
 import { getRealmAdapter } from 'shared/realm/selectors'

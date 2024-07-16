@@ -1,9 +1,8 @@
 /* eslint-disable @typescript-eslint/ban-types */
 import type { Vector3 } from 'lib/math/Vector3'
 import type { Vector2 } from 'lib/math/Vector2'
-import { SceneFeatureToggle } from 'lib/decentraland/sceneJson/types'
+import { SceneFeatureToggle } from 'lib/memetaverse/sceneJson/types'
 import { Entity } from '@mtvproject/schemas'
-import { MinimapSceneInfo } from '@dcl/legacy-ecs/dist/decentraland/Types'
 export type { WearableId, Wearable, WearableV2 } from './catalogs/types'
 
 export interface MessageDict {
@@ -428,11 +427,6 @@ export type SetAudioDevicesPayload = {
     label: string
     deviceId: string
   }[]
-}
-
-export type MiniMapSceneInfoPayload = {
-  isWorld: boolean
-  scenesInfo: MinimapSceneInfo[]
 }
 
 export enum ChatMessagePlayerType {

@@ -6,11 +6,11 @@ import type { ICommunicationsController } from 'shared/comms/sceneSubscriptions'
 
 import type { PeerInformation } from 'shared/comms/interface/types'
 
-import type { RpcServerPort } from '@dcl/rpc'
-import * as codegen from '@dcl/rpc/dist/codegen'
+import type { RpcServerPort } from '@mtvproject/rpc'
+import * as codegen from '@mtvproject/rpc/dist/codegen'
 import { sendParcelSceneCommsMessage } from 'shared/comms'
 import type { PortContext } from './context'
-import { CommunicationsControllerServiceDefinition } from 'shared/protocol/decentraland/kernel/apis/communications_controller.gen'
+import { CommunicationsControllerServiceDefinition } from 'shared/protocol/memetaverse/kernel/apis/communications_controller.gen'
 
 /**
  * MsgType utils to diff between old string messages, and new uint8Array messages.
@@ -34,7 +34,7 @@ function encodeMessage(data: Uint8Array, type: MsgType) {
 }
 
 /**
- * The CommunicationsControllerService connects messages from the comms controller with the scenes of Decentraland,
+ * The CommunicationsControllerService connects messages from the comms controller with the scenes of Memetaverse,
  * particularly the `AvatarScene` that hosts the avatars of other players.
  *
  * @param port connection to scene

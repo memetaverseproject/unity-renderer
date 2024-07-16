@@ -14,7 +14,7 @@ namespace DCLServices.EmotesCatalog
         [Serializable]
         public class OwnedEmotesRequestDto
         {
-            // https://decentraland.github.io/catalyst-api-specs/#tag/Lambdas/operation/getEmotes
+            // https://memetaverse.github.io/catalyst-api-specs/#tag/Lambdas/operation/getEmotes
 
             [Serializable]
             public class EmoteRequestDto

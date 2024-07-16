@@ -1,9 +1,9 @@
-import { executeTask } from '@dcl/legacy-ecs'
+import { executeTask } from '@mtvproject/ecs'
 
-declare let dcl: DecentralandInterface
+declare let mtv: MemetaverseInterface
 
 export async function execute(controller: string, method: string, args: Array<any>) {
   return executeTask(async () => {
-    return dcl.callRpc(controller, method, args)
+    return mtv.callRpc(controller, method, args)
   })
 }

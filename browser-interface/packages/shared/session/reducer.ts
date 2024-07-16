@@ -10,7 +10,7 @@ import {
   AuthenticateAction,
   ChangeLoginStateAction
 } from './actions'
-import { LoginState } from '@dcl/kernel-interface'
+import { LoginState } from '@mtvproject/kernel-interface'
 
 const INITIAL_STATE: SessionState = {
   identity: undefined,

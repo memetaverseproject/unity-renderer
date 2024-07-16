@@ -1,10 +1,10 @@
 import { apply, call, delay, fork, put, race, select, take, takeEvery, takeLatest } from 'redux-saga/effects'
 
-import * as rfc4 from 'shared/protocol/decentraland/kernel/comms/rfc4/comms.gen'
+import * as rfc4 from 'shared/protocol/memetaverse/kernel/comms/rfc4/comms.gen'
 import { IPFSv2 } from '@mtvproject/schemas'
 import type { Avatar, Snapshots } from '@mtvproject/schemas'
-import { genericAvatarSnapshots } from 'lib/decentraland/profiles/transformations/profileToRendererFormat'
-import { signedFetch } from 'lib/decentraland/authentication/signedFetch'
+import { genericAvatarSnapshots } from 'lib/memetaverse/profiles/transformations/profileToRendererFormat'
+import { signedFetch } from 'lib/memetaverse/authentication/signedFetch'
 import { deepEqual } from 'lib/javascript/deepEqual'
 import { isURL } from 'lib/javascript/isURL'
 import type { EventChannel } from 'redux-saga'
@@ -237,8 +237,8 @@ async function connectAdapter(connStr: string, identity: ExplorerIdentity): Prom
         identity,
         { method: 'POST', responseBodyType: 'json' },
         {
-          intent: 'dcl:explorer:comms-handshake',
-          signer: 'dcl:explorer',
+          intent: 'mtv:explorer:comms-handshake',
+          signer: 'mtv:explorer',
           isGuest: !identity.hasConnectedWeb3
         }
       )
@@ -246,7 +246,7 @@ async function connectAdapter(connStr: string, identity: ExplorerIdentity): Prom
       const response: SignedLoginResult = result.json
       if (!result.ok || typeof response !== 'object') {
         throw new Error(
-          'There was an error acquiring the communications connection. Decentraland will try to connect to another realm'
+          'There was an error acquiring the communications connection. Memetaverse will try to connect to another realm'
         )
       }
 

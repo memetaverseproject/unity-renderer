@@ -3,7 +3,7 @@ using System.Collections;
 using DCL.Helpers;
 using UnityEngine;
 using UnityEngine.Networking;
-using Decentraland.Sdk.Ecs6;
+using Memetaverse.Sdk.Ecs6;
 
 namespace DCL.Components
 {

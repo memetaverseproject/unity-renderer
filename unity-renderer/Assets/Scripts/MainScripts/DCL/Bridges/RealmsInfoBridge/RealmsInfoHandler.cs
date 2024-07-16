@@ -3,7 +3,7 @@ using System;
 using Variables.RealmsInfo;
 using System.Collections.Generic;
 using System.Linq;
-using Decentraland.Bff;
+using Memetaverse.Bff;
 using Google.Protobuf;
 
 namespace DCL

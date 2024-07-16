@@ -10,7 +10,7 @@ import {
   getTLD,
   ETHEREUM_NETWORK
 } from 'config'
-import { nameValidCharacterRegex, nameValidRegex } from 'lib/decentraland/profiles/names'
+import { nameValidCharacterRegex, nameValidRegex } from 'lib/memetaverse/profiles/names'
 import { getWorld } from '@mtvproject/schemas'
 import { store } from 'shared/store/isolatedStore'
 import { getSelectedNetwork } from 'shared/dao/selectors'

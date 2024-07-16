@@ -1,16 +1,16 @@
-import { Authenticator } from '@beland/crypto'
-import { getSignedHeaders, signedFetch } from 'lib/decentraland/authentication/signedFetch'
+import { Authenticator } from '@mtvproject/crypto'
+import { getSignedHeaders, signedFetch } from 'lib/memetaverse/authentication/signedFetch'
 import { ETHEREUM_NETWORK } from 'config'
 import { getSelectedNetwork } from 'shared/dao/selectors'
 import { store } from 'shared/store/isolatedStore'
 import { isGuestLogin } from 'shared/session/selectors'
 import { onLoginCompleted } from 'shared/session/onLoginCompleted'
 
-import type { RpcServerPort } from '@dcl/rpc'
+import type { RpcServerPort } from '@mtvproject/rpc'
 import type { PortContext } from './context'
-import * as codegen from '@dcl/rpc/dist/codegen'
+import * as codegen from '@mtvproject/rpc/dist/codegen'
 
-import { SignedFetchServiceDefinition } from 'shared/protocol/decentraland/kernel/apis/signed_fetch.gen'
+import { SignedFetchServiceDefinition } from 'shared/protocol/memetaverse/kernel/apis/signed_fetch.gen'
 import { getRealmAdapter } from 'shared/realm/selectors'
 import type { Realm } from 'shared/dao/types'
 
@@ -41,7 +41,7 @@ function getMetadata(ctx: Pick<PortContext, 'sceneData'>) {
     network,
     isGuest,
     realm: realm?.protocol === 'v2' || realm?.protocol === 'v1' ? compatibilityRealm : realm,
-    signer: 'decentraland-kernel-scene'
+    signer: 'memetaverse-kernel-scene'
   }
 
   return additionalMetadata

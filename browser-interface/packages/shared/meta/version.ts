@@ -5,7 +5,7 @@ export function injectVersions<T extends Record<string, any>>(versions: T): T & 
   const rolloutsInfo = (globalThis as any).ROLLOUTS || {}
 
   for (const component in rolloutsInfo) {
-    if (component === '_site' || component.startsWith('@dcl')) {
+    if (component === '_site' || component.startsWith('@mtvproject')) {
       if (rolloutsInfo[component] && rolloutsInfo[component].version) {
         versions[component as keyof T] = rolloutsInfo[component].version
       }

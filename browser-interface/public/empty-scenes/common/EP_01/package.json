@@ -1,8 +1,8 @@
 {
   "default": {
-    "name": "dcl-project",
+    "name": "mtv-project",
     "version": "1.0.0",
-    "description": "My new Decentraland project",
+    "description": "My new Memetaverse project",
     "scripts": {
       "start": "dcl start",
       "build": "build-ecs",

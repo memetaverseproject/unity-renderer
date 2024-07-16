@@ -4,7 +4,7 @@ using System.Linq;
 using Cysharp.Threading.Tasks;
 using DCL;
 using DCL.Helpers;
-using Decentraland.Bff;
+using Memetaverse.Bff;
 using System.Threading;
 using UnityEngine;
 using Variables.RealmsInfo;

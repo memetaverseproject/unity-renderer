@@ -2,7 +2,7 @@ using DCL.Controllers;
 using DCL.Models;
 using System.Collections;
 using UnityEngine;
-using Decentraland.Sdk.Ecs6;
+using Memetaverse.Sdk.Ecs6;
 
 namespace DCL.Components
 {

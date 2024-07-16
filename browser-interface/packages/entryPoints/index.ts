@@ -1,11 +1,11 @@
 import { ETHEREUM_NETWORK, HAS_INITIAL_POSITION_MARK, getSSOUrl } from 'config/index'
 import { WebSocketProvider } from 'eth-connect'
-import { IDecentralandKernel, IEthereumProvider, KernelOptions, KernelResult, LoginState } from '@dcl/kernel-interface'
+import { IMemetaverseKernel, IEthereumProvider, KernelOptions, KernelResult, LoginState } from '@mtvproject/kernel-interface'
 import * as SingleSignOn from '@dcl/single-sign-on-client'
 import { getFromPersistentStorage, setPersistentStorage } from 'lib/browser/persistentStorage'
-import { gridToWorld } from 'lib/decentraland/parcels/gridToWorld'
-import { parseParcelPosition } from 'lib/decentraland/parcels/parseParcelPosition'
-import { resolveBaseUrl } from 'lib/decentraland/url/resolveBaseUrl'
+import { gridToWorld } from 'lib/memetaverse/parcels/gridToWorld'
+import { parseParcelPosition } from 'lib/memetaverse/parcels/parseParcelPosition'
+import { resolveBaseUrl } from 'lib/memetaverse/url/resolveBaseUrl'
 import { storeCondition } from 'lib/redux/storeCondition'
 import { defaultLogger } from 'lib/logger'
 import { initShared } from 'shared'
@@ -28,10 +28,10 @@ import { loadWebsiteSystems } from './loadWebsiteSystems'
 import { isWebGLCompatible } from './validations'
 
 /**
- * `DecentralandKernel` needs to be global, it's how `exporer-website` calls the initialization
+ * `MemetaverseKernel` needs to be global, it's how `exporer-website` calls the initialization
  */
-declare const globalThis: { DecentralandKernel: IDecentralandKernel }
-globalThis.DecentralandKernel = {
+declare const globalThis: { MemetaverseKernel: IMemetaverseKernel }
+globalThis.MemetaverseKernel = {
   async initKernel(options: KernelOptions): Promise<KernelResult> {
     try {
       let sso = getSSOUrl()

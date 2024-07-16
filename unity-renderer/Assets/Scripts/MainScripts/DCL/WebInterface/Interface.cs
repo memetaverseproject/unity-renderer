@@ -15,7 +15,7 @@ using System.Runtime.InteropServices;
 namespace DCL.Interface
 {
     /**
-     * This class contains the outgoing interface of Decentraland.
+     * This class contains the outgoing interface of Memetaverse.
      * You must call those functions to interact with the WebInterface.
      *
      * The messages comming from the WebInterface instead, are reported directly to
@@ -1837,7 +1837,7 @@ namespace DCL.Interface
             timeReportPayload.isPaused = isPaused;
             timeReportPayload.timeNormalizationFactor = timeNormalizationFactor;
             timeReportPayload.cycleTime = cycleTime;
-            SendMessage("ReportDecentralandTime", timeReportPayload);
+            SendMessage("ReportMemetaverseTime", timeReportPayload);
         }
 
         public static void GetFriendsWithDirectMessages(string userNameOrId, int limit, int skip)

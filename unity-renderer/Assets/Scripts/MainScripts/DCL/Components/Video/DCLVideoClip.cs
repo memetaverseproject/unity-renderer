@@ -3,7 +3,7 @@ using System.Collections;
 using System.Linq;
 using DCL.Helpers;
 using DCL.Models;
-using Decentraland.Sdk.Ecs6;
+using Memetaverse.Sdk.Ecs6;
 
 namespace DCL.Components
 {

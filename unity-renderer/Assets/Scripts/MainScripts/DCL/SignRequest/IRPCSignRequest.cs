@@ -1,5 +1,5 @@
 using Cysharp.Threading.Tasks;
-using Decentraland.Renderer.KernelServices;
+using Memetaverse.Renderer.KernelServices;
 using System.Collections.Generic;
 using System.Threading;
 

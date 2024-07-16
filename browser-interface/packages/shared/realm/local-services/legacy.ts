@@ -1,4 +1,4 @@
-import { AboutResponse } from 'shared/protocol/decentraland/renderer/about.gen'
+import { AboutResponse } from 'shared/protocol/memetaverse/renderer/about.gen'
 import { LegacyServices } from '../types'
 
 export function legacyServices(baseUrl: string, about: AboutResponse): LegacyServices {

@@ -1,7 +1,7 @@
 {
-  "name": "com.decentraland.unity-renderer",
+  "name": "com.memetaverse.unity-renderer",
   "version": "1.0.0",
-  "displayName": "DCL Unity Renderer",
+  "displayName": "Memetaverse Unity Renderer",
   "description": "Memetaverse Unity Renderer Package",
   "unity": "2021.3",
   "unityRelease": "14f1",

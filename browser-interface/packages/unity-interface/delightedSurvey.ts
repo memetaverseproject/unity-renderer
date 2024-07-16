@@ -28,7 +28,7 @@ function delightedSurvey() {
   const profile = getCurrentUserProfile(store.getState())
   if (profile) {
     const payload = {
-      email: profile.userId + '@dcl.gg',
+      email: profile.userId + '@mtv.gg',
       name: profile.name || 'Guest',
       properties: {
         userId: profile.userId,

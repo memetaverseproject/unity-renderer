@@ -1,6 +1,6 @@
 using Cysharp.Threading.Tasks;
 using DCL.Helpers;
-using Decentraland.Quests;
+using Memetaverse.Quests;
 using Google.Protobuf.Collections;
 using Google.Protobuf.WellKnownTypes;
 using NSubstitute;

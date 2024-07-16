@@ -4,10 +4,10 @@ using DCL.Helpers;
 using DCL.UIElements.Structures;
 using Google.Protobuf.Collections;
 using JetBrains.Annotations;
-using Decentraland.Common;
+using Memetaverse.Common;
 using UnityEngine;
-using Quaternion = Decentraland.Common.Quaternion;
-using Vector3 = Decentraland.Common.Vector3;
+using Quaternion = Memetaverse.Common.Quaternion;
+using Vector3 = Memetaverse.Common.Vector3;
 
 namespace DCL.ECSComponents
 {

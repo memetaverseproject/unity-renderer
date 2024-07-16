@@ -119,7 +119,7 @@ namespace DCL.ECSComponents.Test
         private PBAvatarModifierArea CreateModel()
         {
             PBAvatarModifierArea model = new PBAvatarModifierArea();
-            model.Area = new Decentraland.Common.Vector3();
+            model.Area = new Memetaverse.Common.Vector3();
             model.Area.X = 2f;
             model.Area.Y = 2f;
             model.Area.Z = 2f;

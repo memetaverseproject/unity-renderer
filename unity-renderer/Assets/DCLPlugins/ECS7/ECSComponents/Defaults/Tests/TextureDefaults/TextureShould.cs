@@ -1,7 +1,7 @@
 
 using DCL.ECSComponents;
 using DCL.Helpers;
-using Decentraland.Common;
+using Memetaverse.Common;
 using NUnit.Framework;
 
 namespace Tests

@@ -1,4 +1,4 @@
-import { LoginState } from '@dcl/kernel-interface'
+import { LoginState } from '@mtvproject/kernel-interface'
 import { now } from 'lib/javascript/now'
 import { waitFor } from 'lib/redux'
 import { AnyAction } from 'redux'

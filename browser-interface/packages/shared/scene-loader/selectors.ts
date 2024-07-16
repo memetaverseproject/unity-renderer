@@ -1,4 +1,4 @@
-import { encodeParcelPosition } from 'lib/decentraland/parcels/encodeParcelPosition'
+import { encodeParcelPosition } from 'lib/memetaverse/parcels/encodeParcelPosition'
 import { RootSceneLoaderState } from './types'
 
 export const getSceneLoader = (state: RootSceneLoaderState) => state.sceneLoader.loader

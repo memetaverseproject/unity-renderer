@@ -52,8 +52,8 @@
 //                 Duration = 3000,
 //                 Move = new Move()
 //                 {
-//                     Start = new Decentraland.Common.Vector3() { X = 1f, Y = 1f, Z = 1f },
-//                     End = new Decentraland.Common.Vector3() { X = 5f, Y = 5f, Z = 5f }
+//                     Start = new Memetaverse.Common.Vector3() { X = 1f, Y = 1f, Z = 1f },
+//                     End = new Memetaverse.Common.Vector3() { X = 5f, Y = 5f, Z = 5f }
 //                 }
 //             };
 
@@ -74,8 +74,8 @@
 //                 Duration = 3000,
 //                 Move = new Move()
 //                 {
-//                     Start = new Decentraland.Common.Vector3() { X = 1f, Y = 1f, Z = 1f },
-//                     End = new Decentraland.Common.Vector3() { X = 5f, Y = 5f, Z = 5f }
+//                     Start = new Memetaverse.Common.Vector3() { X = 1f, Y = 1f, Z = 1f },
+//                     End = new Memetaverse.Common.Vector3() { X = 5f, Y = 5f, Z = 5f }
 //                 }
 //             };
 
@@ -98,8 +98,8 @@
 //                 Duration = 3000,
 //                 Rotate = new Rotate()
 //                 {
-//                     Start = new Decentraland.Common.Quaternion() { X = 1f, Y = 1f, Z = 1f, W = 1f },
-//                     End = new Decentraland.Common.Quaternion() { X = 5f, Y = 5f, Z = 5f, W = 5f }
+//                     Start = new Memetaverse.Common.Quaternion() { X = 1f, Y = 1f, Z = 1f, W = 1f },
+//                     End = new Memetaverse.Common.Quaternion() { X = 5f, Y = 5f, Z = 5f, W = 5f }
 //                 }
 //             };
 
@@ -122,8 +122,8 @@
 //                 Duration = 3000,
 //                 Scale = new Scale()
 //                 {
-//                     Start = new Decentraland.Common.Vector3() { X = 1f, Y = 1f, Z = 1f },
-//                     End = new Decentraland.Common.Vector3() { X = 5f, Y = 5f, Z = 5f }
+//                     Start = new Memetaverse.Common.Vector3() { X = 1f, Y = 1f, Z = 1f },
+//                     End = new Memetaverse.Common.Vector3() { X = 5f, Y = 5f, Z = 5f }
 //                 }
 //             };
 
@@ -153,8 +153,8 @@
 //                 Duration = 3000,
 //                 Move = new Move()
 //                 {
-//                     Start = new Decentraland.Common.Vector3() { X = startPosition.x, Y = startPosition.y, Z = startPosition.z },
-//                     End = new Decentraland.Common.Vector3() { X = endPosition.x, Y = endPosition.y, Z = endPosition.z }
+//                     Start = new Memetaverse.Common.Vector3() { X = startPosition.x, Y = startPosition.y, Z = startPosition.z },
+//                     End = new Memetaverse.Common.Vector3() { X = endPosition.x, Y = endPosition.y, Z = endPosition.z }
 //                 }
 //             };
 
@@ -192,14 +192,14 @@
 //                 Duration = 3000,
 //                 Rotate = new Rotate()
 //                 {
-//                     Start = new Decentraland.Common.Quaternion()
+//                     Start = new Memetaverse.Common.Quaternion()
 //                     {
 //                         X = startRotation.x,
 //                         Y = startRotation.y,
 //                         Z = startRotation.z,
 //                         W = startRotation.w
 //                     },
-//                     End = new Decentraland.Common.Quaternion()
+//                     End = new Memetaverse.Common.Quaternion()
 //                     {
 //                         X = endRotation.x,
 //                         Y = endRotation.y,
@@ -243,8 +243,8 @@
 //                 Duration = 3000,
 //                 Scale = new Scale()
 //                 {
-//                     Start = new Decentraland.Common.Vector3() { X = startScale.x, Y = startScale.y, Z = startScale.z },
-//                     End = new Decentraland.Common.Vector3() { X = endScale.x, Y = endScale.y, Z = endScale.z }
+//                     Start = new Memetaverse.Common.Vector3() { X = startScale.x, Y = startScale.y, Z = startScale.z },
+//                     End = new Memetaverse.Common.Vector3() { X = endScale.x, Y = endScale.y, Z = endScale.z }
 //                 }
 //             };
 
@@ -276,8 +276,8 @@
 //                 Duration = 3000,
 //                 Move = new Move()
 //                 {
-//                     Start = new Decentraland.Common.Vector3() { X = startPosition.x, Y = startPosition.y, Z = startPosition.z },
-//                     End = new Decentraland.Common.Vector3() { X = endPosition.x, Y = endPosition.y, Z = endPosition.z },
+//                     Start = new Memetaverse.Common.Vector3() { X = startPosition.x, Y = startPosition.y, Z = startPosition.z },
+//                     End = new Memetaverse.Common.Vector3() { X = endPosition.x, Y = endPosition.y, Z = endPosition.z },
 //                     FaceDirection = true
 //                 }
 //             };
@@ -307,8 +307,8 @@
 //                 Duration = 3000,
 //                 Move = new Move()
 //                 {
-//                     Start = new Decentraland.Common.Vector3() { X = startPosition1.x, Y = startPosition1.y, Z = startPosition1.z },
-//                     End = new Decentraland.Common.Vector3() { X = endPosition1.x, Y = endPosition1.y, Z = endPosition1.z }
+//                     Start = new Memetaverse.Common.Vector3() { X = startPosition1.x, Y = startPosition1.y, Z = startPosition1.z },
+//                     End = new Memetaverse.Common.Vector3() { X = endPosition1.x, Y = endPosition1.y, Z = endPosition1.z }
 //                 }
 //             };
 //             componentHandler.OnComponentModelUpdated(scene, entity, model1);
@@ -324,8 +324,8 @@
 //                 Duration = 1500,
 //                 Move = new Move()
 //                 {
-//                     Start = new Decentraland.Common.Vector3() { X = startPosition2.x, Y = startPosition2.y, Z = startPosition2.z },
-//                     End = new Decentraland.Common.Vector3() { X = endPosition2.x, Y = endPosition2.y, Z = endPosition2.z }
+//                     Start = new Memetaverse.Common.Vector3() { X = startPosition2.x, Y = startPosition2.y, Z = startPosition2.z },
+//                     End = new Memetaverse.Common.Vector3() { X = endPosition2.x, Y = endPosition2.y, Z = endPosition2.z }
 //                 }
 //             };
 //             componentHandler.OnComponentModelUpdated(scene, entity, model2);
@@ -362,8 +362,8 @@
 //                 Duration = 3000,
 //                 Scale = new Scale()
 //                 {
-//                     Start = new Decentraland.Common.Vector3() { X = startScale.x, Y = startScale.y, Z = startScale.z },
-//                     End = new Decentraland.Common.Vector3() { X = endScale.x, Y = endScale.y, Z = endScale.z }
+//                     Start = new Memetaverse.Common.Vector3() { X = startScale.x, Y = startScale.y, Z = startScale.z },
+//                     End = new Memetaverse.Common.Vector3() { X = endScale.x, Y = endScale.y, Z = endScale.z }
 //                 }
 //             };
 //             componentHandler.OnComponentModelUpdated(scene, entity, model);
@@ -386,8 +386,8 @@
 //                 Duration = 3000,
 //                 Move = new Move()
 //                 {
-//                     Start = new Decentraland.Common.Vector3() { X = startPosition.x, Y = startPosition.y, Z = startPosition.z },
-//                     End = new Decentraland.Common.Vector3() { X = endPosition.x, Y = endPosition.y, Z = endPosition.z }
+//                     Start = new Memetaverse.Common.Vector3() { X = startPosition.x, Y = startPosition.y, Z = startPosition.z },
+//                     End = new Memetaverse.Common.Vector3() { X = endPosition.x, Y = endPosition.y, Z = endPosition.z }
 //                 }
 //             };
 //             componentHandler.OnComponentModelUpdated(scene, entity, model);
@@ -425,8 +425,8 @@
 //                 Duration = 3000,
 //                 Scale = new Scale()
 //                 {
-//                     Start = new Decentraland.Common.Vector3() { X = startScale.x, Y = startScale.y, Z = startScale.z },
-//                     End = new Decentraland.Common.Vector3() { X = endScale.x, Y = endScale.y, Z = endScale.z }
+//                     Start = new Memetaverse.Common.Vector3() { X = startScale.x, Y = startScale.y, Z = startScale.z },
+//                     End = new Memetaverse.Common.Vector3() { X = endScale.x, Y = endScale.y, Z = endScale.z }
 //                 },
 //                 CurrentTime = initialTime
 //             };
@@ -449,8 +449,8 @@
 //                 Duration = 3000,
 //                 Scale = new Scale()
 //                 {
-//                     Start = new Decentraland.Common.Vector3() { X = startScale.x, Y = startScale.y, Z = startScale.z },
-//                     End = new Decentraland.Common.Vector3() { X = endScale.x, Y = endScale.y, Z = endScale.z }
+//                     Start = new Memetaverse.Common.Vector3() { X = startScale.x, Y = startScale.y, Z = startScale.z },
+//                     End = new Memetaverse.Common.Vector3() { X = endScale.x, Y = endScale.y, Z = endScale.z }
 //                 },
 //                 Playing = true
 //             };
@@ -479,8 +479,8 @@
 //                 Duration = duration,
 //                 Move = new Move()
 //                 {
-//                     Start = new Decentraland.Common.Vector3() { X = startPosition.x, Y = startPosition.y, Z = startPosition.z },
-//                     End = new Decentraland.Common.Vector3() { X = endPosition.x, Y = endPosition.y, Z = endPosition.z },
+//                     Start = new Memetaverse.Common.Vector3() { X = startPosition.x, Y = startPosition.y, Z = startPosition.z },
+//                     End = new Memetaverse.Common.Vector3() { X = endPosition.x, Y = endPosition.y, Z = endPosition.z },
 //                     FaceDirection = true
 //                 }
 //             };
@@ -498,8 +498,8 @@
 //                 Duration = duration,
 //                 Rotate = new Rotate()
 //                 {
-//                     Start = new Decentraland.Common.Quaternion() { X = 1f, Y = 1f, Z = 1f, W = 1f },
-//                     End = new Decentraland.Common.Quaternion() { X = 5f, Y = 5f, Z = 5f, W = 5f }
+//                     Start = new Memetaverse.Common.Quaternion() { X = 1f, Y = 1f, Z = 1f, W = 1f },
+//                     End = new Memetaverse.Common.Quaternion() { X = 5f, Y = 5f, Z = 5f, W = 5f }
 //                 }
 //             };
 //             componentHandler.OnComponentModelUpdated(scene, entity, model);

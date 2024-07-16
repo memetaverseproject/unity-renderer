@@ -4,7 +4,7 @@ import { GifAsset, ProcessorMessageData, WorkerMessage, WorkerMessageData } from
 declare const Worker: any
 
 // @see https://github.com/memetaverseproject/unity-renderer/blob/bc2bf1ee0d685132c85606055e592bac038b3471/unity-renderer/Assets/Plugins/JSFunctions.jslib#L11
-declare const DCL: { GL: any }
+declare const MTV: { GL: any }
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const gifProcessorWorkerRaw = require('../../static/gif-processor/worker.js.txt')
@@ -70,9 +70,9 @@ export class GIFProcessor {
       const GLctx = this.gameInstance.Module.ctx
       for (let i = 0; i < asset.textures.length; i++) {
         const textureIdx = asset.textures[i].name
-        const texture = DCL.GL.textures[textureIdx]
+        const texture = MTV.GL.textures[textureIdx]
         GLctx.deleteTexture(texture)
-        DCL.GL.textures[textureIdx] = null
+        MTV.GL.textures[textureIdx] = null
       }
     } else {
       const worker = asset.worker
@@ -91,13 +91,13 @@ export class GIFProcessor {
     const texture = GLctx.createTexture()
 
     if (!texture) {
-      DCL.GL.recordError(1282)
+      MTV.GL.recordError(1282)
       return
     }
 
-    const id = DCL.GL.getNewId(DCL.GL.textures)
+    const id = MTV.GL.getNewId(MTV.GL.textures)
     texture.name = id
-    DCL.GL.textures[id] = texture
+    MTV.GL.textures[id] = texture
 
     return texture
   }
@@ -108,7 +108,7 @@ export class GIFProcessor {
    *
    */
   UpdateGIFTex(image: any, texId: any) {
-    this.GLctx.bindTexture(this.GLctx.TEXTURE_2D, DCL.GL.textures[texId])
+    this.GLctx.bindTexture(this.GLctx.TEXTURE_2D, MTV.GL.textures[texId])
 
     if (this.isWebGL1) {
       this.GLctx.texImage2D(this.GLctx.TEXTURE_2D, 0, this.GLctx.RGBA, this.GLctx.RGBA, this.GLctx.UNSIGNED_BYTE, image)

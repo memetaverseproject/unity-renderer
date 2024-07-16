@@ -1,4 +1,4 @@
-import * as proto from 'shared/protocol/decentraland/kernel/comms/rfc4/comms.gen'
+import * as proto from 'shared/protocol/memetaverse/kernel/comms/rfc4/comms.gen'
 import { MAXIMUM_NETWORK_MSG_LENGTH } from 'config'
 import {
   ConnectionState,

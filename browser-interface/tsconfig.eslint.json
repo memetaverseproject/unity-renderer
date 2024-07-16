@@ -17,7 +17,7 @@
       "dom",
       "esnext.asynciterable"
     ],
-    "types": ["@dcl/posix"],
+    "types": ["@mtvproject/posix"],
     "typeRoots": ["./node_modules"]
   },
   "include": [

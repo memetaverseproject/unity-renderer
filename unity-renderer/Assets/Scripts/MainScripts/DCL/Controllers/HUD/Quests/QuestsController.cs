@@ -2,14 +2,14 @@ using Cysharp.Threading.Tasks;
 using DCL.Helpers;
 using DCL.Tasks;
 using DCLServices.QuestsService;
-using Decentraland.Quests;
+using Memetaverse.Quests;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using UnityEngine;
-using Action = Decentraland.Quests.Action;
-using Task = Decentraland.Quests.Task;
+using Action = Memetaverse.Quests.Action;
+using Task = Memetaverse.Quests.Task;
 
 namespace DCL.Quests
 {

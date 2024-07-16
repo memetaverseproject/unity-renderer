@@ -1,5 +1,5 @@
 using DCL;
-using Decentraland.Bff;
+using Memetaverse.Bff;
 using System.Collections.Generic;
 
 public class RealmPluginTestsUtils

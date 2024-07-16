@@ -72,8 +72,8 @@ async function getSessionWithSSOIdentity(sessions: StoredSession[]) {
  */
 export const getProvider = () => getProviderSelector(store.getState())
 
-const SESSION_KEY_PREFIX = 'dcl-session'
-const LAST_SESSION_KEY = 'dcl-last-session-id'
+const SESSION_KEY_PREFIX = 'mtv-session'
+const LAST_SESSION_KEY = 'mtv-last-session-id'
 
 function sessionKey(userId: string) {
   return `${SESSION_KEY_PREFIX}-${userId.toLocaleLowerCase()}`

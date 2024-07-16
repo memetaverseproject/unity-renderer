@@ -8,11 +8,11 @@ import {
 import { store } from 'shared/store/isolatedStore'
 import { removeScenePortableExperience } from 'shared/portableExperiences/actions'
 
-import type { RpcServerPort } from '@dcl/rpc'
+import type { RpcServerPort } from '@mtvproject/rpc'
 import type { PortContext } from './context'
-import * as codegen from '@dcl/rpc/dist/codegen'
+import * as codegen from '@mtvproject/rpc/dist/codegen'
 
-import { PortableExperiencesServiceDefinition } from 'shared/protocol/decentraland/kernel/apis/portable_experiences.gen'
+import { PortableExperiencesServiceDefinition } from 'shared/protocol/memetaverse/kernel/apis/portable_experiences.gen'
 import { isEns } from '../../realm/resolver'
 
 export function registerPortableExperiencesServiceServerImplementation(port: RpcServerPort<PortContext>) {

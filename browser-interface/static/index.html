@@ -92,7 +92,7 @@
     </style>
   </head>
 
-  <body class="dcl-loading">
+  <body class="mtv-loading">
     <div id="overlay"></div>
     <div id="gameContainer"></div>
     <audio autoplay id="voice-chat-audio"></audio>
@@ -125,9 +125,9 @@
       async function initKernel() {
         const container = document.getElementById('gameContainer')
 
-        const DecentralandKernel = globalThis.DecentralandKernel
+        const MemetaverseKernel = globalThis.MemetaverseKernel
 
-        if (!DecentralandKernel) throw new Error('MemetaverseKernel could not be loaded')
+        if (!MemetaverseKernel) throw new Error('MemetaverseKernel could not be loaded')
 
         const explorerBaseUrl = new URL('./', location.toString()).toString()
         let baseUrl = explorerBaseUrl
@@ -139,7 +139,7 @@
           baseUrl = `https://cdn.memetaverse.club/@beland/explorer/${qs.get('explorer-version')}`
         }
 
-        const kernel = await DecentralandKernel.initKernel({
+        const kernel = await MemetaverseKernel.initKernel({
           kernelOptions: {
             baseUrl: explorerBaseUrl
           },

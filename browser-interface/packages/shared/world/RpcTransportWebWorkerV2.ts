@@ -1,4 +1,4 @@
-import { Transport, TransportEvents } from '@dcl/rpc/dist/types'
+import { Transport, TransportEvents } from '@mtvproject/rpc/dist/types'
 import mitt from 'mitt'
 
 export interface IWorker {

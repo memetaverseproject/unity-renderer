@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System;
-using Decentraland.Bff;
+using Memetaverse.Bff;
 using Variables.RealmsInfo;
 
 namespace DCL

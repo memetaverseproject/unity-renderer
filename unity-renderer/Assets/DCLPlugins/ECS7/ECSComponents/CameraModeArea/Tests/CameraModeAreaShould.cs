@@ -127,7 +127,7 @@ namespace DCL.ECSComponents.Test
         private PBCameraModeArea CreateModel()
         {
             PBCameraModeArea model = new PBCameraModeArea();
-            model.Area = new Decentraland.Common.Vector3();
+            model.Area = new Memetaverse.Common.Vector3();
             model.Area.X = 2f;
             model.Area.Y = 2f;
             model.Area.Z = 2f;

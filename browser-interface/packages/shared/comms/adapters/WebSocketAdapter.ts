@@ -1,10 +1,10 @@
 import { future, IFuture } from 'fp-future'
 
-import * as rfc5 from 'shared/protocol/decentraland/kernel/comms/rfc5/ws_comms.gen'
+import * as rfc5 from 'shared/protocol/memetaverse/kernel/comms/rfc5/ws_comms.gen'
 import { Writer } from 'protobufjs/minimal'
 import { ILogger, createLogger } from 'lib/logger'
 import { ExplorerIdentity } from 'shared/session/types'
-import { Authenticator } from '@beland/crypto'
+import { Authenticator } from '@mtvproject/crypto'
 import mitt from 'mitt'
 import { CommsAdapterEvents, MinimumCommunicationsAdapter, SendHints } from './types'
 import { createOpusVoiceHandler } from './voice/opusVoiceHandler'

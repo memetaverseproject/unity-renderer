@@ -5,7 +5,7 @@ import { fetchCatalystNodesFromContract } from 'lib/web3/fetchCatalystNodesFromC
 import { CatalystNode } from 'lib/web3/fetchCatalystNodesFromContract'
 import { commsLogger } from 'shared/comms/logger'
 import { getDisabledCatalystConfig } from 'shared/meta/selectors'
-import { AboutResponse } from 'shared/protocol/decentraland/renderer/about.gen'
+import { AboutResponse } from 'shared/protocol/memetaverse/renderer/about.gen'
 import { setRealmAdapter } from 'shared/realm/actions'
 import {
   adapterForRealmConfig,
@@ -159,7 +159,7 @@ async function resolveOfflineRealmAboutFromConnectionString(
   realmString: string
 ): Promise<{ about: AboutResponse; baseUrl: string } | undefined> {
   if (realmString === OFFLINE_REALM || realmString.startsWith(OFFLINE_REALM + '?')) {
-    const params = new URL('decentraland:' + realmString).searchParams
+    const params = new URL('memetaverse:' + realmString).searchParams
     let baseUrl = urlWithProtocol(params.get('baseUrl') || 'https://testnet-peer.memetaverse.club')
 
     if (!baseUrl.endsWith('/')) baseUrl = baseUrl + '/'

@@ -5,7 +5,7 @@ using UnityEngine;
 using DCL.Models;
 using DCL.SettingsCommon;
 using AudioSettings = DCL.SettingsCommon.AudioSettings;
-using Decentraland.Sdk.Ecs6;
+using Memetaverse.Sdk.Ecs6;
 
 namespace DCL.Components
 {

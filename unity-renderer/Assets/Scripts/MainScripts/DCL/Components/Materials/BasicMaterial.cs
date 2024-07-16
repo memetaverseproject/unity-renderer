@@ -7,7 +7,7 @@ using System.Linq;
 using System.Threading;
 using UnityEngine;
 using UnityEngine.Rendering;
-using Decentraland.Sdk.Ecs6;
+using Memetaverse.Sdk.Ecs6;
 using System;
 using Object = UnityEngine.Object;
 

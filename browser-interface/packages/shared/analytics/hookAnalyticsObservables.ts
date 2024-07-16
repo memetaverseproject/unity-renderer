@@ -1,5 +1,5 @@
-import { encodeParcelPosition } from 'lib/decentraland/parcels/encodeParcelPosition'
-import { worldToGrid } from 'lib/decentraland/parcels/worldToGrid'
+import { encodeParcelPosition } from 'lib/memetaverse/parcels/encodeParcelPosition'
+import { worldToGrid } from 'lib/memetaverse/parcels/worldToGrid'
 import { trackEvent } from './trackEvent'
 import { positionObservable } from 'shared/world/positionThings'
 

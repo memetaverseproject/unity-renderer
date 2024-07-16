@@ -1,4 +1,4 @@
-import * as proto from 'shared/protocol/decentraland/kernel/comms/rfc4/comms.gen'
+import * as proto from 'shared/protocol/memetaverse/kernel/comms/rfc4/comms.gen'
 import { CommsEvents, RoomConnection } from '../interface'
 import mitt from 'mitt'
 import { AdapterMessageEvent, MinimumCommunicationsAdapter } from '../adapters/types'
@@ -36,26 +36,45 @@ export class Rfc4RoomConnection implements RoomConnection {
           ...p,
           index: this.positionIndex++
         }
-      }
+      },
+      protocolVersion: 0
     })
   }
   sendParcelSceneMessage(scene: proto.Scene): Promise<void> {
-    return this.sendMessage(false, { message: { $case: 'scene', scene } })
+    return this.sendMessage(false, {
+      message: { $case: 'scene', scene },
+      protocolVersion: 0
+    })
   }
   sendProfileMessage(profileVersion: proto.AnnounceProfileVersion): Promise<void> {
-    return this.sendMessage(false, { message: { $case: 'profileVersion', profileVersion } })
+    return this.sendMessage(false, {
+      message: { $case: 'profileVersion', profileVersion },
+      protocolVersion: 0
+    })
   }
   sendProfileRequest(profileRequest: proto.ProfileRequest): Promise<void> {
-    return this.sendMessage(false, { message: { $case: 'profileRequest', profileRequest } })
+    return this.sendMessage(false, {
+      message: { $case: 'profileRequest', profileRequest },
+      protocolVersion: 0
+    })
   }
   sendProfileResponse(profileResponse: proto.ProfileResponse): Promise<void> {
-    return this.sendMessage(false, { message: { $case: 'profileResponse', profileResponse } })
+    return this.sendMessage(false, {
+      message: { $case: 'profileResponse', profileResponse },
+      protocolVersion: 0
+    })
   }
   sendChatMessage(chat: proto.Chat): Promise<void> {
-    return this.sendMessage(true, { message: { $case: 'chat', chat } })
+    return this.sendMessage(true, {
+      message: { $case: 'chat', chat },
+      protocolVersion: 0
+    })
   }
   sendVoiceMessage(voice: proto.Voice): Promise<void> {
-    return this.sendMessage(false, { message: { $case: 'voice', voice } })
+    return this.sendMessage(false, {
+      message: { $case: 'voice', voice },
+      protocolVersion: 0
+    })
   }
 
   async disconnect() {

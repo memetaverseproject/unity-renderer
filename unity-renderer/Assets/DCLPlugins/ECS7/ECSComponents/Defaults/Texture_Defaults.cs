@@ -1,7 +1,7 @@
 using DCL.Controllers;
-using Decentraland.Common;
+using Memetaverse.Common;
 using UnityEngine;
-using Texture = Decentraland.Common.Texture;
+using Texture = Memetaverse.Common.Texture;
 using TextureWrapMode = UnityEngine.TextureWrapMode;
 
 namespace DCL.ECSComponents
@@ -79,17 +79,17 @@ namespace DCL.ECSComponents
 
         public static TextureWrapMode GetWrapMode(this Texture self)
         {
-            return (TextureWrapMode)(self.HasWrapMode ? self.WrapMode : Decentraland.Common.TextureWrapMode.TwmClamp);
+            return (TextureWrapMode)(self.HasWrapMode ? self.WrapMode : Memetaverse.Common.TextureWrapMode.TwmClamp);
         }
 
         public static TextureWrapMode GetWrapMode(this AvatarTexture self)
         {
-            return (TextureWrapMode)(self.HasWrapMode ? self.WrapMode : Decentraland.Common.TextureWrapMode.TwmClamp);
+            return (TextureWrapMode)(self.HasWrapMode ? self.WrapMode : Memetaverse.Common.TextureWrapMode.TwmClamp);
         }
 
         public static TextureWrapMode GetWrapMode(this VideoTexture self)
         {
-            return (TextureWrapMode)(self.HasWrapMode ? self.WrapMode : Decentraland.Common.TextureWrapMode.TwmClamp);
+            return (TextureWrapMode)(self.HasWrapMode ? self.WrapMode : Memetaverse.Common.TextureWrapMode.TwmClamp);
         }
 
         public static FilterMode GetFilterMode(this Texture self)

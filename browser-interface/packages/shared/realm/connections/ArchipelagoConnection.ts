@@ -1,16 +1,16 @@
 import { ILogger, createLogger } from 'lib/logger'
-import { Authenticator } from '@beland/crypto'
+import { Authenticator } from '@mtvproject/crypto'
 import { future } from 'fp-future'
 import { Writer } from 'protobufjs/minimal'
 import { ExplorerIdentity } from 'shared/session/types'
 import { RealmConnectionEvents, IRealmAdapter, LegacyServices } from '../types'
 import mitt from 'mitt'
 import { legacyServices } from '../local-services/legacy'
-import { ClientPacket, ServerPacket } from 'shared/protocol/decentraland/kernel/comms/v3/archipelago.gen'
+import { ClientPacket, ServerPacket } from 'shared/protocol/memetaverse/kernel/comms/v3/archipelago.gen'
 import { wsAsAsyncChannel } from '../../comms/logic/ws-async-channel'
 import { Vector3 } from 'lib/math/Vector3'
 import { BringDownClientAndShowError } from 'shared/loading/ReportFatalError'
-import { AboutResponse } from 'shared/protocol/decentraland/renderer/about.gen'
+import { AboutResponse } from 'shared/protocol/memetaverse/renderer/about.gen'
 
 // shared writer to leverage pools
 const writer = new Writer()

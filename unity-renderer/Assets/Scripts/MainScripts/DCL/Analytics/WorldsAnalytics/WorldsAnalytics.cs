@@ -2,7 +2,7 @@ using DCL;
 using DCLPlugins.RealmPlugin;
 using System.Collections.Generic;
 using UnityEngine;
-using static Decentraland.Bff.AboutResponse.Types;
+using static Memetaverse.Bff.AboutResponse.Types;
 
 namespace WorldsFeaturesAnalytics
 {

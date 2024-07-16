@@ -1,5 +1,5 @@
 import { Avatar } from '@mtvproject/schemas'
-import { createFakeName } from 'lib/decentraland/profiles/names/fakeName'
+import { createFakeName } from 'lib/memetaverse/profiles/names/fakeName'
 import { deepEqual } from 'lib/javascript/deepEqual'
 import defaultLogger from 'lib/logger'
 import { apply, call, put, select } from 'redux-saga/effects'

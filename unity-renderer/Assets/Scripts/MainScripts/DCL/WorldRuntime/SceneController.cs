@@ -191,7 +191,7 @@ namespace DCL
                     }
                     case MessagingTypes.PB_SHARED_COMPONENT_UPDATE:
                     {
-                        if (msgPayload is Decentraland.Sdk.Ecs6.ComponentUpdatedBody payload)
+                        if (msgPayload is Memetaverse.Sdk.Ecs6.ComponentUpdatedBody payload)
                         {
                             if (payload.ComponentData != null) { delayedComponent = scene.componentsManagerLegacy.SceneSharedComponentUpdate(payload.Id, payload.ComponentData) as IDelayedComponent; }
                         }
@@ -200,7 +200,7 @@ namespace DCL
                     }
                     case MessagingTypes.PB_ENTITY_COMPONENT_CREATE_OR_UPDATE:
                     {
-                        if (msgPayload is Decentraland.Sdk.Ecs6.UpdateEntityComponentBody payload)
+                        if (msgPayload is Memetaverse.Sdk.Ecs6.UpdateEntityComponentBody payload)
                         {
                             if (payload.ComponentData != null)
                             {

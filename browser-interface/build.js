@@ -108,9 +108,9 @@ async function buildRendererProtocol() {
     fse.removeSync('packages/shared/protocol/')
     fse.mkdirSync('packages/shared/protocol/')
 
-    // Merge renderer-protocol to @dcl/protocol into a single folder
-    // `dereference: true` to avoid error when `@dcl/protocol` is linked
-    fse.copySync('./node_modules/@dcl/protocol', './protocol-temp/', { overwrite: false, dereference: true })
+    // Merge renderer-protocol to @mtvproject/protocol into a single folder
+    // `dereference: true` to avoid error when `@mtvproject/protocol` is linked
+    fse.copySync('./node_modules/@mtvproject/protocol', './protocol-temp/', { overwrite: false, dereference: true })
     fse.copySync('../renderer-protocol/', './protocol-temp/', { overwrite: false })
 
     // Generate the protocol files
@@ -157,7 +157,7 @@ async function createPackageJson() {
         name: '@mtvproject/explorer',
         main: 'index.js',
         typings: 'index.d.ts',
-        version: `1.0.${process.env.CIRCLE_BUILD_NUM || '0-development'}-${time}.commit-${shortCommitHash}`,
+        version: `1.1.${process.env.CIRCLE_BUILD_NUM || '0-development'}-${time}.commit-${shortCommitHash}`,
         tag: process.env.CIRCLE_TAG,
         commit: process.env.CIRCLE_SHA1,
         branch: process.env.CIRCLE_BRANCH,
@@ -239,7 +239,7 @@ async function compileJs() {
       'packages/voice-chat-codec/audioWorkletProcessors.ts',
       'static/voice-chat-codec/audioWorkletProcessors.js.txt'
     )
-    createWorker('packages/ui/decentraland-ui.scene.ts', 'static/systems/decentraland-ui.scene.js.txt')
+    createWorker('packages/ui/memetaverse-ui.scene.ts', 'static/systems/memetaverse-ui.scene.js.txt')
   }
 
   if (!process.env.ESSENTIALS_ONLY) {

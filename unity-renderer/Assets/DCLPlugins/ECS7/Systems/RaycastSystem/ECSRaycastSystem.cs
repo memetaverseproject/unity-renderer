@@ -13,7 +13,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Ray = UnityEngine.Ray;
 using RaycastHit = DCL.ECSComponents.RaycastHit;
-using Vector3 = Decentraland.Common.Vector3;
+using Vector3 = Memetaverse.Common.Vector3;
 
 namespace ECSSystems.ECSRaycastSystem
 {

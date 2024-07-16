@@ -1,6 +1,6 @@
 using DCL;
 using DCL.Models;
-using Decentraland.Renderer.RendererServices;
+using Memetaverse.Renderer.RendererServices;
 using MainScripts.DCL.Components;
 using System;
 using System.Collections.Concurrent;

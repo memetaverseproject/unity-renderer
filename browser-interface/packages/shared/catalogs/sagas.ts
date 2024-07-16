@@ -12,7 +12,7 @@ import {
   WITH_FIXED_ITEMS
 } from 'config'
 
-import { authorizeBuilderHeaders } from 'lib/decentraland/authentication/authorizeBuilderHeaders'
+import { authorizeBuilderHeaders } from 'lib/memetaverse/authentication/authorizeBuilderHeaders'
 import defaultLogger from 'lib/logger'
 import {
   EmotesRequest,

@@ -1,16 +1,16 @@
 import {
   FriendRequestInfo,
   FriendshipErrorCode
-} from 'shared/protocol/decentraland/renderer/common/friend_request_common.gen'
+} from 'shared/protocol/memetaverse/renderer/common/friend_request_common.gen'
 import {
   FriendshipStatus,
   GetFriendshipStatusRequest
-} from 'shared/protocol/decentraland/renderer/kernel_services/friends_kernel.gen'
+} from 'shared/protocol/memetaverse/renderer/kernel_services/friends_kernel.gen'
 import {
   CancelFriendRequestPayload,
   GetFriendRequestsReplyOk,
   SendFriendRequestPayload
-} from 'shared/protocol/decentraland/renderer/kernel_services/friend_request_kernel.gen'
+} from 'shared/protocol/memetaverse/renderer/kernel_services/friend_request_kernel.gen'
 import {
   Conversation,
   ConversationType,
@@ -20,8 +20,8 @@ import {
   SocialAPI,
   TextMessage
 } from 'dcl-social-client'
-import { profileToRendererFormat } from 'lib/decentraland/profiles/transformations/profileToRendererFormat'
-import { AddUserProfilesToCatalogPayload } from 'lib/decentraland/profiles/transformations/types'
+import { profileToRendererFormat } from 'lib/memetaverse/profiles/transformations/profileToRendererFormat'
+import { AddUserProfilesToCatalogPayload } from 'lib/memetaverse/profiles/transformations/types'
 import { StoreEnhancer } from 'redux'
 import { expectSaga } from 'redux-saga-test-plan'
 import { select } from 'redux-saga/effects'
@@ -48,7 +48,7 @@ import {
 } from 'shared/types'
 import sinon, { assert } from 'sinon'
 import { getUnityInstance, setUnityInstance } from 'unity-interface/IUnityInterface'
-import { GetMutualFriendsRequest } from 'shared/protocol/decentraland/renderer/kernel_services/mutual_friends_kernel.gen'
+import { GetMutualFriendsRequest } from 'shared/protocol/memetaverse/renderer/kernel_services/mutual_friends_kernel.gen'
 
 function getMockedAvatar(userId: string, name: string): ProfileUserInfo {
   return {

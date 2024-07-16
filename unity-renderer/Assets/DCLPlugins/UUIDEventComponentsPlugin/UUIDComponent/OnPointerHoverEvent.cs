@@ -4,7 +4,7 @@ using DCL.Controllers;
 using DCL.Helpers;
 using DCL.Models;
 using DCLPlugins.UUIDEventComponentsPlugin.UUIDComponent.Interfaces;
-using Decentraland.Sdk.Ecs6;
+using Memetaverse.Sdk.Ecs6;
 
 namespace DCL.Components
 {

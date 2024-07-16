@@ -12,7 +12,7 @@ const generatedFiles = {
 }
 
 export type LoadRendererResult = {
-  createWebRenderer(canvas: HTMLCanvasElement): Promise<DecentralandRendererInstance>
+  createWebRenderer(canvas: HTMLCanvasElement): Promise<MemetaverseRendererInstance>
 }
 
 // the following function is defined by unity, accessible via unity.loader.js
@@ -55,7 +55,7 @@ export type RendererOptions = {
   dontCheckMobile?: boolean
 }
 
-export type DecentralandRendererInstance = {
+export type MemetaverseRendererInstance = {
   /**
    * Signal sent by unity after it started correctly
    * it is a promise, that makes it awaitable.
@@ -93,7 +93,7 @@ function extractSemver(url: string): string | null {
   return null
 }
 
-async function initializeWebRenderer(options: RendererOptions): Promise<DecentralandRendererInstance> {
+async function initializeWebRenderer(options: RendererOptions): Promise<MemetaverseRendererInstance> {
   const explorerVersion = options.versionQueryParam
   const { canvas, baseUrl, onProgress, onSuccess, onError, onMessageLegacy, onBinaryMessage } = options
   const resolveWithBaseUrl = (file: string) =>

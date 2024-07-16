@@ -1,5 +1,5 @@
-import * as rfc4 from 'shared/protocol/decentraland/kernel/comms/rfc4/comms.gen'
-import { parcelSize } from 'lib/decentraland/parcels/limits'
+import * as rfc4 from 'shared/protocol/memetaverse/kernel/comms/rfc4/comms.gen'
+import { parcelSize } from 'lib/memetaverse/parcels/limits'
 
 export const MORDOR_POSITION_RFC4: rfc4.Position = {
   positionX: 1000 * parcelSize,

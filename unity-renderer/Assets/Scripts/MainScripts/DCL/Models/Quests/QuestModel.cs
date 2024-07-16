@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 using DCL.Helpers;
-using Decentraland.Sdk.Ecs6;
+using Memetaverse.Sdk.Ecs6;
 
 public static class QuestsLiterals
 {

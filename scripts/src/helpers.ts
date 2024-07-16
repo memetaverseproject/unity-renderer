@@ -10,13 +10,13 @@ export const nodeModulesPath = path.resolve(__dirname, '../node_modules/')
 export const protocPath = path.resolve(nodeModulesPath, '.bin/protoc')
 export const protocolPath = path.resolve(
   nodeModulesPath,
-  '@dcl/protocol',
+  '@mtvproject/protocol',
   'proto',
 )
 
 export const protocolOutputPath = path.resolve(
   __dirname,
-  '../../unity-renderer/Assets/Scripts/MainScripts/DCL/DecentralandProtocol/',
+  '../../unity-renderer/Assets/Scripts/MainScripts/DCL/MemetaverseProtocol/',
 )
 
 export function normalizePath(path: string) {

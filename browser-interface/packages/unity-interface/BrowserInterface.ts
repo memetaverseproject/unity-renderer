@@ -1,6 +1,6 @@
 import { EcsMathReadOnlyQuaternion, EcsMathReadOnlyVector3 } from '@dcl/ecs-math'
 
-import { Authenticator } from '@beland/crypto'
+import { Authenticator } from '@mtvproject/crypto'
 import { Avatar, generateLazyValidator, JSONSchema, Outfits, WearableCategory } from '@mtvproject/schemas'
 import {
   DEBUG,
@@ -12,13 +12,13 @@ import {
 } from 'config'
 import { isAddress } from 'eth-connect'
 import future, { IFuture } from 'fp-future'
-import { getSignedHeaders } from 'lib/decentraland/authentication/signedFetch'
+import { getSignedHeaders } from 'lib/memetaverse/authentication/signedFetch'
 import { arrayCleanup } from 'lib/javascript/arrayCleanup'
 import { now } from 'lib/javascript/now'
 import { defaultLogger } from 'lib/logger'
 import { fetchENSOwner } from 'lib/web3/fetchENSOwner'
 import { trackEvent } from 'shared/analytics/trackEvent'
-import { setDecentralandTime } from 'shared/apis/host/EnvironmentAPI'
+import { setMemetaverseTime } from 'shared/apis/host/EnvironmentAPI'
 import { reportScenesAroundParcel, reportScenesWorldContext, setHomeScene } from 'shared/atlas/actions'
 import { emotesRequest, wearablesRequest } from 'shared/catalogs/actions'
 import { EmotesRequestFilters, WearablesRequestFilters } from 'shared/catalogs/types'
@@ -353,7 +353,7 @@ export class BrowserInterface {
       ;(this as any)[type](message)
     } else {
       if (DEBUG) {
-        defaultLogger.info(`Unknown message (did you forget to add ${type} to unity-interface/dcl.ts?)`, message)
+        defaultLogger.info(`Unknown message (did you forget to add ${type} to unity-interface/mtv.ts?)`, message)
       }
     }
   }
@@ -809,12 +809,12 @@ export class BrowserInterface {
   public ReportScene(data: { sceneId: string; sceneNumber: number }) {
     const sceneId = data.sceneId ?? getSceneWorkerBySceneNumber(data.sceneNumber)?.rpcContext.sceneData.id
 
-    this.OpenWebURL({ url: `https://dcl.gg/report-user-or-scene?scene_or_name=${sceneId}` })
+    this.OpenWebURL({ url: `https://mtv.gg/report-user-or-scene?scene_or_name=${sceneId}` })
   }
 
   public ReportPlayer(data: { userId: string }) {
     this.OpenWebURL({
-      url: `https://dcl.gg/report-user-or-scene?scene_or_name=${data.userId}`
+      url: `https://mtv.gg/report-user-or-scene?scene_or_name=${data.userId}`
     })
   }
 
@@ -1266,8 +1266,8 @@ export class BrowserInterface {
     setRendererAvatarState(data)
   }
 
-  public ReportDecentralandTime(data: any) {
-    setDecentralandTime(data)
+  public ReportMemetaverseTime(data: any) {
+    setMemetaverseTime(data)
   }
 
   public ReportLog(data: { type: string; message: string }) {

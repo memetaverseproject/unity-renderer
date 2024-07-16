@@ -7,7 +7,7 @@ using DCL.Models;
 using DCLPlugins.UUIDEventComponentsPlugin.UUIDComponent.Interfaces;
 using UnityEngine;
 using Ray = UnityEngine.Ray;
-using Decentraland.Sdk.Ecs6;
+using Memetaverse.Sdk.Ecs6;
 
 namespace DCL.Components
 {

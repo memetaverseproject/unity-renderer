@@ -2,7 +2,7 @@ import { expect } from 'chai'
 import { pickWorldSpawnpoint } from 'shared/world/positionThings'
 import { isInsideWorldLimits, Scene } from '@mtvproject/schemas'
 import { Vector3 } from '@dcl/ecs-math'
-import { parcelSize } from 'lib/decentraland'
+import { parcelSize } from 'lib/memetaverse'
 
 describe('pickWorldSpawnPoint unit tests', function () {
   it('picks a spawn point from the defined ones when no default', () => {

@@ -5,7 +5,7 @@ using DCL.Components;
 using DCL.Helpers;
 using DCL.Models;
 using UnityEngine;
-using Decentraland.Sdk.Ecs6;
+using Memetaverse.Sdk.Ecs6;
 
 public class UUIDEventsPlugin : IPlugin
 {
@@ -41,7 +41,7 @@ public class UUIDEventsPlugin : IPlugin
         OnPointerEvent.Model model = new OnPointerEvent.Model();
         if (data is string json)
             model = (OnPointerEvent.Model)model.GetDataFromJSON(json);
-        else if (data is Decentraland.Sdk.Ecs6.ComponentBodyPayload payload)
+        else if (data is Memetaverse.Sdk.Ecs6.ComponentBodyPayload payload)
             model = (OnPointerEvent.Model)model.GetDataFromPb(payload);
             
         classId = (int) model.GetClassIdFromType();

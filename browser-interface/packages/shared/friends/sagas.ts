@@ -1,13 +1,13 @@
-import type { AuthChain } from '@beland/crypto'
-import { Authenticator } from '@beland/crypto'
+import type { AuthChain } from '@mtvproject/crypto'
+import { Authenticator } from '@mtvproject/crypto'
 import {
   FriendRequestInfo,
   FriendshipErrorCode
-} from 'shared/protocol/decentraland/renderer/common/friend_request_common.gen'
+} from 'shared/protocol/memetaverse/renderer/common/friend_request_common.gen'
 import {
   FriendshipStatus,
   GetFriendshipStatusRequest
-} from 'shared/protocol/decentraland/renderer/kernel_services/friends_kernel.gen'
+} from 'shared/protocol/memetaverse/renderer/kernel_services/friends_kernel.gen'
 import {
   AcceptFriendRequestPayload,
   AcceptFriendRequestReplyOk,
@@ -18,9 +18,9 @@ import {
   RejectFriendRequestReplyOk,
   SendFriendRequestPayload,
   SendFriendRequestReplyOk
-} from 'shared/protocol/decentraland/renderer/kernel_services/friend_request_kernel.gen'
-import { GetMutualFriendsRequest } from 'shared/protocol/decentraland/renderer/kernel_services/mutual_friends_kernel.gen'
-import { ReceiveFriendRequestPayload } from 'shared/protocol/decentraland/renderer/renderer_services/friend_request_renderer.gen'
+} from 'shared/protocol/memetaverse/renderer/kernel_services/friend_request_kernel.gen'
+import { GetMutualFriendsRequest } from 'shared/protocol/memetaverse/renderer/kernel_services/mutual_friends_kernel.gen'
+import { ReceiveFriendRequestPayload } from 'shared/protocol/memetaverse/renderer/renderer_services/friend_request_renderer.gen'
 import { Avatar, EthAddress } from '@mtvproject/schemas'
 import { CHANNEL_TO_JOIN_CONFIG_URL, DEBUG_KERNEL_LOG, ethereumConfigurations } from 'config'
 import {
@@ -39,12 +39,12 @@ import {
 } from 'dcl-social-client'
 import { isAddress } from 'eth-connect/eth-connect'
 import future from 'fp-future'
-import { calculateDisplayName } from 'lib/decentraland/profiles/transformations/processServerProfile'
+import { calculateDisplayName } from 'lib/memetaverse/profiles/transformations/processServerProfile'
 import {
   defaultProfile,
   profileToRendererFormat
-} from 'lib/decentraland/profiles/transformations/profileToRendererFormat'
-import { NewProfileForRenderer } from 'lib/decentraland/profiles/transformations/types'
+} from 'lib/memetaverse/profiles/transformations/profileToRendererFormat'
+import { NewProfileForRenderer } from 'lib/memetaverse/profiles/transformations/types'
 import { deepEqual } from 'lib/javascript/deepEqual'
 import { now } from 'lib/javascript/now'
 import { uuid } from 'lib/javascript/uuid'

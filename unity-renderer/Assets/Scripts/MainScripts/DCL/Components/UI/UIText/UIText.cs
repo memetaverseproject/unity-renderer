@@ -4,7 +4,7 @@ using DCL.Models;
 using System.Collections;
 using TMPro;
 using UnityEngine;
-using Decentraland.Sdk.Ecs6;
+using Memetaverse.Sdk.Ecs6;
 using MainScripts.DCL.Components;
 
 namespace DCL.Components

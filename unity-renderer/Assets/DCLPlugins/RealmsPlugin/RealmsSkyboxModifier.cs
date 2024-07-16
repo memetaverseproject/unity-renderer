@@ -1,7 +1,7 @@
 ﻿using DCL;
 using DCL.SettingsCommon;
 using DCLPlugins.RealmPlugin;
-using static Decentraland.Bff.AboutResponse.Types;
+using static Memetaverse.Bff.AboutResponse.Types;
 
 namespace DCLPlugins.RealmsPlugin
 {

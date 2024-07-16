@@ -1,4 +1,4 @@
-﻿using Decentraland.Common;
+﻿using Memetaverse.Common;
 
 namespace DCL.ECSComponents
 {

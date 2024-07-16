@@ -9,7 +9,7 @@ using DCL.Interface;
 using DCL.SettingsCommon;
 using UnityEngine.Assertions;
 using AudioSettings = DCL.SettingsCommon.AudioSettings;
-using Decentraland.Sdk.Ecs6;
+using Memetaverse.Sdk.Ecs6;
 
 namespace DCL.Components
 {

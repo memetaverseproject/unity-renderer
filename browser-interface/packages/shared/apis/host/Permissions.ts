@@ -1,12 +1,12 @@
-import * as codegen from '@dcl/rpc/dist/codegen'
-import type { RpcServerPort } from '@dcl/rpc/dist/types'
+import * as codegen from '@mtvproject/rpc/dist/codegen'
+import type { RpcServerPort } from '@mtvproject/rpc/dist/types'
 import type { Scene } from '@mtvproject/schemas'
 import {
   PermissionsServiceDefinition,
   permissionItemFromJSON,
   permissionItemToJSON
-} from 'shared/protocol/decentraland/kernel/apis/permissions.gen'
-import { PermissionItem } from 'shared/protocol/decentraland/kernel/apis/permissions.gen'
+} from 'shared/protocol/memetaverse/kernel/apis/permissions.gen'
+import { PermissionItem } from 'shared/protocol/memetaverse/kernel/apis/permissions.gen'
 import type { PortContext } from './context'
 
 export const defaultParcelPermissions: PermissionItem[] = [

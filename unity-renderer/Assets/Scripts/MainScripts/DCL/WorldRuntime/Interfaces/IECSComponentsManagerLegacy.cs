@@ -41,7 +41,7 @@ namespace DCL
         void SceneSharedComponentDispose(string id);
         ISharedComponent SceneSharedComponentUpdate(string id, BaseModel model);
         ISharedComponent SceneSharedComponentUpdate(string id, string json);
-        ISharedComponent SceneSharedComponentUpdate(string id, Decentraland.Sdk.Ecs6.ComponentBodyPayload payload);
+        ISharedComponent SceneSharedComponentUpdate(string id, Memetaverse.Sdk.Ecs6.ComponentBodyPayload payload);
         void EntityComponentRemove(long entityId, string name);
         void DisposeAllSceneComponents();
     }

@@ -1,9 +1,9 @@
 import {
   GetMutualFriendsResponse,
   MutualFriendsKernelServiceDefinition
-} from 'shared/protocol/decentraland/renderer/kernel_services/mutual_friends_kernel.gen'
-import * as codegen from '@dcl/rpc/dist/codegen'
-import { RpcServerPort } from '@dcl/rpc/dist/types'
+} from 'shared/protocol/memetaverse/renderer/kernel_services/mutual_friends_kernel.gen'
+import * as codegen from '@mtvproject/rpc/dist/codegen'
+import { RpcServerPort } from '@mtvproject/rpc/dist/types'
 import { getMutualFriends } from 'shared/friends/sagas'
 import { RendererProtocolContext } from '../context'
 

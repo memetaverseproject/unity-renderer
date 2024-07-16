@@ -1,5 +1,5 @@
 import type { Avatar } from '@mtvproject/schemas'
-import { isSceneFeatureToggleEnabled } from 'lib/decentraland/sceneJson/isSceneFeatureToggleEnabled'
+import { isSceneFeatureToggleEnabled } from 'lib/memetaverse/sceneJson/isSceneFeatureToggleEnabled'
 import { isFriend } from 'shared/friends/selectors'
 import type { RootFriendsState } from 'shared/friends/types'
 import { getBannedUsers } from 'shared/meta/selectors'

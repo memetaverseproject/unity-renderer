@@ -1,4 +1,4 @@
-import { createRpcServer, RpcServerPort, Transport } from '@dcl/rpc'
+import { createRpcServer, RpcServerPort, Transport } from '@mtvproject/rpc'
 import { RendererProtocolContext } from './context'
 import { registerEmotesKernelService } from './services/emotesService'
 import { registerAnalyticsKernelService } from './services/analyticsService'

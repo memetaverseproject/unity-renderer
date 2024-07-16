@@ -90,7 +90,7 @@ export function logTrace(type: string, payload: string | number | undefined, dir
 export function endTrace() {
   pendingMessagesInTrace = 0
   const content = currentTrace.join('\n')
-  const file = new File([content], 'decentraland-trace.csv', { type: 'text/csv' })
+  const file = new File([content], 'memetaverse-trace.csv', { type: 'text/csv' })
   const exportUrl = URL.createObjectURL(file)
   defaultLogger.log('[TRACING] Ending trace, downloading file: ', exportUrl, ' check your downloads folder.')
   window.location.assign(exportUrl)

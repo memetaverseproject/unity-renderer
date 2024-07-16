@@ -1,4 +1,4 @@
-import * as contractInfo from '@beland/urn-resolver/dist/contracts'
+import * as contractInfo from '@mtvproject/urn-resolver/dist/contracts'
 import { getFeatureFlagEnabled } from 'shared/meta/selectors'
 import { now } from 'lib/javascript/now'
 import { isURL } from 'lib/javascript/isURL'
@@ -187,7 +187,7 @@ export function getServerConfigurations(network: ETHEREUM_NETWORK) {
   const metaConfigBaseUrl = META_CONFIG_URL || `https://${tld}config.memetaverse.club/explorer.json`
 
   const questsUrl =
-    ensureSingleString(qs.get('QUESTS_SERVER_URL')) ?? `https://${tld}quests-api.decentraland.memetaverse.club`
+    ensureSingleString(qs.get('QUESTS_SERVER_URL')) ?? `https://${tld}quests-api.memetaverse.club`
 
   return {
     explorerConfiguration: `${metaConfigBaseUrl}?t=${now()}`,

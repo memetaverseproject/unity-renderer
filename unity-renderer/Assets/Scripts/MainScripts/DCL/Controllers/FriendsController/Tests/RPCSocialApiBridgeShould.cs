@@ -1,6 +1,6 @@
 using Cysharp.Threading.Tasks;
 using Cysharp.Threading.Tasks.Linq;
-using Decentraland.Social.Friendships;
+using Memetaverse.Social.Friendships;
 using MainScripts.DCL.Controllers.FriendsController;
 using NSubstitute;
 using NUnit.Framework;

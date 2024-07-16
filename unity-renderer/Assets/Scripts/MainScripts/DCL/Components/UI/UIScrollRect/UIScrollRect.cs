@@ -5,7 +5,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using Color = UnityEngine.Color;
-using Decentraland.Sdk.Ecs6;
+using Memetaverse.Sdk.Ecs6;
 using MainScripts.DCL.Components;
 
 namespace DCL.Components

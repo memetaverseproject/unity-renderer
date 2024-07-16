@@ -1,6 +1,6 @@
 ﻿using DCL.Controllers;
 using DCL.UIElements.Image;
-using Decentraland.Common;
+using Memetaverse.Common;
 using JetBrains.Annotations;
 
 namespace DCL.ECSComponents.Utils

@@ -30,19 +30,19 @@
 
       #gameContainer.loaded,
       body {
-        background: #000 url(images/decentraland-connect/decentraland-loading.gif) no-repeat 50% 50% !important;
+        background: #000 url(images/memetaverse-connect/memetaverse-loading.gif) no-repeat 50% 50% !important;
         background-size: 150px 150px !important;
       }
       @media screen and (min-height: 500px) {
         body {
-          background: #000 url(images/decentraland-connect/decentraland-loading.gif) no-repeat 50% 50% !important;
+          background: #000 url(images/memetaverse-connect/memetaverse-loading.gif) no-repeat 50% 50% !important;
           background-size: 150px 150px !important;
         }
       }
       @media screen and (min-height: 800px) {
         #gameContainer.loaded,
         body {
-          background: #000 url(images/decentraland-connect/decentraland-loading.gif) no-repeat 50% 50% !important;
+          background: #000 url(images/memetaverse-connect/memetaverse-loading.gif) no-repeat 50% 50% !important;
           background-size: 150px 150px !important;
         }
       }
@@ -64,7 +64,7 @@
         height: 100%;
       }
 
-      .dcl-loading .progress {
+      .mtv-loading .progress {
         display: block;
       }
 
@@ -168,7 +168,7 @@
         }
       }
 
-      body.dcl-loading #load-messages-wrapper {
+      body.mtv-loading #load-messages-wrapper {
         display: flex;
       }
       #load-messages-wrapper {
@@ -306,11 +306,11 @@
       }
       @font-face {
         font-family: sfregular;
-        src: url(images/decentraland-connect/SF-UI-Text-Regular.otf);
+        src: url(images/memetaverse-connect/SF-UI-Text-Regular.otf);
       }
       @font-face {
         font-family: sfsemibold;
-        src: url(images/decentraland-connect/SF-UI-Text-Semibold.otf);
+        src: url(images/memetaverse-connect/SF-UI-Text-Semibold.otf);
       }
       .eth-login-description {
         color: white;
@@ -522,7 +522,7 @@
     </style>
   </head>
 
-  <body class="dcl-loading">
+  <body class="mtv-loading">
     <div id="overlay"></div>
     <div id="gameContainer"></div>
     <audio autoplay id="voice-chat-audio"></audio>
@@ -601,7 +601,7 @@
       function getPlayerSessionKey() {
         const qs = new URLSearchParams(document.location.search)
         if (qs.has('PLAYER')){
-          return 'dcl-preview-' + qs.get('PLAYER').toLowerCase().replace(' ', '_');
+          return 'mtv-preview-' + qs.get('PLAYER').toLowerCase().replace(' ', '_');
         }
         return '';
       }
@@ -661,11 +661,11 @@
         await injectScript(kernelScript)
 
         const container = document.getElementById('gameContainer')
-        const DecentralandKernel = globalThis.DecentralandKernel
+        const MemetaverseKernel = globalThis.MemetaverseKernel
 
-        if (!DecentralandKernel) throw new Error('MemetaverseKernel could not be loaded')
+        if (!MemetaverseKernel) throw new Error('MemetaverseKernel could not be loaded')
 
-        const kernel = await DecentralandKernel.initKernel({
+        const kernel = await MemetaverseKernel.initKernel({
           kernelOptions: {
             baseUrl,
             previewMode: true,

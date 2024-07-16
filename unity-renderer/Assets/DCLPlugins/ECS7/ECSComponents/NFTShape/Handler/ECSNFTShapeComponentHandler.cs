@@ -6,7 +6,7 @@ using DCL.ECSRuntime;
 using DCL.Helpers;
 using DCL.Helpers.NFT;
 using DCL.Models;
-using Decentraland.Common;
+using Memetaverse.Common;
 using NFTShape_Internal;
 using UnityEngine;
 using Object = UnityEngine.Object;

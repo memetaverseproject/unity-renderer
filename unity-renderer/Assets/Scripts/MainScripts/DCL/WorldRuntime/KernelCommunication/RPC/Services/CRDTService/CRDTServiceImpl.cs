@@ -3,7 +3,7 @@ using DCL;
 using DCL.Controllers;
 using DCL.CRDT;
 using DCL.Models;
-using Decentraland.Renderer.RendererServices;
+using Memetaverse.Renderer.RendererServices;
 using Google.Protobuf;
 using rpc_csharp;
 using System;

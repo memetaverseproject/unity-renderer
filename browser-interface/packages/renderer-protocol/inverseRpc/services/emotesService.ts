@@ -1,7 +1,7 @@
-import { RpcServerPort } from '@dcl/rpc'
+import { RpcServerPort } from '@mtvproject/rpc'
 import { RendererProtocolContext } from '../context'
-import * as codegen from '@dcl/rpc/dist/codegen'
-import { EmotesKernelServiceDefinition } from 'shared/protocol/decentraland/renderer/kernel_services/emotes_kernel.gen'
+import * as codegen from '@mtvproject/rpc/dist/codegen'
+import { EmotesKernelServiceDefinition } from 'shared/protocol/memetaverse/renderer/kernel_services/emotes_kernel.gen'
 import { allScenesEvent } from 'shared/world/parcelSceneManager'
 import { sendPublicChatMessage } from 'shared/comms'
 

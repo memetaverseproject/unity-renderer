@@ -1,7 +1,7 @@
 using DCL;
 using DCL.Helpers;
 using DCL.UserProfiles;
-using Decentraland.Renderer.KernelServices;
+using Memetaverse.Renderer.KernelServices;
 using System;
 using System.Collections.Generic;
 using System.Linq;
