@@ -2,8 +2,8 @@
   "name": "@mtvproject/explorer",
   "main": "index.js",
   "typings": "index.d.ts",
-  "version": "1.1.0-development-20240717083521.commit-d510307",
-  "commit": "d51030745b75f45f1f38b00870a75bba5c09b67d",
+  "version": "1.1.0-development-20240717084512.commit-6e4fbca",
+  "commit": "6e4fbcaf657acc901ac44b0848a74bcc8a9f35c3",
   "author": "Memetaverse Contributors",
   "license": "Apache-2.0",
   "publishConfig": {
