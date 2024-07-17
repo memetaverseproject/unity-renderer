@@ -1,4 +1,4 @@
-import { Conversation, ConversationType } from 'dcl-social-client'
+import { Conversation, ConversationType } from '@mtvproject/matrix-client'
 import { UpdateTotalFriendRequestsPayload } from 'shared/types'
 import { FriendRequest, RootFriendsState } from './types'
 import { getUserIdFromMatrix } from './utils'

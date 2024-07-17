@@ -1,4 +1,4 @@
-import { CurrentUserStatus, SocialAPI } from 'dcl-social-client'
+import { CurrentUserStatus, SocialAPI } from '@mtvproject/matrix-client'
 export type SocialData = {
   userId: string
   socialId: string

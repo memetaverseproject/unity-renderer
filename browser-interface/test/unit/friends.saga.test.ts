@@ -19,7 +19,7 @@ import {
   PresenceType,
   SocialAPI,
   TextMessage
-} from 'dcl-social-client'
+} from '@mtvproject/matrix-client'
 import { profileToRendererFormat } from 'lib/memetaverse/profiles/transformations/profileToRendererFormat'
 import { AddUserProfilesToCatalogPayload } from 'lib/memetaverse/profiles/transformations/types'
 import { StoreEnhancer } from 'redux'

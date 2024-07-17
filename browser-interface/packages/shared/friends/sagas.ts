@@ -36,7 +36,7 @@ import {
   SocialClient,
   UnknownUsersError,
   UpdateUserStatus
-} from 'dcl-social-client'
+} from '@mtvproject/matrix-client'
 import { isAddress } from 'eth-connect/eth-connect'
 import future from 'fp-future'
 import { calculateDisplayName } from 'lib/memetaverse/profiles/transformations/processServerProfile'

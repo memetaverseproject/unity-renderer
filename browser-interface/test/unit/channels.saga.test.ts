@@ -7,7 +7,7 @@ import {
   SearchChannelsResponse,
   SocialAPI,
   TextMessage
-} from 'dcl-social-client'
+} from '@mtvproject/matrix-client'
 import * as friendsSagas from '../../packages/shared/friends/sagas'
 import * as friendsSelectors from 'shared/friends/selectors'
 import * as profilesSelectors from 'shared/profiles/selectors'
