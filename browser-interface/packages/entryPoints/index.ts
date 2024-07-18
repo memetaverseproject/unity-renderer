@@ -1,13 +1,11 @@
-import { ETHEREUM_NETWORK, HAS_INITIAL_POSITION_MARK, getSSOUrl } from 'config/index'
+import { ETHEREUM_NETWORK, HAS_INITIAL_POSITION_MARK } from 'config/index'
 import { WebSocketProvider } from 'eth-connect'
 import { IMemetaverseKernel, IEthereumProvider, KernelOptions, KernelResult, LoginState } from '@mtvproject/kernel-interface'
-import * as SingleSignOn from '@dcl/single-sign-on-client'
 import { getFromPersistentStorage, setPersistentStorage } from 'lib/browser/persistentStorage'
 import { gridToWorld } from 'lib/memetaverse/parcels/gridToWorld'
 import { parseParcelPosition } from 'lib/memetaverse/parcels/parseParcelPosition'
 import { resolveBaseUrl } from 'lib/memetaverse/url/resolveBaseUrl'
 import { storeCondition } from 'lib/redux/storeCondition'
-import { defaultLogger } from 'lib/logger'
 import { initShared } from 'shared'
 import { sendHomeScene } from 'shared/atlas/actions'
 import { homePointKey } from 'shared/atlas/utils'
@@ -33,15 +31,6 @@ import { isWebGLCompatible } from './validations'
 declare const globalThis: { MemetaverseKernel: IMemetaverseKernel }
 globalThis.MemetaverseKernel = {
   async initKernel(options: KernelOptions): Promise<KernelResult> {
-    try {
-      let sso = getSSOUrl()
-      if (sso) {
-        SingleSignOn.init(sso)
-      }
-    } catch (err) {
-      defaultLogger.error('Error initializing SingleSignOn', err)
-    }
-
     await setupBaseUrl(options)
 
     ensureValidWebGLCanvasContainer(options)
@@ -147,7 +136,7 @@ async function hasStoredSession(address: string, networkId: number) {
 
   const profile = await localProfilesRepo.get(
     address,
-    networkId === 39 ? ETHEREUM_NETWORK.MAINNET : ETHEREUM_NETWORK.NEBULAS
+    networkId === 37 ? ETHEREUM_NETWORK.MAINNET : ETHEREUM_NETWORK.NEBULAS
   )
 
   return { result: !!profile, profile: profile || null } as any

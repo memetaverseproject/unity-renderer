@@ -46,9 +46,6 @@ export async function initSourcemap(code: string, inlineSourcemaps: boolean = tr
    * in every error. So we need to fix that in the error code stack.
    */
   function adjustStackTrace(stackTrace: string) {
-    // Don't adjust the stack trace if we are in preview mode
-    //  preview mode uses a plain eval wrapped, so this is not necessary
-    //  see more https://github.com/decentraland/scene-runtime/pull/211
     if (PREVIEW) return stackTrace
 
     const lines = stackTrace.split('\n')

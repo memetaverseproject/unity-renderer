@@ -38,6 +38,7 @@ function* islandChanged() {
 
   yield call(updateLocation, adapter ? realmToConnectionString(adapter) : undefined, island)
 }
+
 export function getRealmAdapterAndIsland(state: RootCommsState & RootRealmState) {
   return {
     adapter: getRealmAdapter(state),

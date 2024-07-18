@@ -116,7 +116,7 @@ export class SimulationRoom implements RoomConnection {
       setTimeout(() => {
         this.events.emit('profileResponse', {
           address: request.address,
-          data: { serializedProfile: JSON.stringify(peer.profile), baseUrl: `https://testnet-peer.memetaverse.club` }
+          data: { serializedProfile: JSON.stringify(peer.profile), baseUrl: `https://peer.memetaverse.club` }
         })
       }, Math.random() * 100)
     }

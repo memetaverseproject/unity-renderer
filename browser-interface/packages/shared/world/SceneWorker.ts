@@ -254,7 +254,6 @@ export class SceneWorker {
     fileName: string,
     type?: T
   ): Promise<T extends 'text' ? { hash: string; content: string } : { hash: string; content: Uint8Array }> {
-    // filenames are lower cased as per https://adr.decentraland.org/adr/ADR-80
     const normalized = fileName.toLowerCase()
 
     // and we iterate over the entity content mappings to resolve the file hash
@@ -439,7 +438,7 @@ export class SceneWorker {
   }
 
   private sendBatch(actions: EntityAction[]): void {
-    if (this.loadableScene.id === 'dcl-gs-avatars') {
+    if (this.loadableScene.id === 'mtv-gs-avatars') {
       incrementAvatarSceneMessages(actions.length)
     }
 

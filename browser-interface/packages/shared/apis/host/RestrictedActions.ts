@@ -81,7 +81,6 @@ export function triggerEmote(req: TriggerEmoteRequest, ctx: PortContext): Trigge
     return {}
   }
 
-  getUnityInstance().TriggerSelfUserExpression(req.predefinedEmote)
   getRendererModules(store.getState())
     ?.emotes?.triggerSelfUserExpression({ id: req.predefinedEmote })
     .catch(defaultLogger.error)
@@ -111,7 +110,6 @@ export async function triggerSceneEmote(req: TriggerSceneEmoteRequest, ctx: Port
   }
 
   const response = await emoteService.triggerSceneExpression({ ...request })
-
   return response
 }
 
@@ -153,7 +151,7 @@ export function registerRestrictedActionsServiceServerImplementation(port: RpcSe
     },
     async openExternalUrl(req: OpenExternalUrlRequest, ctx: PortContext) {
       if (!ctx.sdk7) throw new Error('API only available for SDK7')
-      if (ctx.sceneData.isPortableExperience){
+      if (ctx.sceneData.isPortableExperience) {
         assertHasPermission(PermissionItem.PI_OPEN_EXTERNAL_LINK, ctx)
       }
       if (!isPositionValid(lastPlayerPosition, ctx)) {
@@ -173,7 +171,10 @@ export function registerRestrictedActionsServiceServerImplementation(port: RpcSe
         return { success: false }
       }
 
-      const response = await getRendererModules(store.getState())?.restrictedActions?.openNftDialog({ urn: req.urn, sceneNumber: ctx.sceneData.sceneNumber })
+      const response = await getRendererModules(store.getState())?.restrictedActions?.openNftDialog({
+        urn: req.urn,
+        sceneNumber: ctx.sceneData.sceneNumber
+      })
       return { success: response?.success ?? false }
     },
     async setCommunicationsAdapter(req: CommsAdapterRequest, ctx: PortContext) {
@@ -200,7 +201,10 @@ export function registerRestrictedActionsServiceServerImplementation(port: RpcSe
       if (!isPositionValid(lastPlayerPosition, ctx) || !req.worldCoordinates)
         ctx.logger.error('Error: Player is not inside of scene', lastPlayerPosition)
       else
-        getRendererModules(store.getState())?.restrictedActions?.teleportTo({ worldCoordinates: req.worldCoordinates, sceneNumber: ctx.sceneData.sceneNumber })
+        getRendererModules(store.getState())?.restrictedActions?.teleportTo({
+          worldCoordinates: req.worldCoordinates,
+          sceneNumber: ctx.sceneData.sceneNumber
+        })
 
       return {}
     },
