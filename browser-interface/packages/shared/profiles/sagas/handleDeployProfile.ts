@@ -1,5 +1,5 @@
 import { Authenticator } from '@mtvproject/crypto'
-import { hashV1 } from '@mtvproject/hashing'
+import { hashV1 } from '@dcl/hashing'
 import { Avatar, EntityType, Profile, Snapshots } from '@mtvproject/schemas'
 import {
   BuildEntityOptions,
@@ -20,6 +20,7 @@ import type { DeployProfile } from '../actions'
 import { deployProfileFailure, deployProfileSuccess } from '../actions'
 import { buildServerMetadata } from 'lib/memetaverse/profiles/transformations/profileToServerFormat'
 import type { ContentFile } from '../types'
+import { localProfileChanged } from '../../world/runtime-7/engine'
 
 export function* handleDeployProfile(deployProfileAction: DeployProfile) {
   const realmAdapter: IRealmAdapter = yield call(waitForRealm)
@@ -28,6 +29,7 @@ export function* handleDeployProfile(deployProfileAction: DeployProfile) {
   const identity: ExplorerIdentity = yield select(getCurrentIdentity)
   const userId: string = yield select(getCurrentUserId)
   const profile: Avatar = deployProfileAction.payload.profile
+
   try {
     yield call(deployAvatar, {
       url: profileServiceUrl,
@@ -36,6 +38,7 @@ export function* handleDeployProfile(deployProfileAction: DeployProfile) {
       profile
     })
     yield put(deployProfileSuccess(userId, profile.version, profile))
+    yield call(() => localProfileChanged.emit('changeAvatar', profile))
   } catch (e: any) {
     trackEvent('error', {
       context: 'kernel#saga',

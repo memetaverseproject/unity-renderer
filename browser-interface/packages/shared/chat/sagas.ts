@@ -1,5 +1,5 @@
 import { SHOW_FPS_COUNTER } from 'config'
-import { SocialAPI } from 'dcl-social-client'
+import { SocialAPI } from '@mtvproject/matrix-client'
 import { parseParcelPosition } from 'lib/memetaverse/parcels/parseParcelPosition'
 import { worldToGrid } from 'lib/memetaverse/parcels/worldToGrid'
 import { uuid } from 'lib/javascript/uuid'

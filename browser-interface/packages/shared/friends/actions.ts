@@ -3,7 +3,7 @@ import { action } from 'typesafe-actions'
 import { ChatMessage, FriendshipAction } from 'shared/types'
 
 import { FriendsState } from './types'
-import { SocialAPI, SocialId } from 'dcl-social-client'
+import { SocialAPI, SocialId } from '@mtvproject/matrix-client'
 import { IFuture } from 'fp-future'
 import { FriendshipErrorCode } from 'shared/protocol/memetaverse/renderer/common/friend_request_common.gen'
 

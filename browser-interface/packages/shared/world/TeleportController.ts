@@ -94,10 +94,10 @@ export class TeleportController {
     teleportMessage?: string
   ): Promise<{ message: string; success: boolean }> {
     const tpMessage: string = teleportMessage ? teleportMessage : `Teleporting to ${x}, ${y}...`
+
     if (isInsideWorldLimits(x, y)) {
       try {
-        if (goToMostPopulatedRealm)
-          await changeToMostPopulatedRealm()
+        if (goToMostPopulatedRealm) await changeToMostPopulatedRealm()
 
         store.dispatch(trackTeleportTriggered(tpMessage))
         store.dispatch(teleportToAction({ position: gridToWorld(x, y) }))
@@ -128,7 +128,13 @@ async function fetchLayerUsersParcels(): Promise<ParcelArray[]> {
 
   try {
     if (realmAdapter) {
-      const parcelsResponse = await fetch(`${urlWithProtocol(realmAdapter.baseUrl)}/stats/parcels`)
+      let baseStatsUrl = `${urlWithProtocol(realmAdapter.baseUrl)}/stats`
+      if (realmAdapter.about.configurations?.realmName === 'main') {
+        baseStatsUrl = urlWithProtocol(
+          realmAdapter.baseUrl.replace('realm-provider', 'archipelago-stats').replace('/main', '')
+        )
+      }
+      const parcelsResponse = await fetch(`${baseStatsUrl}/parcels`)
 
       if (parcelsResponse.ok) {
         const parcelsBody = await parcelsResponse.json()

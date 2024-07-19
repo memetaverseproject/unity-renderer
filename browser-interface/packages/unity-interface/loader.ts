@@ -4,6 +4,7 @@ import { ActiveVideoStreams } from 'shared/comms/adapters/types'
 import { getLivekitActiveVideoStreams } from 'shared/comms/selectors'
 import { BringDownClientAndShowError } from 'shared/loading/ReportFatalError'
 import { store } from 'shared/store/isolatedStore'
+import defaultLogger from '../lib/logger'
 
 const generatedFiles = {
   frameworkUrl: 'unity.framework.js',
@@ -64,7 +65,7 @@ export type MemetaverseRendererInstance = {
    */
   engineStartedFuture: Promise<any>
 
-  // soon there will be more protocol functions here https://github.com/memetaverseproject/renderer-protocol
+  // soon there will be more protocol functions here https://github.com/memetaverse/renderer-protocol
   // and originalUnity will be deprecated to decouple the kernel from unity's impl internals
   originalUnity: UnityGame
 }
@@ -122,7 +123,7 @@ async function initializeWebRenderer(options: RendererOptions): Promise<Memetave
   const engineStartedFuture = future<any>()
 
   // The namespace DCL is exposed to global because the unity template uses it to send the messages
-  // @see https://github.com/memetaverseproject/unity-renderer/blob/bc2bf1ee0d685132c85606055e592bac038b3471/unity-renderer/Assets/Plugins/JSFunctions.jslib#L6-L29
+  // @see https://github.com/memetaverse/unity-renderer/blob/bc2bf1ee0d685132c85606055e592bac038b3471/unity-renderer/Assets/Plugins/JSFunctions.jslib#L6-L29
   ;(globalThis as any).DCL = {
     // This function get's called by the engine
     EngineStarted() {
@@ -213,7 +214,7 @@ export async function loadUnity(baseUrl: string, options: CommonRendererOptions)
           BringDownClientAndShowError(error)
         },
         onBinaryMessage: (...args) => {
-          console.log('onBinaryMessage', ...args)
+          defaultLogger.log('onBinaryMessage', ...args)
         },
         extraConfig: {
           antialias: false,
