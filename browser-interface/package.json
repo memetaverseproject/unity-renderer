@@ -76,7 +76,7 @@
     "dcl-catalyst-client": "^14.0.9",
     "@mtvproject/quests-client": "^0.1.1",
     "@mtvproject/matrix-client": "^0.0.1-development",
-    "@mtvproject/legacy-ecs": "^6.12.5",
+    "@mtvproject/legacy-ecs": "^6.12.6",
     "devtools-protocol": "0.0.1115542",
     "eth-connect": "^6.1.0",
     "fp-future": "^1.0.1",
