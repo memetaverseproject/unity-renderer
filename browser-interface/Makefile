@@ -68,7 +68,7 @@ touch-local:
 	touch static/unity.wasm
 
 build-unity-local:
-	npm i --no-save @mtvproject/explorer@next
+	npm i --no-save @mtvproject/explorer@latest
 	cp node_modules/\@mtvproject/explorer/unity* static/
 	cp -r node_modules/\@mtvproject/explorer/StreamingAssets static/
 watch: touch-local build ## Watch the files required for hacking the explorer
